@@ -12,36 +12,38 @@
       "hook": "MTR's East Rail Line provides frequent and seamless transportation between Hong Kong and Shenzhen.",
       "cta": "Take the East Rail Line for convenient cross-boundary travel."
     },
-    "base_prediction": 745189.1875,
-    "optimized_prediction": 825701.6875,
-    "base_log": 13.521394729614258,
-    "optimized_log": 13.623990058898926,
+    "base_prediction": 288085.03125,
+    "optimized_prediction": 560572.875,
+    "base_log": 12.571014404296875,
+    "optimized_log": 13.236716270446777,
     "uncertainty_band": [
-      14489.5927734375,
-      38321992.0
+      7461.96728515625,
+      11120706.0
     ],
     "changes": {
-      "structure_type": "Product proof led"
+      "structure_type": "Announcement / information led"
     },
-    "candidates_evaluated": 18,
+    "candidates_evaluated": 16,
     "support_examples": [
       {
-        "video_id": "cmrzyteu8000tbnr8qwvfbdnd",
-        "title": "【經典重塑🌟！王者將軍漢堡霸氣新登場🍔🐮！】",
-        "source_url": "https://www.youtube.com/watch?v=0_1xI0ihZSk"
+        "video_id": "cmvc5nw57003fbn00lnr610as",
+        "title": "【易Joy！易賞！易分享 全新大家樂Club 100易.0】",
+        "source_url": "https://www.youtube.com/watch?v=185p2FWa_R0"
       },
       {
-        "video_id": "cmu2x7awk001jbn60ht4lm5t5",
-        "title": "[CATHAY FRESH] BEYOND STARS — YOUR FRESHEST GATEWAY IN AND OUT OF ASIA｜【國泰—鮮貨運送】為您端上產地鮮味｜新鮮快捷 聯繫亞洲",
-        "source_url": "https://www.youtube.com/watch?v=F_gTeg6D8e0"
+        "video_id": "cmt3r8lhc001ebnawtu04awo7",
+        "title": "【新升級恒生 MMPOWER卡】網購信用卡天花板 網球一哥都用緊！🛍️網購及指定商戶賺高達 8% +FUN Dollars！",
+        "source_url": "https://www.youtube.com/watch?v=B2EyinOoCsE"
       },
       {
-        "video_id": "cmsy0fmgu0028bnn8lr8uwa1j",
-        "title": "【滙豐保險呈獻｜一份選擇 成就更多財富可能】",
-        "source_url": "https://www.youtube.com/watch?v=Hki21yPVTS8"
+        "video_id": "cmt3q08mg0005bnawpa8ty5ye",
+        "title": "【滙豐Premier Elite｜洞悉環球市場先機，盡佔全球財富機遇】",
+        "source_url": "https://www.youtube.com/watch?v=CHqJrCwN_QE"
       }
     ],
     "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
+    "age_days": 718.5009931984607,
+    "target_note": "Cumulative snapshot views at training-median age, not a validated fixed-horizon forecast.",
     "storyboard": [
       {
         "seconds": "0-3",
@@ -56,7 +58,7 @@
       {
         "seconds": "20-27",
         "purpose": "Apply suggested creative structure",
-        "content": "structure_type = Product proof led"
+        "content": "structure_type = Announcement / information led"
       },
       {
         "seconds": "27-30",
@@ -66,6 +68,234 @@
     ]
   },
   "dataset_cases": [
+    {
+      "video_id": "cmsxzrhfa0017bnn8p2stilmd",
+      "title": "香港故事，世界靈感; 世界故事，香港靈感",
+      "brand": "HSBC",
+      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
+      "creative_elements": {
+        "creative_mechanic": "Event experience led",
+        "structure_type": "Event experience led",
+        "pacing": "medium tempo",
+        "main_message": "The ad highlights the mutual inspiration and exchange between Hong Kong and the rest of the world, positioning HSBC as a partner that continues to support new possibilities.",
+        "hook": "The ad highlights the mutual inspiration and exchange between Hong Kong and the rest of the world, positioning HSBC as a partner that continues to support new possibilities.",
+        "cta": "unclear"
+      },
+      "base_prediction": 189946.296875,
+      "optimized_prediction": 975601.5625,
+      "base_log": 12.154501914978027,
+      "optimized_log": 13.790810585021973,
+      "uncertainty_band": [
+        4919.64990234375,
+        7332358.5
+      ],
+      "changes": {
+        "creative_mechanic": "Offer led",
+        "structure_type": "Announcement / information led"
+      },
+      "candidates_evaluated": 13,
+      "support_examples": [
+        {
+          "video_id": "cmvc5nw57003fbn00lnr610as",
+          "title": "【易Joy！易賞！易分享 全新大家樂Club 100易.0】",
+          "source_url": "https://www.youtube.com/watch?v=185p2FWa_R0"
+        },
+        {
+          "video_id": "cmt3r8lhc001ebnawtu04awo7",
+          "title": "【新升級恒生 MMPOWER卡】網購信用卡天花板 網球一哥都用緊！🛍️網購及指定商戶賺高達 8% +FUN Dollars！",
+          "source_url": "https://www.youtube.com/watch?v=B2EyinOoCsE"
+        },
+        {
+          "video_id": "cmt3q08mg0005bnawpa8ty5ye",
+          "title": "【滙豐Premier Elite｜洞悉環球市場先機，盡佔全球財富機遇】",
+          "source_url": "https://www.youtube.com/watch?v=CHqJrCwN_QE"
+        }
+      ],
+      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
+      "observed_views": 1709054
+    },
+    {
+      "video_id": "cmu3h124d000zbn5koghp340c",
+      "title": "【神Code伴你行🎶──「出行碼」】 Travel QR Code",
+      "brand": "MTR",
+      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
+      "creative_elements": {
+        "creative_mechanic": "Offer led",
+        "structure_type": "Problem-solution led",
+        "pacing": "medium tempo",
+        "main_message": "The MTR Travel QR code provides real-time service updates, alternative routes, and shuttle bus information to help commuters plan their journeys effectively.",
+        "hook": "The MTR Travel QR code provides real-time service updates, alternative routes, and shuttle bus information to help commuters plan their journeys effectively.",
+        "cta": "Scan the Travel QR codes available in MTR stations and trains to access real-time traffic information and alternative transport options."
+      },
+      "base_prediction": 939716.0,
+      "optimized_prediction": 1575594.0,
+      "base_log": 13.753334045410156,
+      "optimized_log": 14.270143508911133,
+      "uncertainty_band": [
+        24342.69140625,
+        36274988.0
+      ],
+      "changes": {
+        "structure_type": "Announcement / information led"
+      },
+      "candidates_evaluated": 16,
+      "support_examples": [
+        {
+          "video_id": "cmvc5nw57003fbn00lnr610as",
+          "title": "【易Joy！易賞！易分享 全新大家樂Club 100易.0】",
+          "source_url": "https://www.youtube.com/watch?v=185p2FWa_R0"
+        },
+        {
+          "video_id": "cmt3r8lhc001ebnawtu04awo7",
+          "title": "【新升級恒生 MMPOWER卡】網購信用卡天花板 網球一哥都用緊！🛍️網購及指定商戶賺高達 8% +FUN Dollars！",
+          "source_url": "https://www.youtube.com/watch?v=B2EyinOoCsE"
+        },
+        {
+          "video_id": "cmt3q08mg0005bnawpa8ty5ye",
+          "title": "【滙豐Premier Elite｜洞悉環球市場先機，盡佔全球財富機遇】",
+          "source_url": "https://www.youtube.com/watch?v=CHqJrCwN_QE"
+        }
+      ],
+      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
+      "observed_views": 1720337
+    },
+    {
+      "video_id": "cmvc4znur002dbn00afi5g52s",
+      "title": "美心瑤柱蘿蔔糕電視廣告 2014",
+      "brand": "Maxim's",
+      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
+      "creative_elements": {
+        "creative_mechanic": "Product proof led",
+        "structure_type": "Creative mechanic unresolved",
+        "pacing": "fast-cut",
+        "main_message": "Maxim's Scallop Radish Cake is delicious and full of radish pieces.",
+        "hook": "Maxim's Scallop Radish Cake is delicious and full of radish pieces.",
+        "cta": "unclear"
+      },
+      "base_prediction": 34067.44140625,
+      "optimized_prediction": 191621.46875,
+      "base_log": 10.436126708984375,
+      "optimized_log": 12.16328239440918,
+      "uncertainty_band": [
+        881.5546264648438,
+        1315111.375
+      ],
+      "changes": {
+        "creative_mechanic": "Offer led",
+        "structure_type": "Product proof led"
+      },
+      "candidates_evaluated": 8,
+      "support_examples": [
+        {
+          "video_id": "cmrzz3s6r001sbnr8lbqxwrbd",
+          "title": "【嚟麥當勞升級加配泰式滋味😋冬蔭功風味 Shake Shake 薯條➕番石榴椰果梳打➕黑糯米批等緊你‼️】",
+          "source_url": "https://www.youtube.com/watch?v=61ekBwxBCLA"
+        },
+        {
+          "video_id": "cmvc4mk5i000pbn00las6i1uw",
+          "title": "2025 美心月餅 美心冰皮味道 香港製造 – 冰皮月餅系列+榴槤冰皮月餅",
+          "source_url": "https://www.youtube.com/watch?v=8NZyb7wPlao"
+        },
+        {
+          "video_id": "cmrzz2ji6001nbnr8szn29cxl",
+          "title": "【當地人必食😋🌶️辣辣麥炸雞喺香港麥當勞都歎到‼️】",
+          "source_url": "https://www.youtube.com/watch?v=CV-dAWG145s"
+        }
+      ],
+      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
+      "observed_views": 3760
+    },
+    {
+      "video_id": "cmrzyteu8000tbnr8qwvfbdnd",
+      "title": "【經典重塑🌟！王者將軍漢堡霸氣新登場🍔🐮！】",
+      "brand": "McDonald's",
+      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
+      "creative_elements": {
+        "creative_mechanic": "Offer led",
+        "structure_type": "Product proof led",
+        "pacing": "medium tempo",
+        "main_message": "The ad presents the return of the 'Shogun Burger' series at McDonald's as a 'fated reunion' through a dramatic, cinematic narrative involving reincarnation and long-lost lovers.",
+        "hook": "The ad presents the return of the 'Shogun Burger' series at McDonald's as a 'fated reunion' through a dramatic, cinematic narrative involving reincarnation and long-lost lovers.",
+        "cta": "The ad promotes a limited-time offer for the Shogun Burger combo starting at $39, available at designated Hong Kong McDonald's after 11 AM."
+      },
+      "base_prediction": 199551.5,
+      "optimized_prediction": 276563.15625,
+      "base_log": 12.203832626342773,
+      "optimized_log": 12.530198097229004,
+      "uncertainty_band": [
+        5168.47607421875,
+        7703139.5
+      ],
+      "changes": {
+        "structure_type": "Announcement / information led"
+      },
+      "candidates_evaluated": 16,
+      "support_examples": [
+        {
+          "video_id": "cmvc5nw57003fbn00lnr610as",
+          "title": "【易Joy！易賞！易分享 全新大家樂Club 100易.0】",
+          "source_url": "https://www.youtube.com/watch?v=185p2FWa_R0"
+        },
+        {
+          "video_id": "cmt3r8lhc001ebnawtu04awo7",
+          "title": "【新升級恒生 MMPOWER卡】網購信用卡天花板 網球一哥都用緊！🛍️網購及指定商戶賺高達 8% +FUN Dollars！",
+          "source_url": "https://www.youtube.com/watch?v=B2EyinOoCsE"
+        },
+        {
+          "video_id": "cmt3q08mg0005bnawpa8ty5ye",
+          "title": "【滙豐Premier Elite｜洞悉環球市場先機，盡佔全球財富機遇】",
+          "source_url": "https://www.youtube.com/watch?v=CHqJrCwN_QE"
+        }
+      ],
+      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
+      "observed_views": 1614955
+    },
+    {
+      "video_id": "cmvc4x6u10023bn00ww0cuutd",
+      "title": "【你 + 美心 + 我 = 新年最好禮】電視廣告",
+      "brand": "Maxim's",
+      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
+      "creative_elements": {
+        "creative_mechanic": "Offer led",
+        "structure_type": "Product proof led",
+        "pacing": "fast-cut",
+        "main_message": "Hong Kong MX festive foods like radish cake and egg rolls are the best gifts to share with loved ones during Chinese New Year.",
+        "hook": "Hong Kong MX festive foods like radish cake and egg rolls are the best gifts to share with loved ones during Chinese New Year.",
+        "cta": "Celebrate the Lunar New Year by sharing Hong Kong MX festive treats with family."
+      },
+      "base_prediction": 124240.71875,
+      "optimized_prediction": 249724.78125,
+      "base_log": 11.729984283447266,
+      "optimized_log": 12.428118705749512,
+      "uncertainty_band": [
+        3217.5244140625,
+        4795987.0
+      ],
+      "changes": {
+        "structure_type": "Announcement / information led",
+        "pacing": "medium tempo"
+      },
+      "candidates_evaluated": 14,
+      "support_examples": [
+        {
+          "video_id": "cmvc5nw57003fbn00lnr610as",
+          "title": "【易Joy！易賞！易分享 全新大家樂Club 100易.0】",
+          "source_url": "https://www.youtube.com/watch?v=185p2FWa_R0"
+        },
+        {
+          "video_id": "cmt3r8lhc001ebnawtu04awo7",
+          "title": "【新升級恒生 MMPOWER卡】網購信用卡天花板 網球一哥都用緊！🛍️網購及指定商戶賺高達 8% +FUN Dollars！",
+          "source_url": "https://www.youtube.com/watch?v=B2EyinOoCsE"
+        },
+        {
+          "video_id": "cmt3q08mg0005bnawpa8ty5ye",
+          "title": "【滙豐Premier Elite｜洞悉環球市場先機，盡佔全球財富機遇】",
+          "source_url": "https://www.youtube.com/watch?v=CHqJrCwN_QE"
+        }
+      ],
+      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
+      "observed_views": 152450
+    },
     {
       "video_id": "cmvc4lbtr000fbn0081iw3zrc",
       "title": "2026 美心月餅 香港味道 美心製造 – 30秒",
@@ -79,264 +309,38 @@
         "hook": "Maxim's Mooncakes are a timeless representation of Hong Kong's Mid-Autumn festival taste, proudly made in Hong Kong and a market leader for 28 years.",
         "cta": "unclear"
       },
-      "base_prediction": 711080.0,
-      "optimized_prediction": 778939.5625,
-      "base_log": 13.474541664123535,
-      "optimized_log": 13.565690040588379,
+      "base_prediction": 1259943.75,
+      "optimized_prediction": 2168881.5,
+      "base_log": 14.046578407287598,
+      "optimized_log": 14.589722633361816,
       "uncertainty_band": [
-        13826.310546875,
-        36567936.0
+        32638.30078125,
+        48636480.0
       ],
       "changes": {
-        "creative_mechanic": "Offer led"
+        "creative_mechanic": "Offer led",
+        "structure_type": "Announcement / information led"
       },
-      "candidates_evaluated": 17,
+      "candidates_evaluated": 15,
       "support_examples": [
         {
-          "video_id": "cmrzyteu8000tbnr8qwvfbdnd",
-          "title": "【經典重塑🌟！王者將軍漢堡霸氣新登場🍔🐮！】",
-          "source_url": "https://www.youtube.com/watch?v=0_1xI0ihZSk"
+          "video_id": "cmvc5nw57003fbn00lnr610as",
+          "title": "【易Joy！易賞！易分享 全新大家樂Club 100易.0】",
+          "source_url": "https://www.youtube.com/watch?v=185p2FWa_R0"
         },
         {
-          "video_id": "cmu2x7awk001jbn60ht4lm5t5",
-          "title": "[CATHAY FRESH] BEYOND STARS — YOUR FRESHEST GATEWAY IN AND OUT OF ASIA｜【國泰—鮮貨運送】為您端上產地鮮味｜新鮮快捷 聯繫亞洲",
-          "source_url": "https://www.youtube.com/watch?v=F_gTeg6D8e0"
+          "video_id": "cmt3r8lhc001ebnawtu04awo7",
+          "title": "【新升級恒生 MMPOWER卡】網購信用卡天花板 網球一哥都用緊！🛍️網購及指定商戶賺高達 8% +FUN Dollars！",
+          "source_url": "https://www.youtube.com/watch?v=B2EyinOoCsE"
         },
         {
-          "video_id": "cmsy0fmgu0028bnn8lr8uwa1j",
-          "title": "【滙豐保險呈獻｜一份選擇 成就更多財富可能】",
-          "source_url": "https://www.youtube.com/watch?v=Hki21yPVTS8"
+          "video_id": "cmt3q08mg0005bnawpa8ty5ye",
+          "title": "【滙豐Premier Elite｜洞悉環球市場先機，盡佔全球財富機遇】",
+          "source_url": "https://www.youtube.com/watch?v=CHqJrCwN_QE"
         }
       ],
       "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
       "observed_views": 782077
-    },
-    {
-      "video_id": "cmvc8vit6007sbn00j50pifsd",
-      "title": "【香脆花生糖．手工拌炒】",
-      "brand": "Kee Wah Bakery",
-      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
-      "creative_elements": {
-        "creative_mechanic": "Music / mood led",
-        "structure_type": "Music / mood led",
-        "pacing": "fast-cut",
-        "main_message": "Theme-level read: The ad promotes traditional, handmade peanut candy through visual craftsmanship.",
-        "hook": "Theme-level read: The ad promotes traditional, handmade peanut candy through visual craftsmanship.",
-        "cta": "Follow-through appears on the end card, but the CTA remains only partially explicit."
-      },
-      "base_prediction": 22231.78125,
-      "optimized_prediction": 34530.09375,
-      "base_log": 10.009323120117188,
-      "optimized_log": 10.449615478515625,
-      "uncertainty_band": [
-        431.3272705078125,
-        1143337.375
-      ],
-      "changes": {
-        "creative_mechanic": "Offer led",
-        "structure_type": "Problem-solution led"
-      },
-      "candidates_evaluated": 10,
-      "support_examples": [
-        {
-          "video_id": "cmu2v7bvt000ubn7cnteika56",
-          "title": "【李錦記全新快趣煮APP📱過千中、英、印尼文食譜任你shake！】",
-          "source_url": "https://www.youtube.com/watch?v=MbVxAuU3xxQ"
-        },
-        {
-          "video_id": "cmvc5mj660035bn008vaqzdu6",
-          "title": "大家樂 燕麥奶炒滑蛋",
-          "source_url": "https://www.youtube.com/watch?v=OUx6Hxn7ZS4"
-        },
-        {
-          "video_id": "cmvc5jdko002ibn00jd17fzcb",
-          "title": "【✨大家樂超值家餸孖寶優惠✨$60嘆齊濃香芝麻雞➕明爐香烤BB鴨😋】",
-          "source_url": "https://www.youtube.com/watch?v=Pgbkl89_DS8"
-        }
-      ],
-      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
-      "observed_views": 69617
-    },
-    {
-      "video_id": "cmvbu476x004cbnuo1qv1tuh8",
-      "title": "【兩大男神煨Sir x 古Sir 為事業衝衝衝🏃🏻‍♂️🏃🏻 】",
-      "brand": "Prudential",
-      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
-      "creative_elements": {
-        "creative_mechanic": "Announcement / information led",
-        "structure_type": "Product proof led",
-        "pacing": "medium tempo",
-        "main_message": "The ad emphasizes that while striving forward is important, taking a step back to care for family health is equally vital, and offers a premium rebate on its critical illness insurance plan.",
-        "hook": "The ad emphasizes that while striving forward is important, taking a step back to care for family health is equally vital, and offers a premium rebate on its critical illness insurance plan.",
-        "cta": "Visit the provided website or refer to the product brochure for more details on the 25% premium rebate offer."
-      },
-      "base_prediction": 191026.828125,
-      "optimized_prediction": 219448.984375,
-      "base_log": 12.160174369812012,
-      "optimized_log": 12.298879623413086,
-      "uncertainty_band": [
-        3713.62744140625,
-        9823765.0
-      ],
-      "changes": {
-        "creative_mechanic": "Offer led"
-      },
-      "candidates_evaluated": 17,
-      "support_examples": [
-        {
-          "video_id": "cmrzyteu8000tbnr8qwvfbdnd",
-          "title": "【經典重塑🌟！王者將軍漢堡霸氣新登場🍔🐮！】",
-          "source_url": "https://www.youtube.com/watch?v=0_1xI0ihZSk"
-        },
-        {
-          "video_id": "cmu2x7awk001jbn60ht4lm5t5",
-          "title": "[CATHAY FRESH] BEYOND STARS — YOUR FRESHEST GATEWAY IN AND OUT OF ASIA｜【國泰—鮮貨運送】為您端上產地鮮味｜新鮮快捷 聯繫亞洲",
-          "source_url": "https://www.youtube.com/watch?v=F_gTeg6D8e0"
-        },
-        {
-          "video_id": "cmsy0fmgu0028bnn8lr8uwa1j",
-          "title": "【滙豐保險呈獻｜一份選擇 成就更多財富可能】",
-          "source_url": "https://www.youtube.com/watch?v=Hki21yPVTS8"
-        }
-      ],
-      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
-      "observed_views": 3399089
-    },
-    {
-      "video_id": "cmvc5u9v20049bn00m8xakrl6",
-      "title": "大家樂「一哥奶茶」電視廣告",
-      "brand": "Café de Coral",
-      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
-      "creative_elements": {
-        "creative_mechanic": "Offer led",
-        "structure_type": "Product proof led",
-        "pacing": "medium tempo",
-        "main_message": "Café de Coral's signature milk tea (一哥奶茶) is a consistent, high-quality companion for hardworking Hong Kongers, offering them a pick-me-up during their workday.",
-        "hook": "Café de Coral's signature milk tea (一哥奶茶) is a consistent, high-quality companion for hardworking Hong Kongers, offering them a pick-me-up during their workday.",
-        "cta": "The ad promotes a limited-time half-price offer ($5) for hot milk tea, encouraging customers to visit Café de Coral for a beverage."
-      },
-      "base_prediction": 115652.9296875,
-      "optimized_prediction": 116607.8203125,
-      "base_log": 11.658357620239258,
-      "optimized_log": 11.666580200195312,
-      "uncertainty_band": [
-        2247.947021484375,
-        5947593.5
-      ],
-      "changes": {
-        "structure_type": "Problem-solution led"
-      },
-      "candidates_evaluated": 18,
-      "support_examples": [
-        {
-          "video_id": "cmu3h124d000zbn5koghp340c",
-          "title": "【神Code伴你行🎶──「出行碼」】 Travel QR Code",
-          "source_url": "https://www.youtube.com/watch?v=-ScXERv_ZRQ"
-        },
-        {
-          "video_id": "cmvc5xusw004gbn003frnxp6a",
-          "title": "大家樂「天天超值午餐 - 流心玉子燒汁豚肉飯」電視廣告",
-          "source_url": "https://www.youtube.com/watch?v=98Q60sqW-sQ"
-        },
-        {
-          "video_id": "cmsy03r67001mbnn8kl8c7cb4",
-          "title": "【滙豐保險｜人人擁有兌現承諾自由】",
-          "source_url": "https://www.youtube.com/watch?v=UZQ4nQEpuU4"
-        }
-      ],
-      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
-      "observed_views": 56852
-    },
-    {
-      "video_id": "cmvbtyikh003ibnuossgqavbj",
-      "title": "【萬寧一萬種健康．日常 - 秋冬護膚 得個「潤」字？】",
-      "brand": "Mannings",
-      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
-      "creative_elements": {
-        "creative_mechanic": "Announcement / information led",
-        "structure_type": "Product proof led",
-        "pacing": "medium tempo",
-        "main_message": "Mannings beauty consultants provide professional advice on selecting skincare products to address seasonal skin dryness and sensitivity.",
-        "hook": "Mannings beauty consultants provide professional advice on selecting skincare products to address seasonal skin dryness and sensitivity.",
-        "cta": "Visit Mannings to consult with their beauty experts and purchase recommended skincare products."
-      },
-      "base_prediction": 372995.65625,
-      "optimized_prediction": 434413.4375,
-      "base_log": 12.829324722290039,
-      "optimized_log": 12.981754302978516,
-      "uncertainty_band": [
-        7252.10498046875,
-        19181646.0
-      ],
-      "changes": {
-        "creative_mechanic": "Offer led"
-      },
-      "candidates_evaluated": 17,
-      "support_examples": [
-        {
-          "video_id": "cmrzyteu8000tbnr8qwvfbdnd",
-          "title": "【經典重塑🌟！王者將軍漢堡霸氣新登場🍔🐮！】",
-          "source_url": "https://www.youtube.com/watch?v=0_1xI0ihZSk"
-        },
-        {
-          "video_id": "cmu2x7awk001jbn60ht4lm5t5",
-          "title": "[CATHAY FRESH] BEYOND STARS — YOUR FRESHEST GATEWAY IN AND OUT OF ASIA｜【國泰—鮮貨運送】為您端上產地鮮味｜新鮮快捷 聯繫亞洲",
-          "source_url": "https://www.youtube.com/watch?v=F_gTeg6D8e0"
-        },
-        {
-          "video_id": "cmsy0fmgu0028bnn8lr8uwa1j",
-          "title": "【滙豐保險呈獻｜一份選擇 成就更多財富可能】",
-          "source_url": "https://www.youtube.com/watch?v=Hki21yPVTS8"
-        }
-      ],
-      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
-      "observed_views": 400929
-    },
-    {
-      "video_id": "cmu2v61ek000pbn7csj900ufj",
-      "title": "【李錦記特級蠔油】鮮味神器🌟，一支搞掂💯！",
-      "brand": "Lee Kum Kee",
-      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
-      "creative_elements": {
-        "creative_mechanic": "Problem-solution led",
-        "structure_type": "Creative mechanic unresolved",
-        "pacing": "fast-cut",
-        "main_message": "李錦記特級蠔油是提鮮、上色、入味的烹飪秘訣，一瓶即可解決多種烹飪需求。",
-        "hook": "李錦記特級蠔油是提鮮、上色、入味的烹飪秘訣，一瓶即可解決多種烹飪需求。",
-        "cta": "unclear"
-      },
-      "base_prediction": 136426.203125,
-      "optimized_prediction": 233955.671875,
-      "base_log": 11.823546409606934,
-      "optimized_log": 12.36289119720459,
-      "uncertainty_band": [
-        2651.893310546875,
-        7015882.0
-      ],
-      "changes": {
-        "creative_mechanic": "Offer led",
-        "structure_type": "Product proof led"
-      },
-      "candidates_evaluated": 9,
-      "support_examples": [
-        {
-          "video_id": "cmvc4x6u10023bn00ww0cuutd",
-          "title": "【你 + 美心 + 我 = 新年最好禮】電視廣告",
-          "source_url": "https://www.youtube.com/watch?v=0jpktNjWkz4"
-        },
-        {
-          "video_id": "cmrzz3s6r001sbnr8lbqxwrbd",
-          "title": "【嚟麥當勞升級加配泰式滋味😋冬蔭功風味 Shake Shake 薯條➕番石榴椰果梳打➕黑糯米批等緊你‼️】",
-          "source_url": "https://www.youtube.com/watch?v=61ekBwxBCLA"
-        },
-        {
-          "video_id": "cmvc4mk5i000pbn00las6i1uw",
-          "title": "2025 美心月餅 美心冰皮味道 香港製造 – 冰皮月餅系列+榴槤冰皮月餅",
-          "source_url": "https://www.youtube.com/watch?v=8NZyb7wPlao"
-        }
-      ],
-      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
-      "observed_views": 477593
     }
   ],
   "supported_combos": [
@@ -347,12 +351,7 @@
     ],
     [
       "Announcement / information led",
-      "Testimonial led",
-      "medium tempo"
-    ],
-    [
-      "Event experience led",
-      "Event experience led",
+      "Product proof led",
       "medium tempo"
     ],
     [
@@ -363,11 +362,6 @@
     [
       "Music / mood led",
       "Music / mood led",
-      "medium tempo"
-    ],
-    [
-      "Music / mood led",
-      "Offer led",
       "medium tempo"
     ],
     [
@@ -419,11 +413,6 @@
       "Problem-solution led",
       "Problem-solution led",
       "medium tempo"
-    ],
-    [
-      "Product proof led",
-      "Creative mechanic unresolved",
-      "fast-cut"
     ],
     [
       "Product proof led",

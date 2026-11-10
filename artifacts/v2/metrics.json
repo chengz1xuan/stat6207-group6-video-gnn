@@ -1,81 +1,99 @@
 {
   "test": {
     "Mean": {
-      "log_MAE": 1.998844297760069,
-      "log_RMSE": 2.2641342861575686,
+      "log_MAE": 2.2815828005220617,
+      "log_RMSE": 2.6456780764919263,
       "Spearman": null,
-      "views_MAE": 1002714.2564228816,
-      "views_RMSE": 1761857.3196971738,
-      "log_R2": -0.04083181550630188
+      "views_MAE": 1079668.1187001462,
+      "views_RMSE": 1731533.4601375223,
+      "log_R2": -0.0020588969043575656
+    },
+    "Brand mean": {
+      "log_MAE": 1.9892550698490996,
+      "log_RMSE": 2.6217468226250134,
+      "Spearman": 0.2810602369147951,
+      "views_MAE": 946586.583210107,
+      "views_RMSE": 1558725.7948381186,
+      "log_R2": 0.015987190539004326
     },
     "Metadata Ridge": {
-      "log_MAE": 1.6851234331295062,
-      "log_RMSE": 2.134367032367466,
-      "Spearman": 0.32301419510721835,
-      "views_MAE": 911289.6761446221,
-      "views_RMSE": 1597162.3289664823,
-      "log_R2": 0.07505820420432874
+      "log_MAE": 1.9894618590399014,
+      "log_RMSE": 2.375203368238158,
+      "Spearman": 0.4078828148595591,
+      "views_MAE": 996931.8931686044,
+      "views_RMSE": 1596356.085067064,
+      "log_R2": 0.19235436141731643
     },
     "Pooled Ridge": {
-      "log_MAE": 1.8298862613197082,
-      "log_RMSE": 2.1997588820648257,
-      "Spearman": 0.27937179099969794,
-      "views_MAE": 949512.9768350291,
-      "views_RMSE": 1690375.7194388504,
-      "log_R2": 0.01751403256626005
+      "log_MAE": 1.9040064946669542,
+      "log_RMSE": 2.344778951147052,
+      "Spearman": 0.44971307762005436,
+      "views_MAE": 970924.3283066857,
+      "views_RMSE": 1542075.6508049401,
+      "log_R2": 0.21291241005848416
     },
     "Pooled MLP": {
-      "log_MAE": 1.8478153028579765,
-      "log_RMSE": 2.2691938187349407,
-      "Spearman": 0.2754454847478103,
-      "views_MAE": 929094.4129269622,
-      "views_RMSE": 1651571.293277471,
-      "log_R2": -0.045488788781325784
+      "log_MAE": 1.826872763157313,
+      "log_RMSE": 2.360061917322513,
+      "Spearman": 0.4358199939595288,
+      "views_MAE": 933913.4448582847,
+      "views_RMSE": 1524372.592979052,
+      "log_R2": 0.20261870211675836
     },
     "Subgraph structural": {
-      "log_MAE": 1.8258314405813016,
-      "log_RMSE": 2.2485227358438067,
-      "Spearman": 0.26004228329809725,
-      "views_MAE": 920884.6805959302,
-      "views_RMSE": 1620253.030434815,
-      "log_R2": -0.026527912511157936
+      "log_MAE": 1.7949672749634664,
+      "log_RMSE": 2.402024279903523,
+      "Spearman": 0.446843853820598,
+      "views_MAE": 889684.6698310318,
+      "views_RMSE": 1414391.7905442214,
+      "log_R2": 0.17401143076506953
     },
     "Subgraph + similarity": {
-      "log_MAE": 1.8381011675242866,
-      "log_RMSE": 2.238209418472312,
-      "Spearman": 0.2677438840229538,
-      "views_MAE": 932429.0683139535,
-      "views_RMSE": 1662374.7858135633,
-      "log_R2": -0.017132740778596167
+      "log_MAE": 1.9174581396213535,
+      "log_RMSE": 2.2855344582280397,
+      "Spearman": 0.4898822108124434,
+      "views_MAE": 962728.8157703485,
+      "views_RMSE": 1554886.2245207971,
+      "log_R2": 0.2521839223569651
     },
     "Node structural": {
-      "log_MAE": 1.6809207825674144,
-      "log_RMSE": 2.09870969804127,
-      "Spearman": 0.4832376925400182,
-      "views_MAE": 882011.25901617,
-      "views_RMSE": 1535347.1678899084,
-      "log_R2": 0.10570472729452063
+      "log_MAE": 1.9519381198710772,
+      "log_RMSE": 2.344245651934133,
+      "Spearman": 0.5499848988221081,
+      "views_MAE": 985131.6705123544,
+      "views_RMSE": 1602925.4640023801,
+      "log_R2": 0.213270401550548
     },
     "Node + similarity": {
-      "log_MAE": 1.658395240846859,
-      "log_RMSE": 2.1317211566722962,
-      "Spearman": 0.34959226819691935,
-      "views_MAE": 885532.8373001453,
-      "views_RMSE": 1546073.8061583997,
-      "log_R2": 0.07734999759275485
+      "log_MAE": 1.8857579166301197,
+      "log_RMSE": 2.3688141209236036,
+      "Spearman": 0.41377227423739055,
+      "views_MAE": 929824.8856286336,
+      "views_RMSE": 1505158.1301089744,
+      "log_R2": 0.19669361700880128
+    },
+    "Node no-brand edges": {
+      "log_MAE": 1.9479782217276713,
+      "log_RMSE": 2.381783800218506,
+      "Spearman": 0.3622772576260948,
+      "views_MAE": 979511.2192496363,
+      "views_RMSE": 1557008.7296010838,
+      "log_R2": 0.1878730447336041
     }
   },
   "CV_log_RMSE": {
-    "Metadata Ridge": 2.6383702047183455,
-    "Pooled Ridge": 2.651034635721336,
-    "Pooled MLP": 2.598496085560725,
-    "Subgraph structural": 2.6002855602551858,
-    "Subgraph + similarity": 2.5936506804888606,
-    "Node structural": 2.6740651874276065,
-    "Node + similarity": 2.6264504646495137
+    "Metadata Ridge": 2.5125193320991115,
+    "Pooled Ridge": 2.5236407602000623,
+    "Pooled MLP": 2.4692470394846544,
+    "Subgraph structural": 2.469457476939048,
+    "Subgraph + similarity": 2.485061828104475,
+    "Node structural": 2.4714949194939257,
+    "Node + similarity": 2.486909005764152,
+    "Node no-brand edges": 2.4668899284896817,
+    "Brand mean": 2.6533888572299387
   },
-  "selected_model": "Subgraph + similarity",
-  "selected_primary_gnn": "Subgraph + similarity",
+  "selected_model": "Node no-brand edges",
+  "selected_primary_gnn": "Subgraph structural",
   "train_size": 171,
   "test_size": 43,
   "configs": {
@@ -83,57 +101,67 @@
       "alpha": 10.0
     },
     "Pooled Ridge": {
-      "alpha": 100.0
+      "alpha": 10.0
     },
     "Pooled MLP": {
-      "train_log_RMSE": 2.409541896240647,
+      "train_log_RMSE": 2.1080745394241522,
       "training_target": "standardized ln(1+views) MSE",
-      "y_mean": 12.10316244902249,
-      "y_std": 2.7801371833024895,
-      "epochs": 16,
+      "y_mean": 12.16917401854093,
+      "y_std": 2.6923339820911227,
+      "epochs": 28,
       "weight_decay": 0.1
     },
     "Subgraph structural": {
-      "train_log_RMSE": 2.403067807833223,
+      "train_log_RMSE": 2.0875270817648524,
       "training_target": "standardized ln(1+views) MSE",
-      "y_mean": 12.10316244902249,
-      "y_std": 2.7801371833024895,
-      "epochs": 11,
+      "y_mean": 12.16917401854093,
+      "y_std": 2.6923339820911227,
+      "epochs": 24,
       "weight_decay": 0.1
     },
     "Subgraph + similarity": {
-      "train_log_RMSE": 2.432960733277151,
+      "train_log_RMSE": 2.358108539293411,
       "training_target": "standardized ln(1+views) MSE",
-      "y_mean": 12.10316244902249,
-      "y_std": 2.7801371833024895,
-      "epochs": 14,
-      "weight_decay": 0.1
+      "y_mean": 12.16917401854093,
+      "y_std": 2.6923339820911227,
+      "epochs": 6,
+      "weight_decay": 0.01
     },
     "Node structural": {
-      "train_log_RMSE": 2.3129114579062575,
+      "train_log_RMSE": 2.32120893786323,
       "training_target": "standardized ln(1+views) MSE",
-      "y_mean": 12.10316244902249,
-      "y_std": 2.7801371833024895,
-      "epochs": 10,
-      "weight_decay": 0.1
+      "y_mean": 12.16917401854093,
+      "y_std": 2.6923339820911227,
+      "epochs": 5,
+      "weight_decay": 0.01
     },
     "Node + similarity": {
-      "train_log_RMSE": 2.40293805761635,
+      "train_log_RMSE": 2.17023203911214,
       "training_target": "standardized ln(1+views) MSE",
-      "y_mean": 12.10316244902249,
-      "y_std": 2.7801371833024895,
-      "epochs": 8,
+      "y_mean": 12.16917401854093,
+      "y_std": 2.6923339820911227,
+      "epochs": 16,
+      "weight_decay": 0.1
+    },
+    "Node no-brand edges": {
+      "train_log_RMSE": 2.158027708448935,
+      "training_target": "standardized ln(1+views) MSE",
+      "y_mean": 12.16917401854093,
+      "y_std": 2.6923339820911227,
+      "epochs": 21,
       "weight_decay": 0.1
     }
   },
   "OOF_90_absolute_log_residual": {
-    "Metadata Ridge": 4.007560666094417,
-    "Pooled Ridge": 4.435739329944552,
-    "Pooled MLP": 4.082363622705218,
-    "Subgraph structural": 4.18871547512221,
-    "Subgraph + similarity": 3.940140264550921,
-    "Node structural": 4.2450762616324695,
-    "Node + similarity": 4.008309934989224
+    "Metadata Ridge": 3.79142373372137,
+    "Pooled Ridge": 3.870263681044003,
+    "Pooled MLP": 3.6970271731835602,
+    "Subgraph structural": 3.6533059741479157,
+    "Subgraph + similarity": 3.978806088940864,
+    "Node structural": 4.00854664195627,
+    "Node + similarity": 3.7786240668366116,
+    "Node no-brand edges": 3.922383263161338,
+    "Brand mean": 4.565045421406177
   },
   "uncertainty_note": "OOF residual sensitivity bands, not guaranteed/calibrated individual prediction intervals."
 }

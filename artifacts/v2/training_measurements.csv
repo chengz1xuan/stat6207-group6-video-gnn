@@ -1,9 +1,11 @@
 model,target,objective,n_train,train_log_RMSE,CV_log_RMSE,test_log_RMSE,refit_epochs,regularization
-Mean,ln(1+views),MSE on ln(1+views); closed-form constant,171,2.7801371833024895,,2.2641342861575686,,0.0
-Metadata Ridge,ln(1+views),sum squared log residuals + alpha * squared coefficient norm,171,2.4168056144230534,2.6383702047183455,2.134367032367466,,10.0
-Pooled Ridge,ln(1+views),sum squared log residuals + alpha * squared coefficient norm,171,2.501843810704218,2.651034635721336,2.1997588820648257,,100.0
-Pooled MLP,ln(1+views),MSE on train-standardized ln(1+views),171,2.409541896240647,2.598496085560725,2.2691938187349407,16.0,0.1
-Subgraph structural,ln(1+views),MSE on train-standardized ln(1+views),171,2.403067807833223,2.6002855602551858,2.2485227358438067,11.0,0.1
-Subgraph + similarity,ln(1+views),MSE on train-standardized ln(1+views),171,2.432960733277151,2.5936506804888606,2.238209418472312,14.0,0.1
-Node structural,ln(1+views),MSE on train-standardized ln(1+views),171,2.3129114579062575,2.6740651874276065,2.09870969804127,10.0,0.1
-Node + similarity,ln(1+views),MSE on train-standardized ln(1+views),171,2.40293805761635,2.6264504646495137,2.1317211566722962,8.0,0.1
+Mean,ln(1+views),MSE on ln(1+views); closed-form constant,171,2.6923339820911227,,2.6456780764919263,,0.0
+Brand mean,ln(1+views),"MSE on ln(1+views); training brand mean, global mean for unseen brand",171,2.3778740727237486,2.6533888572299387,2.6217468226250134,,0.0
+Metadata Ridge,ln(1+views),sum squared log residuals + alpha * squared coefficient norm,171,2.349502339991472,2.5125193320991115,2.375203368238158,,10.0
+Pooled Ridge,ln(1+views),sum squared log residuals + alpha * squared coefficient norm,171,2.2011168063567603,2.5236407602000623,2.344778951147052,,10.0
+Pooled MLP,ln(1+views),MSE on train-standardized ln(1+views),171,2.1080745394241522,2.4692470394846544,2.360061917322513,28.0,0.1
+Subgraph structural,ln(1+views),MSE on train-standardized ln(1+views),171,2.0875270817648524,2.469457476939048,2.402024279903523,24.0,0.1
+Subgraph + similarity,ln(1+views),MSE on train-standardized ln(1+views),171,2.358108539293411,2.485061828104475,2.2855344582280397,6.0,0.01
+Node structural,ln(1+views),MSE on train-standardized ln(1+views),171,2.32120893786323,2.4714949194939257,2.344245651934133,5.0,0.01
+Node + similarity,ln(1+views),MSE on train-standardized ln(1+views),171,2.17023203911214,2.486909005764152,2.3688141209236036,16.0,0.1
+Node no-brand edges,ln(1+views),MSE on train-standardized ln(1+views),171,2.158027708448935,2.4668899284896817,2.381783800218506,21.0,0.1

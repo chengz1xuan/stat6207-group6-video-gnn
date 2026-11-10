@@ -11,6 +11,6 @@
     "empty_duplicate_or_cap": 2892,
     "excluded_field": 10215
   },
-  "node_video_core_pairs": 1626,
+  "node_video_core_pairs": 1558,
   "policy": "Allowlisted response-free creative concepts/evidence; caps and duplicate rules fixed before tuning. Original membership/support edges only. Support links may be heuristic. Exclude engagement_stats, assessment scores, risk annotations, cross-video heuristic suggestions from primary per-video graphs."
 }

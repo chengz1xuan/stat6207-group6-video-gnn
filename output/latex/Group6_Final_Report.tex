@@ -1,124 +1,130 @@
 \documentclass[a4paper,conference]{IEEEtran}
 \usepackage{amsmath,amssymb,graphicx,booktabs,url}
 \usepackage[hidelinks]{hyperref}
-\title{Advertising Video Popularity Prediction:\\Creative Subgraphs, Structural Edges, and Transfer}
+\title{Advertising Video Popularity Prediction:\\Auditing Creative Subgraphs and Brand Connectivity}
 \author{\IEEEauthorblockN{Group 6}\IEEEauthorblockA{STAT6207: Applied Deep Learning\\The Chinese University of Hong Kong}}
-\begin{document}
-\maketitle
+\begin{document}\maketitle
 \begin{abstract}
-We test whether advertising creative relationships help predict YouTube popularity using a compact graph neural network (GNN). From the latest supplied brand packages, a frozen public-metadata collection recovers exact view counts for 214 of 219 videos across 14 brands. The primary design represents each video as a creative/evidence subgraph, beginning with supplied structural edges; semantic edges are an ablated extension. A campaign-grouped 80/20 split, training-only grouped tuning, common metrics, no-message controls, and leave-one-brand-out tests separate predictive performance from demonstration. The selected subgraph GNN achieves log-view MAE 1.838, RMSE 2.238, and Spearman 0.268; the video-node structural extension reaches RMSE 2.099. Added similarity does not establish a reliable gain, and cross-brand errors remain large. An evidence-linked web tool presents six held-out cases and a new-video storyboard. Recommendations are observational hypotheses, not demonstrated causal gains.
+We implement a compact graph neural network (GNN) to predict cumulative YouTube views from advertising annotations. A frozen collection supplies 214 exact labels across 14 brands. The primary design is a video-level concept/evidence subgraph; video-as-node graphs are an extension. After manually merging bilingual Prudential anniversary variants, all models are retrained and evaluated on a shared campaign-grouped 80/20 split. The training-selected primary subgraph obtains log RMSE 2.402, compared with 2.375 for metadata Ridge and 2.344 for the video-node model: it does not outperform these controls. All 1,558 video-node structural pairs form complete same-brand cliques. Brand-mean and no-brand-edge controls therefore separate brand connectivity from creative-graph claims. A local Streamlit tool exposes source graphs, errors and exploratory recommendations. Cumulative snapshot labels do not validate 30-day forecasts or causal creative uplift.
 \end{abstract}
-\begin{IEEEkeywords}
-Graph neural networks, advertising, video popularity, grouped evaluation, creative recommendation.
-\end{IEEEkeywords}
+\begin{IEEEkeywords}Graph neural networks, advertising, cumulative views, grouped evaluation, brand confounding.\end{IEEEkeywords}
 
-\section{Objective and Data}
-The objective is to predict directly observable audience response and examine whether creative relationships add useful signal. Views measure cumulative reach, rather than sales, brand recognition, or intrinsic creative quality. We start with total views and target $y_i=\ln(1+v_i)$, which reduces the influence of the long popularity tail. The slide-level compact GNN is implemented as the baseline; no executable VideoGNN code, weights, or identifiable 120-video reference subset are supplied. Thus we use the documented latest complete inventory rather than inventing a reproduction subset.
+\section{Objective, Inventory and Labels}
+We predict observable video response and ask whether graph structure adds signal beyond simpler features. The target is $y_i=\ln(1+v_i)$ for cumulative views $v_i$ at collection. Neither sales nor brand recognition is measured. The supplied slide-level compact GNN is our implementation baseline: no executable VideoGNN code, weights or identifiable 120-video reference subset was provided. We use the latest full packages uniformly, without claiming an exact reproduction of that reference.
 
-\subsection{Inventory, Labels, and Fresh Collection}
-Uniformly retaining the latest version per brand yields 219 unique URLs and 14 brands: HSBC and Hang Seng use v0.2; MTR actually contains 14 records. The original label audit finds 219 views and 184 likes, with no non-null comments. Most labels reside in each package's \texttt{evidence\_nodes.csv}: filter \texttt{kind=engagement\_stats}, parse JSON from \texttt{value\_json} or \texttt{text}, and read \texttt{views/likes/comments}. McDonald's also has direct columns in its video table. The original plan's 20-label estimate was therefore incomplete.
+The latest version per brand gives 219 unique URLs across 14 brands; HSBC and Hang Seng use v0.2, while MTR actually contains 14 rows. Original responses are mainly in \texttt{evidence\_nodes.csv}, selecting \texttt{kind=engagement\_stats} and parsing \texttt{value\_json} or \texttt{text}. Original coverage is 219 views, 184 likes and no non-null comments; McDonald's also has direct response columns.
 
-To meet the platform-collection requirement, we make one unauthenticated pass over all 219 supplied YouTube watch URLs on 9 November 2026, 12:01:03--12:02:18 UTC. Exact counts are extracted only from the current video's public primary metadata, never recommendation cards. We recover 214 view counts and channel identities, and 175 exact likes. No exact comment counts surface in the initial public metadata; these remain missing, not zero. Subscriber strings are rounded descriptive metadata, excluded from prediction. Public metadata may be available even when playback requires sign-in; no login barrier is bypassed. Five URLs without fresh exact views are excluded from the revised supervised cohort; archived counts are never substituted. There is no added external holdout.
+To collect platform labels, one unauthenticated pass over all supplied watch URLs on 9 November 2026, 12:01:03--12:02:18 UTC, recovers 214 exact current-video view counts/channel identities and 175 exact likes. No exact comments appear in initial public metadata; missing is not zero. Five URLs lacking fresh exact views are excluded, without substituting archived labels. There is no external holdout. Each retrieval retains URL/ID, UTC time, status, response digest, extraction paths and raw evidence snippets. Rounded subscriber strings are descriptive metadata, excluded from model inputs. No login barrier is bypassed.
 
-Each retrieval preserves URL/ID, UTC time, HTTP/extraction status, SHA-256 response digest, exact evidence snippets, and field paths in per-video JSON. The frozen CSV, failure list and data dictionary are supplied. Publication dates and durations come from the original inventory; newly verified upload dates were not exposed. Exposure age uses the fresh capture time and supplied publication date, so date accuracy remains a limitation. No response label is approximated from \texttt{fit\_score} or creative annotations.
+Publication dates/durations remain source-supplied because the fresh pass exposes no verified upload dates. Exposure age is capture time minus supplied date. For the corrected training set, ages range from 36.5 to 5620.5 days (median 718.5). These are cumulative snapshot labels at heterogeneous ages, not measurements at a common horizon. A 30-day input is outside training support and cannot be called a validated 30-day prediction. Even an in-range age does not establish a validated response trajectory for a new brief.
 
-\section{Video Subgraphs and Model Baselines}
-\subsection{Primary Graph: Supplied Structure First}
-Each video is one graph, with a video/context root, creative-concept nodes, and selected textual-evidence nodes. We normalize schema aliases, allowlist creative fields, deduplicate text, and cap repeated visual/audience aspects at four and each selected evidence kind at three. We exclude engagement statistics, assessment/risk scores, quality flags, and sentences containing response-related terms. The resulting 214 subgraphs contain 6,684 nodes and 7,780 original directed relations before message-passing symmetrization.
+\section{Graphs, Features and Controls}
+\subsection{Primary Video Subgraph}
+Each video is a graph with a context root, creative-aspect nodes and textual-evidence nodes. We normalize schema aliases, allowlist creative fields, deduplicate text, and cap repeated visual/audience aspects at four and each selected evidence kind at three. Engagement statistics, assessment/risk scores and response-bearing sentences are excluded. Across 214 graphs, 6,684 nodes and 7,780 supplied directed relations survive filtering.
 
-Core edges are copied from \texttt{candidate\_edges.csv}: \texttt{video\_has\_aspect}, \texttt{video\_has\_evidence}, and \texttt{aspect\_supported\_by\_evidence}. Original edge IDs and packages are retained. Membership is deterministic; evidence-support links may be source-derived heuristics and are flagged. Cross-video heuristic suggestions are not silently treated as validated internal relations. The model symmetrizes retained edges for aggregation; it does not use view counts to construct them.
-
-\subsection{Features and Similarity Ablation}
-The root encodes brand and seven creative categories, log-duration/exposure age with missingness flags, and a 16-dimensional TF-IDF/SVD representation of message, hook, promise and CTA. Each node also has node-type/field indicators and a separate 16-dimensional TF-IDF/SVD text representation. Vocabulary, category encoding, medians, scaling, and SVD are fitted exclusively on the relevant training rows/nodes. Missing/unseen values have explicit handling. Simple word tokenization limits Chinese semantic fidelity.
-
-The extension adds within-video semantic edges between nonroot nodes: cosine similarity in the training-fitted node-text SVD space must be at least 0.55, retaining up to two neighbors per node, then symmetrizing and deduplicating. This rule, node caps, and feature allowlists are fixed before evaluation. These edges are explicitly heuristic. The matched structural-only model differs only by their absence.
-
-\subsection{Compact GNN and Non-Graph Controls}
-Using standard PyTorch Geometric \texttt{SAGEConv} mean aggregation \cite{sage,pyg},
-\begin{equation}
- h_u^{(\ell+1)}=\operatorname{ReLU}\!\left(W_s^{(\ell)}h_u^{(\ell)}+W_n^{(\ell)}\operatorname{mean}_{w\in N(u)}h_w^{(\ell)}+b^{(\ell)}\right).
-\end{equation}
-Two 24-unit layers yield a representation concatenating the root embedding with the graph's mean node embedding. A linear head predicts standardized log views. Training minimizes mean squared error; Adam uses learning rate 0.01. No views, likes, comments, or \texttt{fit\_score} enter node features.
-
-Controls are a training-log-mean predictor; metadata Ridge (brand, duration, age); Ridge on concatenated raw root/mean node features; and a no-message MLP with the same node inputs, two 24-unit transformations, and identical root/mean readout. The GNN has extra neighbor weights, so the control is information-matched, not exactly parameter-matched.
-
-\subsection{Video-Node Extension}
-A second representation uses one video per node and the same global root features. Core links are original same-brand/author/creative-category video relations from supplied candidate edges. The extension adds five cosine-nearest training-feature links. Held-out nodes receive messages only from training references; there are no held-out-to-training or held-out-to-held-out messages. Two mean GraphSAGE layers predict log views. This extension tests another graph definition without concealing a stronger or weaker result behind model complexity.
-
-\section{Quantitative Training and Evaluation}
-\subsection{Shared Campaign-Grouped 80/20 Protocol}
-Groups union normalized same-brand campaign labels and exact same-brand message duplicates. Of 214 videos, 199 groups remain. A fixed grouped split (seed 42) places 171 videos (79.91\%) in training and 43 (20.09\%) in testing: the rounded 80/20 count. Every main model uses exactly these videos and metrics. Group and URL disjointness are asserted. This tests unseen campaign groups within known brands; paraphrased variants may escape the heuristic grouping, so it is not a guarantee of entirely unseen creative families.
-
-Three grouped folds inside the outer training partition select Ridge $\alpha\in\{10,100\}$ and neural weight decay $\lambda\in\{0.01,0.1\}$. Each fold refits preprocessing and graph rules, trains for at most 260 epochs, and uses fold validation MSE for early stopping (patience 35). Hyperparameters minimize mean fold log RMSE. The final model refits all 171 training videos for the median selected-fold stopping epoch. Thus the held-out 20\% is not used for fitting, stopping, model selection, or edge tuning. Selected subgraph+similarity training uses 14 epochs and $\lambda=0.1$. Full fold scores, final training loss trajectories, configurations and source hashes are exported. CV early-stopping scores are tuning criteria, not unbiased generalization estimates.
-
-Report MAE/RMSE on natural-log views and Spearman correlation. Raw-view errors use $\exp(\hat y)-1$, clipped to nonnegative counts; this back-transform is not an unbiased arithmetic expectation. Quantitative losses, fold errors and epochs are recorded rather than calling a trained network ``successful'' without a target. All baseline targets and metrics match the GNN.
-
-\begin{table}[t]
-\caption{Same-split held-out performance ($n=43$); lower errors are better. Bold identifies the training-CV-selected primary GNN, not the best test model.}
-\label{tab:main}\centering\footnotesize\setlength{\tabcolsep}{4pt}
-\begin{tabular}{lrrr}\toprule
-Model & Log MAE & Log RMSE & $\rho$\\\midrule
-Mean (constant) & 1.999 & 2.264 & -- \\
-Metadata Ridge & 1.685 & 2.134 & 0.323 \\
-Pooled-feature Ridge & 1.830 & 2.200 & 0.279 \\
-No-message MLP & 1.848 & 2.269 & 0.275 \\
-Subgraph: structural & 1.826 & 2.249 & 0.260 \\
-\bfseries Subgraph: structural+sim. & 1.838 & 2.238 & 0.268 \\
-Video node: structural & 1.681 & 2.099 & 0.483 \\
-Video node: structural+sim. & 1.658 & 2.132 & 0.350 \\
-\bottomrule\end{tabular}
-\end{table}
-
-\subsection{Uncertainty and Cross-Brand Transfer}
-We draw 2,000 bootstrap resamples of test campaign groups (seed 44), retaining the same resample across models for paired differences. Intervals condition on the fixed split, collection and fitted model; they exclude split/model-selection uncertainty. Three additional GNN initializations probe training variability without replacing the primary seed 42.
-
-For leave-one-brand-out (LOBO), each of 14 brands is held out in turn. All preprocessing and models are refitted on the other brands. A grouped inner holdout chooses epochs; the remaining brands are then refitted. To bound computation, stress-test regularization is fixed ($\alpha=100$, $\lambda=0.1$), not selected with held-out brand labels. Table~\ref{tab:lobo} reports unweighted brand-macro metrics. These are separate cross-brand stress tests, not the main 80/20 result.
-
-\section{Results and Error Analysis}
-Table~\ref{tab:main} shows that the CV-selected primary model is structural+similarity. Its test log RMSE is 2.238, with campaign-bootstrap 95\% interval [1.814, 2.694], and raw-view MAE 932,429. Structural-only subgraphs have RMSE 2.249; added semantic links make only a small numerical difference. The paired log-MAE difference (similarity minus structural) has interval [-0.038, 0.062], including zero. Therefore we do not establish a reliable benefit from the extension.
-
-The simpler video-node structural design achieves test RMSE 2.099, lower than the primary subgraph model, although it was not selected by training CV. Metadata Ridge also remains competitive. We report these results directly: the richer graph does not establish superiority over a simpler representation or non-graph control. The constant baseline is weak; surpassing it alone would not justify claims about creative relationships.
+Core relations are copied from \texttt{candidate\_edges.csv}: video--aspect membership, video--evidence membership, and aspect--evidence support. Original edge IDs and packages remain in the provenance table. Membership is deterministic; support links can be source-derived heuristics and are flagged. The GNN symmetrizes these edges. Figure~\ref{fig:graph} shows a real induced display subset, with no invented nodes or links; the full graph is available interactively.
 
 \begin{figure}[t]\centering
-\includegraphics[width=\columnwidth]{comparison.pdf}
-\caption{Structural-only and similarity-augmented designs, compared with matched-information and metadata controls on the same 43 test videos.}\label{fig:comparison}
+\includegraphics[width=\columnwidth]{concept_graph.pdf}
+\caption{Actual training-video concept graph: source ID \texttt{cmu3gznxt000pbn5k4mu9yl5f}. An induced subset of 8 of 32 nodes is shown for legibility. Boxes show source concept values and evidence kinds; lines are original supplied membership edges. Full text, original IDs and edge provenance are exported in \texttt{report\_graph.json}.}\label{fig:graph}
 \end{figure}
-\begin{table}[t]\caption{LOBO brand-macro stress test (14 held-out brands). These are refitted models under a separate protocol.}\label{tab:lobo}\centering\footnotesize\setlength{\tabcolsep}{4pt}
+
+The root contains brand/seven creative categories, log-duration/age with missingness flags, and a 16-dimensional TF-IDF/SVD representation of message, hook, promise and CTA. Each node adds type/field indicators and a separate 16-dimensional text representation. Encoders, medians, scaling, vocabularies and SVD are fitted only on the relevant training fold. Unseen categories are handled without fitting on queries. Word tokenization limits bilingual semantic fidelity.
+
+The tested semantic extension adds within-video edges between nonroot nodes with training-fitted SVD cosine similarity at least 0.55, up to two neighbors per node, then symmetrizes/deduplicates. This heuristic rule, node caps and input allowlists are fixed; views never construct edges. Structural-only and structural+similarity models use identical inputs and evaluation.
+
+\subsection{Compact GNN and Feature Baselines}
+Two 24-unit mean GraphSAGE layers \cite{sage,pyg} compute
+\begin{equation}
+ h_u^{(\ell+1)}=\operatorname{ReLU}\!\left(W_s h_u^{(\ell)}+W_n\operatorname{mean}_{w\in N(u)}h_w^{(\ell)}+b\right).
+\end{equation}
+A linear head on concatenated root and mean node embeddings predicts standardized log views. Adam uses learning rate 0.01 and mean squared error (MSE). A no-message MLP uses the same node information, two 24-unit transformations and root/mean readout; its parameter count differs because the GNN has neighbor weights. Additional baselines are constant training-log-mean, metadata Ridge (brand/duration/age), and Ridge on pooled raw root/mean node features.
+
+The added brand baseline predicts the \emph{mean log views within each training brand}, using the global training log mean for unseen brands. It never averages test labels. This is a closed-form MSE fit, not an arithmetic mean of raw views. All baselines share the target, split and quantitative metrics.
+
+\subsection{Video Nodes: Brand Connectivity Audit}
+The extension represents each video as a node, using root features and two mean GraphSAGE layers. Supplied same-brand/author/creative-category relations are collapsed to binary adjacency. Crucially, the resulting 1,558 unique pairs equal complete brand cliques: every edge joins same-brand videos. Overlapping creative/author labels add no distinct adjacency. Thus a good result cannot demonstrate that creative-concept relationships are effective.
+
+The no-brand-edge control removes \emph{every same-brand endpoint pair}, including overlaps supported by other relation labels. Zero edges remain. It retains brand input features, architecture and the same tuning grid, so this is an adjacency ablation, not removal of all brand information. The separate similarity extension adds five nearest training-feature neighbors. Query nodes receive messages only from training references; they send none to training or other query nodes.
+
+\section{Training and Corrected Evaluation}
+\subsection{Campaign-Grouped 80/20 Split}
+Original groups union normalized same-brand campaign labels and exact same-brand message duplicates. Manual review identified Prudential 170th-anniversary variants \texttt{jlB5oiVibQU} and \texttt{m8qVqW63VQs}, previously separated by English/Chinese naming and split across train/test. Both are now assigned the canonical ID \texttt{prudential\_170th\_anniversary\_2019}; a checked-in override table unions their existing groups rather than splitting any prior family.
+
+There are now 198 groups. We resplit all models into 171 training and 43 testing videos (79.91/20.09\%). The pre-existing count-only rule takes the first seed from 42 yielding exactly round$(0.2N)$ query videos; this gives seed 50. It uses group sizes, never view labels or model scores. Both anniversary variants are now in training; outer and inner-fold group/URL disjointness are checked. Other paraphrased families may still escape this heuristic-plus-manual grouping. This measures unseen campaign groups within known brands, not unseen-brand transfer.
+
+This is explicitly a \emph{post-audit corrected internal evaluation}. Earlier holdout errors were inspected before the grouping correction; the new split is not a pristine external test. Superseded metrics and the reason for correction are preserved. The frozen label snapshot is unchanged.
+
+\subsection{Quantitative Objectives and Selection}
+Three grouped folds inside the outer training set select Ridge $\alpha\in\{10,100\}$ and neural weight decay $\lambda\in\{0.01,0.1\}$. Each fold refits all preprocessing. Early stopping uses fold-validation log MSE, at most 260 epochs and patience 35. Hyperparameters minimize mean fold log RMSE; final fitting uses all 171 training videos and the median selected-fold stopping epoch, without querying test losses. Closed-form mean baselines have no tuning parameters.
+
+The primary graph design remains subgraph-as-video. Within that prespecified family, training CV now selects \emph{structural-only}, with 24 epochs and $\lambda=0.1$. Its training log RMSE is 2.088. Across the comparison suite, training CV selects the no-brand-edge video-node control; we disclose this without redefining the primary design or choosing a new primary model from test rankings. Objectives, fold scores, final training RMSE/loss histories, configurations and source hashes are exported for every model.
+
+Common held-out metrics are MAE/RMSE on natural-log views and Spearman correlation. The inverse $\exp(\hat y)-1$ is clipped to nonnegative counts; it is not an unbiased arithmetic expected view count. A 2,000-draw campaign-level bootstrap gives conditional intervals and paired differences, excluding split/selection uncertainty. Additional seeds 7, 21 and 84 probe initialization without replacing seed 42.
+
+\begin{table}[t]\caption{Corrected same-split test results ($n=43$). Lower errors are better. Bold marks the training-selected primary subgraph, not the best test result.}\label{tab:main}\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrr}\toprule
+Model & Log MAE & Log RMSE & $\rho$\\\midrule
+Constant log mean & 2.282 & 2.646 & -- \\
+Training brand log mean & 1.989 & 2.622 & 0.281 \\
+Metadata Ridge & 1.989 & 2.375 & 0.408 \\
+Pooled-feature Ridge & 1.904 & 2.345 & 0.450 \\
+No-message MLP & 1.827 & 2.360 & 0.436 \\
+\bfseries Subgraph: structural & 1.795 & 2.402 & 0.447 \\
+Subgraph: structural+sim. & 1.917 & 2.286 & 0.490 \\
+Video node: brand cliques & 1.952 & 2.344 & 0.550 \\
+Video node: cliques+sim. & 1.886 & 2.369 & 0.414 \\
+Video node: no brand edges & 1.948 & 2.382 & 0.362 \\
+\bottomrule\end{tabular}\end{table}
+
+\section{Results and Failure Analysis}
+The original, superseded primary result (RMSE 2.238) was worse than metadata Ridge (2.134) and video-node GNN (2.099); it did not justify a superiority claim. After correcting grouping and retraining, the primary structural subgraph obtains RMSE 2.402 (95\% campaign-bootstrap interval [1.759, 2.939]), again worse than metadata Ridge (2.375), pooled Ridge (2.345) and video-node brand cliques (2.344). Its paired RMSE difference versus metadata Ridge has interval [-0.222, 0.249], spanning zero. We establish neither superiority nor a precise performance ordering.
+
+The similarity subgraph has test RMSE 2.286, but structural-only was preferred by training CV; we do not switch models after seeing testing results. In particular, the primary MAE/RMSE tradeoff and uncertain edge gains do not prove useful creative graph structure beyond feature baselines.
+
+Brand mean gives RMSE 2.622; video-node brand cliques give 2.344, versus 2.382 with no edges. The paired clique-minus-no-edge RMSE interval [-0.215, 0.142] includes zero. Thus adjacency supplies only a small, uncertain numerical gain here. The clique model also uses duration, age and creative root features, so improvement over brand mean cannot be attributed solely to edges or concepts.
+
+\begin{figure}[t]\centering
+\includegraphics[width=\columnwidth]{scatter.pdf}
+\caption{All 43 corrected test predictions from the primary structural subgraph. Dashed line: perfect log-scale prediction. The circled IKEA case is the largest corrected test log error; extreme responses are compressed.}\label{fig:scatter}
+\end{figure}
+
+\subsection{Reupload and Exposure Confounding}
+A particularly informative \emph{historical} failure is the 1996 McDonald's ad reupload \texttt{P25f\_dDd2MI}: observed views were 1,019, while the superseded subgraph predicted about 442,536. The captured uploader is ``TPB HK CM,'' a third-party Hong Kong TV-ad archive, rather than the official brand channel. Its supplied upload date is 28 April 2026 (about 195.5 days before capture); 1996 refers to the creative, not the upload age. Brand/creative cues do not establish comparable distribution or paid exposure. This is a plausible channel/exposure mismatch, not an identified causal explanation.
+
+That video is now in training, so its corrected prediction is an in-sample diagnostic, \emph{not} a held-out error. The corrected largest test log error instead concerns IKEA video \texttt{4rixed7cNhI}: 958 observed versus 839,933 predicted views. An official uploader alone therefore does not resolve exposure confounding. Figure~\ref{fig:scatter} and exported view-scale/brand slices make the remaining failures visible.
+
+\subsection{Cross-Brand Stress Test}
+Leave-one-brand-out (LOBO) refits on 13 brands and tests the remaining brand, repeating all 14. An inner grouped holdout chooses epochs; regularization is fixed separately ($\alpha=100$, $\lambda=0.1$), never tuned using held-out-brand responses. Brand mean necessarily falls back to the global training log mean. Table~\ref{tab:lobo} reports macro averages; constant-within-brand predictions have undefined rank correlation. These 70 model--brand runs are a stress test separate from the main split, with small per-brand samples and substantial transfer error.
+
+\begin{table}[t]\caption{LOBO brand-macro results across 14 held-out brands.}\label{tab:lobo}\centering\footnotesize\setlength{\tabcolsep}{3pt}
 \begin{tabular}{lrrr}\toprule
 Model & Log MAE & Log RMSE & $\rho$\\\midrule
 Pooled-feature Ridge & 2.145 & 2.563 & 0.262 \\
-No-message MLP & 2.188 & 2.612 & 0.241 \\
-Subgraph: structural & 2.136 & 2.586 & 0.259 \\
-Subgraph: structural+sim. & 2.188 & 2.633 & 0.238 \\
-\bottomrule\end{tabular}
-\end{table}
+No-message MLP & 2.188 & 2.634 & 0.237 \\
+Subgraph: structural & 2.134 & 2.593 & 0.212 \\
+Subgraph: structural+sim. & 2.136 & 2.589 & 0.174 \\
+Training brand log mean & 2.261 & 2.672 & -- \\
+\bottomrule\end{tabular}\end{table}
 
-Cross-brand RMSE remains substantially larger than the main test error for the primary GNN. Brand context, channel reach and curation differ; unseen categorical identities cannot be recovered by simply adding semantic links. LOBO also does not show the semantic extension reliably improving over structural graphs. Fine-grained brand estimates contain only about 14--20 test examples and should be interpreted cautiously.
+\section{Recommendations, Website and Limitations}
+Six cases use the first six corrected test indices, without selecting maximum gains. Each follows objective $\rightarrow$ creative elements $\rightarrow$ predicted/observed response with uncertainty $\rightarrow$ transferable hypothesis. The frozen primary GNN searches mechanic/structure/pacing triples appearing at least twice in training, with at most two categorical edits. Original settings remain if no candidate improves the model estimate; text/similarity features are recomputed. Existing source evidence stays fixed, so a suggested category can conflict with the script and requires human revision.
 
-Prediction scatter and exported brand/view-scale slices show compression of extremes and large individual failures. Paid promotion, targeting, channel audience, release timing and attention to featured people are plausible alternative explanations for views. Current channel metadata is a contemporaneous snapshot, not necessarily the channel audience at publication. We retain it for context rather than interpreting it as a pre-publication causal control. Source annotations may encode extractor style; short or duplicate evidence can dilute useful signals in mean pooling. Several source support edges and similarity links are heuristic, and weak textual supervision can spread irrelevant information.
+For the HSBC case \texttt{cmsxzrhfa0017bnn8p2stilmd}, observed views are 1,709,054; predictions are 189,946 before and 975,602 after the suggested settings. Linked supporting examples come only from training. Out-of-fold absolute-log-residual sensitivity bands are reported; these are not calibrated individual intervals, and no modified-video response is observed.
 
-\section{Evidence-Linked Recommendations and Showcase}
-Recommendations follow: brief/objective $\rightarrow$ creative elements $\rightarrow$ predicted versus observed response with uncertainty $\rightarrow$ transferable hypothesis. Six cases are the first six fixed test indices, not the largest predicted gains. A frozen GNN searches training-observed (mechanic, structure, pacing) triples with at least two supporting examples and at most two categorical edits. It retains the original when no candidate improves predicted log views, and recomputes node text/similarity edges for edits. Brand, horizon, duration and existing textual evidence are held fixed, so a proposed categorical change may be inconsistent with the original script and requires human revision.
+The 30-second new-brief storyboard uses training-median age 718.5 days, \emph{not} a 30-day forecast. It contains a hook (0--3 s), product benefit (3--20 s), suggested structure (20--27 s), and CTA (27--30 s). A graph built solely from declared inputs avoids borrowing another video's evidence, but is sparser than extracted training graphs. New briefs remain an unvalidated showcase even at in-range ages.
 
-For one held-out Maxim's case (source ID \texttt{cmvc4lbtr000fbn0081iw3zrc}), the objective is to improve observable reach for the same product/context. Original observed views are 782,077; the model predicts 711,080 before and 778,940 after the proposed change: creative mechanic = Offer led. Training-only examples sharing the proposed triple are linked in the website. A nominal 90\% out-of-fold absolute-log-residual band gives [13,826, 36,567,936] for the original prediction. This is a broad sensitivity band, not a guaranteed calibrated interval; it shows how uncertain the point prediction is. No edited-video response has been observed.
+The local Streamlit/Python website directly loads the frozen PyG checkpoint and encoders. It combines editable feature-to-recommendation inputs, source evidence, actual concept graphs, baseline/ablation results and one storyboard. Display-edge toggles do not change the trained model. New inputs default to the training age median; out-of-range inputs, including 30 days, display an explicit extrapolation warning in the page and prediction JSON. All outputs remain exploratory cumulative-view estimates. Numerical checks cover all 214 frozen predictions and six optimizations; widget tests cover both input types, graph controls and age warnings.
 
-The new-video showcase uses a declared 30-second MTR brief at an assumed 30-day exposure age. It builds a new graph from declared features/text only, without pretending that another video's evidence belongs to the new ad. Predicted views change from 745,189 to 825,702 under structure type = Product proof led. The storyboard is: 0--3 s hook; 3--20 s demonstrate the product benefit; 20--27 s apply the suggested structure; 27--30 s CTA/end card. Full wording, supporting source links, sensitivity bands, and six existing-video cases accompany the report. This is a demonstration, not independent validation of actual uplift. Sparse new-brief graphs also differ from fully extracted training graphs.
+Paid spend, targeting, channel audience, publication timing, reupload status and featured people's popularity can jointly affect both creative choices and views. Contemporary channel metadata is not historical audience exposure. Annotation style, heuristic support edges, bilingual tokenization, incomplete responses, imperfect campaign verification and a single corrected split further constrain construct validity. Optimizing model estimates can exploit prediction errors; support from two examples does not identify causal uplift.
 
-The local Streamlit/Python prototype prioritizes feature-to-recommendation use, with editable settings, source evidence, the actual per-video GNN graph, structural/similarity display toggles, baseline comparisons, LOBO results and one storyboard. Python directly loads the frozen PyTorch Geometric checkpoint and training-fitted encoders for prediction and constrained search. It starts with \texttt{python -m streamlit run app.py}. Automated checks verify all 214 predictions against frozen outputs, all six optimization cases, graph controls and submitted Streamlit form interactions. Graph display switches do not change the trained prediction model.
-
-\section{Critical Discussion and Improvements}
-Higher views cannot be attributed to creative combinations in this observational sample. A celebrity's popularity/appearance, paid spend, platform distribution, audience size, campaign objectives and publication timing may jointly affect creative choices and responses. Likes are incomplete and comments are unavailable in this pass; neither brand recognition nor sales is measured. Temporal exposure is partly controlled through supplied dates, but dates and extracted concepts have not all been independently verified. Curated ad references, incomplete fresh-label coverage, imperfect campaign grouping, weak bilingual tokenization and a single outer split constrain generalization.
-
-The recommendation search optimizes the model's estimate, which can exploit model error rather than improve an ad. Support from two training examples is a weak plausibility constraint, not causal identification. Uncertainty is large enough that favorable point estimates should remain hypotheses. A transferability claim should be restricted to the observed setting and supported creative elements; original copy and product claims should be rewritten and checked before use.
-
-Priority improvements are: collect fixed post-publication horizons and media spend; verify campaign families and publication dates; expand the sample with a separately frozen official-channel holdout; hand-audit support links and test bilingual encoders; repeat grouped/time splits and capacity-matched graph ablations; and evaluate full sparse-brief versus extracted-graph prediction. Only a prospective exposure-controlled comparison of coherent video variants could test realized creative uplift. Such an experiment is not claimed here.
+Priority improvements are to verify campaign families, uploader type and dates; collect exposure/spend and fixed-age response labels; expand a separately frozen official-channel holdout; test bilingual encoders and capacity-matched edge controls; and repeat grouped/time splits. Prospective exposure-controlled coherent variants are required to evaluate actual creative gains. We claim no sales, brand-recognition or causal engagement effect.
 
 \section{Conclusion}
-The supplied data supports a transparent compact GNN baseline with quantitative targets, a genuine grouped 80/20 evaluation, structural-edge ablations and cross-brand stress tests. The primary subgraph model predicts some popularity signal but does not establish superiority over simpler alternatives. The practical contribution is an auditable comparison and evidence-linked hypothesis tool whose limitations remain visible. The report uses the IEEE A4 conference template \cite{ieee}; reproducible code, frozen platform evidence, full metrics, model checkpoints and session transcript are provided separately.
+The corrected compact-GNN baseline is reproducible and quantitatively evaluated, but the primary concept subgraph does not outperform simpler controls. Video-node adjacency is exactly brand connectivity, and its no-edge comparison is uncertain. Cumulative snapshot prediction must be separated from validated future-horizon forecasting. The contribution is an auditable comparison and source-linked hypothesis tool, rather than proof that concept edges improve creative performance. This report uses the IEEE A4 template \cite{ieee}; code, frozen evidence, checkpoints, full metrics and session transcript accompany it.
 
 \begin{thebibliography}{3}
 \bibitem{sage} W. L. Hamilton, R. Ying, and J. Leskovec, ``Inductive representation learning on large graphs,'' in \emph{Advances in Neural Information Processing Systems}, vol. 30, 2017.
 \bibitem{pyg} PyTorch Geometric, ``SAGEConv and graph-level pooling documentation.'' [Online]. Available: \url{https://pytorch-geometric.readthedocs.io/}
 \bibitem{ieee} IEEE, ``Manuscript templates for conference proceedings.'' [Online]. Available: \url{https://www.ieee.org/conferences/publishing/templates.html}
-\end{thebibliography}
-\end{document}
+\end{thebibliography}\end{document}

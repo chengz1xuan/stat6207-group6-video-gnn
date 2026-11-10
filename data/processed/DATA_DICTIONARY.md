@@ -40,7 +40,10 @@ Fresh coverage: 214 exact views/channel IDs; 175 exact likes; no exact comments.
 - `duration_seconds`: source duration, imputed inside training if missing.
 - `brand_family`, `creative_mechanic`, `structure_type`, `evidence_mode`, `cta_explicitness`, `proof_strength`, `pacing`, `production_complexity`: fixed allowlisted categories.
 - `main_message`, `hook`, `value_promise`, `cta`: response-sanitized creative text used by the global root encoder.
-- `group`: union of normalized same-brand campaign labels and exact same-brand main-message duplicates. This is heuristic grouping, not manually verified campaign lineage.
+- `group`: union of original normalized same-brand campaign/main-message groups and manually reviewed bilingual aliases in `campaign_overrides.csv`. Remaining families are not exhaustively manually verified.
+- `group_original`: original group before reviewed aliases are unioned.
+- `manual_campaign_id`: reviewed stable campaign ID where present; both Prudential 170th anniversary variants use `prudential_170th_anniversary_2019`.
+- `split`: corrected outer partition (`train`/`test`).
 - Remaining source fields and current engagement/channel columns are audit metadata only unless explicitly allowlisted by the model code.
 
 ## Graph provenance
@@ -56,3 +59,13 @@ Similarity extension: top two nonroot within-video neighbors with training-fitte
 `artifacts/v2/splits.csv` contains campaign-group-disjoint outer training (171) and testing (43): 79.91% / 20.09%, the closest rounded 80/20 count for N=214. Three internal grouped folds tune preprocessing/model parameters. Final models refit the entire outer training set for the median chosen fold stopping epoch. All main models share this split and metric definitions.
 
 `metrics.json`: log MAE/RMSE, Spearman, raw-view errors, model selection, selected parameters. `cross_validation.json`: fold RMSE and stopping epochs. `training_histories.json`: final training losses. `leave_brand_out.csv`: separately refitted cross-brand stress tests. OOF residual bands are heuristic sensitivity bands, not guaranteed individual coverage intervals.
+
+## 2026-11-10 audit correction
+
+The two Prudential anniversary variants were manually unioned before rerunning all experiments. The existing group-count-only seed search now selects seed 50, still 171/43, with 198 campaign groups. Both variants are in training and remain together in every inner CV fold (`inner_folds.csv`). This is post-audit internal evaluation after prior test inspection, not an untouched external holdout. Prior metrics survive in `correction_history.json`; labels have not changed.
+
+`Brand mean` fits training mean ln(1+views) per brand, with global training mean fallback; test labels never enter. Video-node binary adjacency equals complete brand cliques (1,558 pairs). `Node no-brand edges` removes every same-brand endpoint pair, including overlapping author/creative labels, leaving zero pairs, while retaining brand input features and the same tuning protocol. Provenance: `video_edge_provenance.csv`, `brand_edge_audit.json`.
+
+Training age support: min 36.5016, median 718.5010, max 5620.5016 days, derived from training rows only. New brief defaults to the median. Thirty days is outside support. Labels are cumulative snapshot counts, not fixed-age windows or repeated video trajectories; even an in-range age does not validate a new-video time forecast. Prediction JSON carries `age_diagnostic` with support limits and an extrapolation flag.
+
+`reupload_error_audit.json` records the superseded test failure (1,019 observed / about 442,536 predicted) for a third-party ad archive. In the corrected split this video is training, so its new prediction is explicitly in-sample. `corrected_largest_error.json` separately describes the actual corrected test failure. Creative year 1996 is distinct from the supplied 2026 upload date. `report_graph.json` contains an actual induced training graph and original edges used for the report figure; `scatter.pdf` contains corrected test predictions only.

@@ -1,0 +1,20 @@
+{
+  "status": "Historical diagnostic from superseded pre-correction split; not silently reused as a corrected holdout result.",
+  "video_id": "cmooc24s50000bnz0qbywz2k5",
+  "youtube_id": "P25f_dDd2MI",
+  "title": "[香港經典廣告](1996)麥當勞 金鼠獻瑞",
+  "source_url": "https://www.youtube.com/watch?v=P25f_dDd2MI",
+  "channel_name": "TPB HK CM 香港電視廣告庫 (香港電視廣告庫)",
+  "channel_id": "UCBDGANnytQYn4kXtZQbOI-A",
+  "archived_publish_date": "2026-04-28T00:00:00.000Z",
+  "age_days_at_snapshot": 195.50107545209497,
+  "observed_views": 1019,
+  "pre_correction_model": "Subgraph + similarity",
+  "pre_correction_predicted_views": 442536.47,
+  "uploader_assessment": "Third-party TV-ad archive uploader, not the McDonald's official brand channel; title references the 1996 creative but supplied upload date is in 2026. Creative year and upload/exposure age must not be conflated.",
+  "interpretation": "Channel distribution, paid exposure and reupload context differ. Observational evidence does not isolate their causal contribution; subscriber text is current, not historical.",
+  "corrected_split": "train",
+  "corrected_model": "Subgraph structural",
+  "corrected_predicted_views": 149063.7535164908,
+  "corrected_prediction_status": "In-sample fit diagnostic, not a held-out error"
+}

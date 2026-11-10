@@ -1,0 +1,93 @@
+{
+  "previous_metrics": {
+    "Mean": {
+      "log_MAE": 1.998844297760069,
+      "log_RMSE": 2.2641342861575686,
+      "Spearman": null,
+      "views_MAE": 1002714.2564228816,
+      "views_RMSE": 1761857.3196971738,
+      "log_R2": -0.04083181550630188
+    },
+    "Metadata Ridge": {
+      "log_MAE": 1.6851234331295062,
+      "log_RMSE": 2.134367032367466,
+      "Spearman": 0.32301419510721835,
+      "views_MAE": 911289.6761446221,
+      "views_RMSE": 1597162.3289664823,
+      "log_R2": 0.07505820420432874
+    },
+    "Pooled Ridge": {
+      "log_MAE": 1.8298862613197082,
+      "log_RMSE": 2.1997588820648257,
+      "Spearman": 0.27937179099969794,
+      "views_MAE": 949512.9768350291,
+      "views_RMSE": 1690375.7194388504,
+      "log_R2": 0.01751403256626005
+    },
+    "Pooled MLP": {
+      "log_MAE": 1.8478153028579765,
+      "log_RMSE": 2.2691938187349407,
+      "Spearman": 0.2754454847478103,
+      "views_MAE": 929094.4129269622,
+      "views_RMSE": 1651571.293277471,
+      "log_R2": -0.045488788781325784
+    },
+    "Subgraph structural": {
+      "log_MAE": 1.8258314405813016,
+      "log_RMSE": 2.2485227358438067,
+      "Spearman": 0.26004228329809725,
+      "views_MAE": 920884.6805959302,
+      "views_RMSE": 1620253.030434815,
+      "log_R2": -0.026527912511157936
+    },
+    "Subgraph + similarity": {
+      "log_MAE": 1.8381011675242866,
+      "log_RMSE": 2.238209418472312,
+      "Spearman": 0.2677438840229538,
+      "views_MAE": 932429.0683139535,
+      "views_RMSE": 1662374.7858135633,
+      "log_R2": -0.017132740778596167
+    },
+    "Node structural": {
+      "log_MAE": 1.6809207825674144,
+      "log_RMSE": 2.09870969804127,
+      "Spearman": 0.4832376925400182,
+      "views_MAE": 882011.25901617,
+      "views_RMSE": 1535347.1678899084,
+      "log_R2": 0.10570472729452063
+    },
+    "Node + similarity": {
+      "log_MAE": 1.658395240846859,
+      "log_RMSE": 2.1317211566722962,
+      "Spearman": 0.34959226819691935,
+      "views_MAE": 885532.8373001453,
+      "views_RMSE": 1546073.8061583997,
+      "log_R2": 0.07734999759275485
+    }
+  },
+  "previous_split": {
+    "train": 171,
+    "test": 43,
+    "target_test_count": 43,
+    "seed": 42,
+    "selection_rule": "First seed >=42 yielding round(0.2*N) test videos with disjoint campaign groups. Selection uses group sizes only, never response labels.",
+    "train_fraction": 0.7990654205607477,
+    "test_fraction": 0.20093457943925233
+  },
+  "manual_campaign_overrides": [
+    {
+      "video_id": "cmvbu5bpx004mbnuobvnt3njr",
+      "canonical_campaign_id": "prudential_170th_anniversary_2019",
+      "reason": "Manual bilingual alias reconciliation: same Prudential 170th anniversary campaign, confirmed in project review.",
+      "reviewed_on": "2026-11-10"
+    },
+    {
+      "video_id": "cmvbu6xs9004wbnuo3n7cfzh3",
+      "canonical_campaign_id": "prudential_170th_anniversary_2019",
+      "reason": "Manual bilingual alias reconciliation: same Prudential 170th anniversary campaign, confirmed in project review.",
+      "reviewed_on": "2026-11-10"
+    }
+  ],
+  "reason": "Correct bilingual campaign leakage, add training-only brand baseline and no-brand adjacency ablation; re-evaluate all models with unchanged frozen labels.",
+  "evaluation_caveat": "Post-audit corrected internal evaluation; previous testing set has been inspected."
+}

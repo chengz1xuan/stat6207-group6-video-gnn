@@ -34,3 +34,15 @@ At the user's request, replaced the active web demonstration with a local Stream
 Streamlit 1.66.1 was already available in Conda stat6207. Added only project-local Streamlit configuration. The server listens at 127.0.0.1:8501 with telemetry disabled. The previous hosted/static prototype is historical local source, not the active app or the new submission package. No hosted site was modified or deleted during this switch.
 
 Verified all 214 Python predictions against the frozen reference (maximum log difference 0), all six optimization cases, existing-graph parity, new-brief graphs without borrowed evidence, and Streamlit AppTest flows for prediction, optimization, edited settings and graph controls (zero app exceptions). Updated the IEEE report's implementation description and verified it remains four A4 pages with no overfull layout boxes. Rebuilt the package around the Streamlit app and refreshed the visible-message transcript.
+
+## 2026-11-10 scientific audit (supersedes the earlier experiment numbers above)
+
+Manually unioned Prudential 170th anniversary Chinese/English variants using a versioned override CSV before grouped splitting. Refit every model on the corrected 171/43 split (seed 50), including fold-local preprocessing/stopping. Added training-only brand log mean with unseen-brand fallback and a node no-brand-edge control. Provenance shows all 1,558 original video-node pairs form complete brand cliques; removing same-brand endpoint pairs leaves zero edges. No claim of creative-relationship efficacy is supported.
+
+Training CV now selects structural-only as the primary subgraph; its corrected log RMSE 2.402 is worse than metadata Ridge 2.375 and video-node brand cliques 2.344. Across the suite, the no-brand-edge control has the lowest tuning CV error. We preserve this distinction and do not select the more favorable similarity model from test scores. Conditional paired intervals do not establish a stable adjacency gain.
+
+Changed the new-brief exposure age from 30 days to the training median (718.5 days); labels remain cumulative snapshot counts. Explicit out-of-support warnings and exported diagnostics mark 30-day inputs as unvalidated extrapolation. Neither in-range ages nor the new sparse brief graph establish a validated forecast.
+
+Preserved the historical 1,019-versus-442,536 third-party McDonald’s reupload failure, with captured uploader, source URL and supplied upload date. The video is now training, and current held-out IKEA failure is reported separately. Added an actual source concept graph and complete corrected test scatter to the four-page IEEE report. Added regression checks for grouping, training-only baseline, edge provenance, age warnings, and source graph fidelity.
+
+The old test set had been inspected before corrections; this is transparently a post-audit corrected internal evaluation, not a new untouched external test. No frozen view labels were altered or videos selectively excluded.

@@ -21,7 +21,7 @@ service=load_service((ROOT/'artifacts/v2/primary_gnn.pt').stat().st_mtime_ns)
 d=service.results;m=d['metrics'];selected=m['selected_primary_gnn'];r=m['test'][selected]
 st.caption('STAT6207 · APPLIED DEEP LEARNING · GROUP 06')
 st.title('视频创意图实验室')
-st.write('用真实数据检验创意关系，通过训练好的 GNN 探索新视频设置。')
+st.write('比较品牌、元数据和创意图信号，通过冻结 GNN 探索待检验的视频设置。')
 with st.sidebar:
     st.header('实验设置')
     st.write('**本地 Streamlit + Python**')
@@ -48,7 +48,11 @@ with results_tab:
     frame=pd.DataFrame(m['test']).T.rename_axis('Model').reset_index()
     st.dataframe(frame[['Model','log_MAE','log_RMSE','Spearman','views_MAE']],hide_index=True,width='stretch')
     st.bar_chart(frame.set_index('Model')[['log_RMSE']],color='#186b60',horizontal=True)
-    st.info(f'主子图模型 Log RMSE 为 {r["log_RMSE"]:.3f}，视频节点结构模型为 {m["test"]["Node structural"]["log_RMSE"]:.3f}。更复杂的子图设计未显示稳定优势。')
+    st.info(f'修正分组后的主子图模型 Log RMSE 为 {r["log_RMSE"]:.3f}，视频节点结构模型为 {m["test"]["Node structural"]["log_RMSE"]:.3f}。更复杂的子图设计未显示稳定优势。')
+    st.write(f'品牌均值基线 Log RMSE：{m["test"]["Brand mean"]["log_RMSE"]:.3f}；去同品牌连接的视频节点模型：{m["test"]["Node no-brand edges"]["log_RMSE"]:.3f}。')
+    edge_audit=d['brand_edge_audit']
+    st.warning(f'视频节点原始结构图 {edge_audit["same_brand_fraction"]:.0%} 的连接为同品牌视频连接，去品牌边后剩 {edge_audit["no_brand_pairs"]} 对。它的成绩不能证明创意概念关系有效；去边模型仍保留品牌输入特征。')
+    st.caption('保诚 170 周年中英文活动已人工合并；这是检查过旧测试误差后的修正版内部评估，不是全新未接触的外部测试集。')
     ci=d['uncertainty']['test_log_RMSE_95'][selected]
     st.write(f'主模型 campaign-bootstrap 95% 区间：**[{ci[0]:.3f}, {ci[1]:.3f}]**。区间以当前模型、采集和测试划分为条件。')
     st.subheader('跨品牌压力测试 · Leave-one-brand-out')
@@ -56,6 +60,9 @@ with results_tab:
     st.caption('每次完全留出一个品牌；其余品牌内部选择停止轮次。这里报告 14 个品牌的宏平均，区别于主 80/20 结果。')
     st.subheader('误差切片与潜在改进')
     st.dataframe(pd.DataFrame(d['slices'])[['slice','n','log_MAE','log_RMSE']],hide_index=True,width='stretch')
+    audit=json.loads((ROOT/'artifacts/v2/reupload_error_audit.json').read_text())
+    st.write(f'修正前的最大误差案例：{audit["title"]}；频道 {audit["channel_name"]}，实际 {audit["observed_views"]:,} 次，原预测 {audit["pre_correction_predicted_views"]:,.0f} 次。第三方转载的分发和曝光条件与官方广告不同；1996 是创意年份，不是本次上传日期。')
+    st.caption('此数值是修正前的历史诊断，当前修正划分的预测另见结果 CSV。频道或曝光差异是潜在解释，未识别其因果作用。')
     st.write('媒体投放、频道受众、曝光时间、人物吸引力及抽取噪声都可能影响播放量。应补充固定观察窗口、媒体预算和人工核验的 campaign 分组，并扩展独立外部测试集。')
 
 with graph_tab:
@@ -85,6 +92,8 @@ with predict_tab:
     options=['__new__']+list(service.videos)
     reference=st.selectbox('输入来源',options,format_func=lambda k:'新视频 Brief · 只使用声明的设置与文本' if k=='__new__' else f'[{service.videos[k]["split"]}] {service.videos[k]["title"]}',key='prediction_reference')
     template=next(v for v in d['videos'] if v['split']=='train') if reference=='__new__' else service.videos[reference]
+    ages=service.age_support
+    st.info(f'目标是采集时的累计播放量，年龄只是输入协变量。训练集曝光年龄范围 {ages["training_min_days"]:.1f}–{ages["training_max_days"]:.1f} 天，中位数 {ages["training_median_days"]:.1f} 天；没有验证上线后 30 天的固定窗口预测。')
     with st.form('prediction_settings'):
         edited=dict(template)
         fields=st.columns(4)
@@ -94,7 +103,7 @@ with predict_tab:
             edited[name]=fields[i%4].selectbox(name,categories,index=categories.index(value),key=f'edit_{reference}_{name}')
         c1,c2=st.columns(2)
         edited['duration_seconds']=c1.number_input('时长（秒）',min_value=1.,max_value=3600.,value=30. if reference=='__new__' else max(1.,float(template['duration_seconds'] or 30)),key=f'duration_{reference}')
-        edited['age_days']=c2.number_input('假定曝光时长（天）',min_value=0.,max_value=20000.,value=30. if reference=='__new__' else float(template['age_days'] or 0),key=f'age_{reference}')
+        edited['age_days']=c2.number_input('采集对应的曝光年龄（天；不是预测窗口）',min_value=0.,max_value=20000.,value=ages['training_median_days'] if reference=='__new__' else float(template['age_days'] or 0),key=f'age_{reference}')
         texts=st.columns(2)
         for i,name in enumerate(TEXT):edited[name]=texts[i%2].text_area(name,value=template.get(name,''),height=100,key=f'text_{reference}_{name}')
         c1,c2=st.columns(2)
@@ -102,13 +111,20 @@ with predict_tab:
         optimized=c2.form_submit_button('搜索支持的创意设置',width='stretch')
     st.caption('现有视频的抽取证据保持固定，编辑后的分类和文案需由人核验一致性。新视频不借用其他视频的证据节点。')
     if submitted or optimized:
-        if reference=='__new__':edited['title']='New advertising brief';edited['video_id']='new-video-example'
+        if reference=='__new__':
+            edited={k:edited[k] for k in CAT+TEXT+['duration_seconds','age_days']}
+            edited['title']='New advertising brief';edited['video_id']='new-video-example'
         graph=service.query_graph(edited,None if reference=='__new__' else reference)
         result=service.optimize(edited,graph) if optimized else {'base':service.predict(edited,graph)}
         st.session_state['last_prediction']={'reference':reference,'input':edited,'result':result}
     saved=st.session_state.get('last_prediction')
     if saved and saved['reference']==reference:
         pred=saved['result']['base'];st.metric('模型预测累计播放量',f'{pred["views"]:,.0f}')
+        diag=pred['age_diagnostic']
+        if diag['outside_training_range']:
+            st.warning(f'范围外推：输入年龄 {diag["input_age_days"]:.1f} 天超出训练年龄范围。此结果只供探索，未经固定窗口或 30 天预测验证；OOF 残差范围也不保证适用于此输入。')
+        else:
+            st.caption('年龄位于训练范围内也不代表新 Brief 或该时间点已获得独立验证。')
         st.write(f'ln(1 + views) = {pred["log"]:.4f}')
         st.write(f'OOF 残差敏感度范围：**{pred["band"][0]:,.0f} – {pred["band"][1]:,.0f}**')
         st.caption('这是名义 90% 的训练折外绝对 log 残差范围，不保证个体覆盖率；log 预测的反变换也不是无偏的平均播放量。')
@@ -128,7 +144,7 @@ with cases_tab:
     new=d['new_video'];st.write('**目标：**',new['brief_objective']);st.write('**品牌 / 产品语境：**',new['brand'])
     c1,c2=st.columns(2);c1.metric('原设置预测',f'{new["base_prediction"]:,.0f}');c2.metric('建议设置预测',f'{new["optimized_prediction"]:,.0f}')
     st.json(new['changes']);st.dataframe(pd.DataFrame(new['storyboard']),hide_index=True,width='stretch')
-    st.caption('此案例假定曝光 30 天，没有新上传视频的实测响应；图只由声明输入构建，与完整抽取的训练图存在差异。')
+    st.caption(f'此案例采用训练年龄中位数 {new["age_days"]:.1f} 天，30 秒指视频时长。预测目标为该年龄语境下的累计播放量，并非经验证的固定窗口预测；新视频没有实测响应，声明图与训练抽取图也存在差异。')
     st.subheader('六个固定测试案例')
     for i,case in enumerate(d['cases'],1):
         with st.expander(f'{i}. {case["brand"]} · {case["title"]}',expanded=i==1):

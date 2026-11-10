@@ -1,0 +1,19 @@
+{
+  "core_undirected_pairs": 1558,
+  "same_brand_pairs": 1558,
+  "same_brand_fraction": 1.0,
+  "no_brand_pairs": 0,
+  "equals_complete_brand_cliques": true,
+  "provided_relation_counts": {
+    "same_brand": 1368,
+    "same_author": 1494,
+    "same_evidence_mode": 970,
+    "same_cta_explicitness": 794,
+    "same_pacing": 1059,
+    "same_structure_type": 417,
+    "same_creative_mechanic": 669,
+    "same_canonical_brand": 190,
+    "same_product_or_campaign": 1
+  },
+  "ablation": "Node no-brand edges removes every same-brand endpoint pair, including pairs supported by overlapping author/creative relations. Root features including brand retained; identical architecture/tuning protocol. No added similarity edges."
+}

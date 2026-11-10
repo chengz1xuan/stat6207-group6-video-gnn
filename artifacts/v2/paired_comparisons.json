@@ -1,0 +1,35 @@
+{
+  "metric": "RMSE difference: first minus second; negative favors first",
+  "draws": 2000,
+  "comparisons": {
+    "Subgraph structural minus Metadata Ridge": {
+      "delta_test_log_RMSE": 0.02682091166536482,
+      "campaign_bootstrap_95": [
+        -0.22183710179979527,
+        0.2494695544147538
+      ]
+    },
+    "Subgraph structural minus Pooled Ridge": {
+      "delta_test_log_RMSE": 0.057245328756470926,
+      "campaign_bootstrap_95": [
+        -0.11082929148833022,
+        0.20890087056451442
+      ]
+    },
+    "Node structural minus Node no-brand edges": {
+      "delta_test_log_RMSE": -0.037538148284373296,
+      "campaign_bootstrap_95": [
+        -0.21532921370097283,
+        0.14218783956414877
+      ]
+    },
+    "Node structural minus Brand mean": {
+      "delta_test_log_RMSE": -0.27750117069088054,
+      "campaign_bootstrap_95": [
+        -0.48001974855696133,
+        -0.047568588102600305
+      ]
+    }
+  },
+  "limitation": "Conditional, exploratory post-audit comparisons; neither causal identification nor independent replication."
+}

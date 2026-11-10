@@ -1,0 +1,108 @@
+{
+  "video_id": "cmu3gznxt000pbn5k4mu9yl5f",
+  "source_package": "mplifier_graph_probe_mtr_15_clean_v0_1",
+  "selection": "First training graph in inventory order with >=5 selected aspects and evidence; induced display subset; labels not used.",
+  "full_node_count": 32,
+  "nodes": [
+    {
+      "id": "video:cmu3gznxt000pbn5k4mu9yl5f",
+      "type": "video",
+      "field": "video",
+      "text": ""
+    },
+    {
+      "id": "aspect:cmu3gznxt000pbn5k4mu9yl5f:brand:01",
+      "type": "aspect",
+      "field": "brand_family",
+      "text": "MTR"
+    },
+    {
+      "id": "aspect:cmu3gznxt000pbn5k4mu9yl5f:creative_mechanic:01",
+      "type": "aspect",
+      "field": "creative_mechanic",
+      "text": "Offer led"
+    },
+    {
+      "id": "aspect:cmu3gznxt000pbn5k4mu9yl5f:structure_type:01",
+      "type": "aspect",
+      "field": "structure_type",
+      "text": "Demo led"
+    },
+    {
+      "id": "aspect:cmu3gznxt000pbn5k4mu9yl5f:pacing:01",
+      "type": "aspect",
+      "field": "pacing",
+      "text": "medium tempo"
+    },
+    {
+      "id": "aspect:cmu3gznxt000pbn5k4mu9yl5f:cta_explicitness:01",
+      "type": "aspect",
+      "field": "cta_explicitness",
+      "text": "implicit"
+    },
+    {
+      "id": "evidence:cmu3gznxt000pbn5k4mu9yl5f:0003",
+      "type": "evidence",
+      "field": "description_text",
+      "text": "港鐵網絡覆蓋全港，各區出發，與朋友沿綫集合話咁易，班次亦非常頻密，隨時隨地搭東鐵綫經羅湖或落馬洲站前往深圳超方便 過關後無縫連接深圳地鐵，輕鬆玩勻深圳人氣熱點  詳情可瀏覽: https://www mtr com hk/ch/customer/main/eal-brand-service-campaign html #港鐵 #MTR #東鐵綫 #搭東鐵 #羅湖站 #落馬洲站 #深圳 #攻略 #林峯 With MTR’s extensive railway network covering all districts across Hong Kong, it is easy to meet up with friends along the line and travel together  Frequent services on the East Rail Line also make travelling to Shenzhen via Lo Wu or Lok Ma Chau incredibly convenient at any time  After crossing the boundary, you can seamlessly connect to the Shenzhen Metro and explore the city’s most popular attractions with ease  Watch the Cross Boundary Travel News now and let Raymond Lam show you how convenient it is to take the East Rail Line for cross boundary travel  Click the link to learn more: https://www mtr com hk/en/customer/main/eal-brand-service-campaign html #EastRailLine #LoWu #LokMaChau #Shenzhen #RaymondLam"
+    },
+    {
+      "id": "evidence:cmu3gznxt000pbn5k4mu9yl5f:0011",
+      "type": "evidence",
+      "field": "extract_spoken_dialogue",
+      "text": "特別旋峯消息"
+    }
+  ],
+  "edges": [
+    {
+      "source": "video:cmu3gznxt000pbn5k4mu9yl5f",
+      "target": "aspect:cmu3gznxt000pbn5k4mu9yl5f:brand:01",
+      "type": "video_has_aspect",
+      "heuristic": false,
+      "source_edge_id": "edge:000182"
+    },
+    {
+      "source": "video:cmu3gznxt000pbn5k4mu9yl5f",
+      "target": "aspect:cmu3gznxt000pbn5k4mu9yl5f:creative_mechanic:01",
+      "type": "video_has_aspect",
+      "heuristic": false,
+      "source_edge_id": "edge:000189"
+    },
+    {
+      "source": "video:cmu3gznxt000pbn5k4mu9yl5f",
+      "target": "aspect:cmu3gznxt000pbn5k4mu9yl5f:structure_type:01",
+      "type": "video_has_aspect",
+      "heuristic": false,
+      "source_edge_id": "edge:000190"
+    },
+    {
+      "source": "video:cmu3gznxt000pbn5k4mu9yl5f",
+      "target": "aspect:cmu3gznxt000pbn5k4mu9yl5f:cta_explicitness:01",
+      "type": "video_has_aspect",
+      "heuristic": false,
+      "source_edge_id": "edge:000192"
+    },
+    {
+      "source": "video:cmu3gznxt000pbn5k4mu9yl5f",
+      "target": "aspect:cmu3gznxt000pbn5k4mu9yl5f:pacing:01",
+      "type": "video_has_aspect",
+      "heuristic": false,
+      "source_edge_id": "edge:000194"
+    },
+    {
+      "source": "video:cmu3gznxt000pbn5k4mu9yl5f",
+      "target": "evidence:cmu3gznxt000pbn5k4mu9yl5f:0003",
+      "type": "video_has_evidence",
+      "heuristic": false,
+      "source_edge_id": "edge:000622"
+    },
+    {
+      "source": "video:cmu3gznxt000pbn5k4mu9yl5f",
+      "target": "evidence:cmu3gznxt000pbn5k4mu9yl5f:0011",
+      "type": "video_has_evidence",
+      "heuristic": false,
+      "source_edge_id": "edge:000630"
+    }
+  ],
+  "note": "Node boxes show source field/value excerpts; evidence text omitted for legibility. Full original text and IDs are retained here and in raw_graphs.json."
+}

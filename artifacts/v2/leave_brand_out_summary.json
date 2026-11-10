@@ -8,21 +8,27 @@
     },
     "Pooled MLP": {
       "brands": 14,
-      "macro_log_MAE": 2.187865851791499,
-      "macro_log_RMSE": 2.61181050051284,
-      "macro_Spearman": 0.24106419895893577
+      "macro_log_MAE": 2.1879093432217087,
+      "macro_log_RMSE": 2.633993711683771,
+      "macro_Spearman": 0.23726142278773854
     },
     "Subgraph structural": {
       "brands": 14,
-      "macro_log_MAE": 2.1364182457648417,
-      "macro_log_RMSE": 2.58644599480192,
-      "macro_Spearman": 0.2590359828141783
+      "macro_log_MAE": 2.1344461520978735,
+      "macro_log_RMSE": 2.592910686939356,
+      "macro_Spearman": 0.2119577790630422
     },
     "Subgraph + similarity": {
       "brands": 14,
-      "macro_log_MAE": 2.1877678359124912,
-      "macro_log_RMSE": 2.63308532727446,
-      "macro_Spearman": 0.23770139634801282
+      "macro_log_MAE": 2.1362455184418367,
+      "macro_log_RMSE": 2.588976405601143,
+      "macro_Spearman": 0.17436999091134428
+    },
+    "Brand mean": {
+      "brands": 14,
+      "macro_log_MAE": 2.261479127320038,
+      "macro_log_RMSE": 2.6718016071371706,
+      "macro_Spearman": null
     }
   },
   "protocol": "Each brand held out entirely. Fixed alpha=100 / weight_decay=.1; inner group holdout chooses epochs, then refit other brands. No held-out brand labels used for preprocessing/stopping. Not tuned on main outer testing results."

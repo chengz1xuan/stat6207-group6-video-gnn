@@ -2,6 +2,8 @@
 
 本项目对应 **Topic 3：视频受众表现预测与创意设置优化**。使用 YouTube 广告视频的创意概念、文本证据和图结构，训练紧凑的图神经网络，比较不同节点、边及非图基线的预测效果，并通过 **Streamlit + Python** 展示实验结果和创意建议。
 
+**2026-11-10 审计修正版：** 保诚周年活动人工统一后已重训；旧划分指标被替代，新增品牌均值与去品牌边对照，网页明确累计播放量与外推边界。
+
 当前提交版本采用“**一个视频对应一个子图**”作为主要设计，以原始 `candidate_edges.csv` 中的关系为基础，对比加入语义相似边后的结果；“一个视频对应一个节点”作为扩展实验。所有主实验使用同一个按 campaign 分组的约 80/20 训练测试划分。
 
 **日常查看项目只需启动 Streamlit，已有数据和模型可以直接使用。** 重新采集、重新训练、生成报告是独立操作，不是启动网页的前置步骤。
@@ -79,7 +81,7 @@ python -c "import sys; print(sys.executable)"
 
 用于查看和解释实验，而非修改训练模型：
 
-1. 查看八种基线/图模型在同一测试集上的 Log MAE、Log RMSE、Spearman 和原始播放量 MAE。
+1. 查看十种基线/图模型在同一测试集上的 Log MAE、Log RMSE、Spearman 和原始播放量 MAE。
 2. 查看误差图，以及按 campaign 重采样的 bootstrap 区间。
 3. 查看 leave-one-brand-out 的品牌宏平均结果。
 4. 查看不同品牌、播放量区间的误差切片及改进方向。
@@ -117,13 +119,13 @@ python -c "import sys; print(sys.executable)"
 | 搜索支持的创意设置 | 原设置预测、支持范围内的最佳预测、建议修改、候选数量与训练集来源 |
 | 下载本次预测 JSON | 保存最近一次提交的输入和结果，便于讨论与记录 |
 
-更改输入后需要再次提交表单，才会计算新结果。曝光天数表示预测所假定的观察时长，不是保证在该时长内获得的播放量。
+更改输入后需要再次提交表单，才会计算新结果。**目标是采集时累计播放量，曝光年龄只是输入协变量，不是经过验证的未来预测窗口。** 修正后训练集年龄为 36.5–5620.5 天，中位数 718.5 天；新 Brief 默认使用该中位数。输入 30 天会在预测结果及 JSON 中标为范围外推，不能宣称“上线 30 天可获得的播放量”。年龄处于范围内，也不代表新 Brief 已被独立验证。
 
 自动搜索只修改 `creative_mechanic`、`structure_type`、`pacing`，最多同时改变两项。候选三元组必须在训练集中出现至少两次；若没有候选提高预测，则保留原设置。
 
 ### 3.4 案例与 Storyboard
 
-包含一个假定曝光 30 天、时长 30 秒的新视频 storyboard，以及六个固定测试视频案例。
+包含一个时长 30 秒、曝光年龄取训练中位数 718.5 天的新视频 storyboard，以及六个固定测试视频案例。30 秒是片长；本项目没有验证固定 30 天播放量预测。
 
 每个已有视频案例包含：目标、原始创意元素、原视频实测播放量、原设置预测、建议设置预测、残差范围、修改建议、训练来源和可迁移启示。
 
@@ -300,7 +302,9 @@ Final Project/
 
 ### 7.3 视频节点扩展
 
-每个视频对应一个节点，核心边来自原始同品牌、作者及创意类别关系；扩展版再增加五个训练特征近邻。
+每个视频对应一个节点。经审计，原始同品牌、作者及创意类别关系合并成二元邻接后，**1,558 对结构连接恰好构成完整品牌内连接图**。创意/作者关系标签未增加独立邻接信息，因此该模型的表现不能证明创意概念关系有效。相似边扩展版再增加五个训练特征近邻。
+
+新增 `Brand mean`：只用训练集各品牌的平均 log 播放量预测；未见品牌退回全局训练 log 均值，绝不使用测试标签。新增 `Node no-brand edges`：移除所有同品牌端点连接，包括被作者/创意等其他标签重复支持的连接，故剩零条边；保留品牌输入特征、架构和相同调参协议。该对照隔离邻接作用，不是移除全部品牌信息。
 
 验证/测试视频仅从训练参考节点接收消息，不向训练节点发送消息，也不在不同测试节点之间传播消息。这避免将整张测试图无条件纳入训练参考。
 
@@ -328,11 +332,14 @@ z = (y - mean_train) / std_train
 
 ### 8.2 按 campaign 分组的 80/20 划分
 
-同品牌的规范化 campaign 名称与完全相同的 main message 被合并分组，214 条样本得到 **199 个分组**。
+原始规则合并同品牌规范化 campaign 名称与完全相同的 main message。人工复核发现保诚 170 周年活动的中英文名称被误分组，现通过 `data/processed/campaign_overrides.csv` 将以下视频统一为 `prudential_170th_anniversary_2019`，并保留既有分组的传递合并关系：
 
-使用固定 seed 42，得到 **171 条训练、43 条测试**，分别为 79.91% 与 20.09%。这对应整数样本下四舍五入的 80/20，且保留分组完整性。测试集中有 40 个 campaign 分组。
+- `cmvbu5bpx004mbnuobvnt3njr` / YouTube `jlB5oiVibQU`
+- `cmvbu6xs9004wbnuo3n7cfzh3` / YouTube `m8qVqW63VQs`
 
-分组和 YouTube ID 不跨训练/测试边界。相似但名称或文案不同的 campaign 仍可能未被识别，分组规则需要后续人工核验。
+修正后 214 条样本有 **198 个分组**。沿用“从 seed 42 起选择第一个产生 round(20% × N) 条测试视频的 seed”的规则，只看组大小，不看标签或得分，现得到 **seed 50、171 训练 / 43 测试**（79.91% / 20.09%）。两条周年活动视频均在训练集，且在训练内部各 CV 折保持同组。测试集包含 40 个活动组。分组和 YouTube ID 不跨边界；其他双语别名仍可能需要进一步复核。
+
+**这是检查过旧测试误差后修正的内部评估，不能包装为全新未接触的外部测试集。** 冻结标签不变，旧结果在 `artifacts/v2/correction_history.json` 中留档，当前指标全部来自修正后的重新训练。
 
 ### 8.3 训练内部调参及最终重训
 
@@ -349,7 +356,7 @@ z = (y - mean_train) / std_train
 
 - **Campaign bootstrap**：在测试 campaign 层面重采样 2,000 次，seed 44；模型间使用相同重采样以计算配对差异。区间以当前划分和拟合模型为条件，不包含划分与模型选择的不确定性。
 - **随机初始化敏感度**：额外使用 seed 7、21、84，不根据测试结果替换主 seed 42。
-- **Leave-one-brand-out**：逐一完全留出 14 个品牌，对其余品牌重新拟合并内部选择停止轮次。比较四种模型，产生 56 个模型－品牌评估。该压力测试固定正则化配置，与主 80/20 协议分开报告。
+- **Leave-one-brand-out**：逐一完全留出 14 个品牌，对其余品牌重新拟合并内部选择停止轮次。比较五种模型（含未见品牌退回全局均值的 Brand mean），产生 70 个模型－品牌评估。该压力测试固定正则化配置，与主 80/20 协议分开报告。
 - **案例中的残差范围**：来自训练折外绝对 log 残差的名义 90% 范围，仅作敏感度参考，不保证个体预测覆盖率。
 
 ## 9. 当前结果与正确解读
@@ -358,29 +365,40 @@ z = (y - mean_train) / std_train
 
 | 模型 | Test Log MAE | Test Log RMSE | Spearman |
 |---|---:|---:|---:|
-| Mean | 1.999 | 2.264 | 不定义 |
-| Metadata Ridge | 1.685 | 2.134 | 0.323 |
-| Pooled Ridge | 1.830 | 2.200 | 0.279 |
-| Pooled MLP | 1.848 | 2.269 | 0.275 |
-| Subgraph structural | 1.826 | 2.249 | 0.260 |
-| **Subgraph + similarity** | **1.838** | **2.238** | **0.268** |
-| Node structural | 1.681 | 2.099 | 0.483 |
-| Node + similarity | 1.658 | 2.132 | 0.350 |
+| Mean | 2.282 | 2.646 | 不定义 |
+| Brand mean | 1.989 | 2.622 | 0.281 |
+| Metadata Ridge | 1.989 | 2.375 | 0.408 |
+| Pooled Ridge | 1.904 | 2.345 | 0.450 |
+| Pooled MLP | 1.827 | 2.360 | 0.436 |
+| **Subgraph structural** | 1.795 | 2.402 | 0.447 |
+| Subgraph + similarity | 1.917 | 2.286 | 0.490 |
+| Node structural | 1.952 | 2.344 | 0.550 |
+| Node + similarity | 1.886 | 2.369 | 0.414 |
+| Node no-brand edges | 1.948 | 2.382 | 0.362 |
 
-训练交叉验证选择的主模型是 **Subgraph + similarity**。主测试集上，视频节点结构模型的数值表现更好；不能据此反过来把它当作原先选定的主模型，也不能隐藏该比较。
+主子图由训练 CV 选择为 **Subgraph structural**；完整比较套件的 CV 最优为 **Node no-brand edges**。测试表现不用于改选主模型。主子图 Log RMSE 2.402，高于 Metadata Ridge 的 2.375、Pooled Ridge 的 2.345 和视频节点模型的 2.344，**不能声称概念子图已优于简单基线**。相似边子图虽然测试 RMSE 较低，也不能看过测试结果后替换预先选择的主模型。
 
-主子图模型的 campaign-bootstrap 95% Log RMSE 区间约为 **[1.814, 2.694]**。相似边相对结构子图的配对 Log MAE 差异区间约为 **[-0.038, 0.062]**，包含零。因此，相似边带来的小幅数值变化不能被描述成稳定提升。
+主子图 campaign-bootstrap 95% Log RMSE 区间为 [1.759, 2.939]。品牌连接模型相对去品牌边模型的配对 RMSE 差异区间为 [-0.215, 0.142]，包含零；其邻接增益不稳定，且原结构图仅编码品牌分组，不能据此证明创意关系有效。完整配对结果见 `paired_comparisons.json`。
 
 ### 9.2 跨品牌结果
 
 | 模型 | LOBO Macro Log MAE | LOBO Macro Log RMSE | Macro Spearman |
 |---|---:|---:|---:|
 | Pooled Ridge | 2.145 | 2.563 | 0.262 |
-| Pooled MLP | 2.188 | 2.612 | 0.241 |
-| Subgraph structural | 2.136 | 2.586 | 0.259 |
-| Subgraph + similarity | 2.188 | 2.633 | 0.238 |
+| Pooled MLP | 2.188 | 2.634 | 0.237 |
+| Subgraph structural | 2.134 | 2.593 | 0.212 |
+| Subgraph + similarity | 2.136 | 2.589 | 0.174 |
+| Brand mean | 2.261 | 2.672 | 不定义 |
 
-跨品牌误差仍较大。这个小样本实验没有证明复杂子图优于简单基线，也没有证明模型能可靠承诺新视频流量。
+跨品牌误差仍较大。Brand mean 在未知品牌上退回全局训练 log 均值，因此品牌内排序相关不定义。这个小样本实验没有证明概念关系有额外预测价值，也没有验证新视频的固定时间窗口流量承诺。
+
+### 9.2.1 两类最大误差应分开讨论
+
+修正前最大 log 误差：麦当劳旧广告 `[香港經典廣告](1996)麥當勞 金鼠獻瑞`，YouTube `P25f_dDd2MI`，实测 **1,019**，原预测约 **442,536**。采集到的频道为 `TPB HK CM 香港電視廣告庫 (香港電視廣告庫)`，属于第三方广告转载。1996 是广告创意年份；供给表的上传日期是 2026-04-28，对应采集年龄约 195.5 天。官方品牌概念无法保证转载频道有相同分发、受众或投放曝光，这些是潜在解释，未被识别为因果效应。
+
+该视频在修正划分中进入训练集，修正后的预测只能作为样本内诊断，不能再称为测试误差。历史失败保存在 `reupload_error_audit.json`。当前最大测试 log 误差为 IKEA `太古猩喺度！（都足本短版）`：实测 **958**，预测约 **839,933**；说明官方频道身份本身也不能消除曝光和分发差异。
+
+报告中的概念图是实际训练图的可读诱导子图，原始节点/边及选图规则在 `report_graph.json`；散点图包含全部 43 条修正后测试预测，不混入训练预测。
 
 ### 9.3 创意建议的解释边界
 
@@ -402,12 +420,18 @@ z = (y - mean_train) / std_train
 | `cross_validation.json` | 参数如何选择？每折误差和停止轮次是多少？ |
 | `training_histories.json` | 最终神经网络的训练损失如何变化？ |
 | `training_measurements.csv` | 各模型目标、训练误差及定量测量是什么？ |
-| `metrics.json` | 八种模型的测试指标、主模型及配置是什么？ |
+| `metrics.json` | 十种模型的测试指标、主模型及配置是什么？ |
 | `test_predictions.csv` | 每条测试视频的预测与实测分别是多少？ |
 | `oof_predictions.csv` | 训练折外预测是什么？ |
 | `uncertainty.json` | Bootstrap 区间及相似边配对差异是什么？ |
 | `seed_sensitivity.json` | 换初始化后结果如何？ |
 | `leave_brand_out.csv` / `leave_brand_out_summary.json` | 各品牌/宏平均的迁移误差是什么？ |
+| `campaign_overrides.csv`（data/processed） | 哪些中英文活动别名经过人工统一？ |
+| `inner_folds.csv` | 人工合并活动是否在训练内部各折保持同组？ |
+| `brand_edge_audit.json` / `video_edge_provenance.csv` | 品牌邻接是否主导视频节点图？去边后剩多少？ |
+| `age_support.json` | 训练年龄范围和新 Brief 默认值如何确定？ |
+| `correction_history.json` / `reupload_error_audit.json` | 哪些旧结果被替代？转载失败与当前测试如何区分？ |
+| `paired_comparisons.json` / `report_graph.json` | 对照差异的不确定性及真实图来源是什么？ |
 | `error_slices.json` | 哪些品牌、播放量范围容易出错？ |
 | `optimization.json` | 六个案例、新视频 storyboard 与搜索限制是什么？ |
 | `primary_gnn.pt` | Streamlit 实际加载的主模型是什么？ |
@@ -431,7 +455,7 @@ python src/validate_revision.py
 python src/test_streamlit_app.py
 ```
 
-第一条检查标签来源、group/URL 隔离、图关系、查询消息方向、CV 选择、训练测量与跨品牌运行记录。第二条对照全部 214 条冻结预测和六个优化案例，并用 Streamlit AppTest 检查新视频、已有视频、编辑设置与图开关。
+第一条同时检查标签来源、外层和内层分组隔离、保诚别名、训练品牌均值/未知品牌回退、品牌连接来源与零边对照、年龄支持范围、历史/当前误差隔离及真实图节点边。第二条对照全部 214 条预测和六个优化案例，并用 Streamlit AppTest 检查新视频、已有视频、编辑设置、图开关、年龄中位数默认值及 30 天外推提示。
 
 验证结果会写入对应 JSON；无需为此重新抓取 YouTube 或重新训练。
 
@@ -534,14 +558,14 @@ python src/package_project.py
 
 ## 14. GitHub 仓库与本地交付包
 
-GitHub 版本以当前 Streamlit/Python 实现为入口，仓库为 [chengz1xuan/stat6207-group6-video-gnn](https://github.com/chengz1xuan/stat6207-group6-video-gnn)，使用私有可见性。代码、冻结数据、训练模型、正式实验结果、IEEE 报告与源码用于协作和复现。
+GitHub 版本以当前 Streamlit/Python 实现为入口，仓库为 [chengz1xuan/stat6207-group6-video-gnn](https://github.com/chengz1xuan/stat6207-group6-video-gnn)，按项目所有者授权保持公开可见。代码、冻结数据、训练模型、正式实验结果、IEEE 报告与源码用于协作和复现。
 
 `.gitignore` 排除本地 Python 依赖、编辑器专用路径、凭证文件、缓存、日志、重复 ZIP、旧静态网站、旧实验及机器相关部署信息。个人会话文本 `output/session_transcript.md` 和本地交付说明保留在本机及课程交付包中，不随 Git 仓库上传。
 
 克隆仓库后，按本 README 的环境配置和 Streamlit 启动步骤运行；无需访问旧托管站点。Git 仓库与课程 ZIP 包的内容范围有所区别，课程提交仍以第 13 节为准。
 
 
-已获仓库访问权限的组员可以克隆项目：
+组员可以克隆公开仓库：
 
 ```bash
 git clone https://github.com/chengz1xuan/stat6207-group6-video-gnn.git

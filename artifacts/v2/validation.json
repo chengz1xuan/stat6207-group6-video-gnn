@@ -1,4 +1,10 @@
 {
+  "manual_bilingual_alias_outer_and_inner_safe": true,
+  "training_only_brand_mean_and_unseen_fallback": true,
+  "brand_clique_provenance_and_zero_edge_ablation": true,
+  "training_age_support_and_30_day_OOD": true,
+  "historical_reupload_separated_from_corrected_holdout": true,
+  "report_graph_uses_original_nodes_edges": true,
   "fresh_label_cohort": 214,
   "split": [
     171,
@@ -11,6 +17,6 @@
   "query_outbound_message_edges": 0,
   "training_reference_isolation": true,
   "CV_selection_only": true,
-  "LOBO_model_brand_runs": 56,
+  "LOBO_model_brand_runs": 70,
   "quantitative_neural_training_losses": true
 }

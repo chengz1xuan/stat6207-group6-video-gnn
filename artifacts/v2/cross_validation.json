@@ -6,19 +6,19 @@
       "10.0": [
         {
           "fold": 0,
-          "log_RMSE": 2.619836532978457,
+          "log_RMSE": 2.2766881797354426,
           "epochs": null,
           "train_log_RMSE": null
         },
         {
           "fold": 1,
-          "log_RMSE": 2.61033413059977,
+          "log_RMSE": 2.907639353467172,
           "epochs": null,
           "train_log_RMSE": null
         },
         {
           "fold": 2,
-          "log_RMSE": 2.6849399505768097,
+          "log_RMSE": 2.3532304630947194,
           "epochs": null,
           "train_log_RMSE": null
         }
@@ -26,19 +26,19 @@
       "100.0": [
         {
           "fold": 0,
-          "log_RMSE": 2.6685626994226292,
+          "log_RMSE": 2.3086496377060834,
           "epochs": null,
           "train_log_RMSE": null
         },
         {
           "fold": 1,
-          "log_RMSE": 2.5837496477246753,
+          "log_RMSE": 2.955947331935865,
           "epochs": null,
           "train_log_RMSE": null
         },
         {
           "fold": 2,
-          "log_RMSE": 2.7254246139692997,
+          "log_RMSE": 2.488621517213729,
           "epochs": null,
           "train_log_RMSE": null
         }
@@ -48,19 +48,19 @@
       "10.0": [
         {
           "fold": 0,
-          "log_RMSE": 2.656251654519925,
+          "log_RMSE": 2.3588973598694505,
           "epochs": null,
           "train_log_RMSE": null
         },
         {
           "fold": 1,
-          "log_RMSE": 2.800639221471338,
+          "log_RMSE": 2.9035984843730964,
           "epochs": null,
           "train_log_RMSE": null
         },
         {
           "fold": 2,
-          "log_RMSE": 2.610007035139103,
+          "log_RMSE": 2.3084264363576397,
           "epochs": null,
           "train_log_RMSE": null
         }
@@ -68,19 +68,19 @@
       "100.0": [
         {
           "fold": 0,
-          "log_RMSE": 2.6414500175356395,
+          "log_RMSE": 2.3194120912549163,
           "epochs": null,
           "train_log_RMSE": null
         },
         {
           "fold": 1,
-          "log_RMSE": 2.632028269726612,
+          "log_RMSE": 2.935928468622751,
           "epochs": null,
           "train_log_RMSE": null
         },
         {
           "fold": 2,
-          "log_RMSE": 2.679625619901756,
+          "log_RMSE": 2.4483926088677697,
           "epochs": null,
           "train_log_RMSE": null
         }
@@ -90,41 +90,41 @@
       "0.01": [
         {
           "fold": 0,
-          "log_RMSE": 2.655286580771381,
-          "epochs": 8,
-          "train_log_RMSE": 2.2895628490440947
+          "log_RMSE": 2.34286306763819,
+          "epochs": 5,
+          "train_log_RMSE": 2.60686654599272
         },
         {
           "fold": 1,
-          "log_RMSE": 2.5990632479586044,
-          "epochs": 5,
-          "train_log_RMSE": 2.6176101588226204
+          "log_RMSE": 2.9179313488557717,
+          "epochs": 7,
+          "train_log_RMSE": 2.1249357803037046
         },
         {
           "fold": 2,
-          "log_RMSE": 2.5455026009606554,
-          "epochs": 9,
-          "train_log_RMSE": 2.2110784776774284
+          "log_RMSE": 2.275857431824335,
+          "epochs": 11,
+          "train_log_RMSE": 2.2179070532417624
         }
       ],
       "0.1": [
         {
           "fold": 0,
-          "log_RMSE": 2.6178889169249837,
-          "epochs": 16,
-          "train_log_RMSE": 2.3362621093317717
+          "log_RMSE": 2.337685090724241,
+          "epochs": 14,
+          "train_log_RMSE": 2.516126471234203
         },
         {
           "fold": 1,
-          "log_RMSE": 2.622367654293507,
-          "epochs": 9,
-          "train_log_RMSE": 2.660235876663147
+          "log_RMSE": 2.7831031261762753,
+          "epochs": 168,
+          "train_log_RMSE": 1.2436822068098499
         },
         {
           "fold": 2,
-          "log_RMSE": 2.5552316854636836,
-          "epochs": 19,
-          "train_log_RMSE": 2.2561854463109565
+          "log_RMSE": 2.2869529015534473,
+          "epochs": 28,
+          "train_log_RMSE": 2.1009231266469195
         }
       ]
     },
@@ -132,41 +132,41 @@
       "0.01": [
         {
           "fold": 0,
-          "log_RMSE": 2.6198348223144685,
-          "epochs": 5,
-          "train_log_RMSE": 2.2764133015183488
+          "log_RMSE": 2.3391582910092197,
+          "epochs": 3,
+          "train_log_RMSE": 2.5949423323599654
         },
         {
           "fold": 1,
-          "log_RMSE": 2.610502222501239,
-          "epochs": 3,
-          "train_log_RMSE": 2.523616499447592
+          "log_RMSE": 2.8571205260417383,
+          "epochs": 14,
+          "train_log_RMSE": 1.545267290509626
         },
         {
           "fold": 2,
-          "log_RMSE": 2.6553335186328266,
-          "epochs": 5,
-          "train_log_RMSE": 2.3171483117315677
+          "log_RMSE": 2.2882516723277746,
+          "epochs": 9,
+          "train_log_RMSE": 2.1603632861161333
         }
       ],
       "0.1": [
         {
           "fold": 0,
-          "log_RMSE": 2.596323200618945,
-          "epochs": 11,
-          "train_log_RMSE": 2.3559077869610374
+          "log_RMSE": 2.3243751470786322,
+          "epochs": 9,
+          "train_log_RMSE": 2.5066052385684547
         },
         {
           "fold": 1,
-          "log_RMSE": 2.6292703782119906,
-          "epochs": 4,
-          "train_log_RMSE": 2.6630940417891376
+          "log_RMSE": 2.8530750829302267,
+          "epochs": 80,
+          "train_log_RMSE": 1.292559644333625
         },
         {
           "fold": 2,
-          "log_RMSE": 2.5752631019346217,
-          "epochs": 14,
-          "train_log_RMSE": 2.2349552064847855
+          "log_RMSE": 2.230922200808285,
+          "epochs": 24,
+          "train_log_RMSE": 2.142324924596911
         }
       ]
     },
@@ -174,41 +174,41 @@
       "0.01": [
         {
           "fold": 0,
-          "log_RMSE": 2.6293914761270494,
-          "epochs": 6,
-          "train_log_RMSE": 2.266174224752494
+          "log_RMSE": 2.331686338965089,
+          "epochs": 4,
+          "train_log_RMSE": 2.5484034701246903
         },
         {
           "fold": 1,
-          "log_RMSE": 2.6109868722984877,
-          "epochs": 3,
-          "train_log_RMSE": 2.6034568738036685
+          "log_RMSE": 2.860607247645929,
+          "epochs": 6,
+          "train_log_RMSE": 2.0777230630265073
         },
         {
           "fold": 2,
-          "log_RMSE": 2.656329729045042,
-          "epochs": 6,
-          "train_log_RMSE": 2.3072783031284403
+          "log_RMSE": 2.2628918977024077,
+          "epochs": 9,
+          "train_log_RMSE": 2.2233260847377383
         }
       ],
       "0.1": [
         {
           "fold": 0,
-          "log_RMSE": 2.6035713527604836,
-          "epochs": 14,
-          "train_log_RMSE": 2.326677085666203
+          "log_RMSE": 2.3243079346096382,
+          "epochs": 10,
+          "train_log_RMSE": 2.5504724051633088
         },
         {
           "fold": 1,
-          "log_RMSE": 2.6194744238144376,
-          "epochs": 7,
-          "train_log_RMSE": 2.60623549941479
+          "log_RMSE": 2.88032241842121,
+          "epochs": 26,
+          "train_log_RMSE": 1.7094527940735866
         },
         {
           "fold": 2,
-          "log_RMSE": 2.5579062648916606,
-          "epochs": 17,
-          "train_log_RMSE": 2.250342845621537
+          "log_RMSE": 2.2694907635181623,
+          "epochs": 26,
+          "train_log_RMSE": 2.164126434584296
         }
       ]
     },
@@ -216,41 +216,41 @@
       "0.01": [
         {
           "fold": 0,
-          "log_RMSE": 2.7608283648885763,
-          "epochs": 3,
-          "train_log_RMSE": 2.394210034362248
+          "log_RMSE": 2.392448637449985,
+          "epochs": 1,
+          "train_log_RMSE": 2.6048357348483924
         },
         {
           "fold": 1,
-          "log_RMSE": 2.7939791749326455,
-          "epochs": 3,
-          "train_log_RMSE": 2.446124660703259
+          "log_RMSE": 2.87148550709566,
+          "epochs": 5,
+          "train_log_RMSE": 2.029698188541635
         },
         {
           "fold": 2,
-          "log_RMSE": 2.6032446830615785,
-          "epochs": 5,
-          "train_log_RMSE": 2.2714556125759042
+          "log_RMSE": 2.1505506139361317,
+          "epochs": 9,
+          "train_log_RMSE": 2.1012839720387606
         }
       ],
       "0.1": [
         {
           "fold": 0,
-          "log_RMSE": 2.697364872410429,
-          "epochs": 6,
-          "train_log_RMSE": 2.2968403366714787
+          "log_RMSE": 2.395723556927932,
+          "epochs": 1,
+          "train_log_RMSE": 2.6469325755854594
         },
         {
           "fold": 1,
-          "log_RMSE": 2.720028311107118,
-          "epochs": 11,
-          "train_log_RMSE": 2.1787184083102384
+          "log_RMSE": 2.8873229969936616,
+          "epochs": 10,
+          "train_log_RMSE": 1.9251599226871026
         },
         {
           "fold": 2,
-          "log_RMSE": 2.604802378765273,
+          "log_RMSE": 2.215826757798728,
           "epochs": 10,
-          "train_log_RMSE": 2.1792037905661434
+          "train_log_RMSE": 2.240531538233825
         }
       ]
     },
@@ -258,52 +258,114 @@
       "0.01": [
         {
           "fold": 0,
-          "log_RMSE": 2.706849020424201,
-          "epochs": 5,
-          "train_log_RMSE": 2.3280397509054516
+          "log_RMSE": 2.410029615261418,
+          "epochs": 1,
+          "train_log_RMSE": 2.6244836479284253
         },
         {
           "fold": 1,
-          "log_RMSE": 2.736214276868662,
-          "epochs": 3,
-          "train_log_RMSE": 2.4683092320039646
+          "log_RMSE": 2.8338494387636888,
+          "epochs": 10,
+          "train_log_RMSE": 1.833291877946962
         },
         {
           "fold": 2,
-          "log_RMSE": 2.536574816901196,
-          "epochs": 9,
-          "train_log_RMSE": 2.0967520489409677
+          "log_RMSE": 2.2235973874969277,
+          "epochs": 11,
+          "train_log_RMSE": 2.013223855338225
         }
       ],
       "0.1": [
         {
           "fold": 0,
-          "log_RMSE": 2.6509222664506047,
-          "epochs": 8,
-          "train_log_RMSE": 2.323128454378853
+          "log_RMSE": 2.4034453647684533,
+          "epochs": 21,
+          "train_log_RMSE": 1.9685512980710538
         },
         {
           "fold": 1,
-          "log_RMSE": 2.7043810283303835,
-          "epochs": 4,
-          "train_log_RMSE": 2.4830735636584675
+          "log_RMSE": 2.83099315417747,
+          "epochs": 16,
+          "train_log_RMSE": 1.8346498131786633
         },
         {
           "fold": 2,
-          "log_RMSE": 2.5240480991675525,
-          "epochs": 11,
-          "train_log_RMSE": 2.2532682305584513
+          "log_RMSE": 2.2262884983465328,
+          "epochs": 13,
+          "train_log_RMSE": 2.1952503266488046
+        }
+      ]
+    },
+    "Node no-brand edges": {
+      "0.01": [
+        {
+          "fold": 0,
+          "log_RMSE": 2.3150305247225513,
+          "epochs": 3,
+          "train_log_RMSE": 2.5484338684721206
+        },
+        {
+          "fold": 1,
+          "log_RMSE": 2.9212332519175987,
+          "epochs": 7,
+          "train_log_RMSE": 2.055747528631623
+        },
+        {
+          "fold": 2,
+          "log_RMSE": 2.321133902402875,
+          "epochs": 14,
+          "train_log_RMSE": 1.9779189766848566
+        }
+      ],
+      "0.1": [
+        {
+          "fold": 0,
+          "log_RMSE": 2.3012449392666383,
+          "epochs": 5,
+          "train_log_RMSE": 2.5240881511141238
+        },
+        {
+          "fold": 1,
+          "log_RMSE": 2.8153699197738264,
+          "epochs": 144,
+          "train_log_RMSE": 1.5321838823581253
+        },
+        {
+          "fold": 2,
+          "log_RMSE": 2.2840549264285808,
+          "epochs": 21,
+          "train_log_RMSE": 2.1073836595536424
         }
       ]
     }
   },
+  "closed_form_baselines": {
+    "Brand mean": [
+      {
+        "fold": 0,
+        "log_RMSE": 2.700912986268983,
+        "train_log_RMSE": 2.3011121278502937
+      },
+      {
+        "fold": 1,
+        "log_RMSE": 2.9096300908507198,
+        "train_log_RMSE": 2.1560688209542587
+      },
+      {
+        "fold": 2,
+        "log_RMSE": 2.349623494570113,
+        "train_log_RMSE": 2.495557758546075
+      }
+    ]
+  },
   "selected": {
     "Metadata Ridge": 10.0,
-    "Pooled Ridge": 100.0,
+    "Pooled Ridge": 10.0,
     "Pooled MLP": 0.1,
     "Subgraph structural": 0.1,
-    "Subgraph + similarity": 0.1,
-    "Node structural": 0.1,
-    "Node + similarity": 0.1
+    "Subgraph + similarity": 0.01,
+    "Node structural": 0.01,
+    "Node + similarity": 0.1,
+    "Node no-brand edges": 0.1
   }
 }

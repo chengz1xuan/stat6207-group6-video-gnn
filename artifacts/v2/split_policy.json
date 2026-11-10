@@ -2,8 +2,10 @@
   "train": 171,
   "test": 43,
   "target_test_count": 43,
-  "seed": 42,
+  "seed": 50,
   "selection_rule": "First seed >=42 yielding round(0.2*N) test videos with disjoint campaign groups. Selection uses group sizes only, never response labels.",
+  "manual_override_file": "data/processed/campaign_overrides.csv",
+  "audit_note": "Post-audit corrected split after inspecting prior test errors and bilingual campaign leakage; not a new untouched external holdout.",
   "train_fraction": 0.7990654205607477,
   "test_fraction": 0.20093457943925233
 }

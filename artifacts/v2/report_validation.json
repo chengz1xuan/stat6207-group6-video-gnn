@@ -1,0 +1,8 @@
+{
+  "pages": 4,
+  "A4": true,
+  "real_graph_and_test_scatter": true,
+  "corrected_result_claims": true,
+  "source_hash_matches_run": true,
+  "visual_review": "All four final pages rendered and reviewed; no clipping or overlap."
+}

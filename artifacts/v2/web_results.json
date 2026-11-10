@@ -3,7 +3,7 @@
     "inventory": 219,
     "fresh_label_cohort": 214,
     "brands": 14,
-    "groups": 199,
+    "groups": 198,
     "excluded_missing_fresh_views": [
       {
         "video_id": "cmu3hawsd001ybn5ko2e7yfc6",
@@ -49,81 +49,99 @@
   "metrics": {
     "test": {
       "Mean": {
-        "log_MAE": 1.998844297760069,
-        "log_RMSE": 2.2641342861575686,
+        "log_MAE": 2.2815828005220617,
+        "log_RMSE": 2.6456780764919263,
         "Spearman": null,
-        "views_MAE": 1002714.2564228816,
-        "views_RMSE": 1761857.3196971738,
-        "log_R2": -0.04083181550630188
+        "views_MAE": 1079668.1187001462,
+        "views_RMSE": 1731533.4601375223,
+        "log_R2": -0.0020588969043575656
+      },
+      "Brand mean": {
+        "log_MAE": 1.9892550698490996,
+        "log_RMSE": 2.6217468226250134,
+        "Spearman": 0.2810602369147951,
+        "views_MAE": 946586.583210107,
+        "views_RMSE": 1558725.7948381186,
+        "log_R2": 0.015987190539004326
       },
       "Metadata Ridge": {
-        "log_MAE": 1.6851234331295062,
-        "log_RMSE": 2.134367032367466,
-        "Spearman": 0.32301419510721835,
-        "views_MAE": 911289.6761446221,
-        "views_RMSE": 1597162.3289664823,
-        "log_R2": 0.07505820420432874
+        "log_MAE": 1.9894618590399014,
+        "log_RMSE": 2.375203368238158,
+        "Spearman": 0.4078828148595591,
+        "views_MAE": 996931.8931686044,
+        "views_RMSE": 1596356.085067064,
+        "log_R2": 0.19235436141731643
       },
       "Pooled Ridge": {
-        "log_MAE": 1.8298862613197082,
-        "log_RMSE": 2.1997588820648257,
-        "Spearman": 0.27937179099969794,
-        "views_MAE": 949512.9768350291,
-        "views_RMSE": 1690375.7194388504,
-        "log_R2": 0.01751403256626005
+        "log_MAE": 1.9040064946669542,
+        "log_RMSE": 2.344778951147052,
+        "Spearman": 0.44971307762005436,
+        "views_MAE": 970924.3283066857,
+        "views_RMSE": 1542075.6508049401,
+        "log_R2": 0.21291241005848416
       },
       "Pooled MLP": {
-        "log_MAE": 1.8478153028579765,
-        "log_RMSE": 2.2691938187349407,
-        "Spearman": 0.2754454847478103,
-        "views_MAE": 929094.4129269622,
-        "views_RMSE": 1651571.293277471,
-        "log_R2": -0.045488788781325784
+        "log_MAE": 1.826872763157313,
+        "log_RMSE": 2.360061917322513,
+        "Spearman": 0.4358199939595288,
+        "views_MAE": 933913.4448582847,
+        "views_RMSE": 1524372.592979052,
+        "log_R2": 0.20261870211675836
       },
       "Subgraph structural": {
-        "log_MAE": 1.8258314405813016,
-        "log_RMSE": 2.2485227358438067,
-        "Spearman": 0.26004228329809725,
-        "views_MAE": 920884.6805959302,
-        "views_RMSE": 1620253.030434815,
-        "log_R2": -0.026527912511157936
+        "log_MAE": 1.7949672749634664,
+        "log_RMSE": 2.402024279903523,
+        "Spearman": 0.446843853820598,
+        "views_MAE": 889684.6698310318,
+        "views_RMSE": 1414391.7905442214,
+        "log_R2": 0.17401143076506953
       },
       "Subgraph + similarity": {
-        "log_MAE": 1.8381011675242866,
-        "log_RMSE": 2.238209418472312,
-        "Spearman": 0.2677438840229538,
-        "views_MAE": 932429.0683139535,
-        "views_RMSE": 1662374.7858135633,
-        "log_R2": -0.017132740778596167
+        "log_MAE": 1.9174581396213535,
+        "log_RMSE": 2.2855344582280397,
+        "Spearman": 0.4898822108124434,
+        "views_MAE": 962728.8157703485,
+        "views_RMSE": 1554886.2245207971,
+        "log_R2": 0.2521839223569651
       },
       "Node structural": {
-        "log_MAE": 1.6809207825674144,
-        "log_RMSE": 2.09870969804127,
-        "Spearman": 0.4832376925400182,
-        "views_MAE": 882011.25901617,
-        "views_RMSE": 1535347.1678899084,
-        "log_R2": 0.10570472729452063
+        "log_MAE": 1.9519381198710772,
+        "log_RMSE": 2.344245651934133,
+        "Spearman": 0.5499848988221081,
+        "views_MAE": 985131.6705123544,
+        "views_RMSE": 1602925.4640023801,
+        "log_R2": 0.213270401550548
       },
       "Node + similarity": {
-        "log_MAE": 1.658395240846859,
-        "log_RMSE": 2.1317211566722962,
-        "Spearman": 0.34959226819691935,
-        "views_MAE": 885532.8373001453,
-        "views_RMSE": 1546073.8061583997,
-        "log_R2": 0.07734999759275485
+        "log_MAE": 1.8857579166301197,
+        "log_RMSE": 2.3688141209236036,
+        "Spearman": 0.41377227423739055,
+        "views_MAE": 929824.8856286336,
+        "views_RMSE": 1505158.1301089744,
+        "log_R2": 0.19669361700880128
+      },
+      "Node no-brand edges": {
+        "log_MAE": 1.9479782217276713,
+        "log_RMSE": 2.381783800218506,
+        "Spearman": 0.3622772576260948,
+        "views_MAE": 979511.2192496363,
+        "views_RMSE": 1557008.7296010838,
+        "log_R2": 0.1878730447336041
       }
     },
     "CV_log_RMSE": {
-      "Metadata Ridge": 2.6383702047183455,
-      "Pooled Ridge": 2.651034635721336,
-      "Pooled MLP": 2.598496085560725,
-      "Subgraph structural": 2.6002855602551858,
-      "Subgraph + similarity": 2.5936506804888606,
-      "Node structural": 2.6740651874276065,
-      "Node + similarity": 2.6264504646495137
+      "Metadata Ridge": 2.5125193320991115,
+      "Pooled Ridge": 2.5236407602000623,
+      "Pooled MLP": 2.4692470394846544,
+      "Subgraph structural": 2.469457476939048,
+      "Subgraph + similarity": 2.485061828104475,
+      "Node structural": 2.4714949194939257,
+      "Node + similarity": 2.486909005764152,
+      "Node no-brand edges": 2.4668899284896817,
+      "Brand mean": 2.6533888572299387
     },
-    "selected_model": "Subgraph + similarity",
-    "selected_primary_gnn": "Subgraph + similarity",
+    "selected_model": "Node no-brand edges",
+    "selected_primary_gnn": "Subgraph structural",
     "train_size": 171,
     "test_size": 43,
     "configs": {
@@ -131,57 +149,67 @@
         "alpha": 10.0
       },
       "Pooled Ridge": {
-        "alpha": 100.0
+        "alpha": 10.0
       },
       "Pooled MLP": {
-        "train_log_RMSE": 2.409541896240647,
+        "train_log_RMSE": 2.1080745394241522,
         "training_target": "standardized ln(1+views) MSE",
-        "y_mean": 12.10316244902249,
-        "y_std": 2.7801371833024895,
-        "epochs": 16,
+        "y_mean": 12.16917401854093,
+        "y_std": 2.6923339820911227,
+        "epochs": 28,
         "weight_decay": 0.1
       },
       "Subgraph structural": {
-        "train_log_RMSE": 2.403067807833223,
+        "train_log_RMSE": 2.0875270817648524,
         "training_target": "standardized ln(1+views) MSE",
-        "y_mean": 12.10316244902249,
-        "y_std": 2.7801371833024895,
-        "epochs": 11,
+        "y_mean": 12.16917401854093,
+        "y_std": 2.6923339820911227,
+        "epochs": 24,
         "weight_decay": 0.1
       },
       "Subgraph + similarity": {
-        "train_log_RMSE": 2.432960733277151,
+        "train_log_RMSE": 2.358108539293411,
         "training_target": "standardized ln(1+views) MSE",
-        "y_mean": 12.10316244902249,
-        "y_std": 2.7801371833024895,
-        "epochs": 14,
-        "weight_decay": 0.1
+        "y_mean": 12.16917401854093,
+        "y_std": 2.6923339820911227,
+        "epochs": 6,
+        "weight_decay": 0.01
       },
       "Node structural": {
-        "train_log_RMSE": 2.3129114579062575,
+        "train_log_RMSE": 2.32120893786323,
         "training_target": "standardized ln(1+views) MSE",
-        "y_mean": 12.10316244902249,
-        "y_std": 2.7801371833024895,
-        "epochs": 10,
-        "weight_decay": 0.1
+        "y_mean": 12.16917401854093,
+        "y_std": 2.6923339820911227,
+        "epochs": 5,
+        "weight_decay": 0.01
       },
       "Node + similarity": {
-        "train_log_RMSE": 2.40293805761635,
+        "train_log_RMSE": 2.17023203911214,
         "training_target": "standardized ln(1+views) MSE",
-        "y_mean": 12.10316244902249,
-        "y_std": 2.7801371833024895,
-        "epochs": 8,
+        "y_mean": 12.16917401854093,
+        "y_std": 2.6923339820911227,
+        "epochs": 16,
+        "weight_decay": 0.1
+      },
+      "Node no-brand edges": {
+        "train_log_RMSE": 2.158027708448935,
+        "training_target": "standardized ln(1+views) MSE",
+        "y_mean": 12.16917401854093,
+        "y_std": 2.6923339820911227,
+        "epochs": 21,
         "weight_decay": 0.1
       }
     },
     "OOF_90_absolute_log_residual": {
-      "Metadata Ridge": 4.007560666094417,
-      "Pooled Ridge": 4.435739329944552,
-      "Pooled MLP": 4.082363622705218,
-      "Subgraph structural": 4.18871547512221,
-      "Subgraph + similarity": 3.940140264550921,
-      "Node structural": 4.2450762616324695,
-      "Node + similarity": 4.008309934989224
+      "Metadata Ridge": 3.79142373372137,
+      "Pooled Ridge": 3.870263681044003,
+      "Pooled MLP": 3.6970271731835602,
+      "Subgraph structural": 3.6533059741479157,
+      "Subgraph + similarity": 3.978806088940864,
+      "Node structural": 4.00854664195627,
+      "Node + similarity": 3.7786240668366116,
+      "Node no-brand edges": 3.922383263161338,
+      "Brand mean": 4.565045421406177
     },
     "uncertainty_note": "OOF residual sensitivity bands, not guaranteed/calibrated individual prediction intervals."
   },
@@ -189,8 +217,10 @@
     "train": 171,
     "test": 43,
     "target_test_count": 43,
-    "seed": 42,
+    "seed": 50,
     "selection_rule": "First seed >=42 yielding round(0.2*N) test videos with disjoint campaign groups. Selection uses group sizes only, never response labels.",
+    "manual_override_file": "data/processed/campaign_overrides.csv",
+    "audit_note": "Post-audit corrected split after inspecting prior test errors and bilingual campaign leakage; not a new untouched external holdout.",
     "train_fraction": 0.7990654205607477,
     "test_fraction": 0.20093457943925233
   },
@@ -198,41 +228,49 @@
     "test_campaign_groups": 40,
     "test_log_RMSE_95": {
       "Mean": [
-        1.9156141484336402,
-        2.6180527334662793
+        2.216663167520784,
+        3.0780142196453237
+      ],
+      "Brand mean": [
+        1.9418746360267232,
+        3.2567904663646106
       ],
       "Metadata Ridge": [
-        1.6764053211039616,
-        2.57130587445362
+        1.8774644717937865,
+        2.8449793393853477
       ],
       "Pooled Ridge": [
-        1.7780861465492346,
-        2.6406515480687536
+        1.8447062945754713,
+        2.8106939571309346
       ],
       "Pooled MLP": [
-        1.8189384524649521,
-        2.7509832698895504
+        1.7889292182142085,
+        2.848434584145443
       ],
       "Subgraph structural": [
-        1.8159059538135234,
-        2.704985578126483
+        1.7585286403004732,
+        2.9385512951408623
       ],
       "Subgraph + similarity": [
-        1.813632579065505,
-        2.6936456707315384
+        1.8560244142046345,
+        2.7022577981823077
       ],
       "Node structural": [
-        1.633756719199042,
-        2.556827270436975
+        1.8508426498151147,
+        2.84963678261469
       ],
       "Node + similarity": [
-        1.624347184102242,
-        2.6543516229023663
+        1.7976398721671147,
+        2.878281909123135
+      ],
+      "Node no-brand edges": [
+        1.885686464671342,
+        2.830613982173184
       ]
     },
     "paired_log_MAE_similarity_minus_structural_95": [
-      -0.038132736967286716,
-      0.062289581102978914
+      -0.10776879851768843,
+      0.3725400432388434
     ],
     "note": "Campaign-level percentile bootstrap, 2000 draws, conditional on this frozen snapshot and split; no split/model-selection uncertainty."
   },
@@ -245,21 +283,27 @@
     },
     "Pooled MLP": {
       "brands": 14,
-      "macro_log_MAE": 2.187865851791499,
-      "macro_log_RMSE": 2.61181050051284,
-      "macro_Spearman": 0.24106419895893577
+      "macro_log_MAE": 2.1879093432217087,
+      "macro_log_RMSE": 2.633993711683771,
+      "macro_Spearman": 0.23726142278773854
     },
     "Subgraph structural": {
       "brands": 14,
-      "macro_log_MAE": 2.1364182457648417,
-      "macro_log_RMSE": 2.58644599480192,
-      "macro_Spearman": 0.2590359828141783
+      "macro_log_MAE": 2.1344461520978735,
+      "macro_log_RMSE": 2.592910686939356,
+      "macro_Spearman": 0.2119577790630422
     },
     "Subgraph + similarity": {
       "brands": 14,
-      "macro_log_MAE": 2.1877678359124912,
-      "macro_log_RMSE": 2.63308532727446,
-      "macro_Spearman": 0.23770139634801282
+      "macro_log_MAE": 2.1362455184418367,
+      "macro_log_RMSE": 2.588976405601143,
+      "macro_Spearman": 0.17436999091134428
+    },
+    "Brand mean": {
+      "brands": 14,
+      "macro_log_MAE": 2.261479127320038,
+      "macro_log_RMSE": 2.6718016071371706,
+      "macro_Spearman": null
     }
   },
   "videos": [
@@ -291,7 +335,9 @@
       "subscriber_count_display": "61.6K subscribers",
       "captured_at": "2026-11-09T12:01:03.535557+00:00",
       "split": "train",
-      "product_campaign": "Seamless Cross Boundary Travel on East Rail Line"
+      "product_campaign": "Seamless Cross Boundary Travel on East Rail Line",
+      "group": "0",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Hang Seng Bank",
@@ -321,7 +367,9 @@
       "subscriber_count_display": "33K subscribers",
       "captured_at": "2026-11-09T12:01:03.535732+00:00",
       "split": "train",
-      "product_campaign": "全新 JustPay"
+      "product_campaign": "全新 JustPay",
+      "group": "1",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "HSBC",
@@ -350,8 +398,10 @@
       "channel_name": "HSBC Hong Kong",
       "subscriber_count_display": "45.2K subscribers",
       "captured_at": "2026-11-09T12:01:03.536739+00:00",
-      "split": "train",
-      "product_campaign": "Opening up a world of opportunity"
+      "split": "test",
+      "product_campaign": "Opening up a world of opportunity",
+      "group": "2",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "MTR",
@@ -380,8 +430,10 @@
       "channel_name": "MTR Hong Kong",
       "subscriber_count_display": "61.6K subscribers",
       "captured_at": "2026-11-09T12:01:04.484323+00:00",
-      "split": "train",
-      "product_campaign": "Travel QR Code (出行碼)"
+      "split": "test",
+      "product_campaign": "Travel QR Code (出行碼)",
+      "group": "3",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Maxim's",
@@ -410,8 +462,10 @@
       "channel_name": "美心食品 Maxim’s Products",
       "subscriber_count_display": "1.92K subscribers",
       "captured_at": "2026-11-09T12:01:04.530189+00:00",
-      "split": "train",
-      "product_campaign": "美心瑤柱蘿蔔糕 (Maxim's Scallop Radish Cake)"
+      "split": "test",
+      "product_campaign": "美心瑤柱蘿蔔糕 (Maxim's Scallop Radish Cake)",
+      "group": "4",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Hang Seng Bank",
@@ -441,7 +495,9 @@
       "subscriber_count_display": "33K subscribers",
       "captured_at": "2026-11-09T12:01:04.576371+00:00",
       "split": "train",
-      "product_campaign": "+FUN Dollars"
+      "product_campaign": "+FUN Dollars",
+      "group": "5",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "McDonald's",
@@ -470,8 +526,10 @@
       "channel_name": "McDonaldsHK",
       "subscriber_count_display": "65.8K subscribers",
       "captured_at": "2026-11-09T12:01:05.600751+00:00",
-      "split": "train",
-      "product_campaign": "全新王者將軍漢堡"
+      "split": "test",
+      "product_campaign": "全新王者將軍漢堡",
+      "group": "6",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Maxim's",
@@ -500,8 +558,10 @@
       "channel_name": "美心食品 Maxim’s Products",
       "subscriber_count_display": "1.92K subscribers",
       "captured_at": "2026-11-09T12:01:05.644012+00:00",
-      "split": "train",
-      "product_campaign": "Lunar New Year Festive Foods"
+      "split": "test",
+      "product_campaign": "Lunar New Year Festive Foods",
+      "group": "7",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Café de Coral",
@@ -531,7 +591,9 @@
       "subscriber_count_display": "10.2K subscribers",
       "captured_at": "2026-11-09T12:01:06.320483+00:00",
       "split": "train",
-      "product_campaign": "全新Club 100 易.0"
+      "product_campaign": "全新Club 100 易.0",
+      "group": "8",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Maxim's",
@@ -561,7 +623,9 @@
       "subscriber_count_display": "1.92K subscribers",
       "captured_at": "2026-11-09T12:01:06.367168+00:00",
       "split": "test",
-      "product_campaign": "Hong Kong MX Mooncakes 2024 Campaign"
+      "product_campaign": "Hong Kong MX Mooncakes 2024 Campaign",
+      "group": "9",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Lee Kum Kee",
@@ -591,7 +655,9 @@
       "subscriber_count_display": "25.5K subscribers",
       "captured_at": "2026-11-09T12:01:06.739284+00:00",
       "split": "train",
-      "product_campaign": "湯/拌麵系列 (Soup/Dressed Noodle Series)"
+      "product_campaign": "湯/拌麵系列 (Soup/Dressed Noodle Series)",
+      "group": "10",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Mannings",
@@ -620,8 +686,10 @@
       "channel_name": "萬寧Mannings",
       "subscriber_count_display": "18.1K subscribers",
       "captured_at": "2026-11-09T12:01:07.278218+00:00",
-      "split": "train",
-      "product_campaign": "揀啱每健事 SAY YES TO BETTER"
+      "split": "test",
+      "product_campaign": "揀啱每健事 SAY YES TO BETTER",
+      "group": "11",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Kee Wah Bakery",
@@ -651,7 +719,9 @@
       "subscriber_count_display": "2.19K subscribers",
       "captured_at": "2026-11-09T12:01:07.298826+00:00",
       "split": "train",
-      "product_campaign": "80th Anniversary Campaign: 以禮傳情 (Conveying Affection with Gifts)"
+      "product_campaign": "80th Anniversary Campaign: 以禮傳情 (Conveying Affection with Gifts)",
+      "group": "12",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Chow Tai Fook",
@@ -681,7 +751,9 @@
       "subscriber_count_display": "3.12K subscribers",
       "captured_at": "2026-11-09T12:01:07.753467+00:00",
       "split": "train",
-      "product_campaign": "Celebrate Love"
+      "product_campaign": "Celebrate Love",
+      "group": "13",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Chow Tai Fook",
@@ -711,7 +783,9 @@
       "subscriber_count_display": "3.12K subscribers",
       "captured_at": "2026-11-09T12:01:08.284441+00:00",
       "split": "train",
-      "product_campaign": "Wedding Collection / In Love with Love"
+      "product_campaign": "Wedding Collection / In Love with Love",
+      "group": "14",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Kee Wah Bakery",
@@ -740,8 +814,10 @@
       "channel_name": "Kee Wah Bakery 奇華餅家",
       "subscriber_count_display": "2.19K subscribers",
       "captured_at": "2026-11-09T12:01:08.873896+00:00",
-      "split": "test",
-      "product_campaign": "香脆花生糖"
+      "split": "train",
+      "product_campaign": "香脆花生糖",
+      "group": "15",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Prudential",
@@ -771,7 +847,9 @@
       "subscriber_count_display": "8.7K subscribers",
       "captured_at": "2026-11-09T12:01:09.424744+00:00",
       "split": "test",
-      "product_campaign": "保誠多重危疾保"
+      "product_campaign": "保誠多重危疾保",
+      "group": "16",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Café de Coral",
@@ -801,7 +879,9 @@
       "subscriber_count_display": "10.2K subscribers",
       "captured_at": "2026-11-09T12:01:09.586319+00:00",
       "split": "train",
-      "product_campaign": "北海道特選3.6牛乳炒滑蛋"
+      "product_campaign": "北海道特選3.6牛乳炒滑蛋",
+      "group": "17",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Café de Coral",
@@ -830,8 +910,10 @@
       "channel_name": "大家樂 CafedeCoralHK",
       "subscriber_count_display": "10.2K subscribers",
       "captured_at": "2026-11-09T12:01:09.626805+00:00",
-      "split": "test",
-      "product_campaign": "一哥奶茶"
+      "split": "train",
+      "product_campaign": "一哥奶茶",
+      "group": "18",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "IKEA",
@@ -860,8 +942,10 @@
       "channel_name": "IKEAHongKong",
       "subscriber_count_display": "13.7K subscribers",
       "captured_at": "2026-11-09T12:01:10.472247+00:00",
-      "split": "train",
-      "product_campaign": "IKEA Cityplaza Store (Tai Koo)"
+      "split": "test",
+      "product_campaign": "IKEA Cityplaza Store (Tai Koo)",
+      "group": "19",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Kee Wah Bakery",
@@ -891,7 +975,9 @@
       "subscriber_count_display": "2.19K subscribers",
       "captured_at": "2026-11-09T12:01:10.514867+00:00",
       "split": "train",
-      "product_campaign": "Kee Wah Mooncakes"
+      "product_campaign": "Kee Wah Mooncakes",
+      "group": "20",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "McDonald's",
@@ -921,7 +1007,9 @@
       "subscriber_count_display": "65.8K subscribers",
       "captured_at": "2026-11-09T12:01:10.556984+00:00",
       "split": "train",
-      "product_campaign": "Taste of Southeast Asia"
+      "product_campaign": "Taste of Southeast Asia",
+      "group": "21",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "McDonald's",
@@ -951,7 +1039,9 @@
       "subscriber_count_display": "20.2K subscribers",
       "captured_at": "2026-11-09T12:01:11.442069+00:00",
       "split": "train",
-      "product_campaign": "Taste of Southeast Asia / 辣椒蟹醬 煎蛋雞腿飽 / 南洋叻沙風味醬"
+      "product_campaign": "Taste of Southeast Asia / 辣椒蟹醬 煎蛋雞腿飽 / 南洋叻沙風味醬",
+      "group": "22",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Chow Tai Fook",
@@ -981,7 +1071,9 @@
       "subscriber_count_display": "3.12K subscribers",
       "captured_at": "2026-11-09T12:01:11.693159+00:00",
       "split": "train",
-      "product_campaign": "JOIE Collection"
+      "product_campaign": "JOIE Collection",
+      "group": "23",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Prudential",
@@ -1011,7 +1103,9 @@
       "subscriber_count_display": "8.7K subscribers",
       "captured_at": "2026-11-09T12:01:11.812306+00:00",
       "split": "train",
-      "product_campaign": "Brand message on the power of listening"
+      "product_campaign": "Brand message on the power of listening",
+      "group": "24",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "McDonald's",
@@ -1040,8 +1134,10 @@
       "channel_name": "McDonaldsHK",
       "subscriber_count_display": "65.8K subscribers",
       "captured_at": "2026-11-09T12:01:12.336763+00:00",
-      "split": "train",
-      "product_campaign": "Ronald McDonald House Charities (RMHC) 30th Anniversary Campaign"
+      "split": "test",
+      "product_campaign": "Ronald McDonald House Charities (RMHC) 30th Anniversary Campaign",
+      "group": "25",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Café de Coral",
@@ -1071,7 +1167,9 @@
       "subscriber_count_display": "10.2K subscribers",
       "captured_at": "2026-11-09T12:01:12.720956+00:00",
       "split": "train",
-      "product_campaign": "「咋咋淋」鐵板餐 (Sizzling Plate)"
+      "product_campaign": "「咋咋淋」鐵板餐 (Sizzling Plate)",
+      "group": "27",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Maxim's",
@@ -1100,8 +1198,10 @@
       "channel_name": "美心食品 Maxim’s Products",
       "subscriber_count_display": "1.92K subscribers",
       "captured_at": "2026-11-09T12:01:13.541209+00:00",
-      "split": "train",
-      "product_campaign": "中秋味道 · 美心"
+      "split": "test",
+      "product_campaign": "中秋味道 · 美心",
+      "group": "28",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Maxim's",
@@ -1131,7 +1231,9 @@
       "subscriber_count_display": "1.92K subscribers",
       "captured_at": "2026-11-09T12:01:13.741811+00:00",
       "split": "train",
-      "product_campaign": "美心冰皮月餅 (Maxim's Snowy Mooncake)"
+      "product_campaign": "美心冰皮月餅 (Maxim's Snowy Mooncake)",
+      "group": "29",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Mannings",
@@ -1161,7 +1263,9 @@
       "subscriber_count_display": "18.1K subscribers",
       "captured_at": "2026-11-09T12:01:13.890754+00:00",
       "split": "train",
-      "product_campaign": "2026 New Year Campaign"
+      "product_campaign": "2026 New Year Campaign",
+      "group": "30",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Mannings",
@@ -1190,8 +1294,10 @@
       "channel_name": "萬寧Mannings",
       "subscriber_count_display": "18.1K subscribers",
       "captured_at": "2026-11-09T12:01:14.673680+00:00",
-      "split": "test",
-      "product_campaign": "Mannings Beauty Services"
+      "split": "train",
+      "product_campaign": "Mannings Beauty Services",
+      "group": "31",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Café de Coral",
@@ -1221,7 +1327,9 @@
       "subscriber_count_display": "10.2K subscribers",
       "captured_at": "2026-11-09T12:01:14.721224+00:00",
       "split": "train",
-      "product_campaign": "天天超值午餐 (Daily Super Value Lunch)"
+      "product_campaign": "天天超值午餐 (Daily Super Value Lunch)",
+      "group": "32",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Chow Tai Fook",
@@ -1251,7 +1359,9 @@
       "subscriber_count_display": "3.12K subscribers",
       "captured_at": "2026-11-09T12:01:14.786351+00:00",
       "split": "train",
-      "product_campaign": "周大福天然鑽石 BEYOND TIME"
+      "product_campaign": "周大福天然鑽石 BEYOND TIME",
+      "group": "33",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "IKEA",
@@ -1281,7 +1391,9 @@
       "subscriber_count_display": "13.7K subscribers",
       "captured_at": "2026-11-09T12:01:15.631585+00:00",
       "split": "train",
-      "product_campaign": "2020 新品上市"
+      "product_campaign": "2020 新品上市",
+      "group": "34",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Lee Kum Kee",
@@ -1311,7 +1423,9 @@
       "subscriber_count_display": "25.5K subscribers",
       "captured_at": "2026-11-09T12:01:15.738910+00:00",
       "split": "train",
-      "product_campaign": "熱辣辣系列 (Hot and Spicy Series)"
+      "product_campaign": "熱辣辣系列 (Hot and Spicy Series)",
+      "group": "35",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Hang Seng Bank",
@@ -1341,7 +1455,9 @@
       "subscriber_count_display": "33K subscribers",
       "captured_at": "2026-11-09T12:01:15.856659+00:00",
       "split": "train",
-      "product_campaign": "MMPOWER World Mastercard"
+      "product_campaign": "MMPOWER World Mastercard",
+      "group": "36",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "McDonald's",
@@ -1371,7 +1487,9 @@
       "subscriber_count_display": "65.8K subscribers",
       "captured_at": "2026-11-09T12:01:16.519290+00:00",
       "split": "train",
-      "product_campaign": "FIFA World Cup 2026 - 18pc Chicken McNuggets and Cilantro Sauce Campaign"
+      "product_campaign": "FIFA World Cup 2026 - 18pc Chicken McNuggets and Cilantro Sauce Campaign",
+      "group": "37",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Cathay",
@@ -1401,7 +1519,9 @@
       "subscriber_count_display": "161K subscribers",
       "captured_at": "2026-11-09T12:01:16.814095+00:00",
       "split": "train",
-      "product_campaign": "Cathay Fresh"
+      "product_campaign": "Cathay Fresh",
+      "group": "38",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Kee Wah Bakery",
@@ -1430,8 +1550,10 @@
       "channel_name": "Kee Wah Bakery 奇華餅家",
       "subscriber_count_display": "2.19K subscribers",
       "captured_at": "2026-11-09T12:01:16.966612+00:00",
-      "split": "train",
-      "product_campaign": "「至真祝福‧送至親」中秋推廣活動"
+      "split": "test",
+      "product_campaign": "「至真祝福‧送至親」中秋推廣活動",
+      "group": "39",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "HSBC",
@@ -1461,7 +1583,9 @@
       "subscriber_count_display": "45.2K subscribers",
       "captured_at": "2026-11-09T12:01:17.495865+00:00",
       "split": "train",
-      "product_campaign": "HSBC Life Retirement Solutions"
+      "product_campaign": "HSBC Life Retirement Solutions",
+      "group": "40",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Hang Seng Bank",
@@ -1491,7 +1615,9 @@
       "subscriber_count_display": "33K subscribers",
       "captured_at": "2026-11-09T12:01:17.797919+00:00",
       "split": "train",
-      "product_campaign": "Preferred 優進理財"
+      "product_campaign": "Preferred 優進理財",
+      "group": "41",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "HSBC",
@@ -1521,7 +1647,9 @@
       "subscriber_count_display": "45.2K subscribers",
       "captured_at": "2026-11-09T12:01:17.984766+00:00",
       "split": "train",
-      "product_campaign": "HSBC Premier Elite"
+      "product_campaign": "HSBC Premier Elite",
+      "group": "42",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Café de Coral",
@@ -1551,7 +1679,9 @@
       "subscriber_count_display": "10.2K subscribers",
       "captured_at": "2026-11-09T12:01:18.661062+00:00",
       "split": "train",
-      "product_campaign": "招牌焗 和風照燒汁鰻魚雞扒焗飯"
+      "product_campaign": "招牌焗 和風照燒汁鰻魚雞扒焗飯",
+      "group": "43",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "McDonald's",
@@ -1581,7 +1711,9 @@
       "subscriber_count_display": "65.8K subscribers",
       "captured_at": "2026-11-09T12:01:18.795483+00:00",
       "split": "train",
-      "product_campaign": "Spicy Crispy Thighs (辣辣麥炸雞)"
+      "product_campaign": "Spicy Crispy Thighs (辣辣麥炸雞)",
+      "group": "44",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Cathay",
@@ -1610,8 +1742,10 @@
       "channel_name": "cathaypacific",
       "subscriber_count_display": "161K subscribers",
       "captured_at": "2026-11-09T12:01:18.975123+00:00",
-      "split": "train",
-      "product_campaign": "Cathay Secure"
+      "split": "test",
+      "product_campaign": "Cathay Secure",
+      "group": "45",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Lee Kum Kee",
@@ -1640,8 +1774,10 @@
       "channel_name": "leekumkeekitchen",
       "subscriber_count_display": "25.5K subscribers",
       "captured_at": "2026-11-09T12:01:19.569666+00:00",
-      "split": "test",
-      "product_campaign": "李錦記特級蠔油 (Lee Kum Kee Premium Oyster Sauce)"
+      "split": "train",
+      "product_campaign": "李錦記特級蠔油 (Lee Kum Kee Premium Oyster Sauce)",
+      "group": "46",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "McDonald's",
@@ -1671,7 +1807,9 @@
       "subscriber_count_display": "20.2K subscribers",
       "captured_at": "2026-11-09T12:01:19.614834+00:00",
       "split": "train",
-      "product_campaign": "Extra Value Meal (超值套餐)"
+      "product_campaign": "Extra Value Meal (超值套餐)",
+      "group": "47",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Maxim's",
@@ -1701,7 +1839,9 @@
       "subscriber_count_display": "1.92K subscribers",
       "captured_at": "2026-11-09T12:01:19.824644+00:00",
       "split": "train",
-      "product_campaign": "鮮蛋卷 (Fresh Egg Rolls) and 甜心酥 (Hearty Pastry)"
+      "product_campaign": "鮮蛋卷 (Fresh Egg Rolls) and 甜心酥 (Hearty Pastry)",
+      "group": "48",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Mannings",
@@ -1731,7 +1871,9 @@
       "subscriber_count_display": "18.1K subscribers",
       "captured_at": "2026-11-09T12:01:20.560189+00:00",
       "split": "train",
-      "product_campaign": "Mannings Everyday Wellness Campaign"
+      "product_campaign": "Mannings Everyday Wellness Campaign",
+      "group": "49",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Café de Coral",
@@ -1761,7 +1903,9 @@
       "subscriber_count_display": "10.2K subscribers",
       "captured_at": "2026-11-09T12:01:20.605882+00:00",
       "split": "train",
-      "product_campaign": "打堅爐 (Daa Gin Lou) Hot Pot"
+      "product_campaign": "打堅爐 (Daa Gin Lou) Hot Pot",
+      "group": "50",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "IKEA",
@@ -1790,8 +1934,10 @@
       "channel_name": "IKEAHongKong",
       "subscriber_count_display": "13.7K subscribers",
       "captured_at": "2026-11-09T12:01:20.701433+00:00",
-      "split": "train",
-      "product_campaign": "IKEA Mattresses & Multi-product Quality Guarantee"
+      "split": "test",
+      "product_campaign": "IKEA Mattresses & Multi-product Quality Guarantee",
+      "group": "51",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "MTR",
@@ -1820,8 +1966,10 @@
       "channel_name": "MTR Hong Kong",
       "subscriber_count_display": "61.6K subscribers",
       "captured_at": "2026-11-09T12:01:21.546957+00:00",
-      "split": "train",
-      "product_campaign": "e-City Saver (電子都會票)"
+      "split": "test",
+      "product_campaign": "e-City Saver (電子都會票)",
+      "group": "52",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Garden",
@@ -1850,8 +1998,10 @@
       "channel_name": "嘉頓 Garden",
       "subscriber_count_display": "1.36K subscribers",
       "captured_at": "2026-11-09T12:01:21.851656+00:00",
-      "split": "train",
-      "product_campaign": "Garden Cream Bun"
+      "split": "test",
+      "product_campaign": "Garden Cream Bun",
+      "group": "53",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Kee Wah Bakery",
@@ -1880,8 +2030,10 @@
       "channel_name": "Kee Wah Bakery 奇華餅家",
       "subscriber_count_display": "2.19K subscribers",
       "captured_at": "2026-11-09T12:01:21.896222+00:00",
-      "split": "train",
-      "product_campaign": "金黃鬆脆酥角"
+      "split": "test",
+      "product_campaign": "金黃鬆脆酥角",
+      "group": "54",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Cathay",
@@ -1911,7 +2063,9 @@
       "subscriber_count_display": "161K subscribers",
       "captured_at": "2026-11-09T12:01:22.440503+00:00",
       "split": "train",
-      "product_campaign": "Cathay Fresh"
+      "product_campaign": "Cathay Fresh",
+      "group": "38",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Hang Seng Bank",
@@ -1941,7 +2095,9 @@
       "subscriber_count_display": "33K subscribers",
       "captured_at": "2026-11-09T12:01:22.886716+00:00",
       "split": "train",
-      "product_campaign": "JustPay"
+      "product_campaign": "JustPay",
+      "group": "56",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "McDonald's",
@@ -1970,8 +2126,10 @@
       "channel_name": "McDonaldsHK",
       "subscriber_count_display": "65.8K subscribers",
       "captured_at": "2026-11-09T12:01:22.929529+00:00",
-      "split": "test",
-      "product_campaign": "玉子將軍漢堡, 將軍漢堡"
+      "split": "train",
+      "product_campaign": "玉子將軍漢堡, 將軍漢堡",
+      "group": "57",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Hang Seng Bank",
@@ -2001,7 +2159,9 @@
       "subscriber_count_display": "33K subscribers",
       "captured_at": "2026-11-09T12:01:23.219750+00:00",
       "split": "train",
-      "product_campaign": "Preferred 優進理財 PayDay+"
+      "product_campaign": "Preferred 優進理財 PayDay+",
+      "group": "58",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Cathay",
@@ -2031,7 +2191,9 @@
       "subscriber_count_display": "161K subscribers",
       "captured_at": "2026-11-09T12:01:23.821282+00:00",
       "split": "train",
-      "product_campaign": "Aria Studio - All-New Regional Business Class"
+      "product_campaign": "Aria Studio - All-New Regional Business Class",
+      "group": "59",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "HSBC",
@@ -2061,7 +2223,9 @@
       "subscriber_count_display": "45.2K subscribers",
       "captured_at": "2026-11-09T12:01:23.899932+00:00",
       "split": "train",
-      "product_campaign": "滙圖多元貨幣保險計劃 II"
+      "product_campaign": "滙圖多元貨幣保險計劃 II",
+      "group": "60",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Chow Tai Fook",
@@ -2091,7 +2255,9 @@
       "subscriber_count_display": "3.12K subscribers",
       "captured_at": "2026-11-09T12:01:24.264631+00:00",
       "split": "train",
-      "product_campaign": "Chinese New Year 'Blessings' Campaign"
+      "product_campaign": "Chinese New Year 'Blessings' Campaign",
+      "group": "61",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Garden",
@@ -2120,8 +2286,10 @@
       "channel_name": "嘉頓 Garden",
       "subscriber_count_display": "1.36K subscribers",
       "captured_at": "2026-11-09T12:01:24.768284+00:00",
-      "split": "test",
-      "product_campaign": "Garden New Year Assorted Biscuits & Gift Boxes Campaign"
+      "split": "train",
+      "product_campaign": "Garden New Year Assorted Biscuits & Gift Boxes Campaign",
+      "group": "62",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Cathay",
@@ -2150,8 +2318,10 @@
       "channel_name": "cathaypacific",
       "subscriber_count_display": "161K subscribers",
       "captured_at": "2026-11-09T12:01:24.770287+00:00",
-      "split": "train",
-      "product_campaign": "Cathay Members' Choice Awards 2025"
+      "split": "test",
+      "product_campaign": "Cathay Members' Choice Awards 2025",
+      "group": "63",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Kee Wah Bakery",
@@ -2180,8 +2350,10 @@
       "channel_name": "Kee Wah Bakery 奇華餅家",
       "subscriber_count_display": "2.19K subscribers",
       "captured_at": "2026-11-09T12:01:25.287336+00:00",
-      "split": "train",
-      "product_campaign": "奇華嫁喜禮餅 (Kee Wah Wedding Cakes)"
+      "split": "test",
+      "product_campaign": "奇華嫁喜禮餅 (Kee Wah Wedding Cakes)",
+      "group": "64",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Hang Seng Bank",
@@ -2211,7 +2383,9 @@
       "subscriber_count_display": "33K subscribers",
       "captured_at": "2026-11-09T12:01:25.812347+00:00",
       "split": "train",
-      "product_campaign": "Hang Seng Credit Card"
+      "product_campaign": "Hang Seng Credit Card",
+      "group": "65",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "HSBC",
@@ -2241,7 +2415,9 @@
       "subscriber_count_display": "45.2K subscribers",
       "captured_at": "2026-11-09T12:01:25.814270+00:00",
       "split": "train",
-      "product_campaign": "HSBC HK App Push Notifications"
+      "product_campaign": "HSBC HK App Push Notifications",
+      "group": "66",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Cathay",
@@ -2270,8 +2446,10 @@
       "channel_name": "cathaypacific",
       "subscriber_count_display": "161K subscribers",
       "captured_at": "2026-11-09T12:01:26.279599+00:00",
-      "split": "train",
-      "product_campaign": "Cathay Members' Choice Awards 2025"
+      "split": "test",
+      "product_campaign": "Cathay Members' Choice Awards 2025",
+      "group": "63",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Cathay",
@@ -2301,7 +2479,9 @@
       "subscriber_count_display": "161K subscribers",
       "captured_at": "2026-11-09T12:01:26.825280+00:00",
       "split": "test",
-      "product_campaign": "Riyadh and Beyond Saudi Adventures"
+      "product_campaign": "Riyadh and Beyond Saudi Adventures",
+      "group": "68",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Hang Seng Bank",
@@ -2331,7 +2511,9 @@
       "subscriber_count_display": "33K subscribers",
       "captured_at": "2026-11-09T12:01:26.886760+00:00",
       "split": "test",
-      "product_campaign": "Hang Seng Invest Express"
+      "product_campaign": "Hang Seng Invest Express",
+      "group": "69",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "McDonald's",
@@ -2361,7 +2543,9 @@
       "subscriber_count_display": "65.8K subscribers",
       "captured_at": "2026-11-09T12:01:27.146587+00:00",
       "split": "test",
-      "product_campaign": "18-Piece Chicken McNuggets and WOW Wasabi Sauce"
+      "product_campaign": "18-Piece Chicken McNuggets and WOW Wasabi Sauce",
+      "group": "70",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Mannings",
@@ -2390,8 +2574,10 @@
       "channel_name": "萬寧Mannings",
       "subscriber_count_display": "18.1K subscribers",
       "captured_at": "2026-11-09T12:01:27.479623+00:00",
-      "split": "test",
-      "product_campaign": "Mannings Own Brand"
+      "split": "train",
+      "product_campaign": "Mannings Own Brand",
+      "group": "71",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Lee Kum Kee",
@@ -2421,7 +2607,9 @@
       "subscriber_count_display": "25.5K subscribers",
       "captured_at": "2026-11-09T12:01:28.081173+00:00",
       "split": "test",
-      "product_campaign": "減鹽蠔油 (Salt Reduced Oyster Sauce)"
+      "product_campaign": "減鹽蠔油 (Salt Reduced Oyster Sauce)",
+      "group": "72",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "McDonald's",
@@ -2451,7 +2639,9 @@
       "subscriber_count_display": "65.8K subscribers",
       "captured_at": "2026-11-09T12:01:28.108017+00:00",
       "split": "train",
-      "product_campaign": "Happy Meal - Squishmallows / FIFA World Cup 2026™"
+      "product_campaign": "Happy Meal - Squishmallows / FIFA World Cup 2026™",
+      "group": "73",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Garden",
@@ -2480,8 +2670,10 @@
       "channel_name": "嘉頓 Garden",
       "subscriber_count_display": "1.36K subscribers",
       "captured_at": "2026-11-09T12:01:28.617491+00:00",
-      "split": "train",
-      "product_campaign": "Garden Bread and Bakery Campaign"
+      "split": "test",
+      "product_campaign": "Garden Bread and Bakery Campaign",
+      "group": "74",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Cathay",
@@ -2511,7 +2703,9 @@
       "subscriber_count_display": "161K subscribers",
       "captured_at": "2026-11-09T12:01:29.025464+00:00",
       "split": "train",
-      "product_campaign": "Cathay Fresh"
+      "product_campaign": "Cathay Fresh",
+      "group": "38",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Lee Kum Kee",
@@ -2541,7 +2735,9 @@
       "subscriber_count_display": "25.5K subscribers",
       "captured_at": "2026-11-09T12:01:29.072697+00:00",
       "split": "train",
-      "product_campaign": "快趣煮 (App)"
+      "product_campaign": "快趣煮 (App)",
+      "group": "76",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Café de Coral",
@@ -2570,8 +2766,10 @@
       "channel_name": "大家樂 CafedeCoralHK",
       "subscriber_count_display": "10.2K subscribers",
       "captured_at": "2026-11-09T12:01:29.546491+00:00",
-      "split": "train",
-      "product_campaign": "大家樂團圓 盆滿豐足"
+      "split": "test",
+      "product_campaign": "大家樂團圓 盆滿豐足",
+      "group": "77",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Chow Tai Fook",
@@ -2600,8 +2798,10 @@
       "channel_name": "Chow Tai Fook Jewellery 周大福珠寶",
       "subscriber_count_display": "3.12K subscribers",
       "captured_at": "2026-11-09T12:01:29.901585+00:00",
-      "split": "train",
-      "product_campaign": "Jewelry"
+      "split": "test",
+      "product_campaign": "Jewelry",
+      "group": "78",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "HSBC",
@@ -2630,8 +2830,10 @@
       "channel_name": "HSBC Hong Kong",
       "subscriber_count_display": "45.2K subscribers",
       "captured_at": "2026-11-09T12:01:30.016387+00:00",
-      "split": "test",
-      "product_campaign": "HSBC HK App"
+      "split": "train",
+      "product_campaign": "HSBC HK App",
+      "group": "79",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Mannings",
@@ -2660,8 +2862,10 @@
       "channel_name": "萬寧Mannings",
       "subscriber_count_display": "18.1K subscribers",
       "captured_at": "2026-11-09T12:01:30.540939+00:00",
-      "split": "test",
-      "product_campaign": "「萬」遊世界 搜羅最好"
+      "split": "train",
+      "product_campaign": "「萬」遊世界 搜羅最好",
+      "group": "80",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "MTR",
@@ -2691,7 +2895,9 @@
       "subscriber_count_display": "61.6K subscribers",
       "captured_at": "2026-11-09T12:01:30.767690+00:00",
       "split": "train",
-      "product_campaign": "New Door Numbering Stickers on East Rail Line"
+      "product_campaign": "New Door Numbering Stickers on East Rail Line",
+      "group": "81",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Café de Coral",
@@ -2720,8 +2926,10 @@
       "channel_name": "大家樂 CafedeCoralHK",
       "subscriber_count_display": "10.2K subscribers",
       "captured_at": "2026-11-09T12:01:31.117512+00:00",
-      "split": "test",
-      "product_campaign": "招牌焗豬扒飯"
+      "split": "train",
+      "product_campaign": "招牌焗豬扒飯",
+      "group": "82",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Café de Coral",
@@ -2751,7 +2959,9 @@
       "subscriber_count_display": "10.2K subscribers",
       "captured_at": "2026-11-09T12:01:31.827417+00:00",
       "split": "train",
-      "product_campaign": "全新燕麥奶炒滑蛋"
+      "product_campaign": "全新燕麥奶炒滑蛋",
+      "group": "84",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "IKEA",
@@ -2781,7 +2991,9 @@
       "subscriber_count_display": "13.7K subscribers",
       "captured_at": "2026-11-09T12:01:32.158159+00:00",
       "split": "train",
-      "product_campaign": "IKEA sofas and armchairs"
+      "product_campaign": "IKEA sofas and armchairs",
+      "group": "85",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Kee Wah Bakery",
@@ -2811,7 +3023,9 @@
       "subscriber_count_display": "2.19K subscribers",
       "captured_at": "2026-11-09T12:01:32.462700+00:00",
       "split": "train",
-      "product_campaign": "「最Like奇華·聚愛心」慈善活動"
+      "product_campaign": "「最Like奇華·聚愛心」慈善活動",
+      "group": "86",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "McDonald's",
@@ -2840,8 +3054,10 @@
       "channel_name": "TPB HK CM 香港電視廣告庫 (香港電視廣告庫)",
       "subscriber_count_display": "20.2K subscribers",
       "captured_at": "2026-11-09T12:01:32.919061+00:00",
-      "split": "test",
-      "product_campaign": "Chinese New Year Redemption Offer"
+      "split": "train",
+      "product_campaign": "Chinese New Year Redemption Offer",
+      "group": "87",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Café de Coral",
@@ -2871,7 +3087,9 @@
       "subscriber_count_display": "10.2K subscribers",
       "captured_at": "2026-11-09T12:01:33.312455+00:00",
       "split": "train",
-      "product_campaign": "一哥酸辣焗番茄雞扒飯"
+      "product_campaign": "一哥酸辣焗番茄雞扒飯",
+      "group": "88",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Café de Coral",
@@ -2901,7 +3119,9 @@
       "subscriber_count_display": "10.2K subscribers",
       "captured_at": "2026-11-09T12:01:33.536866+00:00",
       "split": "train",
-      "product_campaign": "超值家餸孖寶優惠"
+      "product_campaign": "超值家餸孖寶優惠",
+      "group": "89",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "IKEA",
@@ -2930,8 +3150,10 @@
       "channel_name": "IKEAHongKong",
       "subscriber_count_display": "13.7K subscribers",
       "captured_at": "2026-11-09T12:01:34.066854+00:00",
-      "split": "test",
-      "product_campaign": "BRUKSVARA Bedding Set"
+      "split": "train",
+      "product_campaign": "BRUKSVARA Bedding Set",
+      "group": "90",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Hang Seng Bank",
@@ -2960,8 +3182,10 @@
       "channel_name": "恒生銀行 Hang Seng Bank",
       "subscriber_count_display": "33K subscribers",
       "captured_at": "2026-11-09T12:01:34.312056+00:00",
-      "split": "test",
-      "product_campaign": "Prestige 優越理財"
+      "split": "train",
+      "product_campaign": "Prestige 優越理財",
+      "group": "91",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Chow Tai Fook",
@@ -2991,7 +3215,9 @@
       "subscriber_count_display": "3.12K subscribers",
       "captured_at": "2026-11-09T12:01:34.468946+00:00",
       "split": "train",
-      "product_campaign": "HUÁ Collection"
+      "product_campaign": "HUÁ Collection",
+      "group": "92",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Prudential",
@@ -3021,7 +3247,9 @@
       "subscriber_count_display": "8.7K subscribers",
       "captured_at": "2026-11-09T12:01:34.927340+00:00",
       "split": "train",
-      "product_campaign": "HONG KONG TENNIS OPEN 保誠香港網球公開賽"
+      "product_campaign": "HONG KONG TENNIS OPEN 保誠香港網球公開賽",
+      "group": "93",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "McDonald's",
@@ -3051,7 +3279,9 @@
       "subscriber_count_display": "20.2K subscribers",
       "captured_at": "2026-11-09T12:01:35.255629+00:00",
       "split": "train",
-      "product_campaign": "Big N' Tasty Burger Collection & McDonald's App 1st Anniversary"
+      "product_campaign": "Big N' Tasty Burger Collection & McDonald's App 1st Anniversary",
+      "group": "94",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "IKEA",
@@ -3080,8 +3310,10 @@
       "channel_name": "IKEAHongKong",
       "subscriber_count_display": "13.7K subscribers",
       "captured_at": "2026-11-09T12:01:35.594357+00:00",
-      "split": "test",
-      "product_campaign": "2021 IKEA Catalogue"
+      "split": "train",
+      "product_campaign": "2021 IKEA Catalogue",
+      "group": "95",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Garden",
@@ -3111,7 +3343,9 @@
       "subscriber_count_display": "1.36K subscribers",
       "captured_at": "2026-11-09T12:01:35.892796+00:00",
       "split": "train",
-      "product_campaign": "Garden Mini Swiss Roll"
+      "product_campaign": "Garden Mini Swiss Roll",
+      "group": "96",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Garden",
@@ -3141,7 +3375,9 @@
       "subscriber_count_display": "1.36K subscribers",
       "captured_at": "2026-11-09T12:01:36.221951+00:00",
       "split": "train",
-      "product_campaign": "Chinese New Year Gift Sets"
+      "product_campaign": "Chinese New Year Gift Sets",
+      "group": "97",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Lee Kum Kee",
@@ -3171,7 +3407,9 @@
       "subscriber_count_display": "25.5K subscribers",
       "captured_at": "2026-11-09T12:01:36.498112+00:00",
       "split": "train",
-      "product_campaign": "Superior Abalone in Premium Oyster Sauce"
+      "product_campaign": "Superior Abalone in Premium Oyster Sauce",
+      "group": "98",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "IKEA",
@@ -3201,7 +3439,9 @@
       "subscriber_count_display": "13.7K subscribers",
       "captured_at": "2026-11-09T12:01:37.055859+00:00",
       "split": "train",
-      "product_campaign": "裝得落香港人嘅 (Home storage for Hong Kong people)"
+      "product_campaign": "裝得落香港人嘅 (Home storage for Hong Kong people)",
+      "group": "99",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "HSBC",
@@ -3231,7 +3471,9 @@
       "subscriber_count_display": "45.2K subscribers",
       "captured_at": "2026-11-09T12:01:37.336902+00:00",
       "split": "train",
-      "product_campaign": "HSBC Life 160th Anniversary Campaign"
+      "product_campaign": "HSBC Life 160th Anniversary Campaign",
+      "group": "100",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Kee Wah Bakery",
@@ -3260,8 +3502,10 @@
       "channel_name": "Kee Wah Bakery 奇華餅家",
       "subscriber_count_display": "2.19K subscribers",
       "captured_at": "2026-11-09T12:01:37.641606+00:00",
-      "split": "test",
-      "product_campaign": "鬆脆蝴蝶酥"
+      "split": "train",
+      "product_campaign": "鬆脆蝴蝶酥",
+      "group": "101",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Cathay",
@@ -3291,7 +3535,9 @@
       "subscriber_count_display": "161K subscribers",
       "captured_at": "2026-11-09T12:01:38.135868+00:00",
       "split": "train",
-      "product_campaign": "80 Years Together / Official Equine Transport Partner"
+      "product_campaign": "80 Years Together / Official Equine Transport Partner",
+      "group": "102",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Mannings",
@@ -3321,7 +3567,9 @@
       "subscriber_count_display": "18.1K subscribers",
       "captured_at": "2026-11-09T12:01:38.212333+00:00",
       "split": "train",
-      "product_campaign": "Mannings Health Supplement Campaign"
+      "product_campaign": "Mannings Health Supplement Campaign",
+      "group": "103",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Maxim's",
@@ -3351,7 +3599,9 @@
       "subscriber_count_display": "1.92K subscribers",
       "captured_at": "2026-11-09T12:01:38.705001+00:00",
       "split": "train",
-      "product_campaign": "Maxim's Chinese New Year Cakes and Pastries"
+      "product_campaign": "Maxim's Chinese New Year Cakes and Pastries",
+      "group": "104",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "McDonald's",
@@ -3380,8 +3630,10 @@
       "channel_name": "McDonaldsHK",
       "subscriber_count_display": "65.8K subscribers",
       "captured_at": "2026-11-09T12:01:39.083786+00:00",
-      "split": "train",
-      "product_campaign": "The Super Mario Bros. Movie Happy Meal & Party"
+      "split": "test",
+      "product_campaign": "The Super Mario Bros. Movie Happy Meal & Party",
+      "group": "105",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "MTR",
@@ -3410,8 +3662,10 @@
       "channel_name": "MTR Hong Kong",
       "subscriber_count_display": "61.6K subscribers",
       "captured_at": "2026-11-09T12:01:39.178221+00:00",
-      "split": "test",
-      "product_campaign": "Tuen Mun South Extension Project"
+      "split": "train",
+      "product_campaign": "Tuen Mun South Extension Project",
+      "group": "106",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Prudential",
@@ -3441,7 +3695,9 @@
       "subscriber_count_display": "8.7K subscribers",
       "captured_at": "2026-11-09T12:01:39.827891+00:00",
       "split": "train",
-      "product_campaign": "Financial Planning Services"
+      "product_campaign": "Financial Planning Services",
+      "group": "107",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Lee Kum Kee",
@@ -3471,7 +3727,9 @@
       "subscriber_count_display": "25.5K subscribers",
       "captured_at": "2026-11-09T12:01:40.041772+00:00",
       "split": "train",
-      "product_campaign": "全新日韓煮食系列 (New Japanese and Korean Cooking Series)"
+      "product_campaign": "全新日韓煮食系列 (New Japanese and Korean Cooking Series)",
+      "group": "108",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "HSBC",
@@ -3500,8 +3758,10 @@
       "channel_name": "HSBC Hong Kong",
       "subscriber_count_display": "45.2K subscribers",
       "captured_at": "2026-11-09T12:01:40.185546+00:00",
-      "split": "test",
-      "product_campaign": "HSBC HK App"
+      "split": "train",
+      "product_campaign": "HSBC HK App",
+      "group": "79",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Garden",
@@ -3531,7 +3791,9 @@
       "subscriber_count_display": "1.36K subscribers",
       "captured_at": "2026-11-09T12:01:41.033414+00:00",
       "split": "train",
-      "product_campaign": "Life Bread"
+      "product_campaign": "Life Bread",
+      "group": "110",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Kee Wah Bakery",
@@ -3561,7 +3823,9 @@
       "subscriber_count_display": "2.19K subscribers",
       "captured_at": "2026-11-09T12:01:41.130879+00:00",
       "split": "train",
-      "product_campaign": "亞麻糖年糕"
+      "product_campaign": "亞麻糖年糕",
+      "group": "111",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "IKEA",
@@ -3591,7 +3855,9 @@
       "subscriber_count_display": "13.7K subscribers",
       "captured_at": "2026-11-09T12:01:42.190019+00:00",
       "split": "train",
-      "product_campaign": "Affordable Makes Wonderful (低價創造無價)"
+      "product_campaign": "Affordable Makes Wonderful (低價創造無價)",
+      "group": "113",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Chow Tai Fook",
@@ -3621,7 +3887,9 @@
       "subscriber_count_display": "3.12K subscribers",
       "captured_at": "2026-11-09T12:01:42.364370+00:00",
       "split": "train",
-      "product_campaign": "Summer Love"
+      "product_campaign": "Summer Love",
+      "group": "114",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Cathay",
@@ -3651,7 +3919,9 @@
       "subscriber_count_display": "161K subscribers",
       "captured_at": "2026-11-09T12:01:42.408642+00:00",
       "split": "train",
-      "product_campaign": "The Coffee Academics Collaboration"
+      "product_campaign": "The Coffee Academics Collaboration",
+      "group": "115",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Lee Kum Kee",
@@ -3681,7 +3951,9 @@
       "subscriber_count_display": "25.5K subscribers",
       "captured_at": "2026-11-09T12:01:43.253286+00:00",
       "split": "train",
-      "product_campaign": "Chinese New Year Global Celebration"
+      "product_campaign": "Chinese New Year Global Celebration",
+      "group": "116",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "MTR",
@@ -3710,8 +3982,10 @@
       "channel_name": "MTR Hong Kong",
       "subscriber_count_display": "61.6K subscribers",
       "captured_at": "2026-11-09T12:01:43.341921+00:00",
-      "split": "test",
-      "product_campaign": "Tuen Mun South Extension Project"
+      "split": "train",
+      "product_campaign": "Tuen Mun South Extension Project",
+      "group": "106",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "HSBC",
@@ -3741,7 +4015,9 @@
       "subscriber_count_display": "45.2K subscribers",
       "captured_at": "2026-11-09T12:01:43.383771+00:00",
       "split": "train",
-      "product_campaign": "HSBC HK App Passbook Account Consolidation"
+      "product_campaign": "HSBC HK App Passbook Account Consolidation",
+      "group": "118",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Kee Wah Bakery",
@@ -3771,7 +4047,9 @@
       "subscriber_count_display": "2.19K subscribers",
       "captured_at": "2026-11-09T12:01:44.304308+00:00",
       "split": "test",
-      "product_campaign": "Hong Kong Souvenir"
+      "product_campaign": "Hong Kong Souvenir",
+      "group": "119",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Lee Kum Kee",
@@ -3801,7 +4079,9 @@
       "subscriber_count_display": "25.5K subscribers",
       "captured_at": "2026-11-09T12:01:44.449477+00:00",
       "split": "train",
-      "product_campaign": "蠔皇臻選鮑魚 (Superior Abalone in Premium Oyster Sauce)"
+      "product_campaign": "蠔皇臻選鮑魚 (Superior Abalone in Premium Oyster Sauce)",
+      "group": "120",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "McDonald's",
@@ -3830,8 +4110,10 @@
       "channel_name": "McDonaldsHK",
       "subscriber_count_display": "65.8K subscribers",
       "captured_at": "2026-11-09T12:01:44.450893+00:00",
-      "split": "train",
-      "product_campaign": "Big Mac Big Heart"
+      "split": "test",
+      "product_campaign": "Big Mac Big Heart",
+      "group": "121",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Maxim's",
@@ -3860,8 +4142,10 @@
       "channel_name": "美心食品 Maxim’s Products",
       "subscriber_count_display": "1.92K subscribers",
       "captured_at": "2026-11-09T12:01:45.224493+00:00",
-      "split": "train",
-      "product_campaign": "美心冰皮月餅 (MX Snowy Mooncakes)"
+      "split": "test",
+      "product_campaign": "美心冰皮月餅 (MX Snowy Mooncakes)",
+      "group": "122",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Lee Kum Kee",
@@ -3890,8 +4174,10 @@
       "channel_name": "leekumkeekitchen",
       "subscriber_count_display": "25.5K subscribers",
       "captured_at": "2026-11-09T12:01:45.423326+00:00",
-      "split": "train",
-      "product_campaign": "煲煲足料系列 (Rich in Ingredients Claypot Series)"
+      "split": "test",
+      "product_campaign": "煲煲足料系列 (Rich in Ingredients Claypot Series)",
+      "group": "123",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Kee Wah Bakery",
@@ -3921,7 +4207,9 @@
       "subscriber_count_display": "2.19K subscribers",
       "captured_at": "2026-11-09T12:01:45.489977+00:00",
       "split": "train",
-      "product_campaign": "奇華嫁喜 (Kee Wah Wedding Gifts)"
+      "product_campaign": "奇華嫁喜 (Kee Wah Wedding Gifts)",
+      "group": "124",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Prudential",
@@ -3951,7 +4239,9 @@
       "subscriber_count_display": "8.7K subscribers",
       "captured_at": "2026-11-09T12:01:46.335919+00:00",
       "split": "train",
-      "product_campaign": "守護健康危疾加倍保"
+      "product_campaign": "守護健康危疾加倍保",
+      "group": "125",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Prudential",
@@ -3981,7 +4271,9 @@
       "subscriber_count_display": "8.7K subscribers",
       "captured_at": "2026-11-09T12:01:46.379507+00:00",
       "split": "train",
-      "product_campaign": "保誠「加護一生」住院現金儲蓄保險及「寵愛寶」寵物保險"
+      "product_campaign": "保誠「加護一生」住院現金儲蓄保險及「寵愛寶」寵物保險",
+      "group": "126",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Cathay",
@@ -4011,7 +4303,9 @@
       "subscriber_count_display": "161K subscribers",
       "captured_at": "2026-11-09T12:01:46.516136+00:00",
       "split": "train",
-      "product_campaign": "Premium Economy"
+      "product_campaign": "Premium Economy",
+      "group": "127",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Cathay",
@@ -4040,8 +4334,10 @@
       "channel_name": "cathaypacific",
       "subscriber_count_display": "161K subscribers",
       "captured_at": "2026-11-09T12:01:47.262401+00:00",
-      "split": "test",
-      "product_campaign": "Direct overnight flights to 12 European cities"
+      "split": "train",
+      "product_campaign": "Direct overnight flights to 12 European cities",
+      "group": "128",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Prudential",
@@ -4071,7 +4367,9 @@
       "subscriber_count_display": "8.7K subscribers",
       "captured_at": "2026-11-09T12:01:47.377145+00:00",
       "split": "train",
-      "product_campaign": "Hong Kong Tennis Open"
+      "product_campaign": "Hong Kong Tennis Open",
+      "group": "129",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "MTR",
@@ -4101,7 +4399,9 @@
       "subscriber_count_display": "61.6K subscribers",
       "captured_at": "2026-11-09T12:01:47.421470+00:00",
       "split": "train",
-      "product_campaign": "MTR PLARAIL 全新系列"
+      "product_campaign": "MTR PLARAIL 全新系列",
+      "group": "130",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Mannings",
@@ -4131,7 +4431,9 @@
       "subscriber_count_display": "18.1K subscribers",
       "captured_at": "2026-11-09T12:01:48.256275+00:00",
       "split": "test",
-      "product_campaign": "Mannings Chinese New Year Campaign"
+      "product_campaign": "Mannings Chinese New Year Campaign",
+      "group": "131",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Garden",
@@ -4160,8 +4462,10 @@
       "channel_name": "嘉頓 Garden",
       "subscriber_count_display": "1.36K subscribers",
       "captured_at": "2026-11-09T12:01:48.402251+00:00",
-      "split": "test",
-      "product_campaign": "Garden Sandwich Bread (切皮方包)"
+      "split": "train",
+      "product_campaign": "Garden Sandwich Bread (切皮方包)",
+      "group": "132",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "MTR",
@@ -4191,7 +4495,9 @@
       "subscriber_count_display": "61.6K subscribers",
       "captured_at": "2026-11-09T12:01:48.535490+00:00",
       "split": "train",
-      "product_campaign": "Tung Chung Line Extension"
+      "product_campaign": "Tung Chung Line Extension",
+      "group": "133",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Cathay",
@@ -4220,8 +4526,10 @@
       "channel_name": "cathaypacific",
       "subscriber_count_display": "161K subscribers",
       "captured_at": "2026-11-09T12:01:49.170240+00:00",
-      "split": "test",
-      "product_campaign": "Kai Tak Sports Park Partnership"
+      "split": "train",
+      "product_campaign": "Kai Tak Sports Park Partnership",
+      "group": "134",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Lee Kum Kee",
@@ -4251,7 +4559,9 @@
       "subscriber_count_display": "25.5K subscribers",
       "captured_at": "2026-11-09T12:01:49.357611+00:00",
       "split": "train",
-      "product_campaign": "營料理 (Ying Cuisine) Instant Bowl Noodles"
+      "product_campaign": "營料理 (Ying Cuisine) Instant Bowl Noodles",
+      "group": "135",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "HSBC",
@@ -4281,7 +4591,9 @@
       "subscriber_count_display": "45.2K subscribers",
       "captured_at": "2026-11-09T12:01:49.398912+00:00",
       "split": "test",
-      "product_campaign": "滙豐自願醫保靈活計劃"
+      "product_campaign": "滙豐自願醫保靈活計劃",
+      "group": "136",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Mannings",
@@ -4311,7 +4623,9 @@
       "subscriber_count_display": "18.1K subscribers",
       "captured_at": "2026-11-09T12:01:50.195859+00:00",
       "split": "train",
-      "product_campaign": "Mannings Hair Care Campaign"
+      "product_campaign": "Mannings Hair Care Campaign",
+      "group": "137",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "McDonald's",
@@ -4341,7 +4655,9 @@
       "subscriber_count_display": "65.8K subscribers",
       "captured_at": "2026-11-09T12:01:50.373490+00:00",
       "split": "train",
-      "product_campaign": "Taste of Southeast Asia"
+      "product_campaign": "Taste of Southeast Asia",
+      "group": "21",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Chow Tai Fook",
@@ -4371,7 +4687,9 @@
       "subscriber_count_display": "3.12K subscribers",
       "captured_at": "2026-11-09T12:01:50.415970+00:00",
       "split": "train",
-      "product_campaign": "DAWN Collection"
+      "product_campaign": "DAWN Collection",
+      "group": "139",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "McDonald's",
@@ -4401,7 +4719,9 @@
       "subscriber_count_display": "65.8K subscribers",
       "captured_at": "2026-11-09T12:01:51.437270+00:00",
       "split": "train",
-      "product_campaign": "Choco McGriddles"
+      "product_campaign": "Choco McGriddles",
+      "group": "140",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Prudential",
@@ -4431,7 +4751,9 @@
       "subscriber_count_display": "8.7K subscribers",
       "captured_at": "2026-11-09T12:01:51.480935+00:00",
       "split": "train",
-      "product_campaign": "保誠國際單車賽 (PRURide Six Day Hong Kong)"
+      "product_campaign": "保誠國際單車賽 (PRURide Six Day Hong Kong)",
+      "group": "141",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Hang Seng Bank",
@@ -4461,7 +4783,9 @@
       "subscriber_count_display": "33K subscribers",
       "captured_at": "2026-11-09T12:01:51.551363+00:00",
       "split": "train",
-      "product_campaign": "+FUN Dollars / Hang Seng Credit Card"
+      "product_campaign": "+FUN Dollars / Hang Seng Credit Card",
+      "group": "142",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Cathay",
@@ -4491,7 +4815,9 @@
       "subscriber_count_display": "161K subscribers",
       "captured_at": "2026-11-09T12:01:52.410181+00:00",
       "split": "train",
-      "product_campaign": "We Know How"
+      "product_campaign": "We Know How",
+      "group": "143",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Maxim's",
@@ -4521,7 +4847,9 @@
       "subscriber_count_display": "1.92K subscribers",
       "captured_at": "2026-11-09T12:01:52.497931+00:00",
       "split": "train",
-      "product_campaign": "Radish Cake with Thick-cut Shredded Radish (美心厚切絲蘿蔔糕)"
+      "product_campaign": "Radish Cake with Thick-cut Shredded Radish (美心厚切絲蘿蔔糕)",
+      "group": "144",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "MTR",
@@ -4551,7 +4879,9 @@
       "subscriber_count_display": "61.6K subscribers",
       "captured_at": "2026-11-09T12:01:52.499087+00:00",
       "split": "train",
-      "product_campaign": "Airport Express"
+      "product_campaign": "Airport Express",
+      "group": "145",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Kee Wah Bakery",
@@ -4581,7 +4911,9 @@
       "subscriber_count_display": "2.19K subscribers",
       "captured_at": "2026-11-09T12:01:53.373754+00:00",
       "split": "train",
-      "product_campaign": "奇華冬蓉老婆餅 (Kee Wah Winter Melon Wife Cake)"
+      "product_campaign": "奇華冬蓉老婆餅 (Kee Wah Winter Melon Wife Cake)",
+      "group": "146",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Maxim's",
@@ -4611,7 +4943,9 @@
       "subscriber_count_display": "1.92K subscribers",
       "captured_at": "2026-11-09T12:01:53.418380+00:00",
       "split": "train",
-      "product_campaign": "Reunite! 從心從新 快樂團圓"
+      "product_campaign": "Reunite! 從心從新 快樂團圓",
+      "group": "147",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Hang Seng Bank",
@@ -4641,7 +4975,9 @@
       "subscriber_count_display": "33K subscribers",
       "captured_at": "2026-11-09T12:01:53.480817+00:00",
       "split": "train",
-      "product_campaign": "MMPOWER World Mastercard and +FUN Dollars Campaign"
+      "product_campaign": "MMPOWER World Mastercard and +FUN Dollars Campaign",
+      "group": "148",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Garden",
@@ -4671,7 +5007,9 @@
       "subscriber_count_display": "1.36K subscribers",
       "captured_at": "2026-11-09T12:01:54.596256+00:00",
       "split": "train",
-      "product_campaign": "Garden x Lulu the Piggy Lunar New Year Gift Set Series"
+      "product_campaign": "Garden x Lulu the Piggy Lunar New Year Gift Set Series",
+      "group": "149",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Hang Seng Bank",
@@ -4700,8 +5038,10 @@
       "channel_name": "恒生銀行 Hang Seng Bank",
       "subscriber_count_display": "33K subscribers",
       "captured_at": "2026-11-09T12:01:54.598270+00:00",
-      "split": "train",
-      "product_campaign": "Hang Seng Preferred Banking"
+      "split": "test",
+      "product_campaign": "Hang Seng Preferred Banking",
+      "group": "150",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "HSBC",
@@ -4731,7 +5071,9 @@
       "subscriber_count_display": "45.2K subscribers",
       "captured_at": "2026-11-09T12:01:54.599910+00:00",
       "split": "train",
-      "product_campaign": "滙越保險計劃"
+      "product_campaign": "滙越保險計劃",
+      "group": "151",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Prudential",
@@ -4761,7 +5103,9 @@
       "subscriber_count_display": "8.7K subscribers",
       "captured_at": "2026-11-09T12:01:55.556280+00:00",
       "split": "train",
-      "product_campaign": "Prudential 170th Anniversary Campaign"
+      "product_campaign": "Prudential 170th Anniversary Campaign",
+      "group": "152",
+      "manual_campaign_id": "prudential_170th_anniversary_2019"
     },
     {
       "brand_family": "McDonald's",
@@ -4791,7 +5135,9 @@
       "subscriber_count_display": "65.8K subscribers",
       "captured_at": "2026-11-09T12:01:55.891600+00:00",
       "split": "train",
-      "product_campaign": "北太平洋狹鱈魚柳系列 (North Pacific Pollock Series)"
+      "product_campaign": "北太平洋狹鱈魚柳系列 (North Pacific Pollock Series)",
+      "group": "153",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Cathay",
@@ -4820,8 +5166,10 @@
       "channel_name": "cathaypacific",
       "subscriber_count_display": "161K subscribers",
       "captured_at": "2026-11-09T12:01:56.472111+00:00",
-      "split": "train",
-      "product_campaign": "CATHAY SECURE"
+      "split": "test",
+      "product_campaign": "CATHAY SECURE",
+      "group": "45",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Prudential",
@@ -4851,7 +5199,9 @@
       "subscriber_count_display": "8.7K subscribers",
       "captured_at": "2026-11-09T12:01:56.591167+00:00",
       "split": "train",
-      "product_campaign": "PRUhealth critical illness multi-care"
+      "product_campaign": "PRUhealth critical illness multi-care",
+      "group": "155",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Maxim's",
@@ -4881,7 +5231,9 @@
       "subscriber_count_display": "1.92K subscribers",
       "captured_at": "2026-11-09T12:01:57.148651+00:00",
       "split": "train",
-      "product_campaign": "美心冰皮 MX SNOWY, 美心流心奶黃, 雙黃白蓮蓉, 冰皮七星伴明月"
+      "product_campaign": "美心冰皮 MX SNOWY, 美心流心奶黃, 雙黃白蓮蓉, 冰皮七星伴明月",
+      "group": "156",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Hang Seng Bank",
@@ -4911,7 +5263,9 @@
       "subscriber_count_display": "33K subscribers",
       "captured_at": "2026-11-09T12:01:57.320432+00:00",
       "split": "train",
-      "product_campaign": "+FUN Dollars / Hang Seng Credit Card"
+      "product_campaign": "+FUN Dollars / Hang Seng Credit Card",
+      "group": "142",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Lee Kum Kee",
@@ -4940,8 +5294,10 @@
       "channel_name": "leekumkeekitchen",
       "subscriber_count_display": "25.5K subscribers",
       "captured_at": "2026-11-09T12:01:57.532195+00:00",
-      "split": "test",
-      "product_campaign": "快趣煮 FunCook 醬料包 (FunCook Sauce Packs)"
+      "split": "train",
+      "product_campaign": "快趣煮 FunCook 醬料包 (FunCook Sauce Packs)",
+      "group": "158",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Prudential",
@@ -4970,8 +5326,10 @@
       "channel_name": "Prudential Hong Kong Limited 香港保誠保險",
       "subscriber_count_display": "8.7K subscribers",
       "captured_at": "2026-11-09T12:01:58.041280+00:00",
-      "split": "test",
-      "product_campaign": "170週年 (170th Anniversary Campaign)"
+      "split": "train",
+      "product_campaign": "170週年 (170th Anniversary Campaign)",
+      "group": "152",
+      "manual_campaign_id": "prudential_170th_anniversary_2019"
     },
     {
       "brand_family": "Chow Tai Fook",
@@ -5001,7 +5359,9 @@
       "subscriber_count_display": "3.12K subscribers",
       "captured_at": "2026-11-09T12:01:58.275758+00:00",
       "split": "train",
-      "product_campaign": "BOND TO LOVE COLLECTION"
+      "product_campaign": "BOND TO LOVE COLLECTION",
+      "group": "160",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "IKEA",
@@ -5030,8 +5390,10 @@
       "channel_name": "IKEAHongKong",
       "subscriber_count_display": "13.7K subscribers",
       "captured_at": "2026-11-09T12:01:58.596657+00:00",
-      "split": "train",
-      "product_campaign": "VALEVÅG 特大雙人獨立袋裝彈簧床褥"
+      "split": "test",
+      "product_campaign": "VALEVÅG 特大雙人獨立袋裝彈簧床褥",
+      "group": "161",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Café de Coral",
@@ -5061,7 +5423,9 @@
       "subscriber_count_display": "10.2K subscribers",
       "captured_at": "2026-11-09T12:01:59.082638+00:00",
       "split": "train",
-      "product_campaign": "Doraemon Lunar New Year Campaign"
+      "product_campaign": "Doraemon Lunar New Year Campaign",
+      "group": "162",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Chow Tai Fook",
@@ -5091,7 +5455,9 @@
       "subscriber_count_display": "3.12K subscribers",
       "captured_at": "2026-11-09T12:01:59.129618+00:00",
       "split": "train",
-      "product_campaign": "BEYONDTIME"
+      "product_campaign": "BEYONDTIME",
+      "group": "163",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "IKEA",
@@ -5121,7 +5487,9 @@
       "subscriber_count_display": "13.7K subscribers",
       "captured_at": "2026-11-09T12:01:59.562940+00:00",
       "split": "train",
-      "product_campaign": "IKEA 精選梳化 8折起 (Chinese New Year Sofa Sale)"
+      "product_campaign": "IKEA 精選梳化 8折起 (Chinese New Year Sofa Sale)",
+      "group": "164",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Café de Coral",
@@ -5151,7 +5519,9 @@
       "subscriber_count_display": "10.2K subscribers",
       "captured_at": "2026-11-09T12:01:59.958723+00:00",
       "split": "train",
-      "product_campaign": "Celebrate Christmas with your loved ones 聖誕在一起就好"
+      "product_campaign": "Celebrate Christmas with your loved ones 聖誕在一起就好",
+      "group": "165",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "IKEA",
@@ -5181,7 +5551,9 @@
       "subscriber_count_display": "13.7K subscribers",
       "captured_at": "2026-11-09T12:02:00.097004+00:00",
       "split": "train",
-      "product_campaign": "Affordable Makes Wonderful (低價創造無價)"
+      "product_campaign": "Affordable Makes Wonderful (低價創造無價)",
+      "group": "113",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "HSBC",
@@ -5211,7 +5583,9 @@
       "subscriber_count_display": "45.2K subscribers",
       "captured_at": "2026-11-09T12:02:00.524879+00:00",
       "split": "train",
-      "product_campaign": "HSBC Premier 滙豐卓越理財"
+      "product_campaign": "HSBC Premier 滙豐卓越理財",
+      "group": "167",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Garden",
@@ -5241,7 +5615,9 @@
       "subscriber_count_display": "1.36K subscribers",
       "captured_at": "2026-11-09T12:02:01.093867+00:00",
       "split": "train",
-      "product_campaign": "mini Swiss Roll"
+      "product_campaign": "mini Swiss Roll",
+      "group": "168",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Mannings",
@@ -5271,7 +5647,9 @@
       "subscriber_count_display": "18.1K subscribers",
       "captured_at": "2026-11-09T12:02:01.096128+00:00",
       "split": "train",
-      "product_campaign": "Summer Wellness"
+      "product_campaign": "Summer Wellness",
+      "group": "169",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Mannings",
@@ -5301,7 +5679,9 @@
       "subscriber_count_display": "18.1K subscribers",
       "captured_at": "2026-11-09T12:02:01.513753+00:00",
       "split": "train",
-      "product_campaign": "Mannings Healthy Hair Campaign"
+      "product_campaign": "Mannings Healthy Hair Campaign",
+      "group": "170",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Mannings",
@@ -5331,7 +5711,9 @@
       "subscriber_count_display": "18.1K subscribers",
       "captured_at": "2026-11-09T12:02:02.279791+00:00",
       "split": "test",
-      "product_campaign": "睡覺事 大健事 (Sleep Better, Healthier)"
+      "product_campaign": "睡覺事 大健事 (Sleep Better, Healthier)",
+      "group": "171",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Chow Tai Fook",
@@ -5361,7 +5743,9 @@
       "subscriber_count_display": "3.12K subscribers",
       "captured_at": "2026-11-09T12:02:02.363225+00:00",
       "split": "train",
-      "product_campaign": "周大福天然鑽石 BEYOND TIME"
+      "product_campaign": "周大福天然鑽石 BEYOND TIME",
+      "group": "33",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Lee Kum Kee",
@@ -5391,7 +5775,9 @@
       "subscriber_count_display": "25.5K subscribers",
       "captured_at": "2026-11-09T12:02:02.468025+00:00",
       "split": "test",
-      "product_campaign": "減鹽蠔油 (SALT REDUCED OYSTER SAUCE)"
+      "product_campaign": "減鹽蠔油 (SALT REDUCED OYSTER SAUCE)",
+      "group": "72",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "MTR",
@@ -5421,7 +5807,9 @@
       "subscriber_count_display": "61.6K subscribers",
       "captured_at": "2026-11-09T12:02:03.317495+00:00",
       "split": "train",
-      "product_campaign": "MTR Safety and Service Information Campaign"
+      "product_campaign": "MTR Safety and Service Information Campaign",
+      "group": "175",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Mannings",
@@ -5451,7 +5839,9 @@
       "subscriber_count_display": "18.1K subscribers",
       "captured_at": "2026-11-09T12:02:03.525309+00:00",
       "split": "train",
-      "product_campaign": "萬寧美肌 一膚萬應 (We care for all your skincare needs)"
+      "product_campaign": "萬寧美肌 一膚萬應 (We care for all your skincare needs)",
+      "group": "176",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Hang Seng Bank",
@@ -5481,7 +5871,9 @@
       "subscriber_count_display": "33K subscribers",
       "captured_at": "2026-11-09T12:02:04.218718+00:00",
       "split": "train",
-      "product_campaign": "+FUN Dollars"
+      "product_campaign": "+FUN Dollars",
+      "group": "5",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Mannings",
@@ -5511,7 +5903,9 @@
       "subscriber_count_display": "18.1K subscribers",
       "captured_at": "2026-11-09T12:02:04.501494+00:00",
       "split": "train",
-      "product_campaign": "送心意 大健事"
+      "product_campaign": "送心意 大健事",
+      "group": "178",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "IKEA",
@@ -5540,8 +5934,10 @@
       "channel_name": "IKEAHongKong",
       "subscriber_count_display": "13.7K subscribers",
       "captured_at": "2026-11-09T12:02:04.561188+00:00",
-      "split": "test",
-      "product_campaign": "IKEA 春日好禮 / PAX 衣櫃"
+      "split": "train",
+      "product_campaign": "IKEA 春日好禮 / PAX 衣櫃",
+      "group": "179",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "HSBC",
@@ -5570,8 +5966,10 @@
       "channel_name": "HSBC Hong Kong",
       "subscriber_count_display": "45.2K subscribers",
       "captured_at": "2026-11-09T12:02:05.289949+00:00",
-      "split": "test",
-      "product_campaign": "HSBC HK App - Credit Card Management"
+      "split": "train",
+      "product_campaign": "HSBC HK App - Credit Card Management",
+      "group": "180",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Chow Tai Fook",
@@ -5600,8 +5998,10 @@
       "channel_name": "Chow Tai Fook Jewellery 周大福珠寶",
       "subscriber_count_display": "3.12K subscribers",
       "captured_at": "2026-11-09T12:02:05.336920+00:00",
-      "split": "train",
-      "product_campaign": "傳福系列 ROUGE COLLECTION"
+      "split": "test",
+      "product_campaign": "傳福系列 ROUGE COLLECTION",
+      "group": "181",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Lee Kum Kee",
@@ -5630,8 +6030,10 @@
       "channel_name": "leekumkeekitchen",
       "subscriber_count_display": "25.5K subscribers",
       "captured_at": "2026-11-09T12:02:05.678152+00:00",
-      "split": "train",
-      "product_campaign": "即食吉品鮑魚及大快活新春盆菜 (Ready-to-eat Yoshihama Abalone & Café de Coral Chinese New Year Poon Choi)"
+      "split": "test",
+      "product_campaign": "即食吉品鮑魚及大快活新春盆菜 (Ready-to-eat Yoshihama Abalone & Café de Coral Chinese New Year Poon Choi)",
+      "group": "182",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Café de Coral",
@@ -5661,7 +6063,9 @@
       "subscriber_count_display": "10.2K subscribers",
       "captured_at": "2026-11-09T12:02:06.250524+00:00",
       "split": "train",
-      "product_campaign": "招牌焗素肉醬意粉"
+      "product_campaign": "招牌焗素肉醬意粉",
+      "group": "183",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "McDonald's",
@@ -5691,7 +6095,9 @@
       "subscriber_count_display": "65.8K subscribers",
       "captured_at": "2026-11-09T12:02:06.299921+00:00",
       "split": "train",
-      "product_campaign": "Smashin' Enjoyin' Lovin' it - McSpicy Chicken Filet Meal Promotion"
+      "product_campaign": "Smashin' Enjoyin' Lovin' it - McSpicy Chicken Filet Meal Promotion",
+      "group": "184",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "McDonald's",
@@ -5721,7 +6127,9 @@
       "subscriber_count_display": "65.8K subscribers",
       "captured_at": "2026-11-09T12:02:06.683005+00:00",
       "split": "train",
-      "product_campaign": "Happy Meal / The Super Mario Bros. Movie Toy Campaign"
+      "product_campaign": "Happy Meal / The Super Mario Bros. Movie Toy Campaign",
+      "group": "185",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Maxim's",
@@ -5751,7 +6159,9 @@
       "subscriber_count_display": "1.92K subscribers",
       "captured_at": "2026-11-09T12:02:07.125439+00:00",
       "split": "train",
-      "product_campaign": "全新拔絲蓮蓉月餅 (Lace Lotus Seed Paste Mooncake)"
+      "product_campaign": "全新拔絲蓮蓉月餅 (Lace Lotus Seed Paste Mooncake)",
+      "group": "186",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "IKEA",
@@ -5781,7 +6191,9 @@
       "subscriber_count_display": "13.7K subscribers",
       "captured_at": "2026-11-09T12:02:07.321944+00:00",
       "split": "train",
-      "product_campaign": "KLUBBSPORRE 䀑剂倀倃朠逓"
+      "product_campaign": "KLUBBSPORRE 䀑剂倀倃朠逓",
+      "group": "187",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Kee Wah Bakery",
@@ -5810,8 +6222,10 @@
       "channel_name": "Kee Wah Bakery 奇華餅家",
       "subscriber_count_display": "2.19K subscribers",
       "captured_at": "2026-11-09T12:02:07.664053+00:00",
-      "split": "test",
-      "product_campaign": "Kee Wah Mooncake"
+      "split": "train",
+      "product_campaign": "Kee Wah Mooncake",
+      "group": "188",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "MTR",
@@ -5840,8 +6254,10 @@
       "channel_name": "MTR Hong Kong",
       "subscriber_count_display": "61.6K subscribers",
       "captured_at": "2026-11-09T12:02:08.046893+00:00",
-      "split": "test",
-      "product_campaign": "New Railways Go Beyond Boundaries"
+      "split": "train",
+      "product_campaign": "New Railways Go Beyond Boundaries",
+      "group": "189",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Prudential",
@@ -5871,7 +6287,9 @@
       "subscriber_count_display": "8.7K subscribers",
       "captured_at": "2026-11-09T12:02:08.134210+00:00",
       "split": "train",
-      "product_campaign": "守護健康危疾全護保"
+      "product_campaign": "守護健康危疾全護保",
+      "group": "190",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Hang Seng Bank",
@@ -5901,7 +6319,9 @@
       "subscriber_count_display": "33K subscribers",
       "captured_at": "2026-11-09T12:02:08.556245+00:00",
       "split": "train",
-      "product_campaign": "Preferred Banking"
+      "product_campaign": "Preferred Banking",
+      "group": "191",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Hang Seng Bank",
@@ -5931,7 +6351,9 @@
       "subscriber_count_display": "33K subscribers",
       "captured_at": "2026-11-09T12:02:09.120193+00:00",
       "split": "train",
-      "product_campaign": "+FUN Dollars"
+      "product_campaign": "+FUN Dollars",
+      "group": "5",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Kee Wah Bakery",
@@ -5960,8 +6382,10 @@
       "channel_name": "Kee Wah Bakery 奇華餅家",
       "subscriber_count_display": "2.19K subscribers",
       "captured_at": "2026-11-09T12:02:09.223840+00:00",
-      "split": "test",
-      "product_campaign": "臘味蘿蔔糕 (Cured Meat Radish Cake)"
+      "split": "train",
+      "product_campaign": "臘味蘿蔔糕 (Cured Meat Radish Cake)",
+      "group": "193",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Prudential",
@@ -5990,8 +6414,10 @@
       "channel_name": "Prudential Hong Kong Limited 香港保誠保險",
       "subscriber_count_display": "8.7K subscribers",
       "captured_at": "2026-11-09T12:02:09.825647+00:00",
-      "split": "test",
-      "product_campaign": "myDNA Nutrigenomics DNA Test"
+      "split": "train",
+      "product_campaign": "myDNA Nutrigenomics DNA Test",
+      "group": "194",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Maxim's",
@@ -6021,7 +6447,9 @@
       "subscriber_count_display": "1.92K subscribers",
       "captured_at": "2026-11-09T12:02:10.096613+00:00",
       "split": "train",
-      "product_campaign": "美心瑤柱蘿蔔糕 (MX Scallop Turnip Cake)"
+      "product_campaign": "美心瑤柱蘿蔔糕 (MX Scallop Turnip Cake)",
+      "group": "195",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Garden",
@@ -6051,7 +6479,9 @@
       "subscriber_count_display": "1.36K subscribers",
       "captured_at": "2026-11-09T12:02:10.179601+00:00",
       "split": "train",
-      "product_campaign": "Garden Cream Wafers 嘉頓威化"
+      "product_campaign": "Garden Cream Wafers 嘉頓威化",
+      "group": "196",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Hang Seng Bank",
@@ -6081,7 +6511,9 @@
       "subscriber_count_display": "33K subscribers",
       "captured_at": "2026-11-09T12:02:10.731625+00:00",
       "split": "train",
-      "product_campaign": "JustPay e-Lai See (e利是)"
+      "product_campaign": "JustPay e-Lai See (e利是)",
+      "group": "197",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Mannings",
@@ -6110,8 +6542,10 @@
       "channel_name": "萬寧Mannings",
       "subscriber_count_display": "18.1K subscribers",
       "captured_at": "2026-11-09T12:02:11.215259+00:00",
-      "split": "train",
-      "product_campaign": "#StrongBeauty"
+      "split": "test",
+      "product_campaign": "#StrongBeauty",
+      "group": "198",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Maxim's",
@@ -6141,7 +6575,9 @@
       "subscriber_count_display": "1.92K subscribers",
       "captured_at": "2026-11-09T12:02:11.805634+00:00",
       "split": "train",
-      "product_campaign": "Mid-Autumn Taste Campaign (中秋味道)"
+      "product_campaign": "Mid-Autumn Taste Campaign (中秋味道)",
+      "group": "199",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Garden",
@@ -6171,7 +6607,9 @@
       "subscriber_count_display": "1.36K subscribers",
       "captured_at": "2026-11-09T12:02:11.952398+00:00",
       "split": "train",
-      "product_campaign": "Garden Bread Series (嘉頓麵包系列)"
+      "product_campaign": "Garden Bread Series (嘉頓麵包系列)",
+      "group": "200",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Lee Kum Kee",
@@ -6201,7 +6639,9 @@
       "subscriber_count_display": "25.5K subscribers",
       "captured_at": "2026-11-09T12:02:12.274596+00:00",
       "split": "train",
-      "product_campaign": "頭道原釀頭抽系列"
+      "product_campaign": "頭道原釀頭抽系列",
+      "group": "201",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Garden",
@@ -6231,7 +6671,9 @@
       "subscriber_count_display": "1.36K subscribers",
       "captured_at": "2026-11-09T12:02:12.672325+00:00",
       "split": "train",
-      "product_campaign": "Cream Wafers / Mini Cream Wafers"
+      "product_campaign": "Cream Wafers / Mini Cream Wafers",
+      "group": "202",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "MTR",
@@ -6261,7 +6703,9 @@
       "subscriber_count_display": "61.6K subscribers",
       "captured_at": "2026-11-09T12:02:13.140717+00:00",
       "split": "train",
-      "product_campaign": "全面電子化資訊．服務 (Go Fully Digital Information Services)"
+      "product_campaign": "全面電子化資訊．服務 (Go Fully Digital Information Services)",
+      "group": "203",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Hang Seng Bank",
@@ -6291,7 +6735,9 @@
       "subscriber_count_display": "33K subscribers",
       "captured_at": "2026-11-09T12:02:13.248525+00:00",
       "split": "train",
-      "product_campaign": "+FUN Dollars"
+      "product_campaign": "+FUN Dollars",
+      "group": "5",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Chow Tai Fook",
@@ -6321,7 +6767,9 @@
       "subscriber_count_display": "3.12K subscribers",
       "captured_at": "2026-11-09T12:02:13.579001+00:00",
       "split": "train",
-      "product_campaign": "Chinese New Year Gold Jewelry"
+      "product_campaign": "Chinese New Year Gold Jewelry",
+      "group": "205",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "IKEA",
@@ -6351,7 +6799,9 @@
       "subscriber_count_display": "13.7K subscribers",
       "captured_at": "2026-11-09T12:02:14.012226+00:00",
       "split": "train",
-      "product_campaign": "裝得落香港人嘅 (Home storage solutions for Hong Kong people)"
+      "product_campaign": "裝得落香港人嘅 (Home storage solutions for Hong Kong people)",
+      "group": "206",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Prudential",
@@ -6380,8 +6830,10 @@
       "channel_name": "Prudential Hong Kong Limited 香港保誠保險",
       "subscriber_count_display": "8.7K subscribers",
       "captured_at": "2026-11-09T12:02:14.207887+00:00",
-      "split": "test",
-      "product_campaign": "保誠精選「寵愛寶」"
+      "split": "train",
+      "product_campaign": "保誠精選「寵愛寶」",
+      "group": "207",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Hang Seng Bank",
@@ -6411,7 +6863,9 @@
       "subscriber_count_display": "33K subscribers",
       "captured_at": "2026-11-09T12:02:14.385477+00:00",
       "split": "test",
-      "product_campaign": "Hang Seng Travel+ Visa Signature Card"
+      "product_campaign": "Hang Seng Travel+ Visa Signature Card",
+      "group": "208",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Chow Tai Fook",
@@ -6441,7 +6895,9 @@
       "subscriber_count_display": "3.12K subscribers",
       "captured_at": "2026-11-09T12:02:15.114948+00:00",
       "split": "train",
-      "product_campaign": "Summer Love"
+      "product_campaign": "Summer Love",
+      "group": "114",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Prudential",
@@ -6471,7 +6927,9 @@
       "subscriber_count_display": "8.7K subscribers",
       "captured_at": "2026-11-09T12:02:15.232041+00:00",
       "split": "train",
-      "product_campaign": "保誠自願醫保"
+      "product_campaign": "保誠自願醫保",
+      "group": "210",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "McDonald's",
@@ -6500,8 +6958,10 @@
       "channel_name": "McDonaldsHK",
       "subscriber_count_display": "65.8K subscribers",
       "captured_at": "2026-11-09T12:02:15.277259+00:00",
-      "split": "test",
-      "product_campaign": "Double 雙層芝士子堡套餐 / Double Double 6PM 後"
+      "split": "train",
+      "product_campaign": "Double 雙層芝士子堡套餐 / Double Double 6PM 後",
+      "group": "211",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Kee Wah Bakery",
@@ -6531,7 +6991,9 @@
       "subscriber_count_display": "2.19K subscribers",
       "captured_at": "2026-11-09T12:02:16.038491+00:00",
       "split": "train",
-      "product_campaign": "奇華至尊月餅 (Kee Wah Chinese Moon Pastry)"
+      "product_campaign": "奇華至尊月餅 (Kee Wah Chinese Moon Pastry)",
+      "group": "212",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "MTR",
@@ -6561,7 +7023,9 @@
       "subscriber_count_display": "61.6K subscribers",
       "captured_at": "2026-11-09T12:02:16.395660+00:00",
       "split": "train",
-      "product_campaign": "MTR Chinese New Year 2014 (Year of the Horse) Campaign"
+      "product_campaign": "MTR Chinese New Year 2014 (Year of the Horse) Campaign",
+      "group": "214",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Maxim's",
@@ -6591,7 +7055,9 @@
       "subscriber_count_display": "1.92K subscribers",
       "captured_at": "2026-11-09T12:02:17.130720+00:00",
       "split": "train",
-      "product_campaign": "美心零添加鮮蛋卷 & 美心香脆甜心酥"
+      "product_campaign": "美心零添加鮮蛋卷 & 美心香脆甜心酥",
+      "group": "215",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "HSBC",
@@ -6621,7 +7087,9 @@
       "subscriber_count_display": "45.2K subscribers",
       "captured_at": "2026-11-09T12:02:17.344148+00:00",
       "split": "train",
-      "product_campaign": "HSBC Hong Kong Brand Campaign"
+      "product_campaign": "HSBC Hong Kong Brand Campaign",
+      "group": "216",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Garden",
@@ -6651,7 +7119,9 @@
       "subscriber_count_display": "1.36K subscribers",
       "captured_at": "2026-11-09T12:02:17.526492+00:00",
       "split": "train",
-      "product_campaign": "嘉頓餅乾 新春一罐紅"
+      "product_campaign": "嘉頓餅乾 新春一罐紅",
+      "group": "217",
+      "manual_campaign_id": ""
     },
     {
       "brand_family": "Hang Seng Bank",
@@ -6681,7 +7151,9 @@
       "subscriber_count_display": "33K subscribers",
       "captured_at": "2026-11-09T12:02:18.363431+00:00",
       "split": "train",
-      "product_campaign": "Prestige Club 優越·家"
+      "product_campaign": "Prestige Club 優越·家",
+      "group": "218",
+      "manual_campaign_id": ""
     }
   ],
   "graphs": [
@@ -102964,6 +103436,234 @@
   ],
   "cases": [
     {
+      "video_id": "cmsxzrhfa0017bnn8p2stilmd",
+      "title": "香港故事，世界靈感; 世界故事，香港靈感",
+      "brand": "HSBC",
+      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
+      "creative_elements": {
+        "creative_mechanic": "Event experience led",
+        "structure_type": "Event experience led",
+        "pacing": "medium tempo",
+        "main_message": "The ad highlights the mutual inspiration and exchange between Hong Kong and the rest of the world, positioning HSBC as a partner that continues to support new possibilities.",
+        "hook": "The ad highlights the mutual inspiration and exchange between Hong Kong and the rest of the world, positioning HSBC as a partner that continues to support new possibilities.",
+        "cta": "unclear"
+      },
+      "base_prediction": 189946.296875,
+      "optimized_prediction": 975601.5625,
+      "base_log": 12.154501914978027,
+      "optimized_log": 13.790810585021973,
+      "uncertainty_band": [
+        4919.64990234375,
+        7332358.5
+      ],
+      "changes": {
+        "creative_mechanic": "Offer led",
+        "structure_type": "Announcement / information led"
+      },
+      "candidates_evaluated": 13,
+      "support_examples": [
+        {
+          "video_id": "cmvc5nw57003fbn00lnr610as",
+          "title": "【易Joy！易賞！易分享 全新大家樂Club 100易.0】",
+          "source_url": "https://www.youtube.com/watch?v=185p2FWa_R0"
+        },
+        {
+          "video_id": "cmt3r8lhc001ebnawtu04awo7",
+          "title": "【新升級恒生 MMPOWER卡】網購信用卡天花板 網球一哥都用緊！🛍️網購及指定商戶賺高達 8% +FUN Dollars！",
+          "source_url": "https://www.youtube.com/watch?v=B2EyinOoCsE"
+        },
+        {
+          "video_id": "cmt3q08mg0005bnawpa8ty5ye",
+          "title": "【滙豐Premier Elite｜洞悉環球市場先機，盡佔全球財富機遇】",
+          "source_url": "https://www.youtube.com/watch?v=CHqJrCwN_QE"
+        }
+      ],
+      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
+      "observed_views": 1709054
+    },
+    {
+      "video_id": "cmu3h124d000zbn5koghp340c",
+      "title": "【神Code伴你行🎶──「出行碼」】 Travel QR Code",
+      "brand": "MTR",
+      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
+      "creative_elements": {
+        "creative_mechanic": "Offer led",
+        "structure_type": "Problem-solution led",
+        "pacing": "medium tempo",
+        "main_message": "The MTR Travel QR code provides real-time service updates, alternative routes, and shuttle bus information to help commuters plan their journeys effectively.",
+        "hook": "The MTR Travel QR code provides real-time service updates, alternative routes, and shuttle bus information to help commuters plan their journeys effectively.",
+        "cta": "Scan the Travel QR codes available in MTR stations and trains to access real-time traffic information and alternative transport options."
+      },
+      "base_prediction": 939716.0,
+      "optimized_prediction": 1575594.0,
+      "base_log": 13.753334045410156,
+      "optimized_log": 14.270143508911133,
+      "uncertainty_band": [
+        24342.69140625,
+        36274988.0
+      ],
+      "changes": {
+        "structure_type": "Announcement / information led"
+      },
+      "candidates_evaluated": 16,
+      "support_examples": [
+        {
+          "video_id": "cmvc5nw57003fbn00lnr610as",
+          "title": "【易Joy！易賞！易分享 全新大家樂Club 100易.0】",
+          "source_url": "https://www.youtube.com/watch?v=185p2FWa_R0"
+        },
+        {
+          "video_id": "cmt3r8lhc001ebnawtu04awo7",
+          "title": "【新升級恒生 MMPOWER卡】網購信用卡天花板 網球一哥都用緊！🛍️網購及指定商戶賺高達 8% +FUN Dollars！",
+          "source_url": "https://www.youtube.com/watch?v=B2EyinOoCsE"
+        },
+        {
+          "video_id": "cmt3q08mg0005bnawpa8ty5ye",
+          "title": "【滙豐Premier Elite｜洞悉環球市場先機，盡佔全球財富機遇】",
+          "source_url": "https://www.youtube.com/watch?v=CHqJrCwN_QE"
+        }
+      ],
+      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
+      "observed_views": 1720337
+    },
+    {
+      "video_id": "cmvc4znur002dbn00afi5g52s",
+      "title": "美心瑤柱蘿蔔糕電視廣告 2014",
+      "brand": "Maxim's",
+      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
+      "creative_elements": {
+        "creative_mechanic": "Product proof led",
+        "structure_type": "Creative mechanic unresolved",
+        "pacing": "fast-cut",
+        "main_message": "Maxim's Scallop Radish Cake is delicious and full of radish pieces.",
+        "hook": "Maxim's Scallop Radish Cake is delicious and full of radish pieces.",
+        "cta": "unclear"
+      },
+      "base_prediction": 34067.44140625,
+      "optimized_prediction": 191621.46875,
+      "base_log": 10.436126708984375,
+      "optimized_log": 12.16328239440918,
+      "uncertainty_band": [
+        881.5546264648438,
+        1315111.375
+      ],
+      "changes": {
+        "creative_mechanic": "Offer led",
+        "structure_type": "Product proof led"
+      },
+      "candidates_evaluated": 8,
+      "support_examples": [
+        {
+          "video_id": "cmrzz3s6r001sbnr8lbqxwrbd",
+          "title": "【嚟麥當勞升級加配泰式滋味😋冬蔭功風味 Shake Shake 薯條➕番石榴椰果梳打➕黑糯米批等緊你‼️】",
+          "source_url": "https://www.youtube.com/watch?v=61ekBwxBCLA"
+        },
+        {
+          "video_id": "cmvc4mk5i000pbn00las6i1uw",
+          "title": "2025 美心月餅 美心冰皮味道 香港製造 – 冰皮月餅系列+榴槤冰皮月餅",
+          "source_url": "https://www.youtube.com/watch?v=8NZyb7wPlao"
+        },
+        {
+          "video_id": "cmrzz2ji6001nbnr8szn29cxl",
+          "title": "【當地人必食😋🌶️辣辣麥炸雞喺香港麥當勞都歎到‼️】",
+          "source_url": "https://www.youtube.com/watch?v=CV-dAWG145s"
+        }
+      ],
+      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
+      "observed_views": 3760
+    },
+    {
+      "video_id": "cmrzyteu8000tbnr8qwvfbdnd",
+      "title": "【經典重塑🌟！王者將軍漢堡霸氣新登場🍔🐮！】",
+      "brand": "McDonald's",
+      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
+      "creative_elements": {
+        "creative_mechanic": "Offer led",
+        "structure_type": "Product proof led",
+        "pacing": "medium tempo",
+        "main_message": "The ad presents the return of the 'Shogun Burger' series at McDonald's as a 'fated reunion' through a dramatic, cinematic narrative involving reincarnation and long-lost lovers.",
+        "hook": "The ad presents the return of the 'Shogun Burger' series at McDonald's as a 'fated reunion' through a dramatic, cinematic narrative involving reincarnation and long-lost lovers.",
+        "cta": "The ad promotes a limited-time offer for the Shogun Burger combo starting at $39, available at designated Hong Kong McDonald's after 11 AM."
+      },
+      "base_prediction": 199551.5,
+      "optimized_prediction": 276563.15625,
+      "base_log": 12.203832626342773,
+      "optimized_log": 12.530198097229004,
+      "uncertainty_band": [
+        5168.47607421875,
+        7703139.5
+      ],
+      "changes": {
+        "structure_type": "Announcement / information led"
+      },
+      "candidates_evaluated": 16,
+      "support_examples": [
+        {
+          "video_id": "cmvc5nw57003fbn00lnr610as",
+          "title": "【易Joy！易賞！易分享 全新大家樂Club 100易.0】",
+          "source_url": "https://www.youtube.com/watch?v=185p2FWa_R0"
+        },
+        {
+          "video_id": "cmt3r8lhc001ebnawtu04awo7",
+          "title": "【新升級恒生 MMPOWER卡】網購信用卡天花板 網球一哥都用緊！🛍️網購及指定商戶賺高達 8% +FUN Dollars！",
+          "source_url": "https://www.youtube.com/watch?v=B2EyinOoCsE"
+        },
+        {
+          "video_id": "cmt3q08mg0005bnawpa8ty5ye",
+          "title": "【滙豐Premier Elite｜洞悉環球市場先機，盡佔全球財富機遇】",
+          "source_url": "https://www.youtube.com/watch?v=CHqJrCwN_QE"
+        }
+      ],
+      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
+      "observed_views": 1614955
+    },
+    {
+      "video_id": "cmvc4x6u10023bn00ww0cuutd",
+      "title": "【你 + 美心 + 我 = 新年最好禮】電視廣告",
+      "brand": "Maxim's",
+      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
+      "creative_elements": {
+        "creative_mechanic": "Offer led",
+        "structure_type": "Product proof led",
+        "pacing": "fast-cut",
+        "main_message": "Hong Kong MX festive foods like radish cake and egg rolls are the best gifts to share with loved ones during Chinese New Year.",
+        "hook": "Hong Kong MX festive foods like radish cake and egg rolls are the best gifts to share with loved ones during Chinese New Year.",
+        "cta": "Celebrate the Lunar New Year by sharing Hong Kong MX festive treats with family."
+      },
+      "base_prediction": 124240.71875,
+      "optimized_prediction": 249724.78125,
+      "base_log": 11.729984283447266,
+      "optimized_log": 12.428118705749512,
+      "uncertainty_band": [
+        3217.5244140625,
+        4795987.0
+      ],
+      "changes": {
+        "structure_type": "Announcement / information led",
+        "pacing": "medium tempo"
+      },
+      "candidates_evaluated": 14,
+      "support_examples": [
+        {
+          "video_id": "cmvc5nw57003fbn00lnr610as",
+          "title": "【易Joy！易賞！易分享 全新大家樂Club 100易.0】",
+          "source_url": "https://www.youtube.com/watch?v=185p2FWa_R0"
+        },
+        {
+          "video_id": "cmt3r8lhc001ebnawtu04awo7",
+          "title": "【新升級恒生 MMPOWER卡】網購信用卡天花板 網球一哥都用緊！🛍️網購及指定商戶賺高達 8% +FUN Dollars！",
+          "source_url": "https://www.youtube.com/watch?v=B2EyinOoCsE"
+        },
+        {
+          "video_id": "cmt3q08mg0005bnawpa8ty5ye",
+          "title": "【滙豐Premier Elite｜洞悉環球市場先機，盡佔全球財富機遇】",
+          "source_url": "https://www.youtube.com/watch?v=CHqJrCwN_QE"
+        }
+      ],
+      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
+      "observed_views": 152450
+    },
+    {
       "video_id": "cmvc4lbtr000fbn0081iw3zrc",
       "title": "2026 美心月餅 香港味道 美心製造 – 30秒",
       "brand": "Maxim's",
@@ -102976,264 +103676,38 @@
         "hook": "Maxim's Mooncakes are a timeless representation of Hong Kong's Mid-Autumn festival taste, proudly made in Hong Kong and a market leader for 28 years.",
         "cta": "unclear"
       },
-      "base_prediction": 711080.0,
-      "optimized_prediction": 778939.5625,
-      "base_log": 13.474541664123535,
-      "optimized_log": 13.565690040588379,
+      "base_prediction": 1259943.75,
+      "optimized_prediction": 2168881.5,
+      "base_log": 14.046578407287598,
+      "optimized_log": 14.589722633361816,
       "uncertainty_band": [
-        13826.310546875,
-        36567936.0
+        32638.30078125,
+        48636480.0
       ],
       "changes": {
-        "creative_mechanic": "Offer led"
+        "creative_mechanic": "Offer led",
+        "structure_type": "Announcement / information led"
       },
-      "candidates_evaluated": 17,
+      "candidates_evaluated": 15,
       "support_examples": [
         {
-          "video_id": "cmrzyteu8000tbnr8qwvfbdnd",
-          "title": "【經典重塑🌟！王者將軍漢堡霸氣新登場🍔🐮！】",
-          "source_url": "https://www.youtube.com/watch?v=0_1xI0ihZSk"
+          "video_id": "cmvc5nw57003fbn00lnr610as",
+          "title": "【易Joy！易賞！易分享 全新大家樂Club 100易.0】",
+          "source_url": "https://www.youtube.com/watch?v=185p2FWa_R0"
         },
         {
-          "video_id": "cmu2x7awk001jbn60ht4lm5t5",
-          "title": "[CATHAY FRESH] BEYOND STARS — YOUR FRESHEST GATEWAY IN AND OUT OF ASIA｜【國泰—鮮貨運送】為您端上產地鮮味｜新鮮快捷 聯繫亞洲",
-          "source_url": "https://www.youtube.com/watch?v=F_gTeg6D8e0"
+          "video_id": "cmt3r8lhc001ebnawtu04awo7",
+          "title": "【新升級恒生 MMPOWER卡】網購信用卡天花板 網球一哥都用緊！🛍️網購及指定商戶賺高達 8% +FUN Dollars！",
+          "source_url": "https://www.youtube.com/watch?v=B2EyinOoCsE"
         },
         {
-          "video_id": "cmsy0fmgu0028bnn8lr8uwa1j",
-          "title": "【滙豐保險呈獻｜一份選擇 成就更多財富可能】",
-          "source_url": "https://www.youtube.com/watch?v=Hki21yPVTS8"
+          "video_id": "cmt3q08mg0005bnawpa8ty5ye",
+          "title": "【滙豐Premier Elite｜洞悉環球市場先機，盡佔全球財富機遇】",
+          "source_url": "https://www.youtube.com/watch?v=CHqJrCwN_QE"
         }
       ],
       "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
       "observed_views": 782077
-    },
-    {
-      "video_id": "cmvc8vit6007sbn00j50pifsd",
-      "title": "【香脆花生糖．手工拌炒】",
-      "brand": "Kee Wah Bakery",
-      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
-      "creative_elements": {
-        "creative_mechanic": "Music / mood led",
-        "structure_type": "Music / mood led",
-        "pacing": "fast-cut",
-        "main_message": "Theme-level read: The ad promotes traditional, handmade peanut candy through visual craftsmanship.",
-        "hook": "Theme-level read: The ad promotes traditional, handmade peanut candy through visual craftsmanship.",
-        "cta": "Follow-through appears on the end card, but the CTA remains only partially explicit."
-      },
-      "base_prediction": 22231.78125,
-      "optimized_prediction": 34530.09375,
-      "base_log": 10.009323120117188,
-      "optimized_log": 10.449615478515625,
-      "uncertainty_band": [
-        431.3272705078125,
-        1143337.375
-      ],
-      "changes": {
-        "creative_mechanic": "Offer led",
-        "structure_type": "Problem-solution led"
-      },
-      "candidates_evaluated": 10,
-      "support_examples": [
-        {
-          "video_id": "cmu2v7bvt000ubn7cnteika56",
-          "title": "【李錦記全新快趣煮APP📱過千中、英、印尼文食譜任你shake！】",
-          "source_url": "https://www.youtube.com/watch?v=MbVxAuU3xxQ"
-        },
-        {
-          "video_id": "cmvc5mj660035bn008vaqzdu6",
-          "title": "大家樂 燕麥奶炒滑蛋",
-          "source_url": "https://www.youtube.com/watch?v=OUx6Hxn7ZS4"
-        },
-        {
-          "video_id": "cmvc5jdko002ibn00jd17fzcb",
-          "title": "【✨大家樂超值家餸孖寶優惠✨$60嘆齊濃香芝麻雞➕明爐香烤BB鴨😋】",
-          "source_url": "https://www.youtube.com/watch?v=Pgbkl89_DS8"
-        }
-      ],
-      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
-      "observed_views": 69617
-    },
-    {
-      "video_id": "cmvbu476x004cbnuo1qv1tuh8",
-      "title": "【兩大男神煨Sir x 古Sir 為事業衝衝衝🏃🏻‍♂️🏃🏻 】",
-      "brand": "Prudential",
-      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
-      "creative_elements": {
-        "creative_mechanic": "Announcement / information led",
-        "structure_type": "Product proof led",
-        "pacing": "medium tempo",
-        "main_message": "The ad emphasizes that while striving forward is important, taking a step back to care for family health is equally vital, and offers a premium rebate on its critical illness insurance plan.",
-        "hook": "The ad emphasizes that while striving forward is important, taking a step back to care for family health is equally vital, and offers a premium rebate on its critical illness insurance plan.",
-        "cta": "Visit the provided website or refer to the product brochure for more details on the 25% premium rebate offer."
-      },
-      "base_prediction": 191026.828125,
-      "optimized_prediction": 219448.984375,
-      "base_log": 12.160174369812012,
-      "optimized_log": 12.298879623413086,
-      "uncertainty_band": [
-        3713.62744140625,
-        9823765.0
-      ],
-      "changes": {
-        "creative_mechanic": "Offer led"
-      },
-      "candidates_evaluated": 17,
-      "support_examples": [
-        {
-          "video_id": "cmrzyteu8000tbnr8qwvfbdnd",
-          "title": "【經典重塑🌟！王者將軍漢堡霸氣新登場🍔🐮！】",
-          "source_url": "https://www.youtube.com/watch?v=0_1xI0ihZSk"
-        },
-        {
-          "video_id": "cmu2x7awk001jbn60ht4lm5t5",
-          "title": "[CATHAY FRESH] BEYOND STARS — YOUR FRESHEST GATEWAY IN AND OUT OF ASIA｜【國泰—鮮貨運送】為您端上產地鮮味｜新鮮快捷 聯繫亞洲",
-          "source_url": "https://www.youtube.com/watch?v=F_gTeg6D8e0"
-        },
-        {
-          "video_id": "cmsy0fmgu0028bnn8lr8uwa1j",
-          "title": "【滙豐保險呈獻｜一份選擇 成就更多財富可能】",
-          "source_url": "https://www.youtube.com/watch?v=Hki21yPVTS8"
-        }
-      ],
-      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
-      "observed_views": 3399089
-    },
-    {
-      "video_id": "cmvc5u9v20049bn00m8xakrl6",
-      "title": "大家樂「一哥奶茶」電視廣告",
-      "brand": "Café de Coral",
-      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
-      "creative_elements": {
-        "creative_mechanic": "Offer led",
-        "structure_type": "Product proof led",
-        "pacing": "medium tempo",
-        "main_message": "Café de Coral's signature milk tea (一哥奶茶) is a consistent, high-quality companion for hardworking Hong Kongers, offering them a pick-me-up during their workday.",
-        "hook": "Café de Coral's signature milk tea (一哥奶茶) is a consistent, high-quality companion for hardworking Hong Kongers, offering them a pick-me-up during their workday.",
-        "cta": "The ad promotes a limited-time half-price offer ($5) for hot milk tea, encouraging customers to visit Café de Coral for a beverage."
-      },
-      "base_prediction": 115652.9296875,
-      "optimized_prediction": 116607.8203125,
-      "base_log": 11.658357620239258,
-      "optimized_log": 11.666580200195312,
-      "uncertainty_band": [
-        2247.947021484375,
-        5947593.5
-      ],
-      "changes": {
-        "structure_type": "Problem-solution led"
-      },
-      "candidates_evaluated": 18,
-      "support_examples": [
-        {
-          "video_id": "cmu3h124d000zbn5koghp340c",
-          "title": "【神Code伴你行🎶──「出行碼」】 Travel QR Code",
-          "source_url": "https://www.youtube.com/watch?v=-ScXERv_ZRQ"
-        },
-        {
-          "video_id": "cmvc5xusw004gbn003frnxp6a",
-          "title": "大家樂「天天超值午餐 - 流心玉子燒汁豚肉飯」電視廣告",
-          "source_url": "https://www.youtube.com/watch?v=98Q60sqW-sQ"
-        },
-        {
-          "video_id": "cmsy03r67001mbnn8kl8c7cb4",
-          "title": "【滙豐保險｜人人擁有兌現承諾自由】",
-          "source_url": "https://www.youtube.com/watch?v=UZQ4nQEpuU4"
-        }
-      ],
-      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
-      "observed_views": 56852
-    },
-    {
-      "video_id": "cmvbtyikh003ibnuossgqavbj",
-      "title": "【萬寧一萬種健康．日常 - 秋冬護膚 得個「潤」字？】",
-      "brand": "Mannings",
-      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
-      "creative_elements": {
-        "creative_mechanic": "Announcement / information led",
-        "structure_type": "Product proof led",
-        "pacing": "medium tempo",
-        "main_message": "Mannings beauty consultants provide professional advice on selecting skincare products to address seasonal skin dryness and sensitivity.",
-        "hook": "Mannings beauty consultants provide professional advice on selecting skincare products to address seasonal skin dryness and sensitivity.",
-        "cta": "Visit Mannings to consult with their beauty experts and purchase recommended skincare products."
-      },
-      "base_prediction": 372995.65625,
-      "optimized_prediction": 434413.4375,
-      "base_log": 12.829324722290039,
-      "optimized_log": 12.981754302978516,
-      "uncertainty_band": [
-        7252.10498046875,
-        19181646.0
-      ],
-      "changes": {
-        "creative_mechanic": "Offer led"
-      },
-      "candidates_evaluated": 17,
-      "support_examples": [
-        {
-          "video_id": "cmrzyteu8000tbnr8qwvfbdnd",
-          "title": "【經典重塑🌟！王者將軍漢堡霸氣新登場🍔🐮！】",
-          "source_url": "https://www.youtube.com/watch?v=0_1xI0ihZSk"
-        },
-        {
-          "video_id": "cmu2x7awk001jbn60ht4lm5t5",
-          "title": "[CATHAY FRESH] BEYOND STARS — YOUR FRESHEST GATEWAY IN AND OUT OF ASIA｜【國泰—鮮貨運送】為您端上產地鮮味｜新鮮快捷 聯繫亞洲",
-          "source_url": "https://www.youtube.com/watch?v=F_gTeg6D8e0"
-        },
-        {
-          "video_id": "cmsy0fmgu0028bnn8lr8uwa1j",
-          "title": "【滙豐保險呈獻｜一份選擇 成就更多財富可能】",
-          "source_url": "https://www.youtube.com/watch?v=Hki21yPVTS8"
-        }
-      ],
-      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
-      "observed_views": 400929
-    },
-    {
-      "video_id": "cmu2v61ek000pbn7csj900ufj",
-      "title": "【李錦記特級蠔油】鮮味神器🌟，一支搞掂💯！",
-      "brand": "Lee Kum Kee",
-      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
-      "creative_elements": {
-        "creative_mechanic": "Problem-solution led",
-        "structure_type": "Creative mechanic unresolved",
-        "pacing": "fast-cut",
-        "main_message": "李錦記特級蠔油是提鮮、上色、入味的烹飪秘訣，一瓶即可解決多種烹飪需求。",
-        "hook": "李錦記特級蠔油是提鮮、上色、入味的烹飪秘訣，一瓶即可解決多種烹飪需求。",
-        "cta": "unclear"
-      },
-      "base_prediction": 136426.203125,
-      "optimized_prediction": 233955.671875,
-      "base_log": 11.823546409606934,
-      "optimized_log": 12.36289119720459,
-      "uncertainty_band": [
-        2651.893310546875,
-        7015882.0
-      ],
-      "changes": {
-        "creative_mechanic": "Offer led",
-        "structure_type": "Product proof led"
-      },
-      "candidates_evaluated": 9,
-      "support_examples": [
-        {
-          "video_id": "cmvc4x6u10023bn00ww0cuutd",
-          "title": "【你 + 美心 + 我 = 新年最好禮】電視廣告",
-          "source_url": "https://www.youtube.com/watch?v=0jpktNjWkz4"
-        },
-        {
-          "video_id": "cmrzz3s6r001sbnr8lbqxwrbd",
-          "title": "【嚟麥當勞升級加配泰式滋味😋冬蔭功風味 Shake Shake 薯條➕番石榴椰果梳打➕黑糯米批等緊你‼️】",
-          "source_url": "https://www.youtube.com/watch?v=61ekBwxBCLA"
-        },
-        {
-          "video_id": "cmvc4mk5i000pbn00las6i1uw",
-          "title": "2025 美心月餅 美心冰皮味道 香港製造 – 冰皮月餅系列+榴槤冰皮月餅",
-          "source_url": "https://www.youtube.com/watch?v=8NZyb7wPlao"
-        }
-      ],
-      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
-      "observed_views": 477593
     }
   ],
   "new_video": {
@@ -103249,36 +103723,38 @@
       "hook": "MTR's East Rail Line provides frequent and seamless transportation between Hong Kong and Shenzhen.",
       "cta": "Take the East Rail Line for convenient cross-boundary travel."
     },
-    "base_prediction": 745189.1875,
-    "optimized_prediction": 825701.6875,
-    "base_log": 13.521394729614258,
-    "optimized_log": 13.623990058898926,
+    "base_prediction": 288085.03125,
+    "optimized_prediction": 560572.875,
+    "base_log": 12.571014404296875,
+    "optimized_log": 13.236716270446777,
     "uncertainty_band": [
-      14489.5927734375,
-      38321992.0
+      7461.96728515625,
+      11120706.0
     ],
     "changes": {
-      "structure_type": "Product proof led"
+      "structure_type": "Announcement / information led"
     },
-    "candidates_evaluated": 18,
+    "candidates_evaluated": 16,
     "support_examples": [
       {
-        "video_id": "cmrzyteu8000tbnr8qwvfbdnd",
-        "title": "【經典重塑🌟！王者將軍漢堡霸氣新登場🍔🐮！】",
-        "source_url": "https://www.youtube.com/watch?v=0_1xI0ihZSk"
+        "video_id": "cmvc5nw57003fbn00lnr610as",
+        "title": "【易Joy！易賞！易分享 全新大家樂Club 100易.0】",
+        "source_url": "https://www.youtube.com/watch?v=185p2FWa_R0"
       },
       {
-        "video_id": "cmu2x7awk001jbn60ht4lm5t5",
-        "title": "[CATHAY FRESH] BEYOND STARS — YOUR FRESHEST GATEWAY IN AND OUT OF ASIA｜【國泰—鮮貨運送】為您端上產地鮮味｜新鮮快捷 聯繫亞洲",
-        "source_url": "https://www.youtube.com/watch?v=F_gTeg6D8e0"
+        "video_id": "cmt3r8lhc001ebnawtu04awo7",
+        "title": "【新升級恒生 MMPOWER卡】網購信用卡天花板 網球一哥都用緊！🛍️網購及指定商戶賺高達 8% +FUN Dollars！",
+        "source_url": "https://www.youtube.com/watch?v=B2EyinOoCsE"
       },
       {
-        "video_id": "cmsy0fmgu0028bnn8lr8uwa1j",
-        "title": "【滙豐保險呈獻｜一份選擇 成就更多財富可能】",
-        "source_url": "https://www.youtube.com/watch?v=Hki21yPVTS8"
+        "video_id": "cmt3q08mg0005bnawpa8ty5ye",
+        "title": "【滙豐Premier Elite｜洞悉環球市場先機，盡佔全球財富機遇】",
+        "source_url": "https://www.youtube.com/watch?v=CHqJrCwN_QE"
       }
     ],
     "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
+    "age_days": 718.5009931984607,
+    "target_note": "Cumulative snapshot views at training-median age, not a validated fixed-horizon forecast.",
     "storyboard": [
       {
         "seconds": "0-3",
@@ -103293,7 +103769,7 @@
       {
         "seconds": "20-27",
         "purpose": "Apply suggested creative structure",
-        "content": "structure_type = Product proof led"
+        "content": "structure_type = Announcement / information led"
       },
       {
         "seconds": "27-30",
@@ -103305,163 +103781,173 @@
   "slices": [
     {
       "slice": "views <= 10k",
-      "n": 3,
-      "log_MAE": 4.697147177515849,
-      "log_RMSE": 4.806303851377597,
-      "Spearman": -0.5,
-      "views_MAE": 240551.38020833334,
-      "views_RMSE": 283548.6707343943,
-      "log_R2": -144.97360051527446
+      "n": 8,
+      "log_MAE": 4.1790688386749375,
+      "log_RMSE": 4.502714629233194,
+      "Spearman": 0.09523809523809526,
+      "views_MAE": 354783.6823730469,
+      "views_RMSE": 493793.6637224466,
+      "log_R2": -22.321266608860064
     },
     {
       "slice": "10k < views <= 1m",
-      "n": 26,
-      "log_MAE": 1.1964445596420912,
-      "log_RMSE": 1.5078228944860104,
-      "Spearman": 0.37777777777777777,
-      "views_MAE": 233527.20943509619,
-      "views_RMSE": 318861.74254499294,
-      "log_R2": 0.054963104296092746
+      "n": 16,
+      "log_MAE": 1.0795148549173452,
+      "log_RMSE": 1.3719972753205913,
+      "Spearman": 0.37941176470588234,
+      "views_MAE": 278815.79199218756,
+      "views_RMSE": 415114.1015499547,
+      "log_R2": -0.02929364873085394
     },
     {
       "slice": "views > 1m",
-      "n": 14,
-      "log_MAE": 2.417096437164457,
-      "log_RMSE": 2.4928261814870076,
-      "Spearman": 0.6835164835164835,
-      "views_MAE": 2378649.1679687505,
-      "views_RMSE": 2877813.8316824357,
-      "log_R2": -20.757930502288453
+      "n": 19,
+      "log_MAE": 1.3936212860711585,
+      "log_RMSE": 1.7134829248193306,
+      "Spearman": 0.1456140350877193,
+      "views_MAE": 1629322.0353618418,
+      "views_RMSE": 2068738.5549027682,
+      "log_R2": -11.928402797356377
     },
     {
       "slice": "Café de Coral",
-      "n": 2,
-      "log_MAE": 1.2113135453990056,
-      "log_RMSE": 1.3109012516273777,
-      "Spearman": -0.9999999999999999,
-      "views_MAE": 207491.296875,
-      "views_RMSE": 255267.43539516153,
-      "log_R2": -0.6616064568004638
+      "n": 1,
+      "log_MAE": 2.317008079748332,
+      "log_RMSE": 2.317008079748332,
+      "Spearman": null,
+      "views_MAE": 1157023.625,
+      "views_RMSE": 1157023.625,
+      "log_R2": null
     },
     {
       "slice": "Cathay",
-      "n": 3,
-      "log_MAE": 1.1794209943573648,
-      "log_RMSE": 1.490602218139604,
-      "Spearman": 0.5,
-      "views_MAE": 126625.79427083324,
-      "views_RMSE": 147777.47870821305,
-      "log_R2": 0.12653951007399566
+      "n": 5,
+      "log_MAE": 1.7096323737644816,
+      "log_RMSE": 2.3547681554514304,
+      "Spearman": -0.09999999999999999,
+      "views_MAE": 437853.8812499998,
+      "views_RMSE": 582743.8418532254,
+      "log_R2": -0.6082299920414622
+    },
+    {
+      "slice": "Chow Tai Fook",
+      "n": 2,
+      "log_MAE": 0.976283791339986,
+      "log_RMSE": 1.0662698719568005,
+      "Spearman": -0.9999999999999999,
+      "views_MAE": 104831.13671874997,
+      "views_RMSE": 112456.06813232393,
+      "log_R2": -6.379342322576305
     },
     {
       "slice": "Garden",
       "n": 2,
-      "log_MAE": 0.501030919692556,
-      "log_RMSE": 0.5336612540370664,
-      "Spearman": 0.9999999999999999,
-      "views_MAE": 111532.16796874988,
-      "views_RMSE": 140108.1377199942,
-      "log_R2": 0.6105846177524712
+      "log_MAE": 1.4668506138028956,
+      "log_RMSE": 1.8908874886918943,
+      "Spearman": -0.9999999999999999,
+      "views_MAE": 1203757.6796874993,
+      "views_RMSE": 1518799.8230818054,
+      "log_R2": -14.715504007930946
     },
     {
       "slice": "HSBC",
-      "n": 4,
-      "log_MAE": 2.0520827349402815,
-      "log_RMSE": 2.4995207266961925,
-      "Spearman": 0.39999999999999997,
-      "views_MAE": 856451.4687499998,
-      "views_RMSE": 1093304.8993785898,
-      "log_R2": 0.16628175295126346
+      "n": 2,
+      "log_MAE": 1.1196515576723005,
+      "log_RMSE": 1.5537663542505586,
+      "Spearman": -0.9999999999999999,
+      "views_MAE": 789650.6015624992,
+      "views_RMSE": 1075014.295517962,
+      "log_R2": -360.97109386488495
     },
     {
       "slice": "Hang Seng Bank",
       "n": 3,
-      "log_MAE": 1.1153163070299612,
-      "log_RMSE": 1.4199890186986242,
-      "Spearman": -0.5,
-      "views_MAE": 2305317.197916669,
-      "views_RMSE": 3617987.5449441806,
-      "log_R2": -1.120827453245492
+      "log_MAE": 1.0549124981085842,
+      "log_RMSE": 1.1099645554809467,
+      "Spearman": 0.5,
+      "views_MAE": 2863270.447916668,
+      "views_RMSE": 3513131.323554912,
+      "log_R2": -0.6560983134811507
     },
     {
       "slice": "IKEA",
       "n": 3,
-      "log_MAE": 2.9926719893885902,
-      "log_RMSE": 3.020429983345381,
+      "log_MAE": 2.816730924702766,
+      "log_RMSE": 3.9834826871051763,
       "Spearman": 0.5,
-      "views_MAE": 1870480.3958333333,
-      "views_RMSE": 1968257.9781330198,
-      "log_R2": -73.81743515946201
+      "views_MAE": 752601.6354166662,
+      "views_RMSE": 772693.6351106035,
+      "log_R2": -0.36021269708913217
     },
     {
       "slice": "Kee Wah Bakery",
-      "n": 5,
-      "log_MAE": 1.0465197614379984,
-      "log_RMSE": 1.1196945245851844,
-      "Spearman": -0.6,
-      "views_MAE": 41418.4,
-      "views_RMSE": 47077.49701330557,
-      "log_R2": -1.2933194738530251
+      "n": 4,
+      "log_MAE": 2.1326171024179943,
+      "log_RMSE": 2.4090368938450175,
+      "Spearman": 0.6000000000000001,
+      "views_MAE": 55248.33837890628,
+      "views_RMSE": 62628.63203148698,
+      "log_R2": -0.41640851011068203
     },
     {
       "slice": "Lee Kum Kee",
       "n": 4,
-      "log_MAE": 2.0716977012377225,
-      "log_RMSE": 2.125578398041815,
-      "Spearman": 1.0,
-      "views_MAE": 2421893.71875,
-      "views_RMSE": 3203120.787390023,
-      "log_R2": -4.237240298821801
+      "log_MAE": 1.0883416413114455,
+      "log_RMSE": 1.232666841635898,
+      "Spearman": 0.39999999999999997,
+      "views_MAE": 1147871.0468749993,
+      "views_RMSE": 1263800.1392746954,
+      "log_R2": -15.190725913179307
     },
     {
       "slice": "MTR",
-      "n": 3,
-      "log_MAE": 3.024821446301187,
-      "log_RMSE": 3.0517433884631364,
-      "Spearman": -0.5,
-      "views_MAE": 326898.75,
-      "views_RMSE": 331040.3380815179,
-      "log_R2": -132.6737014928386
+      "n": 2,
+      "log_MAE": 1.9000346364465441,
+      "log_RMSE": 2.2995717962318505,
+      "Spearman": 0.9999999999999999,
+      "views_MAE": 647102.625,
+      "views_RMSE": 660733.6556771807,
+      "log_R2": -0.11147292330469916
     },
     {
       "slice": "Mannings",
-      "n": 5,
-      "log_MAE": 1.722442093224115,
-      "log_RMSE": 1.9249266408183954,
-      "Spearman": 0.0,
-      "views_MAE": 798133.7937500003,
-      "views_RMSE": 995062.2414451031,
-      "log_R2": -9.618016688510231
+      "n": 4,
+      "log_MAE": 2.0829018695739627,
+      "log_RMSE": 3.157834887802481,
+      "Spearman": 1.0,
+      "views_MAE": 1083817.328125,
+      "views_RMSE": 1493390.3326974208,
+      "log_R2": 0.1874281391884659
     },
     {
       "slice": "Maxim's",
-      "n": 1,
-      "log_MAE": 0.0951680946753104,
-      "log_RMSE": 0.0951680946753104,
-      "Spearman": null,
-      "views_MAE": 70996.99999999965,
-      "views_RMSE": 70996.99999999965,
-      "log_R2": null
+      "n": 5,
+      "log_MAE": 1.618361569900236,
+      "log_RMSE": 2.396664258318971,
+      "Spearman": 0.7,
+      "views_MAE": 253983.57578125008,
+      "views_RMSE": 387631.1240762304,
+      "log_R2": -0.4270505385648411
     },
     {
       "slice": "McDonald's",
-      "n": 4,
-      "log_MAE": 2.1991298107465322,
-      "log_RMSE": 3.1892838594669946,
-      "Spearman": 0.0,
-      "views_MAE": 730838.4609374998,
-      "views_RMSE": 1031066.5588761006,
-      "log_R2": -0.10955916422354517
+      "n": 5,
+      "log_MAE": 2.1143467644694107,
+      "log_RMSE": 2.270443152436403,
+      "Spearman": 0.6,
+      "views_MAE": 964794.9515624994,
+      "views_RMSE": 1354802.3634072025,
+      "log_R2": 0.08362607387576282
     },
     {
       "slice": "Prudential",
-      "n": 4,
-      "log_MAE": 2.8613376766114698,
-      "log_RMSE": 2.9508077867718865,
-      "Spearman": 0.39999999999999997,
-      "views_MAE": 1315736.0078124995,
-      "views_RMSE": 1755999.2062586446,
-      "log_R2": -0.03967893034832026
+      "n": 1,
+      "log_MAE": 3.8988672828389532,
+      "log_RMSE": 3.8988672828389532,
+      "Spearman": null,
+      "views_MAE": 3330207.9453124977,
+      "views_RMSE": 3330207.9453124977,
+      "log_R2": null
     }
   ],
   "graph_audit": {
@@ -103477,7 +103963,33 @@
       "empty_duplicate_or_cap": 2892,
       "excluded_field": 10215
     },
-    "node_video_core_pairs": 1626,
+    "node_video_core_pairs": 1558,
     "policy": "Allowlisted response-free creative concepts/evidence; caps and duplicate rules fixed before tuning. Original membership/support edges only. Support links may be heuristic. Exclude engagement_stats, assessment scores, risk annotations, cross-video heuristic suggestions from primary per-video graphs."
+  },
+  "brand_edge_audit": {
+    "core_undirected_pairs": 1558,
+    "same_brand_pairs": 1558,
+    "same_brand_fraction": 1.0,
+    "no_brand_pairs": 0,
+    "equals_complete_brand_cliques": true,
+    "provided_relation_counts": {
+      "same_brand": 1368,
+      "same_author": 1494,
+      "same_evidence_mode": 970,
+      "same_cta_explicitness": 794,
+      "same_pacing": 1059,
+      "same_structure_type": 417,
+      "same_creative_mechanic": 669,
+      "same_canonical_brand": 190,
+      "same_product_or_campaign": 1
+    },
+    "ablation": "Node no-brand edges removes every same-brand endpoint pair, including pairs supported by overlapping author/creative relations. Root features including brand retained; identical architecture/tuning protocol. No added similarity edges."
+  },
+  "age_support": {
+    "training_min_days": 36.501551067430555,
+    "training_median_days": 718.5009931984607,
+    "training_max_days": 5620.5015745195715,
+    "training_n": 171,
+    "target": "Cumulative views at snapshot; age is a covariate, not a validated response trajectory or fixed-horizon forecast."
   }
 }

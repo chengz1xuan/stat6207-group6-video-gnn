@@ -27,12 +27,20 @@ class ModelService:
         self.graphs={g['video_id']:g for g in self.results['graphs']}
         self.train_ids=set(cp['train_ids'])
         self.combos=self.scenarios['supported_combos']
+        self.age_support=self.results['age_support']
 
     def predict_many(self, rows, graphs):
         ds=[self.features.graph(pd.Series(r),g,self.similarity)[0] for r,g in zip(rows,graphs)]
         logs=predict(self.model,self.config,ds)
         return [{'log':float(z),'views':float(np.expm1(np.clip(z,0,25))),
-                 'band':[float(np.expm1(max(0,z-self.band))),float(np.expm1(min(25,z+self.band)))]} for z in logs]
+                 'band':[float(np.expm1(max(0,z-self.band))),float(np.expm1(min(25,z+self.band)))],
+                 'age_diagnostic':self.age_diagnostic(row)} for z,row in zip(logs,rows)]
+
+    def age_diagnostic(self,row):
+        age=float(row['age_days']);a=self.age_support
+        outside=not a['training_min_days']<=age<=a['training_max_days']
+        return {'input_age_days':age,'outside_training_range':outside,**a,
+                'interpretation':'Exploratory cumulative-view estimate; not a validated fixed-horizon or 30-day forecast. Age within range alone does not validate a new brief.'}
 
     def predict(self,row,graph):
         return self.predict_many([row],[graph])[0]

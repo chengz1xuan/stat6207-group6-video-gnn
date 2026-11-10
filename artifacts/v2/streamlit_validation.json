@@ -8,6 +8,8 @@
   "new_video_prediction": true,
   "optimization_form": true,
   "existing_video_prediction_parity": true,
+  "30_day_extrapolation_warning": true,
+  "new_default_is_training_age_median": true,
   "graph_toggle": true,
   "edited_settings_submission": true,
   "app_exceptions": 0
