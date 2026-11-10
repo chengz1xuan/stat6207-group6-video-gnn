@@ -1,0 +1,40 @@
+{
+  "video_id": "cmt3rmfou000pbnlsayxa6pxl",
+  "youtube_id": "KKfxbA-MMj4",
+  "source_url": "https://www.youtube.com/watch?v=KKfxbA-MMj4",
+  "retrieved_at_utc": "2026-11-09T12:01:25.812347+00:00",
+  "views": 3559584,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCSIfcoM9kmyjil_IU5IC_gA",
+  "subscriber_count_display": "33K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "7545d0d81f5542e768afbfc65236673d84573dcc12cb5a8668b9d363d9872586",
+  "platform_title": "【恒生信用卡玩轉個獎賞】玩轉個限定一蚊熱搶仲有大抽獎 | 恒生銀行",
+  "channel_name": "恒生銀行 Hang Seng Bank",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "3559584",
+      "display": "3,559,584 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCSIfcoM9kmyjil_IU5IC_gA",
+      "name": "恒生銀行 Hang Seng Bank",
+      "subscribers_display": "33K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

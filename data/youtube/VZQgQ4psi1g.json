@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu2vs2sd0023bn7cit6tg60x",
+  "youtube_id": "VZQgQ4psi1g",
+  "source_url": "https://www.youtube.com/watch?v=VZQgQ4psi1g",
+  "retrieved_at_utc": "2026-11-09T12:01:38.135868+00:00",
+  "views": 8023040,
+  "likes": 38,
+  "comments": null,
+  "channel_id": "UCDF__e4OyxESzW1snu1i0Bg",
+  "subscriber_count_display": "161K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "58de197008a4cc49077d054cb1fa99c25feb1deaa112c824bc0939643a3b8e99",
+  "platform_title": "Official Equine Transport Partner | Cathay Cargo x Cavalluna | 官方馬術運輸夥伴｜國泰貨運 x Cavalluna",
+  "channel_name": "cathaypacific",
+  "likes_display": "like this video along with 38 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "8023040",
+      "display": "8,023,040 views"
+    },
+    "likes_accessibility": "like this video along with 38 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCDF__e4OyxESzW1snu1i0Bg",
+      "name": "cathaypacific",
+      "subscribers_display": "161K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

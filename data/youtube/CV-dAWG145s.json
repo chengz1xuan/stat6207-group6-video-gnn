@@ -1,0 +1,40 @@
+{
+  "video_id": "cmrzz2ji6001nbnr8szn29cxl",
+  "youtube_id": "CV-dAWG145s",
+  "source_url": "https://www.youtube.com/watch?v=CV-dAWG145s",
+  "retrieved_at_utc": "2026-11-09T12:01:18.795483+00:00",
+  "views": 191595,
+  "likes": 93,
+  "comments": null,
+  "channel_id": "UCF4O7FcQ_xeXIRhYvR_vFog",
+  "subscriber_count_display": "65.8K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "5f6b304c2f918d827bd94e1f758ba89cfeaf8ca3232c6dbf565d361f5f34d42e",
+  "platform_title": "[Locals must eat 😋🌶️ Spicy McDonald's fried chicken at McDonald's Hong Kong!! ️】",
+  "channel_name": "McDonaldsHK",
+  "likes_display": "like this video along with 93 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "191595",
+      "display": "191,595 views"
+    },
+    "likes_accessibility": "like this video along with 93 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCF4O7FcQ_xeXIRhYvR_vFog",
+      "name": "McDonaldsHK",
+      "subscribers_display": "65.8K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

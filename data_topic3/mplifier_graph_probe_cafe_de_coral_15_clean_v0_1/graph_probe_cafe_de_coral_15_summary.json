@@ -1,0 +1,304 @@
+{
+  "dataset_name": "cafe_de_coral_15",
+  "generated_from": "ad-reference-vault-export-CDC.json",
+  "source_sha256": "461a05ee44783250ba671c6dc7f11ac1c04adfccc0a5e9478322813f41488175",
+  "source_export_generated_at": "2026-10-17T09:29:12.445Z",
+  "reference_audit": {
+    "selected_references": 17,
+    "official_brand_uploads": 15,
+    "third_party_uploads": 2,
+    "unresolved_uploader_matches": 0,
+    "final_clean_references": 15,
+    "uploader_source_truth": {
+      "author": "大家樂 CafedeCoralHK",
+      "channel_identity": [
+        "@CafedeCoralHK",
+        "UCIQZpBMs8zNn-g9Y7TzM8hw"
+      ],
+      "channel_link": "https://www.youtube.com/channel/UCIQZpBMs8zNn-g9Y7TzM8hw",
+      "handle_link": "https://www.youtube.com/@CafedeCoralHK",
+      "verification_note": "The channel page identifies 大家樂 CafedeCoralHK and its @CafedeCoralHK handle; the two channel identifiers are equivalent."
+    },
+    "per_record_audit": [
+      {
+        "source_reference_id": "cmvc5xusw004gbn003frnxp6a",
+        "title": "大家樂「天天超值午餐 - 流心玉子燒汁豚肉飯」電視廣告",
+        "source_url": "https://www.youtube.com/watch?v=98Q60sqW-sQ",
+        "original_author": "大家樂 CafedeCoralHK",
+        "original_channel_id_or_handle": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+        "status": "official_brand_upload",
+        "reason": "Official Café de Coral source matched: author=大家樂 CafedeCoralHK; channel=UCIQZpBMs8zNn-g9Y7TzM8hw."
+      },
+      {
+        "source_reference_id": "cmvc5u9v20049bn00m8xakrl6",
+        "title": "大家樂「一哥奶茶」電視廣告",
+        "source_url": "https://www.youtube.com/watch?v=4NM3S0va1yA",
+        "original_author": "大家樂 CafedeCoralHK",
+        "original_channel_id_or_handle": "@CafedeCoralHK",
+        "status": "official_brand_upload",
+        "reason": "Official Café de Coral source matched: author=大家樂 CafedeCoralHK; channel=@CafedeCoralHK."
+      },
+      {
+        "source_reference_id": "cmvc5u1i50046bn00x453059h",
+        "title": "大家樂「咋咋淋鐵板餐」電視廣告",
+        "source_url": "https://www.youtube.com/watch?v=7y7LNpnUSPc",
+        "original_author": "大家樂 CafedeCoralHK",
+        "original_channel_id_or_handle": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+        "status": "official_brand_upload",
+        "reason": "Official Café de Coral source matched: author=大家樂 CafedeCoralHK; channel=UCIQZpBMs8zNn-g9Y7TzM8hw."
+      },
+      {
+        "source_reference_id": "cmvc5rjmi003zbn00kx00d5k7",
+        "title": "【打堅爐火鍋系列，堅係和牛鍋！】",
+        "source_url": "https://www.youtube.com/watch?v=E0kfVldng2M",
+        "original_author": "大家樂 CafedeCoralHK",
+        "original_channel_id_or_handle": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+        "status": "official_brand_upload",
+        "reason": "Official Café de Coral source matched: author=大家樂 CafedeCoralHK; channel=UCIQZpBMs8zNn-g9Y7TzM8hw."
+      },
+      {
+        "source_reference_id": "cmvc5ree3003wbn00gamp08f1",
+        "title": "【食過咁多次 都係咁鐘意！大家樂招牌焗飯】",
+        "source_url": "https://www.youtube.com/watch?v=NxIwYigNCjI",
+        "original_author": "大家樂 CafedeCoralHK",
+        "original_channel_id_or_handle": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+        "status": "official_brand_upload",
+        "reason": "Official Café de Coral source matched: author=大家樂 CafedeCoralHK; channel=UCIQZpBMs8zNn-g9Y7TzM8hw."
+      },
+      {
+        "source_reference_id": "cmvc5qa8a003pbn00rsjxufrv",
+        "title": "聖誕梗要有Party美食先夠盡興",
+        "source_url": "https://www.youtube.com/watch?v=n17rIrkjINg",
+        "original_author": "大家樂 CafedeCoralHK",
+        "original_channel_id_or_handle": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+        "status": "official_brand_upload",
+        "reason": "Official Café de Coral source matched: author=大家樂 CafedeCoralHK; channel=UCIQZpBMs8zNn-g9Y7TzM8hw."
+      },
+      {
+        "source_reference_id": "cmvc5q41u003mbn0063uldhht",
+        "title": "大家樂呈獻招牌焗系列【焗素肉醬意粉】",
+        "source_url": "https://www.youtube.com/watch?v=q6Z2KZQId68",
+        "original_author": "大家樂 CafedeCoralHK",
+        "original_channel_id_or_handle": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+        "status": "official_brand_upload",
+        "reason": "Official Café de Coral source matched: author=大家樂 CafedeCoralHK; channel=UCIQZpBMs8zNn-g9Y7TzM8hw."
+      },
+      {
+        "source_reference_id": "cmvc5nw57003fbn00lnr610as",
+        "title": "【易Joy！易賞！易分享 全新大家樂Club 100易.0】",
+        "source_url": "https://www.youtube.com/watch?v=185p2FWa_R0",
+        "original_author": "大家樂 CafedeCoralHK",
+        "original_channel_id_or_handle": "@CafedeCoralHK",
+        "status": "official_brand_upload",
+        "reason": "Official Café de Coral source matched: author=大家樂 CafedeCoralHK; channel=@CafedeCoralHK."
+      },
+      {
+        "source_reference_id": "cmvc5npif003cbn0036cb4swn",
+        "title": "大家樂 一哥酸辣焗番茄雞扒飯 精華片段",
+        "source_url": "https://www.youtube.com/watch?v=P3e4EiD4Wns",
+        "original_author": "大家樂 CafedeCoralHK",
+        "original_channel_id_or_handle": "@CafedeCoralHK",
+        "status": "official_brand_upload",
+        "reason": "Official Café de Coral source matched: author=大家樂 CafedeCoralHK; channel=@CafedeCoralHK."
+      },
+      {
+        "source_reference_id": "cmvc5mj660035bn008vaqzdu6",
+        "title": "大家樂 燕麥奶炒滑蛋",
+        "source_url": "https://www.youtube.com/watch?v=OUx6Hxn7ZS4",
+        "original_author": "大家樂 CafedeCoralHK",
+        "original_channel_id_or_handle": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+        "status": "official_brand_upload",
+        "reason": "Official Café de Coral source matched: author=大家樂 CafedeCoralHK; channel=UCIQZpBMs8zNn-g9Y7TzM8hw."
+      },
+      {
+        "source_reference_id": "cmvc5mafh0032bn00ur4j2w7y",
+        "title": "大家樂 招牌焗超進化 和風照燒汁鰻魚雞扒焗飯 足本版",
+        "source_url": "https://www.youtube.com/watch?v=COQgrghJZH8",
+        "original_author": "大家樂 CafedeCoralHK",
+        "original_channel_id_or_handle": "@CafedeCoralHK",
+        "status": "official_brand_upload",
+        "reason": "Official Café de Coral source matched: author=大家樂 CafedeCoralHK; channel=@CafedeCoralHK."
+      },
+      {
+        "source_reference_id": "cmvc5kwkj002vbn00twlvkg0b",
+        "title": "#大家樂 【多啦A夢新春送福🎁限量版賀年百寶盒🍬等你嚟拎！】",
+        "source_url": "https://www.youtube.com/watch?v=meW_ZN4yHDM",
+        "original_author": "大家樂 CafedeCoralHK",
+        "original_channel_id_or_handle": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+        "status": "official_brand_upload",
+        "reason": "Official Café de Coral source matched: author=大家樂 CafedeCoralHK; channel=UCIQZpBMs8zNn-g9Y7TzM8hw."
+      },
+      {
+        "source_reference_id": "cmvc5k59i002qbn00o6l0ws5b",
+        "title": "#大家樂 陳煒推薦團年首選🧧｜大家樂鴻運盆菜宴同你一齊過新年！",
+        "source_url": "https://www.youtube.com/watch?v=MhalEVYPJgE",
+        "original_author": "大家樂 CafedeCoralHK",
+        "original_channel_id_or_handle": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+        "status": "official_brand_upload",
+        "reason": "Official Café de Coral source matched: author=大家樂 CafedeCoralHK; channel=UCIQZpBMs8zNn-g9Y7TzM8hw."
+      },
+      {
+        "source_reference_id": "cmvc5jk89002lbn00olmyt66x",
+        "title": "大家樂早餐推介｜北海道3.6牛乳炒蛋一啖入魂！大家樂精選早餐/滑蛋套餐",
+        "source_url": "https://www.youtube.com/watch?v=3pLqks-7nWo",
+        "original_author": "大家樂 CafedeCoralHK",
+        "original_channel_id_or_handle": "@CafedeCoralHK",
+        "status": "official_brand_upload",
+        "reason": "Official Café de Coral source matched: author=大家樂 CafedeCoralHK; channel=@CafedeCoralHK."
+      },
+      {
+        "source_reference_id": "cmvc5jdko002ibn00jd17fzcb",
+        "title": "【✨大家樂超值家餸孖寶優惠✨$60嘆齊濃香芝麻雞➕明爐香烤BB鴨😋】",
+        "source_url": "https://www.youtube.com/watch?v=Pgbkl89_DS8",
+        "original_author": "大家樂 CafedeCoralHK",
+        "original_channel_id_or_handle": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+        "status": "official_brand_upload",
+        "reason": "Official Café de Coral source matched: author=大家樂 CafedeCoralHK; channel=UCIQZpBMs8zNn-g9Y7TzM8hw."
+      },
+      {
+        "source_reference_id": "cmu2v9btg0014bn7cbisarrg9",
+        "title": "李錦記即食鮑魚 - 醬香濃「鮑」入味 (大家樂鮑魚瑤柱福袋盆菜 )",
+        "source_url": "https://www.youtube.com/watch?v=q6Xu4yOPnXA",
+        "original_author": "leekumkeekitchen",
+        "original_channel_id_or_handle": "UCuVp1SVmuRD0-ADZ7AFdhyw",
+        "status": "third_party_upload",
+        "reason": "Not uploaded by Café de Coral: author=leekumkeekitchen; channel=UCuVp1SVmuRD0-ADZ7AFdhyw."
+      },
+      {
+        "source_reference_id": "cmol7ev49000abns0urjad7dx",
+        "title": "[香港廣告](2026)大家樂 靚湯靚餸晚市套餐",
+        "source_url": "https://www.youtube.com/watch?v=bCiwqh_wXU8",
+        "original_author": "TPB HK CM 香港電視廣告庫 (香港電視廣告庫)",
+        "original_channel_id_or_handle": "UCBDGANnytQYn4kXtZQbOI-A",
+        "status": "third_party_upload",
+        "reason": "Not uploaded by Café de Coral: author=TPB HK CM 香港電視廣告庫 (香港電視廣告庫); channel=UCBDGANnytQYn4kXtZQbOI-A."
+      }
+    ],
+    "excluded_records": [
+      {
+        "source_reference_id": "cmu2v9btg0014bn7cbisarrg9",
+        "title": "李錦記即食鮑魚 - 醬香濃「鮑」入味 (大家樂鮑魚瑤柱福袋盆菜 )",
+        "source_url": "https://www.youtube.com/watch?v=q6Xu4yOPnXA",
+        "original_author": "leekumkeekitchen",
+        "original_channel_id_or_handle": "UCuVp1SVmuRD0-ADZ7AFdhyw",
+        "status": "third_party_upload",
+        "reason": "Not uploaded by Café de Coral: author=leekumkeekitchen; channel=UCuVp1SVmuRD0-ADZ7AFdhyw."
+      },
+      {
+        "source_reference_id": "cmol7ev49000abns0urjad7dx",
+        "title": "[香港廣告](2026)大家樂 靚湯靚餸晚市套餐",
+        "source_url": "https://www.youtube.com/watch?v=bCiwqh_wXU8",
+        "original_author": "TPB HK CM 香港電視廣告庫 (香港電視廣告庫)",
+        "original_channel_id_or_handle": "UCBDGANnytQYn4kXtZQbOI-A",
+        "status": "third_party_upload",
+        "reason": "Not uploaded by Café de Coral: author=TPB HK CM 香港電視廣告庫 (香港電視廣告庫); channel=UCBDGANnytQYn4kXtZQbOI-A."
+      }
+    ],
+    "unresolved_records": []
+  },
+  "graph_counts": {
+    "video_nodes": 15,
+    "aspect_nodes": 634,
+    "evidence_nodes": 782,
+    "candidate_edges": 2967,
+    "edge_type_counts": {
+      "aspect_supported_by_evidence": 374,
+      "same_author": 105,
+      "same_brand": 105,
+      "same_creative_mechanic": 67,
+      "same_cta_explicitness": 61,
+      "same_evidence_mode": 69,
+      "same_pacing": 49,
+      "same_safety_status": 105,
+      "same_structure_type": 20,
+      "similar_aspect_candidate": 596,
+      "video_has_aspect": 634,
+      "video_has_evidence": 782
+    }
+  },
+  "distributions": {
+    "brand_raw": {
+      "大家樂 (Café de Coral)": 3,
+      "Café de Coral 大家樂": 1,
+      "Café de Coral": 2,
+      "大家樂 Café de Coral": 6,
+      "大家樂 Cafe de Coral": 2,
+      "Café de Coral (大家樂)": 1
+    },
+    "brand_family": {
+      "Café de Coral": 15
+    },
+    "sub_brand": {
+      "Café de Coral": 14,
+      "Club 100": 1
+    },
+    "author": {
+      "大家樂 CafedeCoralHK": 15
+    },
+    "creative_mechanic": {
+      "Offer led": 12,
+      "Testimonial led": 2,
+      "Problem-solution led": 1
+    },
+    "structure_type": {
+      "Problem-solution led": 4,
+      "Product proof led": 5,
+      "Testimonial led": 2,
+      "Offer led": 3,
+      "Announcement / information led": 1
+    },
+    "evidence_mode": {
+      "mixed": 12,
+      "dialogue_led": 3
+    },
+    "safety_status": {
+      "needs_review": 15
+    }
+  },
+  "header_contract": {
+    "video_node_column_count": 35,
+    "columns": [
+      "video_id",
+      "source_reference_id",
+      "title",
+      "brand_raw",
+      "brand_family",
+      "sub_brand",
+      "top_level_ui_brand",
+      "product_campaign",
+      "author",
+      "platform",
+      "source_url",
+      "publish_date",
+      "duration_seconds",
+      "main_message",
+      "hook",
+      "cta",
+      "value_promise",
+      "creative_mechanic",
+      "structure_type",
+      "evidence_mode",
+      "cta_explicitness",
+      "proof_strength",
+      "pacing",
+      "production_complexity",
+      "platform_fit",
+      "safety_status",
+      "copy_risk",
+      "fit_score",
+      "overall_evidence",
+      "unresolved_count",
+      "warning_count",
+      "languages",
+      "what_not_to_copy",
+      "inclusion_status",
+      "inclusion_reason"
+    ]
+  },
+  "limitations": [
+    "No upstream interpretation or model-generated field was independently re-judged.",
+    "Some Chinese-language normalization in the source files is low-confidence and should be audited by researcher.",
+    "Similarity edges are suggestions only; they do not represent supervised ground-truth labels or a trained GNN.",
+    "Only verified uploader/channel records are retained; source analysis safety-status flags are not uploader exclusions."
+  ]
+}

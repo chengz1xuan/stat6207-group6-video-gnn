@@ -1,0 +1,40 @@
+{
+  "video_id": "cmsxzdcjo0009bnn8u7fvvbqw",
+  "youtube_id": "YgECszm3ChA",
+  "source_url": "https://www.youtube.com/watch?v=YgECszm3ChA",
+  "retrieved_at_utc": "2026-11-09T12:01:43.383771+00:00",
+  "views": 13200190,
+  "likes": 121,
+  "comments": null,
+  "channel_id": "UCYassnxj-M1niKCNIaaRPWw",
+  "subscriber_count_display": "45.2K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "7557458c4293961a98d5e117f2d40db2cccca5c850ff5d2be652bc1ea8a9cdf4",
+  "platform_title": "HSBC HK App📱｜一App掌握 吿別打簿",
+  "channel_name": "HSBC Hong Kong",
+  "likes_display": "like this video along with 121 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "13200190",
+      "display": "13,200,190 views"
+    },
+    "likes_accessibility": "like this video along with 121 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCYassnxj-M1niKCNIaaRPWw",
+      "name": "HSBC Hong Kong",
+      "subscribers_display": "45.2K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

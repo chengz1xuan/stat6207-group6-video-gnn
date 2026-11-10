@@ -1,0 +1,40 @@
+{
+  "video_id": "cmrzyteu8000tbnr8qwvfbdnd",
+  "youtube_id": "0_1xI0ihZSk",
+  "source_url": "https://www.youtube.com/watch?v=0_1xI0ihZSk",
+  "retrieved_at_utc": "2026-11-09T12:01:05.600751+00:00",
+  "views": 1614955,
+  "likes": 348,
+  "comments": null,
+  "channel_id": "UCF4O7FcQ_xeXIRhYvR_vFog",
+  "subscriber_count_display": "65.8K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "ae8bafb233b856df0768a902e1e236fc7ec97bb005cb5a6fb1f016ebefb79b24",
+  "platform_title": "【經典重塑🌟！王者將軍漢堡霸氣新登場🍔🐮！】",
+  "channel_name": "McDonaldsHK",
+  "likes_display": "like this video along with 348 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1614955",
+      "display": "1,614,955 views"
+    },
+    "likes_accessibility": "like this video along with 348 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCF4O7FcQ_xeXIRhYvR_vFog",
+      "name": "McDonaldsHK",
+      "subscribers_display": "65.8K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

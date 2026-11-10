@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu2v9btg0014bn7cbisarrg9",
+  "youtube_id": "q6Xu4yOPnXA",
+  "source_url": "https://www.youtube.com/watch?v=q6Xu4yOPnXA",
+  "retrieved_at_utc": "2026-11-09T12:02:05.678152+00:00",
+  "views": 1051467,
+  "likes": 5,
+  "comments": null,
+  "channel_id": "UCuVp1SVmuRD0-ADZ7AFdhyw",
+  "subscriber_count_display": "25.5K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "c8df2ea79fb9a668af7de28eb3f5ac84f32b64ad12f045e1d9701d069e1add3e",
+  "platform_title": "李錦記即食鮑魚 - 醬香濃「鮑」入味 (大家樂鮑魚瑤柱福袋盆菜 )",
+  "channel_name": "leekumkeekitchen",
+  "likes_display": "like this video along with 5 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1051467",
+      "display": "1,051,467 views"
+    },
+    "likes_accessibility": "like this video along with 5 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCuVp1SVmuRD0-ADZ7AFdhyw",
+      "name": "leekumkeekitchen",
+      "subscribers_display": "25.5K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

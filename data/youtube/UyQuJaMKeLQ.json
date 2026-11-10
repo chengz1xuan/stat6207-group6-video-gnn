@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc9p9sn0085bn00duthearm",
+  "youtube_id": "UyQuJaMKeLQ",
+  "source_url": "https://www.youtube.com/watch?v=UyQuJaMKeLQ",
+  "retrieved_at_utc": "2026-11-09T12:01:37.641606+00:00",
+  "views": 100846,
+  "likes": 82,
+  "comments": null,
+  "channel_id": "UCNRqFSTPHIzVwrVnZAMj_2A",
+  "subscriber_count_display": "2.19K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "0f9ae7ce9b8e64a5e9b3abace51a42cf082205a6a56a5298101e96563e59527b",
+  "platform_title": "【鬆脆蝴蝶酥．用心打造】",
+  "channel_name": "Kee Wah Bakery 奇華餅家",
+  "likes_display": "like this video along with 82 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "100846",
+      "display": "100,846 views"
+    },
+    "likes_accessibility": "like this video along with 82 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCNRqFSTPHIzVwrVnZAMj_2A",
+      "name": "Kee Wah Bakery 奇華餅家",
+      "subscribers_display": "2.19K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

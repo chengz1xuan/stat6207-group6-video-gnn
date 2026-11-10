@@ -1,0 +1,40 @@
+{
+  "video_id": "cmt3r7yyd0019bnawc43hg0oy",
+  "youtube_id": "H4Ol-GN8eAo",
+  "source_url": "https://www.youtube.com/watch?v=H4Ol-GN8eAo",
+  "retrieved_at_utc": "2026-11-09T12:01:23.219750+00:00",
+  "views": 2057999,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCSIfcoM9kmyjil_IU5IC_gA",
+  "subscriber_count_display": "33K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "968ef448aabb2d03ab975f31959b982861f9055253786aa7891d96361721894b",
+  "platform_title": "【出糧好伙伴｜轉用 PayDay+ 出糧賺港幣 2,000，冇薪金門檻，唔使做任務】",
+  "channel_name": "恒生銀行 Hang Seng Bank",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "2057999",
+      "display": "2,057,999 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCSIfcoM9kmyjil_IU5IC_gA",
+      "name": "恒生銀行 Hang Seng Bank",
+      "subscribers_display": "33K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

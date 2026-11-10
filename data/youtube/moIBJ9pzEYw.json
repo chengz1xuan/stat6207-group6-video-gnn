@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvbtmklm001cbnuocfnh5rs8",
+  "youtube_id": "moIBJ9pzEYw",
+  "source_url": "https://www.youtube.com/watch?v=moIBJ9pzEYw",
+  "retrieved_at_utc": "2026-11-09T12:01:59.562940+00:00",
+  "views": 627381,
+  "likes": 6,
+  "comments": null,
+  "channel_id": "UCcQ5WlinXufbKizIJHlI4LQ",
+  "subscriber_count_display": "13.7K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "200b4458371447574f0859634112220c7decbb8bdc3c8e3b5db9c5c2f90c2349",
+  "platform_title": "測試過的好品質 - 求婚篇｜IKEA Hong Kong",
+  "channel_name": "IKEAHongKong",
+  "likes_display": "like this video along with 6 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "627381",
+      "display": "627,381 views"
+    },
+    "likes_accessibility": "like this video along with 6 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCcQ5WlinXufbKizIJHlI4LQ",
+      "name": "IKEAHongKong",
+      "subscribers_display": "13.7K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

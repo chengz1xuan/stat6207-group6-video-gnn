@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc893cb006cbn001szl8gt5",
+  "youtube_id": "S_O_1slKghs",
+  "source_url": "https://www.youtube.com/watch?v=S_O_1slKghs",
+  "retrieved_at_utc": "2026-11-09T12:01:35.892796+00:00",
+  "views": 63448,
+  "likes": 21,
+  "comments": null,
+  "channel_id": "UCy80v1icfNULOE2wF3Hr7CQ",
+  "subscriber_count_display": "1.36K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "b52d5e9fca8463e56af2d8b9729395d21f1c2755ff5a3120726c6427b0ffb9b2",
+  "platform_title": "嘉頓瑞士卷電視廣告 - 一代糕手 新鮮為首（2018）",
+  "channel_name": "嘉頓 Garden",
+  "likes_display": "like this video along with 21 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "63448",
+      "display": "63,448 views"
+    },
+    "likes_accessibility": "like this video along with 21 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCy80v1icfNULOE2wF3Hr7CQ",
+      "name": "嘉頓 Garden",
+      "subscribers_display": "1.36K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

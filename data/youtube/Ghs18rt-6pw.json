@@ -1,0 +1,40 @@
+{
+  "video_id": "cmrzyv755000ybnr8iqmrz1jk",
+  "youtube_id": "Ghs18rt-6pw",
+  "source_url": "https://www.youtube.com/watch?v=Ghs18rt-6pw",
+  "retrieved_at_utc": "2026-11-09T12:01:22.929529+00:00",
+  "views": 2400901,
+  "likes": 708,
+  "comments": null,
+  "channel_id": "UCF4O7FcQ_xeXIRhYvR_vFog",
+  "subscriber_count_display": "65.8K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "f564ca78cf2a3ce07b17996dbb71bd589751bef545cd9b23d27cc969fa5d57bb",
+  "platform_title": "[Wait until he comes back 🥹! General Yuko Burger is with you at McDonald's ❤️】",
+  "channel_name": "McDonaldsHK",
+  "likes_display": "like this video along with 708 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "2400901",
+      "display": "2,400,901 views"
+    },
+    "likes_accessibility": "like this video along with 708 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCF4O7FcQ_xeXIRhYvR_vFog",
+      "name": "McDonaldsHK",
+      "subscribers_display": "65.8K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

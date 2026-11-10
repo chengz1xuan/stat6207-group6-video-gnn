@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc88w3m0069bn00ftdd8673",
+  "youtube_id": "zmol5gECAXo",
+  "source_url": "https://www.youtube.com/watch?v=zmol5gECAXo",
+  "retrieved_at_utc": "2026-11-09T12:02:17.526492+00:00",
+  "views": 357473,
+  "likes": 20,
+  "comments": null,
+  "channel_id": "UCy80v1icfNULOE2wF3Hr7CQ",
+  "subscriber_count_display": "1.36K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "021e343123558d394f214f8f8442ddf1d1393771c028211f375413337a383c69",
+  "platform_title": "【嘉頓餅乾賀年廣告】新春一罐紅15秒 家居篇",
+  "channel_name": "嘉頓 Garden",
+  "likes_display": "like this video along with 20 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "357473",
+      "display": "357,473 views"
+    },
+    "likes_accessibility": "like this video along with 20 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCy80v1icfNULOE2wF3Hr7CQ",
+      "name": "嘉頓 Garden",
+      "subscribers_display": "1.36K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

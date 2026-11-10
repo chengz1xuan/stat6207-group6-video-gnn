@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc9tmte008mbn0040t3np8l",
+  "youtube_id": "359mKJOz0L0",
+  "source_url": "https://www.youtube.com/watch?v=359mKJOz0L0",
+  "retrieved_at_utc": "2026-11-09T12:01:07.298826+00:00",
+  "views": 16150,
+  "likes": 26,
+  "comments": null,
+  "channel_id": "UCNRqFSTPHIzVwrVnZAMj_2A",
+  "subscriber_count_display": "2.19K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "3a5c954299687d04d659ba3df0f8202060b7e54a2fff942f1ca1421fd7c71888",
+  "platform_title": "奇華餅家 以禮傳情 八十年 微電影預告片",
+  "channel_name": "Kee Wah Bakery 奇華餅家",
+  "likes_display": "like this video along with 26 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "16150",
+      "display": "16,150 views"
+    },
+    "likes_accessibility": "like this video along with 26 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCNRqFSTPHIzVwrVnZAMj_2A",
+      "name": "Kee Wah Bakery 奇華餅家",
+      "subscribers_display": "2.19K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

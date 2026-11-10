@@ -1,0 +1,40 @@
+{
+  "video_id": "cmt3rs53c000zbnlsfsg3r0lo",
+  "youtube_id": "gUZvl5hnAow",
+  "source_url": "https://www.youtube.com/watch?v=gUZvl5hnAow",
+  "retrieved_at_utc": "2026-11-09T12:01:51.551363+00:00",
+  "views": 1188344,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCSIfcoM9kmyjil_IU5IC_gA",
+  "subscriber_count_display": "33K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "85e98fc094ac25fa4b723dc223082977ecbe87ea17c6a313f8d7134b43ed1045",
+  "platform_title": "【恒生信用卡+FUN Dollars】多達80,000個即用+FUN位，+FUN 體驗 從此擴大！",
+  "channel_name": "恒生銀行 Hang Seng Bank",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1188344",
+      "display": "1,188,344 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCSIfcoM9kmyjil_IU5IC_gA",
+      "name": "恒生銀行 Hang Seng Bank",
+      "subscribers_display": "33K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

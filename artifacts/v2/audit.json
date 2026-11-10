@@ -1,0 +1,47 @@
+{
+  "inventory": 219,
+  "fresh_label_cohort": 214,
+  "brands": 14,
+  "groups": 199,
+  "excluded_missing_fresh_views": [
+    {
+      "video_id": "cmu3hawsd001ybn5ko2e7yfc6",
+      "source_url": "https://www.youtube.com/watch?v=7prRTSm-Unw",
+      "status_youtube": "no_exact_view_count"
+    },
+    {
+      "video_id": "cmvc7ss6b004lbn00ezs6v5dl",
+      "source_url": "https://www.youtube.com/watch?v=O0ul7UE2aZ4",
+      "status_youtube": "no_exact_view_count"
+    },
+    {
+      "video_id": "cmsxzeq0r000ebnn80z0yznjq",
+      "source_url": "https://www.youtube.com/watch?v=XX6oHp76lsw",
+      "status_youtube": "no_exact_view_count"
+    },
+    {
+      "video_id": "cmvbtlkpb0012bnuob0wm8e7h",
+      "source_url": "https://www.youtube.com/watch?v=oocGvHaIEiE",
+      "status_youtube": "no_exact_view_count"
+    },
+    {
+      "video_id": "cmvc83z33005sbn000oyfwrkf",
+      "source_url": "https://www.youtube.com/watch?v=zSH1QHu7zQc",
+      "status_youtube": "no_exact_view_count"
+    }
+  ],
+  "snapshot": {
+    "attempted": 219,
+    "views": 214,
+    "likes": 175,
+    "comments": 0,
+    "channel_ids": 214,
+    "started_utc": "2026-11-09T12:01:03.535557+00:00",
+    "ended_utc": "2026-11-09T12:02:18.363431+00:00",
+    "policy": "Exact public counts only. Missing/hidden counts remain null; approximate display subscriber counts are not exact labels. No login or access-control bypass. Archived values remain separately preserved."
+  },
+  "archived_view_labels": 219,
+  "archived_likes": 184,
+  "archived_comments": 0,
+  "missing_age": 0
+}

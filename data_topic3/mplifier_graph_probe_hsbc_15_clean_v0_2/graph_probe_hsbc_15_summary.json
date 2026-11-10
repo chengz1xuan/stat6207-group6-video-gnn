@@ -1,0 +1,68 @@
+{
+  "dataset_name": "hsbc_15",
+  "generated_from": "ad-reference-vault-export-HSBC.json",
+  "source_export_generated_at": "2026-09-15T22:51:32.690Z",
+  "reference_audit": {
+    "selected_references": 16,
+    "official_brand_uploads": 15,
+    "third_party_uploads": 1,
+    "unresolved_uploader_matches": 0,
+    "final_clean_references": 15,
+    "excluded_records": [
+      {
+        "id": "cmp7ofg190000bn90b10wlzh3",
+        "title": "[香港經典廣告](1995)滙豐銀行",
+        "reason": "Uploader did not match official registry: author=TPB HK CM 香港電視廣告庫 (香港電視廣告庫); channel_id=UCBDGANnytQYn4kXtZQbOI-A."
+      }
+    ],
+    "unresolved_records": []
+  },
+  "graph_counts": {
+    "video_nodes": 15,
+    "aspect_nodes": 417,
+    "evidence_nodes": 651,
+    "candidate_edges": 1916,
+    "edge_type_counts": {
+      "video_has_aspect": 417,
+      "video_has_evidence": 651,
+      "same_brand": 105,
+      "same_author": 105,
+      "same_creative_mechanic": 34,
+      "same_evidence_mode": 69,
+      "same_cta_explicitness": 67,
+      "same_pacing": 105,
+      "same_safety_status": 51,
+      "same_structure_type": 15,
+      "similar_aspect_candidate": 297
+    }
+  },
+  "distributions": {
+    "sub_brand": {
+      "HSBC": 9,
+      "HSBC Life": 6
+    },
+    "author": {
+      "HSBC Hong Kong": 15
+    },
+    "creative_mechanic": {
+      "Offer led": 8,
+      "Product proof led": 1,
+      "Announcement / information led": 4,
+      "Music / mood led": 1,
+      "Event experience led": 1
+    },
+    "structure_type": {
+      "Announcement / information led": 3,
+      "Offer led": 4,
+      "Problem-solution led": 3,
+      "Product proof led": 3,
+      "Event experience led": 1,
+      "Testimonial led": 1
+    },
+    "evidence_mode": {
+      "endcard_led": 12,
+      "mixed": 3
+    }
+  },
+  "positioning": "Graph-readiness / clustering probe only; not a production GNN."
+}

@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu2wmsl3000ubn60e8ge1w06",
+  "youtube_id": "aRxksODz0T4",
+  "source_url": "https://www.youtube.com/watch?v=aRxksODz0T4",
+  "retrieved_at_utc": "2026-11-09T12:01:46.516136+00:00",
+  "views": 9862,
+  "likes": 148,
+  "comments": null,
+  "channel_id": "UCDF__e4OyxESzW1snu1i0Bg",
+  "subscriber_count_display": "161K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "6ca194563e2d9292656640a48cdb34215dcfca0ed850ca415e03cca9708aca77",
+  "platform_title": "All the things that move you, all in our Premium Economy | 特選經濟客艙的匠心設計 全為昇華你的每段旅程",
+  "channel_name": "cathaypacific",
+  "likes_display": "like this video along with 148 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "9862",
+      "display": "9,862 views"
+    },
+    "likes_accessibility": "like this video along with 148 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCDF__e4OyxESzW1snu1i0Bg",
+      "name": "cathaypacific",
+      "subscribers_display": "161K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

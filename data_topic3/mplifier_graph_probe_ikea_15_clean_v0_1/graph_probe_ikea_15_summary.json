@@ -1,0 +1,72 @@
+{
+  "dataset_name": "ikea_15",
+  "source_export": "ad-reference-vault-export-Ikea.json",
+  "source_export_generated_at": "2026-10-17T07:44:33.597Z",
+  "reference_audit": {
+    "selected_references": 15,
+    "official_brand_uploads": 15,
+    "third_party_uploads": 0,
+    "unresolved_uploader_matches": 0,
+    "final_clean_references": 15,
+    "official_registry_author": "IKEAHongKong",
+    "official_registry_channel_ids": [
+      "@IKEAHongKong",
+      "UCcQ5WlinXufbKizIJHlI4LQ"
+    ],
+    "uploader_channel_distributions": {
+      "IKEAHongKong | UCcQ5WlinXufbKizIJHlI4LQ": 12,
+      "IKEAHongKong | @IKEAHongKong": 3
+    },
+    "excluded_records": [],
+    "unresolved_records": []
+  },
+  "graph_counts": {
+    "video_nodes": 15,
+    "aspect_nodes": 611,
+    "evidence_nodes": 744,
+    "candidate_edges": 2926,
+    "edge_type_counts": {
+      "video_has_aspect": 611,
+      "video_has_evidence": 744,
+      "aspect_supported_by_evidence": 402,
+      "same_brand": 105,
+      "same_author": 105,
+      "same_creative_mechanic": 39,
+      "same_structure_type": 26,
+      "same_evidence_mode": 55,
+      "same_cta_explicitness": 69,
+      "same_safety_status": 49,
+      "same_pacing": 51,
+      "similar_aspect_candidate": 670
+    }
+  },
+  "distributions": {
+    "brand_family": {
+      "IKEA": 15
+    },
+    "author": {
+      "IKEAHongKong": 15
+    },
+    "creative_mechanic": {
+      "Product proof led": 2,
+      "Offer led": 8,
+      "Music / mood led": 5
+    },
+    "structure_type": {
+      "Product proof led": 4,
+      "Offer led": 1,
+      "Problem-solution led": 5,
+      "Music / mood led": 5
+    },
+    "evidence_mode": {
+      "mixed": 10,
+      "music_visual_led_sparse_dialogue": 5
+    }
+  },
+  "quality_notes": [
+    "Title similarities represent different YouTube video IDs; there are no duplicate reference IDs or exact source URLs.",
+    "Three records use @IKEAHongKong as channel identity instead of the UC... channel ID; registry accepts both when the author is IKEAHongKong.",
+    "Official-uploader rule is based on source uploader metadata and the explicitly configured official registry; it is not a fresh independent platform verification."
+  ],
+  "research_positioning": "Graph readiness / clustering probe only; not a production GNN. Similarity candidates are not ground truth."
+}

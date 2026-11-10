@@ -1,0 +1,40 @@
+{
+  "video_id": "cmol7iglr000fbns0sbn3n9x6",
+  "youtube_id": "CrRejJT0q7c",
+  "source_url": "https://www.youtube.com/watch?v=CrRejJT0q7c",
+  "retrieved_at_utc": "2026-11-09T12:01:19.614834+00:00",
+  "views": 1530,
+  "likes": 5,
+  "comments": null,
+  "channel_id": "UCBDGANnytQYn4kXtZQbOI-A",
+  "subscriber_count_display": "20.2K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "6cbcd1ddf5595505e8b74d94503f26f7dd8c62f12743db52b0e46d2e4694f263",
+  "platform_title": "[香港經典廣告](1996)麥當勞 超值套餐",
+  "channel_name": "TPB HK CM 香港電視廣告庫 (香港電視廣告庫)",
+  "likes_display": "like this video along with 5 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1530",
+      "display": "1,530 views"
+    },
+    "likes_accessibility": "like this video along with 5 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCBDGANnytQYn4kXtZQbOI-A",
+      "name": "TPB HK CM 香港電視廣告庫 (香港電視廣告庫)",
+      "subscribers_display": "20.2K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

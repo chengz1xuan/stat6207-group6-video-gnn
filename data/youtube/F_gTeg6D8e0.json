@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu2x7awk001jbn60ht4lm5t5",
+  "youtube_id": "F_gTeg6D8e0",
+  "source_url": "https://www.youtube.com/watch?v=F_gTeg6D8e0",
+  "retrieved_at_utc": "2026-11-09T12:01:22.440503+00:00",
+  "views": 2533483,
+  "likes": 52,
+  "comments": null,
+  "channel_id": "UCDF__e4OyxESzW1snu1i0Bg",
+  "subscriber_count_display": "161K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "d169af72771411aac6e96dab70785bcd0679d07f528136c82a06a1bb4c738aa7",
+  "platform_title": "[CATHAY FRESH] BEYOND STARS — YOUR FRESHEST GATEWAY IN AND OUT OF ASIA｜【國泰—鮮貨運送】為您端上產地鮮味｜新鮮快捷 聯繫亞洲",
+  "channel_name": "cathaypacific",
+  "likes_display": "like this video along with 52 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "2533483",
+      "display": "2,533,483 views"
+    },
+    "likes_accessibility": "like this video along with 52 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCDF__e4OyxESzW1snu1i0Bg",
+      "name": "cathaypacific",
+      "subscribers_display": "161K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

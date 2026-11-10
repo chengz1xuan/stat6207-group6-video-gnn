@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc4lbtr000fbn0081iw3zrc",
+  "youtube_id": "1YEhm7RjaG0",
+  "source_url": "https://www.youtube.com/watch?v=1YEhm7RjaG0",
+  "retrieved_at_utc": "2026-11-09T12:01:06.367168+00:00",
+  "views": 782077,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCbv_6SSiwvl7fLoXg4usdWA",
+  "subscriber_count_display": "1.92K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "144a58a34686cf043ec5f31a230abff29a8aee4d73184eed3aaf645385e88a18",
+  "platform_title": "2026 美心月餅 香港味道 美心製造 – 30秒",
+  "channel_name": "美心食品 Maxim’s Products",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "782077",
+      "display": "782,077 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCbv_6SSiwvl7fLoXg4usdWA",
+      "name": "美心食品 Maxim’s Products",
+      "subscribers_display": "1.92K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

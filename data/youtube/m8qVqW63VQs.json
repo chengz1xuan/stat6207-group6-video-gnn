@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvbu6xs9004wbnuo3n7cfzh3",
+  "youtube_id": "m8qVqW63VQs",
+  "source_url": "https://www.youtube.com/watch?v=m8qVqW63VQs",
+  "retrieved_at_utc": "2026-11-09T12:01:58.041280+00:00",
+  "views": 1245698,
+  "likes": 518,
+  "comments": null,
+  "channel_id": "UC0FcaFJVwvfwIRgPJjFJaKQ",
+  "subscriber_count_display": "8.7K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "3910871fa8bfd559486bb41f4820dc064cab10b02ec3b2f45f12e777f97d3278",
+  "platform_title": "保誠「用行動 成就您想」電視廣告 2019 30\"",
+  "channel_name": "Prudential Hong Kong Limited 香港保誠保險",
+  "likes_display": "like this video along with 518 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1245698",
+      "display": "1,245,698 views"
+    },
+    "likes_accessibility": "like this video along with 518 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UC0FcaFJVwvfwIRgPJjFJaKQ",
+      "name": "Prudential Hong Kong Limited 香港保誠保險",
+      "subscribers_display": "8.7K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

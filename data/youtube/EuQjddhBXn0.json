@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu3h7qjz001obn5kcdgz47iw",
+  "youtube_id": "EuQjddhBXn0",
+  "source_url": "https://www.youtube.com/watch?v=EuQjddhBXn0",
+  "retrieved_at_utc": "2026-11-09T12:01:21.546957+00:00",
+  "views": 21929,
+  "likes": 52,
+  "comments": null,
+  "channel_id": "UCAjKRiZ-UeH2Bz4Cu-ZEtUg",
+  "subscriber_count_display": "61.6K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "1ca2b28a82ba20c3e5c36ab2767a21ba13bad67cb2c26a4a90cb24f4f39b1abf",
+  "platform_title": "電子都會票經已推出！經MTR Mobile隨時隨地購票~ The e-City Saver is here! Purchase anytime, anywhere via MTR Mobile~",
+  "channel_name": "MTR Hong Kong",
+  "likes_display": "like this video along with 52 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "21929",
+      "display": "21,929 views"
+    },
+    "likes_accessibility": "like this video along with 52 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCAjKRiZ-UeH2Bz4Cu-ZEtUg",
+      "name": "MTR Hong Kong",
+      "subscribers_display": "61.6K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

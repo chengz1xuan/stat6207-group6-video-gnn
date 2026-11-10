@@ -1,0 +1,3 @@
+IEEEtran distribution: https://mirrors.ctan.org/macros/latex/contrib/IEEEtran.zip
+Selected conference mode with a4paper.
+Tectonic: https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.17.0/tectonic-0.17.0-aarch64-apple-darwin.tar.gz

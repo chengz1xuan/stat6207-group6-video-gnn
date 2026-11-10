@@ -1,0 +1,40 @@
+{
+  "video_id": "cmrzz0hxi001dbnr812x02b9f",
+  "youtube_id": "ZM9zcu7kLAI",
+  "source_url": "https://www.youtube.com/watch?v=ZM9zcu7kLAI",
+  "retrieved_at_utc": "2026-11-09T12:01:44.450893+00:00",
+  "views": 2708810,
+  "likes": 2866,
+  "comments": null,
+  "channel_id": "UCF4O7FcQ_xeXIRhYvR_vFog",
+  "subscriber_count_display": "65.8K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "805982fc4bba0ba6567a4b21b3d62f435dfac60aa5b1bde5b0ecea2baaf75a94",
+  "platform_title": "【一路歎Big Mac，愛心一路Power Up💪🏻♥️】",
+  "channel_name": "McDonaldsHK",
+  "likes_display": "like this video along with 2,866 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "2708810",
+      "display": "2,708,810 views"
+    },
+    "likes_accessibility": "like this video along with 2,866 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCF4O7FcQ_xeXIRhYvR_vFog",
+      "name": "McDonaldsHK",
+      "subscribers_display": "65.8K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu2vhlxl001obn7ch9b8e4hh",
+  "youtube_id": "Wm2sWEWQb0g",
+  "source_url": "https://www.youtube.com/watch?v=Wm2sWEWQb0g",
+  "retrieved_at_utc": "2026-11-09T12:01:40.041772+00:00",
+  "views": 377554,
+  "likes": 338,
+  "comments": null,
+  "channel_id": "UCuVp1SVmuRD0-ADZ7AFdhyw",
+  "subscriber_count_display": "25.5K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "f3eed6de1b96234f7279830c504c4c0fdaa1bfad57bffe3d8dc0c11eb9f2ad13",
+  "platform_title": "日本年賣一千萬支！全新日韓煮食風襲港！",
+  "channel_name": "leekumkeekitchen",
+  "likes_display": "like this video along with 338 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "377554",
+      "display": "377,554 views"
+    },
+    "likes_accessibility": "like this video along with 338 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCuVp1SVmuRD0-ADZ7AFdhyw",
+      "name": "leekumkeekitchen",
+      "subscribers_display": "25.5K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

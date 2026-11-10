@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu2vascj0019bn7crpn9ega3",
+  "youtube_id": "TiU8WWzNSFI",
+  "source_url": "https://www.youtube.com/watch?v=TiU8WWzNSFI",
+  "retrieved_at_utc": "2026-11-09T12:01:36.498112+00:00",
+  "views": 490024,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCuVp1SVmuRD0-ADZ7AFdhyw",
+  "subscriber_count_display": "25.5K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "fb89f150c6da00dd6a1a07d976b19b944a29838de21d1a0b1501667475ff1d04",
+  "platform_title": "李錦記即食鮑魚 - 醬香濃「鮑」入味 (節日限定)",
+  "channel_name": "leekumkeekitchen",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "490024",
+      "display": "490,024 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCuVp1SVmuRD0-ADZ7AFdhyw",
+      "name": "leekumkeekitchen",
+      "subscribers_display": "25.5K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

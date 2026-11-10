@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu3h2cny0014bn5kmtm8sjem",
+  "youtube_id": "cru2ZL6HMEg",
+  "source_url": "https://www.youtube.com/watch?v=cru2ZL6HMEg",
+  "retrieved_at_utc": "2026-11-09T12:01:48.535490+00:00",
+  "views": 12358,
+  "likes": 197,
+  "comments": null,
+  "channel_id": "UCAjKRiZ-UeH2Bz4Cu-ZEtUg",
+  "subscriber_count_display": "61.6K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "9e57b62ea1d1d48b522364d97c8ae85a72d405678ab9c5c7c12105523c10902a",
+  "platform_title": "東涌綫延綫隧道 - 鑽挖篇 Tung Chung Line Extension - Tunnel Boring Works",
+  "channel_name": "MTR Hong Kong",
+  "likes_display": "like this video along with 197 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "12358",
+      "display": "12,358 views"
+    },
+    "likes_accessibility": "like this video along with 197 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCAjKRiZ-UeH2Bz4Cu-ZEtUg",
+      "name": "MTR Hong Kong",
+      "subscribers_display": "61.6K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc7zk9y0055bn00nkt9atyh",
+  "youtube_id": "wSqyT9xSPUY",
+  "source_url": "https://www.youtube.com/watch?v=wSqyT9xSPUY",
+  "retrieved_at_utc": "2026-11-09T12:02:11.952398+00:00",
+  "views": 1904373,
+  "likes": 1072,
+  "comments": null,
+  "channel_id": "UCy80v1icfNULOE2wF3Hr7CQ",
+  "subscriber_count_display": "1.36K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "a0f4b17492c2fdc2fec26a859d84958eb09e0a1276a60808be3bcefa1ff7910f",
+  "platform_title": "【升級配方更健康】嘉頓生命麵包、三文治方包、切皮三文治方包  系列 (30秒版本)",
+  "channel_name": "嘉頓 Garden",
+  "likes_display": "like this video along with 1,072 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1904373",
+      "display": "1,904,373 views"
+    },
+    "likes_accessibility": "like this video along with 1,072 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCy80v1icfNULOE2wF3Hr7CQ",
+      "name": "嘉頓 Garden",
+      "subscribers_display": "1.36K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

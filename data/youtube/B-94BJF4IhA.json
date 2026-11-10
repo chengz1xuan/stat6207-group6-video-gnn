@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu2vj9p2001tbn7cy0pvw8xx",
+  "youtube_id": "B-94BJF4IhA",
+  "source_url": "https://www.youtube.com/watch?v=B-94BJF4IhA",
+  "retrieved_at_utc": "2026-11-09T12:01:15.738910+00:00",
+  "views": 859340,
+  "likes": 838,
+  "comments": null,
+  "channel_id": "UCuVp1SVmuRD0-ADZ7AFdhyw",
+  "subscriber_count_display": "25.5K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "5d7ad5737bbc210f47f3a923318279292e22b870eb1ab3fd33c91689d5c6ccbc",
+  "platform_title": "【李錦記全新熱辣辣系列 辣夠味？！你挑戰咗未？】",
+  "channel_name": "leekumkeekitchen",
+  "likes_display": "like this video along with 838 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "859340",
+      "display": "859,340 views"
+    },
+    "likes_accessibility": "like this video along with 838 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCuVp1SVmuRD0-ADZ7AFdhyw",
+      "name": "leekumkeekitchen",
+      "subscribers_display": "25.5K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

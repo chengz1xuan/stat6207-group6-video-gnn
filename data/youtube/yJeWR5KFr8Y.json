@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvbu3n6y0047bnuonmso0psg",
+  "youtube_id": "yJeWR5KFr8Y",
+  "source_url": "https://www.youtube.com/watch?v=yJeWR5KFr8Y",
+  "retrieved_at_utc": "2026-11-09T12:02:14.207887+00:00",
+  "views": 951238,
+  "likes": 1,
+  "comments": null,
+  "channel_id": "UC0FcaFJVwvfwIRgPJjFJaKQ",
+  "subscriber_count_display": "8.7K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "878aa1ad888e318807ff39ef3661933b59c94165c33eea251817b30480a7a58d",
+  "platform_title": "【如果貓貓識講嘢，你估吓佢哋有咩⼼底話？🐱】",
+  "channel_name": "Prudential Hong Kong Limited 香港保誠保險",
+  "likes_display": "like this video along with 1 other person",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "951238",
+      "display": "951,238 views"
+    },
+    "likes_accessibility": "like this video along with 1 other person",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UC0FcaFJVwvfwIRgPJjFJaKQ",
+      "name": "Prudential Hong Kong Limited 香港保誠保險",
+      "subscribers_display": "8.7K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

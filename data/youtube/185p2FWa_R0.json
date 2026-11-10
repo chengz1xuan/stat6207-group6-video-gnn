@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc5nw57003fbn00lnr610as",
+  "youtube_id": "185p2FWa_R0",
+  "source_url": "https://www.youtube.com/watch?v=185p2FWa_R0",
+  "retrieved_at_utc": "2026-11-09T12:01:06.320483+00:00",
+  "views": 1559280,
+  "likes": 475,
+  "comments": null,
+  "channel_id": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+  "subscriber_count_display": "10.2K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "f06163be0378c8ac3554c11cc415790b9cdd2a8d142902895b3e9cf0f56d7552",
+  "platform_title": "【易Joy！易賞！易分享　全新大家樂Club 100易.0】",
+  "channel_name": "大家樂 CafedeCoralHK",
+  "likes_display": "like this video along with 475 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1559280",
+      "display": "1,559,280 views"
+    },
+    "likes_accessibility": "like this video along with 475 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+      "name": "大家樂 CafedeCoralHK",
+      "subscribers_display": "10.2K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu2x5ga1001ebn60k5cu5puh",
+  "youtube_id": "ctvWljvgZ18",
+  "source_url": "https://www.youtube.com/watch?v=ctvWljvgZ18",
+  "retrieved_at_utc": "2026-11-09T12:01:49.170240+00:00",
+  "views": 11887,
+  "likes": 194,
+  "comments": null,
+  "channel_id": "UCDF__e4OyxESzW1snu1i0Bg",
+  "subscriber_count_display": "161K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "7e3c1ca9166407b630908206c37283f11aa7c4dbff61e52dfb1f0d0f0776d226",
+  "platform_title": "Taking Off Again with Kai Tak 與啟德再度啟航",
+  "channel_name": "cathaypacific",
+  "likes_display": "like this video along with 194 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "11887",
+      "display": "11,887 views"
+    },
+    "likes_accessibility": "like this video along with 194 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCDF__e4OyxESzW1snu1i0Bg",
+      "name": "cathaypacific",
+      "subscribers_display": "161K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

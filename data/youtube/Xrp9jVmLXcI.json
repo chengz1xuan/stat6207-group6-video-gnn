@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu2v81ud000zbn7c14o0hmai",
+  "youtube_id": "Xrp9jVmLXcI",
+  "source_url": "https://www.youtube.com/watch?v=Xrp9jVmLXcI",
+  "retrieved_at_utc": "2026-11-09T12:01:43.253286+00:00",
+  "views": 610350,
+  "likes": 1136,
+  "comments": null,
+  "channel_id": "UCuVp1SVmuRD0-ADZ7AFdhyw",
+  "subscriber_count_display": "25.5K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "37b8896b71b02b52a0241d1425577231296bca95e6195deba3f8d56487c8a08c",
+  "platform_title": "從亞洲到全球",
+  "channel_name": "leekumkeekitchen",
+  "likes_display": "like this video along with 1,136 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "610350",
+      "display": "610,350 views"
+    },
+    "likes_accessibility": "like this video along with 1,136 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCuVp1SVmuRD0-ADZ7AFdhyw",
+      "name": "leekumkeekitchen",
+      "subscribers_display": "25.5K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

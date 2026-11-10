@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvbu895p0053bnuoisvutc6v",
+  "youtube_id": "sbx2Dx1B-Z0",
+  "source_url": "https://www.youtube.com/watch?v=sbx2Dx1B-Z0",
+  "retrieved_at_utc": "2026-11-09T12:02:08.134210+00:00",
+  "views": 272579,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UC0FcaFJVwvfwIRgPJjFJaKQ",
+  "subscriber_count_display": "8.7K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "01fac394a9359ff3757af898303417cfefbf015b4f0485db7585b3ba0126f2de",
+  "platform_title": "保誠「守護健康危疾全護保」廣告",
+  "channel_name": "Prudential Hong Kong Limited 香港保誠保險",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "272579",
+      "display": "272,579 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UC0FcaFJVwvfwIRgPJjFJaKQ",
+      "name": "Prudential Hong Kong Limited 香港保誠保險",
+      "subscribers_display": "8.7K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

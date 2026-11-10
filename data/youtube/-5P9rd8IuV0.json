@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu3gznxt000pbn5k4mu9yl5f",
+  "youtube_id": "-5P9rd8IuV0",
+  "source_url": "https://www.youtube.com/watch?v=-5P9rd8IuV0",
+  "retrieved_at_utc": "2026-11-09T12:01:03.535557+00:00",
+  "views": 559098,
+  "likes": 135,
+  "comments": null,
+  "channel_id": "UCAjKRiZ-UeH2Bz4Cu-ZEtUg",
+  "subscriber_count_display": "61.6K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "8efd20cd78c1d9629048420eccdbac40cb36f564e879c92c9945dcd197ca8c63",
+  "platform_title": "旋「峯」消息: 搭東鐵往來羅湖或落馬洲超方便 Travel hassle-free on the East Rail Line to and from Lo Wu or Lok Ma Chau",
+  "channel_name": "MTR Hong Kong",
+  "likes_display": "like this video along with 135 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "559098",
+      "display": "559,098 views"
+    },
+    "likes_accessibility": "like this video along with 135 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCAjKRiZ-UeH2Bz4Cu-ZEtUg",
+      "name": "MTR Hong Kong",
+      "subscribers_display": "61.6K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc4mk5i000pbn00las6i1uw",
+  "youtube_id": "8NZyb7wPlao",
+  "source_url": "https://www.youtube.com/watch?v=8NZyb7wPlao",
+  "retrieved_at_utc": "2026-11-09T12:01:13.741811+00:00",
+  "views": 479535,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCbv_6SSiwvl7fLoXg4usdWA",
+  "subscriber_count_display": "1.92K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "711c20b94867efcd49e1692c8daaa95a5d891e68311066f6377993ebd7ee4863",
+  "platform_title": "2025 美心月餅 美心冰皮味道 香港製造 – 冰皮月餅系列+榴槤冰皮月餅",
+  "channel_name": "美心食品 Maxim’s Products",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "479535",
+      "display": "479,535 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCbv_6SSiwvl7fLoXg4usdWA",
+      "name": "美心食品 Maxim’s Products",
+      "subscribers_display": "1.92K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

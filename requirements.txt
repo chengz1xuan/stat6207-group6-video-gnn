@@ -1,0 +1,18 @@
+# Core versions verified in local conda stat6207, Python 3.11.16
+numpy==2.4.6
+pandas==3.0.6
+torch==2.14.0
+scikit-learn==1.9.1
+scipy==1.17.1
+matplotlib==3.11.2
+Pillow==12.3.0
+# PDF helpers installed locally under .project-deps
+reportlab==5.1.0
+pypdf==7.0.0
+pymupdf==2.1
+# Additional graph-level baseline library (installed project-locally)
+torch-geometric==2.8.1
+xxhash==4.0.2
+
+# Local Python web demonstration (already installed in stat6207)
+streamlit==1.66.1

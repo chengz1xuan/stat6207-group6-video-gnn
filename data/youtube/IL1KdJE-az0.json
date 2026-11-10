@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc83tdb005pbn00p4q0ub8t",
+  "youtube_id": "IL1KdJE-az0",
+  "source_url": "https://www.youtube.com/watch?v=IL1KdJE-az0",
+  "retrieved_at_utc": "2026-11-09T12:01:24.768284+00:00",
+  "views": 395990,
+  "likes": 4,
+  "comments": null,
+  "channel_id": "UCy80v1icfNULOE2wF3Hr7CQ",
+  "subscriber_count_display": "1.36K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "a58f4c170b8342627f16a28b84d8dc9ee6ad46542ca8102ae5370c366433b3c2",
+  "platform_title": "【嘉頓開心好禮，新春最讚祝賀】為大家送上最合時嘅祝福！(30秒)",
+  "channel_name": "嘉頓 Garden",
+  "likes_display": "like this video along with 4 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "395990",
+      "display": "395,990 views"
+    },
+    "likes_accessibility": "like this video along with 4 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCy80v1icfNULOE2wF3Hr7CQ",
+      "name": "嘉頓 Garden",
+      "subscribers_display": "1.36K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

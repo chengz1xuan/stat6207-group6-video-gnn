@@ -1,0 +1,40 @@
+{
+  "video_id": "cmt3rij3m000fbnlsoi1w0z1s",
+  "youtube_id": "-DTVoI_qJi4",
+  "source_url": "https://www.youtube.com/watch?v=-DTVoI_qJi4",
+  "retrieved_at_utc": "2026-11-09T12:01:03.535732+00:00",
+  "views": 735175,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCSIfcoM9kmyjil_IU5IC_gA",
+  "subscriber_count_display": "33K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "e491bdfcff451653271e4b68e326b59b355f60ef90950f46c67d27447ff577bf",
+  "platform_title": "【畀錢都可以sweet住畀❤️】用JustPay畀錢「畀心意」​",
+  "channel_name": "恒生銀行 Hang Seng Bank",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "735175",
+      "display": "735,175 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCSIfcoM9kmyjil_IU5IC_gA",
+      "name": "恒生銀行 Hang Seng Bank",
+      "subscribers_display": "33K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

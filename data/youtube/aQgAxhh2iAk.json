@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvbu3g3q0044bnuoleiktjg8",
+  "youtube_id": "aQgAxhh2iAk",
+  "source_url": "https://www.youtube.com/watch?v=aQgAxhh2iAk",
+  "retrieved_at_utc": "2026-11-09T12:01:46.379507+00:00",
+  "views": 1241,
+  "likes": 11,
+  "comments": null,
+  "channel_id": "UC0FcaFJVwvfwIRgPJjFJaKQ",
+  "subscriber_count_display": "8.7K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "7e13286b7895ea505f98967019e6856a69163df3fc7802af063dc4a79a263e2e",
+  "platform_title": "保誠健康方案 全面守護家中每個成員👨‍👩‍👧‍👦🐱🐶",
+  "channel_name": "Prudential Hong Kong Limited 香港保誠保險",
+  "likes_display": "like this video along with 11 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1241",
+      "display": "1,241 views"
+    },
+    "likes_accessibility": "like this video along with 11 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UC0FcaFJVwvfwIRgPJjFJaKQ",
+      "name": "Prudential Hong Kong Limited 香港保誠保險",
+      "subscribers_display": "8.7K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

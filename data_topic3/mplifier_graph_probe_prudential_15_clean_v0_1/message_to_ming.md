@@ -1,0 +1,1 @@
+Hi Ming — here is the Prudential controlled batch: 15/15 official uploader matches, 0 third-party excluded, 0 unresolved held out. The package includes 15 videos, 659 aspect nodes, 804 evidence nodes and 3073 candidate edges. `video_nodes.csv` follows your fixed 35-field order. Candidate links are research graph probes, not GNN ground-truth labels.

@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc5jk89002lbn00olmyt66x",
+  "youtube_id": "3pLqks-7nWo",
+  "source_url": "https://www.youtube.com/watch?v=3pLqks-7nWo",
+  "retrieved_at_utc": "2026-11-09T12:01:09.586319+00:00",
+  "views": 1823304,
+  "likes": 43,
+  "comments": null,
+  "channel_id": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+  "subscriber_count_display": "10.2K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "096ba7e9aa9a7a53830b34c6ba06d35acb2ed1025aa21adda32dc55e6c1e3a3f",
+  "platform_title": "大家樂早餐推介｜北海道3.6牛乳炒蛋一啖入魂！大家樂精選早餐/滑蛋套餐",
+  "channel_name": "大家樂 CafedeCoralHK",
+  "likes_display": "like this video along with 43 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1823304",
+      "display": "1,823,304 views"
+    },
+    "likes_accessibility": "like this video along with 43 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+      "name": "大家樂 CafedeCoralHK",
+      "subscribers_display": "10.2K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

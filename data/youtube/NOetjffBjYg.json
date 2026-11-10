@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvbtu70a002obnuolzssfs20",
+  "youtube_id": "NOetjffBjYg",
+  "source_url": "https://www.youtube.com/watch?v=NOetjffBjYg",
+  "retrieved_at_utc": "2026-11-09T12:01:30.540939+00:00",
+  "views": 771258,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCtOHIOjPlO12F7XghNsJzCg",
+  "subscriber_count_display": "18.1K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "aae7c23bffde5349b7bbc23319f0df7d55413f754e3d3e2f08b8c54622705ccf",
+  "platform_title": "【🛫「萬」遊世界 搜羅最好🚩】🌍萬寧帶你環遊世界！",
+  "channel_name": "萬寧Mannings",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "771258",
+      "display": "771,258 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCtOHIOjPlO12F7XghNsJzCg",
+      "name": "萬寧Mannings",
+      "subscribers_display": "18.1K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

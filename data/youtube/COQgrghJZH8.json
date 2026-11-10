@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc5mafh0032bn00ur4j2w7y",
+  "youtube_id": "COQgrghJZH8",
+  "source_url": "https://www.youtube.com/watch?v=COQgrghJZH8",
+  "retrieved_at_utc": "2026-11-09T12:01:18.661062+00:00",
+  "views": 4847,
+  "likes": 21,
+  "comments": null,
+  "channel_id": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+  "subscriber_count_display": "10.2K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "8c203c96a9df4aa3bdb662d5bd8dff943aa4878cad43911e0b3c8bfc7de03a40",
+  "platform_title": "大家樂 招牌焗超進化 和風照燒汁鰻魚雞扒焗飯 足本版",
+  "channel_name": "大家樂 CafedeCoralHK",
+  "likes_display": "like this video along with 21 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "4847",
+      "display": "4,847 views"
+    },
+    "likes_accessibility": "like this video along with 21 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+      "name": "大家樂 CafedeCoralHK",
+      "subscribers_display": "10.2K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

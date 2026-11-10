@@ -1,0 +1,40 @@
+{
+  "video_id": "cmt3r98b3001jbnawgplw9ymh",
+  "youtube_id": "Lh70a4x5KuI",
+  "source_url": "https://www.youtube.com/watch?v=Lh70a4x5KuI",
+  "retrieved_at_utc": "2026-11-09T12:01:26.886760+00:00",
+  "views": 6957741,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCSIfcoM9kmyjil_IU5IC_gA",
+  "subscriber_count_display": "33K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "8dd781433b586c60b3311a7b562185f2264fb45264ae7424007e89845b1ce257",
+  "platform_title": "【 9成投資者必看「恒生投資快」比你更安心及信心掌握市場機遇📊 】| 恒生銀行",
+  "channel_name": "恒生銀行 Hang Seng Bank",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "6957741",
+      "display": "6,957,741 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCSIfcoM9kmyjil_IU5IC_gA",
+      "name": "恒生銀行 Hang Seng Bank",
+      "subscribers_display": "33K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

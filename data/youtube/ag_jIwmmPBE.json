@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc31bjj000abn00k2q5hopc",
+  "youtube_id": "ag_jIwmmPBE",
+  "source_url": "https://www.youtube.com/watch?v=ag_jIwmmPBE",
+  "retrieved_at_utc": "2026-11-09T12:01:47.377145+00:00",
+  "views": 1024,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UC0FcaFJVwvfwIRgPJjFJaKQ",
+  "subscriber_count_display": "8.7K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "41ad2e05b8286f5d322c7762860700e3cdebf5580d45fa097f7cdcb8e2fe09ce",
+  "platform_title": "「保誠香港網球公開球賽2016」電視廣告20\"",
+  "channel_name": "Prudential Hong Kong Limited 香港保誠保險",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1024",
+      "display": "1,024 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UC0FcaFJVwvfwIRgPJjFJaKQ",
+      "name": "Prudential Hong Kong Limited 香港保誠保險",
+      "subscribers_display": "8.7K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

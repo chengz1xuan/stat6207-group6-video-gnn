@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc5k59i002qbn00o6l0ws5b",
+  "youtube_id": "MhalEVYPJgE",
+  "source_url": "https://www.youtube.com/watch?v=MhalEVYPJgE",
+  "retrieved_at_utc": "2026-11-09T12:01:29.546491+00:00",
+  "views": 126515,
+  "likes": 5,
+  "comments": null,
+  "channel_id": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+  "subscriber_count_display": "10.2K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "bc49494243524faa46cdc7a2e8eb5dd4a3f464853f85a38535800d76eba2ad69",
+  "platform_title": "#大家樂 陳煒推薦團年首選🧧｜大家樂鴻運盆菜宴同你一齊過新年！",
+  "channel_name": "大家樂 CafedeCoralHK",
+  "likes_display": "like this video along with 5 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "126515",
+      "display": "126,515 views"
+    },
+    "likes_accessibility": "like this video along with 5 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+      "name": "大家樂 CafedeCoralHK",
+      "subscribers_display": "10.2K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

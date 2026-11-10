@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvbu9ujj005gbnuou2b4c9k9",
+  "youtube_id": "uaPKYTUO70Q",
+  "source_url": "https://www.youtube.com/watch?v=uaPKYTUO70Q",
+  "retrieved_at_utc": "2026-11-09T12:02:09.825647+00:00",
+  "views": 2179,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UC0FcaFJVwvfwIRgPJjFJaKQ",
+  "subscriber_count_display": "8.7K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "bed02b5ed5b34934acfc1cfcd076e9b020403ce26163ea9af40b94f350542e80",
+  "platform_title": "2016 Prudential Health & Protection TV Commercial",
+  "channel_name": "Prudential Hong Kong Limited 香港保誠保險",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "2179",
+      "display": "2,179 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UC0FcaFJVwvfwIRgPJjFJaKQ",
+      "name": "Prudential Hong Kong Limited 香港保誠保險",
+      "subscribers_display": "8.7K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

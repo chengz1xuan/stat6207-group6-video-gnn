@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc4lkv1000ibn00nzej00p6",
+  "youtube_id": "hgjiQ8QnZN4",
+  "source_url": "https://www.youtube.com/watch?v=hgjiQ8QnZN4",
+  "retrieved_at_utc": "2026-11-09T12:01:52.497931+00:00",
+  "views": 207578,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCbv_6SSiwvl7fLoXg4usdWA",
+  "subscriber_count_display": "1.92K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "627edc9e93425eca8a02e34796ed7e921951d71fc11cb66b473329ec78e33733",
+  "platform_title": "2026 年美心賀年廣告 蘿蔔糕+金沙奶黃年糕篇30秒",
+  "channel_name": "美心食品 Maxim’s Products",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "207578",
+      "display": "207,578 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCbv_6SSiwvl7fLoXg4usdWA",
+      "name": "美心食品 Maxim’s Products",
+      "subscribers_display": "1.92K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

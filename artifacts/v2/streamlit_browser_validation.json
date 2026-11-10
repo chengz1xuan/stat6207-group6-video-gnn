@@ -1,0 +1,11 @@
+{
+  "health": true,
+  "framework": "Streamlit",
+  "actual_graph_svg": true,
+  "optimization_form": true,
+  "desktop": "1440x1000",
+  "mobile": "390x844",
+  "app_exceptions": 0,
+  "js_exceptions": 0,
+  "mobile_overflow": false
+}

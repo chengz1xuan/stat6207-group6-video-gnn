@@ -1,0 +1,9 @@
+{
+  "train": 171,
+  "test": 43,
+  "target_test_count": 43,
+  "seed": 42,
+  "selection_rule": "First seed >=42 yielding round(0.2*N) test videos with disjoint campaign groups. Selection uses group sizes only, never response labels.",
+  "train_fraction": 0.7990654205607477,
+  "test_fraction": 0.20093457943925233
+}

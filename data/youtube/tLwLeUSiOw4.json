@@ -1,0 +1,40 @@
+{
+  "video_id": "cmt3ruagg0019bnlsyumm4sgl",
+  "youtube_id": "tLwLeUSiOw4",
+  "source_url": "https://www.youtube.com/watch?v=tLwLeUSiOw4",
+  "retrieved_at_utc": "2026-11-09T12:02:08.556245+00:00",
+  "views": 515,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCSIfcoM9kmyjil_IU5IC_gA",
+  "subscriber_count_display": "33K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "7d1171281252a21dcc6ddcfdbc24bab5240edacf3c934d68eca8560fc3244958",
+  "platform_title": "恒生Preferred Banking一齊求變、創新，實現更大理想！",
+  "channel_name": "恒生銀行 Hang Seng Bank",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "515",
+      "display": "515 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCSIfcoM9kmyjil_IU5IC_gA",
+      "name": "恒生銀行 Hang Seng Bank",
+      "subscribers_display": "33K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu2vtqne0028bn7crxlaymsx",
+  "youtube_id": "HcP4Lt-D5Yc",
+  "source_url": "https://www.youtube.com/watch?v=HcP4Lt-D5Yc",
+  "retrieved_at_utc": "2026-11-09T12:01:23.821282+00:00",
+  "views": 11680,
+  "likes": 221,
+  "comments": null,
+  "channel_id": "UCDF__e4OyxESzW1snu1i0Bg",
+  "subscriber_count_display": "161K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "c62e018124889cd5342426b99cf2bdbf7c2ba59ba363a08eeaa80cd06f8a9daa",
+  "platform_title": "Introducing the Aria Studio 爾逸商務艙 全新區域商務艙",
+  "channel_name": "cathaypacific",
+  "likes_display": "like this video along with 221 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "11680",
+      "display": "11,680 views"
+    },
+    "likes_accessibility": "like this video along with 221 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCDF__e4OyxESzW1snu1i0Bg",
+      "name": "cathaypacific",
+      "subscribers_display": "161K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

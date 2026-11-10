@@ -1,0 +1,103 @@
+{
+  "dataset_name": "hang_seng_20",
+  "package_name": "mplifier_graph_probe_hang_seng_20_clean_v0_1.zip",
+  "generated_from": "ad-reference-vault-export-2026-08-22 (1).json",
+  "source_export_generated_at": "2026-08-22T02:43:31.006Z",
+  "reference_diagnostic": {
+    "exported_references": 20,
+    "included_references": 20,
+    "excluded_references": 0,
+    "all_included_are_hang_seng_family": true,
+    "all_sources_are_official_hang_seng_channel": true,
+    "off_theme_exclusions": [],
+    "notes": [
+      "Canonical brand labels vary in capitalization and Chinese/English order, so the probe normalizes them to brand_family=Hang Seng Bank while preserving brand_raw.",
+      "All 20 records are published by the official 恒生銀行 Hang Seng Bank YouTube channel.",
+      "Sub-brand/product-line labels are heuristic graph-test normalizations only and remain separate from the canonical product/campaign field."
+    ]
+  },
+  "graph_counts": {
+    "video_nodes": 20,
+    "aspect_nodes": 794,
+    "evidence_nodes": 1244,
+    "candidate_edges": 4703,
+    "edge_type_counts": {
+      "aspect_supported_by_evidence": 514,
+      "same_author": 190,
+      "same_brand": 190,
+      "same_creative_mechanic": 136,
+      "same_cta_explicitness": 154,
+      "same_evidence_mode": 190,
+      "same_pacing": 190,
+      "same_safety_status": 171,
+      "same_structure_type": 37,
+      "similar_aspect_candidate": 893,
+      "video_has_aspect": 794,
+      "video_has_evidence": 1244
+    }
+  },
+  "distributions": {
+    "canonical_brand_raw": {
+      "HANG SENG BANK": 5,
+      "Hang Seng Bank": 8,
+      "恒生銀行 Hang Seng Bank": 2,
+      "Hang Seng Bank (恒生銀行)": 1,
+      "HANG SENG BANK 恆生銀行": 2,
+      "HANG SENG BANK 恒生銀行": 1,
+      "Hang Seng Bank 恒生銀行": 1
+    },
+    "sub_brand": {
+      "Hang Seng Preferred Banking": 4,
+      "Hang Seng Credit Card": 10,
+      "Hang Seng Bank": 4,
+      "Hang Seng Prestige Banking": 2
+    },
+    "author": {
+      "恒生銀行 Hang Seng Bank": 20
+    },
+    "creative_mechanic": {
+      "Offer led": 17,
+      "Creative mechanic unresolved": 1,
+      "Announcement / information led": 1,
+      "Music / mood led": 1
+    },
+    "structure_type": {
+      "Product proof led": 3,
+      "Creative mechanic unresolved": 2,
+      "Offer led": 8,
+      "Problem-solution led": 3,
+      "Announcement / information led": 2,
+      "Testimonial led": 2
+    },
+    "evidence_mode": {
+      "mixed": 20
+    },
+    "cta_explicitness": {
+      "explicit": 18,
+      "implicit": 2
+    },
+    "pacing": {
+      "medium tempo": 20
+    },
+    "safety_status": {
+      "high_risk": 1,
+      "needs_review": 19
+    }
+  },
+  "previous_mcdonalds_pack_baseline": {
+    "package": "mplifier_graph_probe_mcdonald_20_clean_v0_1.zip",
+    "references": 20,
+    "aspect_nodes": 667,
+    "evidence_nodes": 1486,
+    "candidate_edges": 6869
+  },
+  "previous_hsbc_pack_baseline": {
+    "package": "mplifier_graph_probe_hsbc_16_clean_v0_1.zip",
+    "references": 16,
+    "aspect_nodes": 704,
+    "evidence_nodes": 1037,
+    "candidate_edges": 3554
+  },
+  "important_caveat": "candidate_edges.csv is not ground truth. Deterministic structural/same-field edges should be treated differently from weaker similarity-candidate edges.",
+  "research_positioning": "Graph probe / graph-readiness / clustering test only; not a claim that Mplifier already has a working GNN."
+}

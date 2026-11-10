@@ -1,0 +1,62 @@
+{
+  "dataset_name": "hang_seng_20",
+  "generated_from": "ad-reference-vault-export-HangSeng.json",
+  "source_export_generated_at": "2026-09-16T01:42:35.469Z",
+  "reference_audit": {
+    "selected_references": 20,
+    "official_brand_uploads": 20,
+    "third_party_uploads": 0,
+    "unresolved_uploader_matches": 0,
+    "final_clean_references": 20,
+    "excluded_records": [],
+    "unresolved_records": []
+  },
+  "graph_counts": {
+    "video_nodes": 20,
+    "aspect_nodes": 549,
+    "evidence_nodes": 861,
+    "candidate_edges": 3071,
+    "edge_type_counts": {
+      "video_has_aspect": 549,
+      "video_has_evidence": 861,
+      "same_brand": 190,
+      "same_author": 190,
+      "same_evidence_mode": 190,
+      "same_pacing": 190,
+      "same_creative_mechanic": 136,
+      "same_cta_explicitness": 154,
+      "same_structure_type": 37,
+      "same_safety_status": 171,
+      "similar_aspect_candidate": 403
+    }
+  },
+  "distributions": {
+    "sub_brand": {
+      "Hang Seng Preferred Banking": 4,
+      "Hang Seng Credit Card": 9,
+      "Hang Seng Bank": 5,
+      "Hang Seng Prestige Banking": 2
+    },
+    "author": {
+      "恒生銀行 Hang Seng Bank": 20
+    },
+    "creative_mechanic": {
+      "Offer led": 17,
+      "Creative mechanic unresolved": 1,
+      "Announcement / information led": 1,
+      "Music / mood led": 1
+    },
+    "structure_type": {
+      "Product proof led": 3,
+      "Creative mechanic unresolved": 2,
+      "Offer led": 8,
+      "Problem-solution led": 3,
+      "Announcement / information led": 2,
+      "Testimonial led": 2
+    },
+    "evidence_mode": {
+      "mixed": 20
+    }
+  },
+  "positioning": "Graph-readiness / clustering probe only; not a production GNN."
+}

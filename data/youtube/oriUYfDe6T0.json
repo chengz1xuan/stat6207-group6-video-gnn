@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu3h0e3l000ubn5kqeugr1bu",
+  "youtube_id": "oriUYfDe6T0",
+  "source_url": "https://www.youtube.com/watch?v=oriUYfDe6T0",
+  "retrieved_at_utc": "2026-11-09T12:02:03.317495+00:00",
+  "views": 1490186,
+  "likes": 39,
+  "comments": null,
+  "channel_id": "UCAjKRiZ-UeH2Bz4Cu-ZEtUg",
+  "subscriber_count_display": "61.6K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "5359fd4fd5af3ae7297d7fc42ddce52bfa4fc746b984293e39d093e459f97af1",
+  "platform_title": "【神Code伴你行🎶──疏散應變】 Evacuation Tips",
+  "channel_name": "MTR Hong Kong",
+  "likes_display": "like this video along with 39 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1490186",
+      "display": "1,490,186 views"
+    },
+    "likes_accessibility": "like this video along with 39 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCAjKRiZ-UeH2Bz4Cu-ZEtUg",
+      "name": "MTR Hong Kong",
+      "subscribers_display": "61.6K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

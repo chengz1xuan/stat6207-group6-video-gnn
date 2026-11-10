@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvbtvkhs002vbnuoqrsrkngv",
+  "youtube_id": "M085htAtiRs",
+  "source_url": "https://www.youtube.com/watch?v=M085htAtiRs",
+  "retrieved_at_utc": "2026-11-09T12:01:27.479623+00:00",
+  "views": 468424,
+  "likes": 2,
+  "comments": null,
+  "channel_id": "UCtOHIOjPlO12F7XghNsJzCg",
+  "subscriber_count_display": "18.1K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "ab4a723eca7810b94d8d7392b4caaf07fb3c068df79850eeee5db25517215b04",
+  "platform_title": "🧡萬寧自家品牌🧡 由朝到晚  時刻撐你追求更好",
+  "channel_name": "萬寧Mannings",
+  "likes_display": "like this video along with 2 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "468424",
+      "display": "468,424 views"
+    },
+    "likes_accessibility": "like this video along with 2 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCtOHIOjPlO12F7XghNsJzCg",
+      "name": "萬寧Mannings",
+      "subscribers_display": "18.1K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

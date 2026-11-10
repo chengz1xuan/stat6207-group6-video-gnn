@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvbtwm3y0030bnuonb2lsqqk",
+  "youtube_id": "W55hGwh93DY",
+  "source_url": "https://www.youtube.com/watch?v=W55hGwh93DY",
+  "retrieved_at_utc": "2026-11-09T12:01:38.212333+00:00",
+  "views": 3383769,
+  "likes": 13,
+  "comments": null,
+  "channel_id": "UCtOHIOjPlO12F7XghNsJzCg",
+  "subscriber_count_display": "18.1K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "4034ba57f58ac4941fa2318dffe1d0b5b303540fcbfd3b306ccfdff1a9e35e2c",
+  "platform_title": "【保健冠軍 唯獨萬寧】全港最受愛戴保健品零售商",
+  "channel_name": "萬寧Mannings",
+  "likes_display": "like this video along with 13 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "3383769",
+      "display": "3,383,769 views"
+    },
+    "likes_accessibility": "like this video along with 13 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCtOHIOjPlO12F7XghNsJzCg",
+      "name": "萬寧Mannings",
+      "subscribers_display": "18.1K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

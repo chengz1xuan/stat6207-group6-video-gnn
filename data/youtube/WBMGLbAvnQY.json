@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc4piak0019bn00a2nk9b56",
+  "youtube_id": "WBMGLbAvnQY",
+  "source_url": "https://www.youtube.com/watch?v=WBMGLbAvnQY",
+  "retrieved_at_utc": "2026-11-09T12:01:38.705001+00:00",
+  "views": 459694,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCbv_6SSiwvl7fLoXg4usdWA",
+  "subscriber_count_display": "1.92K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "faba241871e21802cf50d5a276e44f29d79f49211f964231ca8182483dc493cf",
+  "platform_title": "【祝福 就是最足料的幸福】 2023年美心賀年廣告 - 蘿蔔糕篇",
+  "channel_name": "美心食品 Maxim’s Products",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "459694",
+      "display": "459,694 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCbv_6SSiwvl7fLoXg4usdWA",
+      "name": "美心食品 Maxim’s Products",
+      "subscribers_display": "1.92K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "dataset_name": "cathay_15",
+  "package_name": "mplifier_graph_probe_cathay_15_clean_v0_1.zip",
+  "generated_from": "ad-reference-vault-export-CX.json",
+  "source_export_generated_at": "2026-09-15T22:39:42.593Z",
+  "reference_diagnostic": {
+    "exported_references": 15,
+    "official_brand_uploads": 15,
+    "third_party_uploads": 0,
+    "unresolved_uploader_matches": 0,
+    "clean_references": 15,
+    "official_uploader_verification": "Official-uploader registry matched author 'cathaypacific' and channel ID UCDF__e4OyxESzW1snu1i0Bg. Cathay Pacific's official website links its YouTube presence to youtube.com/cathaypacific.",
+    "excluded_records": [],
+    "unresolved_records": []
+  },
+  "graph_counts": {
+    "video_nodes": 15,
+    "aspect_nodes": 619,
+    "evidence_nodes": 846,
+    "candidate_edges": 2968,
+    "edge_type_counts": {
+      "aspect_supported_by_evidence": 432,
+      "same_author": 105,
+      "same_brand": 105,
+      "same_creative_mechanic": 23,
+      "same_cta_explicitness": 37,
+      "same_evidence_mode": 34,
+      "same_pacing": 69,
+      "same_safety_status": 61,
+      "same_structure_type": 31,
+      "similar_aspect_candidate": 606,
+      "video_has_aspect": 619,
+      "video_has_evidence": 846
+    }
+  },
+  "distributions": {
+    "canonical_brand_raw": {
+      "Cathay": 2,
+      "Cathay Pacific": 5,
+      "CATHAY PACIFIC": 1,
+      "CATHAY CARGO": 2,
+      "Cathay Cargo": 5
+    },
+    "brand_family": {
+      "Cathay": 15
+    },
+    "sub_brand": {
+      "Cathay": 2,
+      "Cathay Pacific": 6,
+      "Cathay Cargo": 7
+    },
+    "author": {
+      "cathaypacific": 15
+    },
+    "creative_mechanic": {
+      "Testimonial led": 1,
+      "Offer led": 5,
+      "Music / mood led": 5,
+      "Product proof led": 3,
+      "Announcement / information led": 1
+    },
+    "structure_type": {
+      "Testimonial led": 1,
+      "Service credibility led": 1,
+      "Product proof led": 7,
+      "Music / mood led": 5,
+      "Problem-solution led": 1
+    },
+    "evidence_mode": {
+      "mixed": 7,
+      "text_led": 5,
+      "music_visual_led_sparse_dialogue": 3
+    },
+    "cta_explicitness": {
+      "implicit": 4,
+      "unclear": 8,
+      "explicit": 3
+    },
+    "pacing": {
+      "medium tempo": 12,
+      "fast-cut": 3
+    },
+    "safety_status": {
+      "high_risk": 4,
+      "needs_review": 11
+    }
+  },
+  "important_caveat": "candidate_edges.csv is not ground truth. Deterministic structural/same-field edges should be treated differently from weaker similarity-candidate edges.",
+  "research_positioning": "Graph probe / graph-readiness / clustering test only; not a claim that Mplifier already has a working GNN."
+}

@@ -1,0 +1,40 @@
+{
+  "video_id": "cmt3r8lhc001ebnawtu04awo7",
+  "youtube_id": "B2EyinOoCsE",
+  "source_url": "https://www.youtube.com/watch?v=B2EyinOoCsE",
+  "retrieved_at_utc": "2026-11-09T12:01:15.856659+00:00",
+  "views": 5162994,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCSIfcoM9kmyjil_IU5IC_gA",
+  "subscriber_count_display": "33K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "0151c95b022ad4ee4aa75f7b53a9cae573abacd562150ed3b39b1308413f70f3",
+  "platform_title": "【新升級恒生 MMPOWER卡】網購信用卡天花板 網球一哥都用緊！🛍️網購及指定商戶賺高達 8% +FUN Dollars！",
+  "channel_name": "恒生銀行 Hang Seng Bank",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "5162994",
+      "display": "5,162,994 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCSIfcoM9kmyjil_IU5IC_gA",
+      "name": "恒生銀行 Hang Seng Bank",
+      "subscribers_display": "33K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

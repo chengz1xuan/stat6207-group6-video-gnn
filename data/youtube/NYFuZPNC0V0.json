@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu3gd9b90000bn5ksc0fo2yj",
+  "youtube_id": "NYFuZPNC0V0",
+  "source_url": "https://www.youtube.com/watch?v=NYFuZPNC0V0",
+  "retrieved_at_utc": "2026-11-09T12:01:30.767690+00:00",
+  "views": 2268967,
+  "likes": 214,
+  "comments": null,
+  "channel_id": "UCAjKRiZ-UeH2Bz4Cu-ZEtUg",
+  "subscriber_count_display": "61.6K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "8184e74412788e0b4b0fb010d127728b8ad45897fbc160663eda34a6773dbff9",
+  "platform_title": "East Rail Line’s new train door numbering stickers are now in use 🚈",
+  "channel_name": "MTR Hong Kong",
+  "likes_display": "like this video along with 214 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "2268967",
+      "display": "2,268,967 views"
+    },
+    "likes_accessibility": "like this video along with 214 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCAjKRiZ-UeH2Bz4Cu-ZEtUg",
+      "name": "MTR Hong Kong",
+      "subscribers_display": "61.6K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

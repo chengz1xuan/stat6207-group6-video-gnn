@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvcaydc600a8bn00b6o0wg76",
+  "youtube_id": "oUY-9ccC8mM",
+  "source_url": "https://www.youtube.com/watch?v=oUY-9ccC8mM",
+  "retrieved_at_utc": "2026-11-09T12:02:02.363225+00:00",
+  "views": 200159,
+  "likes": 771,
+  "comments": null,
+  "channel_id": "UCrpcqERIGaznGxm7ZoRVBRw",
+  "subscriber_count_display": "3.12K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "7b2207ccd176f720d2437c9b7557aef1528419a7c0593f1afea948e6cd194a37",
+  "platform_title": "周大福 BEYOND TIME - Beyond Generations",
+  "channel_name": "Chow Tai Fook Jewellery 周大福珠寶",
+  "likes_display": "like this video along with 771 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "200159",
+      "display": "200,159 views"
+    },
+    "likes_accessibility": "like this video along with 771 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCrpcqERIGaznGxm7ZoRVBRw",
+      "name": "Chow Tai Fook Jewellery 周大福珠寶",
+      "subscribers_display": "3.12K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvbts9tf0029bnuoifoulmm5",
+  "youtube_id": "oSSYljtVwQg",
+  "source_url": "https://www.youtube.com/watch?v=oSSYljtVwQg",
+  "retrieved_at_utc": "2026-11-09T12:02:02.279791+00:00",
+  "views": 1322283,
+  "likes": 109,
+  "comments": null,
+  "channel_id": "UCtOHIOjPlO12F7XghNsJzCg",
+  "subscriber_count_display": "18.1K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "e8ca9a0f2d72b370faf4f9eb88afd84d81cfb3212e66e5fef16e6b1bb83abc02",
+  "platform_title": "【瞓覺事 大健事】萬寧撐你瞓好啲 先可以健康啲！",
+  "channel_name": "萬寧Mannings",
+  "likes_display": "like this video along with 109 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1322283",
+      "display": "1,322,283 views"
+    },
+    "likes_accessibility": "like this video along with 109 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCtOHIOjPlO12F7XghNsJzCg",
+      "name": "萬寧Mannings",
+      "subscribers_display": "18.1K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

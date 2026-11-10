@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvbucwxc005sbnuoskg5zh60",
+  "youtube_id": "WkcyCWOx6-w",
+  "source_url": "https://www.youtube.com/watch?v=WkcyCWOx6-w",
+  "retrieved_at_utc": "2026-11-09T12:01:39.827891+00:00",
+  "views": 2542,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UC0FcaFJVwvfwIRgPJjFJaKQ",
+  "subscriber_count_display": "8.7K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "4231110493dd43663fbec272d24856e745eff85da652407dd2d0d2389d6afe30",
+  "platform_title": "保誠 Prudential 2010 電視廣告「Listen to Me」",
+  "channel_name": "Prudential Hong Kong Limited 香港保誠保險",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "2542",
+      "display": "2,542 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UC0FcaFJVwvfwIRgPJjFJaKQ",
+      "name": "Prudential Hong Kong Limited 香港保誠保險",
+      "subscribers_display": "8.7K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

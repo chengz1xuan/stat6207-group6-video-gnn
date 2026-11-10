@@ -1,0 +1,40 @@
+{
+  "video_id": "cmsxzoifu000ybnn8hkdaxhvh",
+  "youtube_id": "KuamaJ_IFFk",
+  "source_url": "https://www.youtube.com/watch?v=KuamaJ_IFFk",
+  "retrieved_at_utc": "2026-11-09T12:01:25.814270+00:00",
+  "views": 1613781,
+  "likes": 194,
+  "comments": null,
+  "channel_id": "UCYassnxj-M1niKCNIaaRPWw",
+  "subscriber_count_display": "45.2K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "40e8a407b79f72f6594770638ff5d9a407e162c8db66a427696fbf806a4352d2",
+  "platform_title": "啟用推播通知，資訊盡在掌握",
+  "channel_name": "HSBC Hong Kong",
+  "likes_display": "like this video along with 194 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1613781",
+      "display": "1,613,781 views"
+    },
+    "likes_accessibility": "like this video along with 194 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCYassnxj-M1niKCNIaaRPWw",
+      "name": "HSBC Hong Kong",
+      "subscribers_display": "45.2K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

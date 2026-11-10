@@ -1,0 +1,40 @@
+{
+  "video_id": "cmol77a1i0000bns0j82s94vf",
+  "youtube_id": "6nM-zMXtN5c",
+  "source_url": "https://www.youtube.com/watch?v=6nM-zMXtN5c",
+  "retrieved_at_utc": "2026-11-09T12:01:11.442069+00:00",
+  "views": 1095,
+  "likes": 11,
+  "comments": null,
+  "channel_id": "UCBDGANnytQYn4kXtZQbOI-A",
+  "subscriber_count_display": "20.2K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "aabcfd684f11a82e3a28cdf0bf7d784f9925e9a57d931acf0c0469e0e8e4183e",
+  "platform_title": "[香港廣告](2026)麥當勞 辣椒蟹醬煎蛋雞腿飽",
+  "channel_name": "TPB HK CM 香港電視廣告庫 (香港電視廣告庫)",
+  "likes_display": "like this video along with 11 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1095",
+      "display": "1,095 views"
+    },
+    "likes_accessibility": "like this video along with 11 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCBDGANnytQYn4kXtZQbOI-A",
+      "name": "TPB HK CM 香港電視廣告庫 (香港電視廣告庫)",
+      "subscribers_display": "20.2K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

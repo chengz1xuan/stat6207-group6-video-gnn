@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvcb242e00albn00rlhl4woq",
+  "youtube_id": "QO1Nt4997vc",
+  "source_url": "https://www.youtube.com/watch?v=QO1Nt4997vc",
+  "retrieved_at_utc": "2026-11-09T12:01:34.468946+00:00",
+  "views": 158498,
+  "likes": 62,
+  "comments": null,
+  "channel_id": "UCrpcqERIGaznGxm7ZoRVBRw",
+  "subscriber_count_display": "3.12K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "09f9271545200aaa7886d2b84933b21e3b5fd8dd4d5a00171bdbf7e662bcf272",
+  "platform_title": "周大福傳承系列 #GoldIsChic",
+  "channel_name": "Chow Tai Fook Jewellery 周大福珠寶",
+  "likes_display": "like this video along with 62 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "158498",
+      "display": "158,498 views"
+    },
+    "likes_accessibility": "like this video along with 62 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCrpcqERIGaznGxm7ZoRVBRw",
+      "name": "Chow Tai Fook Jewellery 周大福珠寶",
+      "subscribers_display": "3.12K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

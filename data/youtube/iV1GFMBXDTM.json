@@ -1,0 +1,40 @@
+{
+  "video_id": "cmt3rj4fw000kbnlsr5kipwly",
+  "youtube_id": "iV1GFMBXDTM",
+  "source_url": "https://www.youtube.com/watch?v=iV1GFMBXDTM",
+  "retrieved_at_utc": "2026-11-09T12:01:53.480817+00:00",
+  "views": 6810170,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCSIfcoM9kmyjil_IU5IC_gA",
+  "subscriber_count_display": "33K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "949067646f81f258b780484d7febb34dd4a3079e380d8ab62824643e474205cd",
+  "platform_title": "恒生信用卡夏日追加高達$2900獎賞！",
+  "channel_name": "恒生銀行 Hang Seng Bank",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "6810170",
+      "display": "6,810,170 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCSIfcoM9kmyjil_IU5IC_gA",
+      "name": "恒生銀行 Hang Seng Bank",
+      "subscribers_display": "33K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc4mw0u000sbn00sn58cgyw",
+  "youtube_id": "z_Teu7lch74",
+  "source_url": "https://www.youtube.com/watch?v=z_Teu7lch74",
+  "retrieved_at_utc": "2026-11-09T12:02:17.130720+00:00",
+  "views": 383564,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCbv_6SSiwvl7fLoXg4usdWA",
+  "subscriber_count_display": "1.92K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "b7080d90fc3ddd000a6fdff609554c9c1690fd3908242d76bff9970b5fd750fa",
+  "platform_title": "【從心出發 滋味團年】2024年美心賀年廣告 雞蛋卷及甜心酥篇30秒",
+  "channel_name": "美心食品 Maxim’s Products",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "383564",
+      "display": "383,564 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCbv_6SSiwvl7fLoXg4usdWA",
+      "name": "美心食品 Maxim’s Products",
+      "subscribers_display": "1.92K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

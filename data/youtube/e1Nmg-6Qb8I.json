@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvcae8bx008ubn006iyhct3p",
+  "youtube_id": "e1Nmg-6Qb8I",
+  "source_url": "https://www.youtube.com/watch?v=e1Nmg-6Qb8I",
+  "retrieved_at_utc": "2026-11-09T12:01:50.415970+00:00",
+  "views": 998115,
+  "likes": 7,
+  "comments": null,
+  "channel_id": "UCrpcqERIGaznGxm7ZoRVBRw",
+  "subscriber_count_display": "3.12K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "32003cd5410c6629ee561196c9753e18245200847ecae4f65cbe4fa8d8c4d6c6",
+  "platform_title": "Chow Tai Fook DAWN Collection",
+  "channel_name": "Chow Tai Fook Jewellery 周大福珠寶",
+  "likes_display": "like this video along with 7 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "998115",
+      "display": "998,115 views"
+    },
+    "likes_accessibility": "like this video along with 7 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCrpcqERIGaznGxm7ZoRVBRw",
+      "name": "Chow Tai Fook Jewellery 周大福珠寶",
+      "subscribers_display": "3.12K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

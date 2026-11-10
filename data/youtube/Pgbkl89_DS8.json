@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc5jdko002ibn00jd17fzcb",
+  "youtube_id": "Pgbkl89_DS8",
+  "source_url": "https://www.youtube.com/watch?v=Pgbkl89_DS8",
+  "retrieved_at_utc": "2026-11-09T12:01:33.536866+00:00",
+  "views": 58368,
+  "likes": 10,
+  "comments": null,
+  "channel_id": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+  "subscriber_count_display": "10.2K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "02288642ef27f214761a4c98f8cece20edec1812f3f16edfecb3b57aa45e291a",
+  "platform_title": "【✨大家樂超值家餸孖寶優惠✨$60嘆齊濃香芝麻雞➕明爐香烤BB鴨😋】",
+  "channel_name": "大家樂 CafedeCoralHK",
+  "likes_display": "like this video along with 10 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "58368",
+      "display": "58,368 views"
+    },
+    "likes_accessibility": "like this video along with 10 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+      "name": "大家樂 CafedeCoralHK",
+      "subscribers_display": "10.2K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

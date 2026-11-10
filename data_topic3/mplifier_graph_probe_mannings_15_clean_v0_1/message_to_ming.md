@@ -1,0 +1,1 @@
+Hi Ming — here is the Mannings controlled batch: 15/15 official uploader matches, 0 third-party excluded, 0 unresolved held out. The package includes 15 videos, 657 aspect nodes, 801 evidence nodes and 2953 candidate edges. `video_nodes.csv` follows your fixed 35-field order. Candidate links are research graph probes, not GNN ground-truth labels.

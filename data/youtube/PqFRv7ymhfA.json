@@ -1,0 +1,40 @@
+{
+  "video_id": "cmt3ra46w001obnaweynvl0sp",
+  "youtube_id": "PqFRv7ymhfA",
+  "source_url": "https://www.youtube.com/watch?v=PqFRv7ymhfA",
+  "retrieved_at_utc": "2026-11-09T12:01:34.312056+00:00",
+  "views": 832830,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCSIfcoM9kmyjil_IU5IC_gA",
+  "subscriber_count_display": "33K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "8fb05b04be2f7b833609a3ac038d2de63c8c645071557c2dcd5f59ae576c30d4",
+  "platform_title": "【想全家理財目標準時達標？恒生Prestige Family+戶口 開戶可享超過港幣34,500現金獎賞| 恒生銀行】",
+  "channel_name": "恒生銀行 Hang Seng Bank",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "832830",
+      "display": "832,830 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCSIfcoM9kmyjil_IU5IC_gA",
+      "name": "恒生銀行 Hang Seng Bank",
+      "subscribers_display": "33K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu2w4i710000bn601279dwvu",
+  "youtube_id": "hPrZgpPeMoA",
+  "source_url": "https://www.youtube.com/watch?v=hPrZgpPeMoA",
+  "retrieved_at_utc": "2026-11-09T12:01:52.410181+00:00",
+  "views": 181881,
+  "likes": 28,
+  "comments": null,
+  "channel_id": "UCDF__e4OyxESzW1snu1i0Bg",
+  "subscriber_count_display": "161K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "dc4a98823e0c97900d95ead505756745e86f1e56721122080b4b8931528a6cbc",
+  "platform_title": "We Know How: From Complex Challenges to A Seamless Journey | We Know How: 把特殊貨物挑戰，化為無縫運送旅程",
+  "channel_name": "cathaypacific",
+  "likes_display": "like this video along with 28 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "181881",
+      "display": "181,881 views"
+    },
+    "likes_accessibility": "like this video along with 28 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCDF__e4OyxESzW1snu1i0Bg",
+      "name": "cathaypacific",
+      "subscribers_display": "161K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

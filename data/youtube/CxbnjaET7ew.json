@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc4pxvs001cbn00o7q88cw9",
+  "youtube_id": "CxbnjaET7ew",
+  "source_url": "https://www.youtube.com/watch?v=CxbnjaET7ew",
+  "retrieved_at_utc": "2026-11-09T12:01:19.824644+00:00",
+  "views": 80417,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCbv_6SSiwvl7fLoXg4usdWA",
+  "subscriber_count_display": "1.92K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "3b0bc3deee97d30ba7bf79b5dc380ce848c5e40932a4e9a387a329ece9c03d2d",
+  "platform_title": "【祝福 就是最足料的幸福】2023年美心賀年廣告 - 鮮蛋卷篇",
+  "channel_name": "美心食品 Maxim’s Products",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "80417",
+      "display": "80,417 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCbv_6SSiwvl7fLoXg4usdWA",
+      "name": "美心食品 Maxim’s Products",
+      "subscribers_display": "1.92K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

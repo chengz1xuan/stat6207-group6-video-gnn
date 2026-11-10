@@ -1,0 +1,45 @@
+.venv/
+.project-deps/
+tmp/
+__pycache__/
+.DS_Store
+.local-tools/
+
+# Local editor settings and credentials
+.vscode/
+.idea/
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# Superseded static site and first experiment
+website/
+artifacts/v1/
+artifacts/*
+!artifacts/v2/
+
+# Generated bundles, logs and unused browser exports
+*.log
+output/*.zip
+output/SHA256SUMS.json
+output/archive/
+output/session_transcript.md
+output/交付说明.txt
+data_topic3/*.zip
+data/youtube/probe*
+artifacts/v2/*deploy*.tar.gz
+artifacts/v2/deployment.json
+artifacts/v2/web_model.json
+artifacts/v2/browser_validation.json
+artifacts/v2/inference_validation.json
+artifacts/v2/website-*.png
+
+# LaTeX intermediate files; retain the final PDF and editable source
+*.aux
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk

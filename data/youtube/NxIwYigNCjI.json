@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc5ree3003wbn00gamp08f1",
+  "youtube_id": "NxIwYigNCjI",
+  "source_url": "https://www.youtube.com/watch?v=NxIwYigNCjI",
+  "retrieved_at_utc": "2026-11-09T12:01:31.117512+00:00",
+  "views": 434587,
+  "likes": 90,
+  "comments": null,
+  "channel_id": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+  "subscriber_count_display": "10.2K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "0721f278034d7736e01a5d97278f748527164e61448beddc0ca582bee0a8dcbf",
+  "platform_title": "【食過咁多次 都係咁鐘意！大家樂招牌焗飯】",
+  "channel_name": "大家樂 CafedeCoralHK",
+  "likes_display": "like this video along with 90 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "434587",
+      "display": "434,587 views"
+    },
+    "likes_accessibility": "like this video along with 90 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+      "name": "大家樂 CafedeCoralHK",
+      "subscribers_display": "10.2K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "framework": "Streamlit 1.66.1 + Python/PyG",
+  "fixture_videos": 214,
+  "max_log_prediction_error": 0.0,
+  "optimization_cases": 6,
+  "new_brief_without_borrowed_evidence": true,
+  "app_initialization": true,
+  "new_video_prediction": true,
+  "optimization_form": true,
+  "existing_video_prediction_parity": true,
+  "graph_toggle": true,
+  "edited_settings_submission": true,
+  "app_exceptions": 0
+}

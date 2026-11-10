@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc4rxbp001mbn00kujfo4p3",
+  "youtube_id": "krimJHXX-GE",
+  "source_url": "https://www.youtube.com/watch?v=krimJHXX-GE",
+  "retrieved_at_utc": "2026-11-09T12:01:57.148651+00:00",
+  "views": 1076728,
+  "likes": 14,
+  "comments": null,
+  "channel_id": "UCbv_6SSiwvl7fLoXg4usdWA",
+  "subscriber_count_display": "1.92K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "2f2b7580aa6f022414e447e885c3c60231b047af5e5020efe31d92620643615a",
+  "platform_title": "2019美心月餅廣告 - 30秒電視版",
+  "channel_name": "美心食品 Maxim’s Products",
+  "likes_display": "like this video along with 14 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1076728",
+      "display": "1,076,728 views"
+    },
+    "likes_accessibility": "like this video along with 14 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCbv_6SSiwvl7fLoXg4usdWA",
+      "name": "美心食品 Maxim’s Products",
+      "subscribers_display": "1.92K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

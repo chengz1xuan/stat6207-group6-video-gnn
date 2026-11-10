@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu3h6smv001jbn5ks3l7sm38",
+  "youtube_id": "hp8NlkDOZao",
+  "source_url": "https://www.youtube.com/watch?v=hp8NlkDOZao",
+  "retrieved_at_utc": "2026-11-09T12:01:52.499087+00:00",
+  "views": 574216,
+  "likes": 135,
+  "comments": null,
+  "channel_id": "UCAjKRiZ-UeH2Bz4Cu-ZEtUg",
+  "subscriber_count_display": "61.6K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "1c23613349a9f27652864cc0c55862c44bef0b23807591dcd882ebf8244b5021",
+  "platform_title": "旅行感係同老best帶住默契出發！ Travelling Is Syncing Up with Your Besties for a Great Trip!",
+  "channel_name": "MTR Hong Kong",
+  "likes_display": "like this video along with 135 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "574216",
+      "display": "574,216 views"
+    },
+    "likes_accessibility": "like this video along with 135 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCAjKRiZ-UeH2Bz4Cu-ZEtUg",
+      "name": "MTR Hong Kong",
+      "subscribers_display": "61.6K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

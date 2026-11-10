@@ -1,0 +1,40 @@
+{
+  "video_id": "cmrzyosgu000fbnr8evhfjks5",
+  "youtube_id": "MEYNmh5RqaQ",
+  "source_url": "https://www.youtube.com/watch?v=MEYNmh5RqaQ",
+  "retrieved_at_utc": "2026-11-09T12:01:28.108017+00:00",
+  "views": 2033908,
+  "likes": 98,
+  "comments": null,
+  "channel_id": "UCF4O7FcQ_xeXIRhYvR_vFog",
+  "subscriber_count_display": "65.8K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "83cc8e2fdddcd0e5ed864cc2cbc761662e82404b24cd2cd3237f0ab82370721c",
+  "platform_title": "【FIFA World Cup™ Happy Meal: Includes Squishmallows Toy⚽️】",
+  "channel_name": "McDonaldsHK",
+  "likes_display": "like this video along with 98 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "2033908",
+      "display": "2,033,908 views"
+    },
+    "likes_accessibility": "like this video along with 98 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCF4O7FcQ_xeXIRhYvR_vFog",
+      "name": "McDonaldsHK",
+      "subscribers_display": "65.8K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

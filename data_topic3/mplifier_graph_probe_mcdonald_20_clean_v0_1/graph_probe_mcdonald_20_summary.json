@@ -1,0 +1,60 @@
+{
+  "source_file": "ad-reference-vault-export-2026-07-25.json",
+  "generated_from_export_at": "2026-07-25T06:41:14.708Z",
+  "total_references_in_uploaded_export": 21,
+  "filter": "Kept records whose canonical source.brand is McDonald's. Excluded one off-brand Café de Coral record.",
+  "video_nodes": 20,
+  "aspect_nodes": 667,
+  "evidence_nodes": 1486,
+  "candidate_edges": 6869,
+  "brand_canonical_counts": {
+    "McDonald's": 20
+  },
+  "author_counts": {
+    "McDonaldsHK": 16,
+    "TPB HK CM 香港電視廣告庫 (香港電視廣告庫)": 4
+  },
+  "creative_mechanic_counts": {
+    "Offer led": 16,
+    "Announcement / information led": 2,
+    "Music / mood led": 1,
+    "Problem-solution led": 1
+  },
+  "evidence_mode_counts": {
+    "mixed": 17,
+    "dialogue_led": 2,
+    "music_visual_led_sparse_dialogue": 1
+  },
+  "edge_type_counts": {
+    "aspect_supported_by_evidence": 2053,
+    "video_has_evidence": 1486,
+    "similar_aspect_candidate": 1185,
+    "video_has_aspect": 667,
+    "same_canonical_brand": 190,
+    "same_copy_risk": 190,
+    "language_overlap": 190,
+    "same_safety_status": 190,
+    "same_evidence_mode": 137,
+    "same_pacing": 126,
+    "same_author": 126,
+    "same_creative_mechanic": 121,
+    "same_cta_explicitness": 115,
+    "same_structure_type": 63,
+    "same_export_brand": 28,
+    "same_product_or_campaign": 1,
+    "same_category": 1
+  },
+  "excluded_records": [
+    {
+      "video_id": "cmol7ev49000abns0urjad7dx",
+      "title": "[香港廣告](2026)大家樂 靚湯靚餸晚市套餐",
+      "brand_canonical": "Café de Coral",
+      "source_url": "https://www.youtube.com/watch?v=bCiwqh_wXU8"
+    }
+  ],
+  "notes": [
+    "This is the clean same-brand McDonald subset for controlled GNN/clustering feature review.",
+    "Candidate edges are heuristics and not ground-truth labels.",
+    "No shot/storyboard layer is included yet."
+  ]
+}

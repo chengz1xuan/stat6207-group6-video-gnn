@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu3h99h6001tbn5kpr8n6err",
+  "youtube_id": "xy0gfrI16Gc",
+  "source_url": "https://www.youtube.com/watch?v=xy0gfrI16Gc",
+  "retrieved_at_utc": "2026-11-09T12:02:13.140717+00:00",
+  "views": 1951918,
+  "likes": 38,
+  "comments": null,
+  "channel_id": "UCAjKRiZ-UeH2Bz4Cu-ZEtUg",
+  "subscriber_count_display": "61.6K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "3f38bfdb3e403b51af6c9c620a3b04321eef393057375fc1012aed5cb97fe302",
+  "platform_title": "全面電子化資訊‧服務  幾時搭、點樣搭，更容易掌握！Elevating Your Journeys with Digital Innovations!",
+  "channel_name": "MTR Hong Kong",
+  "likes_display": "like this video along with 38 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1951918",
+      "display": "1,951,918 views"
+    },
+    "likes_accessibility": "like this video along with 38 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCAjKRiZ-UeH2Bz4Cu-ZEtUg",
+      "name": "MTR Hong Kong",
+      "subscribers_display": "61.6K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

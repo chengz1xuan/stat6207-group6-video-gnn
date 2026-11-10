@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc8vit6007sbn00j50pifsd",
+  "youtube_id": "3Ybi_Gp6sAk",
+  "source_url": "https://www.youtube.com/watch?v=3Ybi_Gp6sAk",
+  "retrieved_at_utc": "2026-11-09T12:01:08.873896+00:00",
+  "views": 69617,
+  "likes": 103,
+  "comments": null,
+  "channel_id": "UCNRqFSTPHIzVwrVnZAMj_2A",
+  "subscriber_count_display": "2.19K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "5fc49482d2a2083bab309262ba545579252629714222c4a9af3ebdb329f2f94b",
+  "platform_title": "【香脆花生糖．手工拌炒】",
+  "channel_name": "Kee Wah Bakery 奇華餅家",
+  "likes_display": "like this video along with 103 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "69617",
+      "display": "69,617 views"
+    },
+    "likes_accessibility": "like this video along with 103 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCNRqFSTPHIzVwrVnZAMj_2A",
+      "name": "Kee Wah Bakery 奇華餅家",
+      "subscribers_display": "2.19K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

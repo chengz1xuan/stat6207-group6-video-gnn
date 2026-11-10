@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu3gz0ns000kbn5klqdzok6v",
+  "youtube_id": "zT1G1K_pMgA",
+  "source_url": "https://www.youtube.com/watch?v=zT1G1K_pMgA",
+  "retrieved_at_utc": "2026-11-09T12:02:16.395660+00:00",
+  "views": 602728,
+  "likes": 193,
+  "comments": null,
+  "channel_id": "UCAjKRiZ-UeH2Bz4Cu-ZEtUg",
+  "subscriber_count_display": "61.6K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "897d5e91ab9cda5641d189254de08bfd2711e042a7fb12765a9790b579c5b457",
+  "platform_title": "🚇跟住農夫搭港鐵｜風生水起迎馬年  FAMA shares Lunar New Year luck to all MTR riders🐴",
+  "channel_name": "MTR Hong Kong",
+  "likes_display": "like this video along with 193 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "602728",
+      "display": "602,728 views"
+    },
+    "likes_accessibility": "like this video along with 193 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCAjKRiZ-UeH2Bz4Cu-ZEtUg",
+      "name": "MTR Hong Kong",
+      "subscribers_display": "61.6K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

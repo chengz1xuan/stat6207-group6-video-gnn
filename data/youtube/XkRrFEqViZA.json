@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu2wjq7r000kbn60fmj7o90m",
+  "youtube_id": "XkRrFEqViZA",
+  "source_url": "https://www.youtube.com/watch?v=XkRrFEqViZA",
+  "retrieved_at_utc": "2026-11-09T12:01:42.408642+00:00",
+  "views": 2818,
+  "likes": 84,
+  "comments": null,
+  "channel_id": "UCDF__e4OyxESzW1snu1i0Bg",
+  "subscriber_count_display": "161K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "8f0ad1341ced38a960f128c24918b3b553ca39efc44181353ca3dd7cf33265f1",
+  "platform_title": "Brewing Excellence with The Coffee Academïcs 帶來非凡咖啡體驗",
+  "channel_name": "cathaypacific",
+  "likes_display": "like this video along with 84 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "2818",
+      "display": "2,818 views"
+    },
+    "likes_accessibility": "like this video along with 84 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCDF__e4OyxESzW1snu1i0Bg",
+      "name": "cathaypacific",
+      "subscribers_display": "161K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

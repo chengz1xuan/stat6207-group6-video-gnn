@@ -1,0 +1,271 @@
+{
+  "dataset_name": "kee_wah_15",
+  "generated_from": "ad-reference-vault-export-Kee Wah.json",
+  "source_sha256": "1260ba6898fe77e3b33b2f72f842ee062567b924ce766d73d9c982012c1bc142",
+  "source_export_generated_at": "2026-10-17T10:46:52.780Z",
+  "reference_audit": {
+    "selected_references": 15,
+    "official_brand_uploads": 15,
+    "third_party_uploads": 0,
+    "unresolved_uploader_matches": 0,
+    "final_clean_references": 15,
+    "uploader_source_truth": {
+      "author": "Kee Wah Bakery 奇華餅家",
+      "channel_identity": [
+        "@keewahbakery",
+        "UCNRqFSTPHIzVwrVnZAMj_2A"
+      ],
+      "channel_link": "https://www.youtube.com/channel/UCNRqFSTPHIzVwrVnZAMj_2A",
+      "handle_link": "https://www.youtube.com/@keewahbakery",
+      "verification_note": "Uploader fields in the export match the Kee Wah Bakery 奇華餅家 identity. Public Wikidata (Q6382658) associates YouTube channel UCNRqFSTPHIzVwrVnZAMj_2A with handle keewahbakery; https://www.youtube.com/@keewahbakery has the matching name."
+    },
+    "per_record_audit": [
+      {
+        "source_reference_id": "cmvc8orlg006ybn00umvx4vyc",
+        "title": "奇華至尊月餅電視廣告2015",
+        "source_url": "https://www.youtube.com/watch?v=5w_BXo_DRrY",
+        "original_author": "Kee Wah Bakery 奇華餅家",
+        "original_channel_id_or_handle": "UCNRqFSTPHIzVwrVnZAMj_2A",
+        "status": "official_brand_upload",
+        "reason": "Official Kee Wah Bakery source matched: author=Kee Wah Bakery 奇華餅家; channel=UCNRqFSTPHIzVwrVnZAMj_2A."
+      },
+      {
+        "source_reference_id": "cmvc9tmte008mbn0040t3np8l",
+        "title": "奇華餅家 以禮傳情 八十年 微電影預告片",
+        "source_url": "https://www.youtube.com/watch?v=359mKJOz0L0",
+        "original_author": "Kee Wah Bakery 奇華餅家",
+        "original_channel_id_or_handle": "UCNRqFSTPHIzVwrVnZAMj_2A",
+        "status": "official_brand_upload",
+        "reason": "Official Kee Wah Bakery source matched: author=Kee Wah Bakery 奇華餅家; channel=UCNRqFSTPHIzVwrVnZAMj_2A."
+      },
+      {
+        "source_reference_id": "cmvc9srdv008fbn00nr9rykfi",
+        "title": "奇華餅家facebook專頁中秋特別呈獻「最Like奇華‧聚愛心」",
+        "source_url": "https://www.youtube.com/watch?v=OyZoCBg3Ngk",
+        "original_author": "Kee Wah Bakery 奇華餅家",
+        "original_channel_id_or_handle": "UCNRqFSTPHIzVwrVnZAMj_2A",
+        "status": "official_brand_upload",
+        "reason": "Official Kee Wah Bakery source matched: author=Kee Wah Bakery 奇華餅家; channel=UCNRqFSTPHIzVwrVnZAMj_2A."
+      },
+      {
+        "source_reference_id": "cmvc9slub008cbn00ivkttbc0",
+        "title": "奇華餅家facebook專頁中秋特別呈獻「至真祝福‧送至親」",
+        "source_url": "https://www.youtube.com/watch?v=BJClwocXh8c",
+        "original_author": "Kee Wah Bakery 奇華餅家",
+        "original_channel_id_or_handle": "UCNRqFSTPHIzVwrVnZAMj_2A",
+        "status": "official_brand_upload",
+        "reason": "Official Kee Wah Bakery source matched: author=Kee Wah Bakery 奇華餅家; channel=UCNRqFSTPHIzVwrVnZAMj_2A."
+      },
+      {
+        "source_reference_id": "cmvc9p9sn0085bn00duthearm",
+        "title": "【鬆脆蝴蝶酥．用心打造】",
+        "source_url": "https://www.youtube.com/watch?v=UyQuJaMKeLQ",
+        "original_author": "Kee Wah Bakery 奇華餅家",
+        "original_channel_id_or_handle": "UCNRqFSTPHIzVwrVnZAMj_2A",
+        "status": "official_brand_upload",
+        "reason": "Official Kee Wah Bakery source matched: author=Kee Wah Bakery 奇華餅家; channel=UCNRqFSTPHIzVwrVnZAMj_2A."
+      },
+      {
+        "source_reference_id": "cmvc9p30m0082bn00awb9y2vr",
+        "title": "【亞嫲糖年糕．香甜軟糯】",
+        "source_url": "https://www.youtube.com/watch?v=XLNo393de5U",
+        "original_author": "Kee Wah Bakery 奇華餅家",
+        "original_channel_id_or_handle": "UCNRqFSTPHIzVwrVnZAMj_2A",
+        "status": "official_brand_upload",
+        "reason": "Official Kee Wah Bakery source matched: author=Kee Wah Bakery 奇華餅家; channel=UCNRqFSTPHIzVwrVnZAMj_2A."
+      },
+      {
+        "source_reference_id": "cmvc8vp2b007vbn00ks93w63e",
+        "title": "【臘味蘿蔔糕．材料豐富】",
+        "source_url": "https://www.youtube.com/watch?v=uEhK6pMU-O4",
+        "original_author": "Kee Wah Bakery 奇華餅家",
+        "original_channel_id_or_handle": "@keewahbakery",
+        "status": "official_brand_upload",
+        "reason": "Official Kee Wah Bakery source matched: author=Kee Wah Bakery 奇華餅家; channel=@keewahbakery."
+      },
+      {
+        "source_reference_id": "cmvc8vit6007sbn00j50pifsd",
+        "title": "【香脆花生糖．手工拌炒】",
+        "source_url": "https://www.youtube.com/watch?v=3Ybi_Gp6sAk",
+        "original_author": "Kee Wah Bakery 奇華餅家",
+        "original_channel_id_or_handle": "UCNRqFSTPHIzVwrVnZAMj_2A",
+        "status": "official_brand_upload",
+        "reason": "Official Kee Wah Bakery source matched: author=Kee Wah Bakery 奇華餅家; channel=UCNRqFSTPHIzVwrVnZAMj_2A."
+      },
+      {
+        "source_reference_id": "cmvc8u1sj007lbn00caj0c5os",
+        "title": "【鬆化香酥角．巧手製作】",
+        "source_url": "https://www.youtube.com/watch?v=FSoZAWh93b0",
+        "original_author": "Kee Wah Bakery 奇華餅家",
+        "original_channel_id_or_handle": "@keewahbakery",
+        "status": "official_brand_upload",
+        "reason": "Official Kee Wah Bakery source matched: author=Kee Wah Bakery 奇華餅家; channel=@keewahbakery."
+      },
+      {
+        "source_reference_id": "cmvc8ttlc007ibn00mz42oe2f",
+        "title": "至尊月餅電視廣告2009",
+        "source_url": "https://www.youtube.com/watch?v=zJMAXqNsdZ0",
+        "original_author": "Kee Wah Bakery 奇華餅家",
+        "original_channel_id_or_handle": "UCNRqFSTPHIzVwrVnZAMj_2A",
+        "status": "official_brand_upload",
+        "reason": "Official Kee Wah Bakery source matched: author=Kee Wah Bakery 奇華餅家; channel=UCNRqFSTPHIzVwrVnZAMj_2A."
+      },
+      {
+        "source_reference_id": "cmvc8r0b1007bbn00bh5fms9w",
+        "title": "奇華手信禮品電視廣告2013",
+        "source_url": "https://www.youtube.com/watch?v=YyZQl4e5YvA",
+        "original_author": "Kee Wah Bakery 奇華餅家",
+        "original_channel_id_or_handle": "@keewahbakery",
+        "status": "official_brand_upload",
+        "reason": "Official Kee Wah Bakery source matched: author=Kee Wah Bakery 奇華餅家; channel=@keewahbakery."
+      },
+      {
+        "source_reference_id": "cmvc8qsbq0078bn003z4jeqsb",
+        "title": "奇華至尊月餅電視廣告2013",
+        "source_url": "https://www.youtube.com/watch?v=rW9zKaIy4CA",
+        "original_author": "Kee Wah Bakery 奇華餅家",
+        "original_channel_id_or_handle": "UCNRqFSTPHIzVwrVnZAMj_2A",
+        "status": "official_brand_upload",
+        "reason": "Official Kee Wah Bakery source matched: author=Kee Wah Bakery 奇華餅家; channel=UCNRqFSTPHIzVwrVnZAMj_2A."
+      },
+      {
+        "source_reference_id": "cmvc8p5vl0071bn00encif876",
+        "title": "奇華手信禮品電視廣告2015",
+        "source_url": "https://www.youtube.com/watch?v=iBrJl_B6p60",
+        "original_author": "Kee Wah Bakery 奇華餅家",
+        "original_channel_id_or_handle": "@keewahbakery",
+        "status": "official_brand_upload",
+        "reason": "Official Kee Wah Bakery source matched: author=Kee Wah Bakery 奇華餅家; channel=@keewahbakery."
+      },
+      {
+        "source_reference_id": "cmvc8n56o006rbn00k6qpn70f",
+        "title": "一半 就是一直相伴 (奇華嫁喜禮餅電視廣告2019)",
+        "source_url": "https://www.youtube.com/watch?v=JHNJThUjAvY",
+        "original_author": "Kee Wah Bakery 奇華餅家",
+        "original_channel_id_or_handle": "UCNRqFSTPHIzVwrVnZAMj_2A",
+        "status": "official_brand_upload",
+        "reason": "Official Kee Wah Bakery source matched: author=Kee Wah Bakery 奇華餅家; channel=UCNRqFSTPHIzVwrVnZAMj_2A."
+      },
+      {
+        "source_reference_id": "cmvc8mz9z006obn00ksv5t22e",
+        "title": "【奇華嫁喜｜愛的模樣 不需一模一樣】",
+        "source_url": "https://www.youtube.com/watch?v=_KFUFerBlSI",
+        "original_author": "Kee Wah Bakery 奇華餅家",
+        "original_channel_id_or_handle": "UCNRqFSTPHIzVwrVnZAMj_2A",
+        "status": "official_brand_upload",
+        "reason": "Official Kee Wah Bakery source matched: author=Kee Wah Bakery 奇華餅家; channel=UCNRqFSTPHIzVwrVnZAMj_2A."
+      }
+    ],
+    "excluded_records": [],
+    "unresolved_records": []
+  },
+  "graph_counts": {
+    "video_nodes": 15,
+    "aspect_nodes": 635,
+    "evidence_nodes": 701,
+    "candidate_edges": 2748,
+    "edge_type_counts": {
+      "aspect_supported_by_evidence": 323,
+      "same_author": 105,
+      "same_brand": 105,
+      "same_creative_mechanic": 34,
+      "same_cta_explicitness": 46,
+      "same_evidence_mode": 36,
+      "same_pacing": 55,
+      "same_safety_status": 91,
+      "same_structure_type": 32,
+      "similar_aspect_candidate": 585,
+      "video_has_aspect": 635,
+      "video_has_evidence": 701
+    }
+  },
+  "distributions": {
+    "brand_raw": {
+      "Kee Wah Bakery (奇華餅家)": 2,
+      "Kee Wah Bakery": 3,
+      "奇華餅家 (Kee Wah Bakery)": 6,
+      "奇華餅家": 1,
+      "奇華": 1,
+      "奇華 (Kee Wah Bakery)": 2
+    },
+    "brand_family": {
+      "Kee Wah Bakery": 15
+    },
+    "sub_brand": {
+      "Kee Wah Bakery": 15
+    },
+    "author": {
+      "Kee Wah Bakery 奇華餅家": 15
+    },
+    "creative_mechanic": {
+      "Music / mood led": 8,
+      "Demo led": 1,
+      "Product proof led": 4,
+      "Event experience led": 1,
+      "Offer led": 1
+    },
+    "structure_type": {
+      "Music / mood led": 8,
+      "Demo led": 1,
+      "Event experience led": 3,
+      "Product proof led": 2,
+      "Offer led": 1
+    },
+    "evidence_mode": {
+      "music_visual_led_sparse_dialogue": 7,
+      "mixed": 6,
+      "dialogue_led": 1,
+      "text_led": 1
+    },
+    "safety_status": {
+      "high_risk": 1,
+      "needs_review": 14
+    }
+  },
+  "header_contract": {
+    "video_node_column_count": 35,
+    "columns": [
+      "video_id",
+      "source_reference_id",
+      "title",
+      "brand_raw",
+      "brand_family",
+      "sub_brand",
+      "top_level_ui_brand",
+      "product_campaign",
+      "author",
+      "platform",
+      "source_url",
+      "publish_date",
+      "duration_seconds",
+      "main_message",
+      "hook",
+      "cta",
+      "value_promise",
+      "creative_mechanic",
+      "structure_type",
+      "evidence_mode",
+      "cta_explicitness",
+      "proof_strength",
+      "pacing",
+      "production_complexity",
+      "platform_fit",
+      "safety_status",
+      "copy_risk",
+      "fit_score",
+      "overall_evidence",
+      "unresolved_count",
+      "warning_count",
+      "languages",
+      "what_not_to_copy",
+      "inclusion_status",
+      "inclusion_reason"
+    ]
+  },
+  "limitations": [
+    "No upstream interpretation or model-generated field was independently re-judged.",
+    "Some Chinese-language normalization in the source files is low-confidence and should be audited by researcher.",
+    "Similarity edges are suggestions only; they do not represent supervised ground-truth labels or a trained GNN.",
+    "Only verified uploader/channel records are retained; source analysis safety-status flags are not uploader exclusions."
+  ]
+}

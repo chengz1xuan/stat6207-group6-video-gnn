@@ -1,0 +1,269 @@
+{
+  "dataset_name": "garden_15",
+  "generated_from": "ad-reference-vault-export-Garden.json",
+  "source_sha256": "212aecc2e56383441b2c40b68a720d6b9aa0dbc34227ade889adf5283fd6d948",
+  "source_export_generated_at": "2026-10-17T10:06:34.147Z",
+  "reference_audit": {
+    "selected_references": 15,
+    "official_brand_uploads": 15,
+    "third_party_uploads": 0,
+    "unresolved_uploader_matches": 0,
+    "final_clean_references": 15,
+    "uploader_source_truth": {
+      "author": "嘉頓 Garden",
+      "channel_identity": [
+        "@TheGardenBreadCake",
+        "UCy80v1icfNULOE2wF3Hr7CQ"
+      ],
+      "channel_link": "https://www.youtube.com/channel/UCy80v1icfNULOE2wF3Hr7CQ",
+      "handle_link": "https://www.youtube.com/@TheGardenBreadCake",
+      "verification_note": "The YouTube channel page identifies 嘉頓 Garden as @TheGardenBreadCake; the channel ID and handle refer to the same channel."
+    },
+    "per_record_audit": [
+      {
+        "source_reference_id": "cmvc8akqj006jbn00rhvyhwp4",
+        "title": "生命麵包：有愛 有力量 (情侶篇)",
+        "source_url": "https://www.youtube.com/watch?v=XH3o7qXEWvE",
+        "original_author": "嘉頓 Garden",
+        "original_channel_id_or_handle": "UCy80v1icfNULOE2wF3Hr7CQ",
+        "status": "official_brand_upload",
+        "reason": "Official Garden source matched: author=嘉頓 Garden; channel=UCy80v1icfNULOE2wF3Hr7CQ."
+      },
+      {
+        "source_reference_id": "cmvc893cb006cbn001szl8gt5",
+        "title": "嘉頓瑞士卷電視廣告 - 一代糕手 新鮮為首（2018）",
+        "source_url": "https://www.youtube.com/watch?v=S_O_1slKghs",
+        "original_author": "嘉頓 Garden",
+        "original_channel_id_or_handle": "@TheGardenBreadCake",
+        "status": "official_brand_upload",
+        "reason": "Official Garden source matched: author=嘉頓 Garden; channel=@TheGardenBreadCake."
+      },
+      {
+        "source_reference_id": "cmvc88w3m0069bn00ftdd8673",
+        "title": "【嘉頓餅乾賀年廣告】新春一罐紅15秒 家居篇",
+        "source_url": "https://www.youtube.com/watch?v=zmol5gECAXo",
+        "original_author": "嘉頓 Garden",
+        "original_channel_id_or_handle": "UCy80v1icfNULOE2wF3Hr7CQ",
+        "status": "official_brand_upload",
+        "reason": "Official Garden source matched: author=嘉頓 Garden; channel=UCy80v1icfNULOE2wF3Hr7CQ."
+      },
+      {
+        "source_reference_id": "cmvc861ux0062bn0085o4henq",
+        "title": "嘉頓威化 鍾意佢夠鬆化",
+        "source_url": "https://www.youtube.com/watch?v=v3IQWiF477Y",
+        "original_author": "嘉頓 Garden",
+        "original_channel_id_or_handle": "UCy80v1icfNULOE2wF3Hr7CQ",
+        "status": "official_brand_upload",
+        "reason": "Official Garden source matched: author=嘉頓 Garden; channel=UCy80v1icfNULOE2wF3Hr7CQ."
+      },
+      {
+        "source_reference_id": "cmvc85vf2005zbn00ydg413hj",
+        "title": "【嘉頓切皮方包】 Let’s Eat Light!🥬 輕盈滋味🥪 讓愛無邊❤️ - 媽咪篇",
+        "source_url": "https://www.youtube.com/watch?v=cCe3JMmZzYA",
+        "original_author": "嘉頓 Garden",
+        "original_channel_id_or_handle": "UCy80v1icfNULOE2wF3Hr7CQ",
+        "status": "official_brand_upload",
+        "reason": "Official Garden source matched: author=嘉頓 Garden; channel=UCy80v1icfNULOE2wF3Hr7CQ."
+      },
+      {
+        "source_reference_id": "cmvc83z33005sbn000oyfwrkf",
+        "title": "【嘉頓雪芳蛋糕】😊📆 鬆軟日常 - 返學篇📚🎒",
+        "source_url": "https://www.youtube.com/watch?v=zSH1QHu7zQc",
+        "original_author": "嘉頓 Garden",
+        "original_channel_id_or_handle": "UCy80v1icfNULOE2wF3Hr7CQ",
+        "status": "official_brand_upload",
+        "reason": "Official Garden source matched: author=嘉頓 Garden; channel=UCy80v1icfNULOE2wF3Hr7CQ."
+      },
+      {
+        "source_reference_id": "cmvc83tdb005pbn00p4q0ub8t",
+        "title": "【嘉頓開心好禮，新春最讚祝賀】為大家送上最合時嘅祝福！(30秒)",
+        "source_url": "https://www.youtube.com/watch?v=IL1KdJE-az0",
+        "original_author": "嘉頓 Garden",
+        "original_channel_id_or_handle": "@TheGardenBreadCake",
+        "status": "official_brand_upload",
+        "reason": "Official Garden source matched: author=嘉頓 Garden; channel=@TheGardenBreadCake."
+      },
+      {
+        "source_reference_id": "cmvc821ot005ibn00xs557445",
+        "title": "【新包裝嘉頓忌廉檳 全新車打芝士味 Carry Your Day】",
+        "source_url": "https://www.youtube.com/watch?v=F-KDWYQepLY",
+        "original_author": "嘉頓 Garden",
+        "original_channel_id_or_handle": "UCy80v1icfNULOE2wF3Hr7CQ",
+        "status": "official_brand_upload",
+        "reason": "Official Garden source matched: author=嘉頓 Garden; channel=UCy80v1icfNULOE2wF3Hr7CQ."
+      },
+      {
+        "source_reference_id": "cmvc81w79005fbn00isdem44c",
+        "title": "【全新嘉頓威化 me time + 膳食纖維 Your Healthy Formula】",
+        "source_url": "https://www.youtube.com/watch?v=xCjSd7r4szc",
+        "original_author": "嘉頓 Garden",
+        "original_channel_id_or_handle": "UCy80v1icfNULOE2wF3Hr7CQ",
+        "status": "official_brand_upload",
+        "reason": "Official Garden source matched: author=嘉頓 Garden; channel=UCy80v1icfNULOE2wF3Hr7CQ."
+      },
+      {
+        "source_reference_id": "cmvc7zqe10058bn0034riz509",
+        "title": "【親手送嘉頓 家上你我最滿祝】今個新春約定你，親身拜年送嘉頓 (30秒)",
+        "source_url": "https://www.youtube.com/watch?v=T_qSFi4V9u4",
+        "original_author": "嘉頓 Garden",
+        "original_channel_id_or_handle": "UCy80v1icfNULOE2wF3Hr7CQ",
+        "status": "official_brand_upload",
+        "reason": "Official Garden source matched: author=嘉頓 Garden; channel=UCy80v1icfNULOE2wF3Hr7CQ."
+      },
+      {
+        "source_reference_id": "cmvc7zk9y0055bn00nkt9atyh",
+        "title": "【升級配方更健康】嘉頓生命麵包、三文治方包、切皮三文治方包 系列 (30秒版本)",
+        "source_url": "https://www.youtube.com/watch?v=wSqyT9xSPUY",
+        "original_author": "嘉頓 Garden",
+        "original_channel_id_or_handle": "UCy80v1icfNULOE2wF3Hr7CQ",
+        "status": "official_brand_upload",
+        "reason": "Official Garden source matched: author=嘉頓 Garden; channel=UCy80v1icfNULOE2wF3Hr7CQ."
+      },
+      {
+        "source_reference_id": "cmvc7v0zd004ybn00r68ga0yf",
+        "title": "【嘉頓迷你瑞士卷 Roll Out 新鮮感！】全新登場 嘉頓椰子朱古力咖啡味瑞士卷",
+        "source_url": "https://www.youtube.com/watch?v=o33ogNGmKts",
+        "original_author": "嘉頓 Garden",
+        "original_channel_id_or_handle": "UCy80v1icfNULOE2wF3Hr7CQ",
+        "status": "official_brand_upload",
+        "reason": "Official Garden source matched: author=嘉頓 Garden; channel=UCy80v1icfNULOE2wF3Hr7CQ."
+      },
+      {
+        "source_reference_id": "cmvc7uufy004vbn00p6q5ojmr",
+        "title": "【嘉頓 x 罐頭豬LuLu – 新年小劇場第一彈 ✨ 送禮篇！】",
+        "source_url": "https://www.youtube.com/watch?v=ibmeLw7dgu8",
+        "original_author": "嘉頓 Garden",
+        "original_channel_id_or_handle": "UCy80v1icfNULOE2wF3Hr7CQ",
+        "status": "official_brand_upload",
+        "reason": "Official Garden source matched: author=嘉頓 Garden; channel=UCy80v1icfNULOE2wF3Hr7CQ."
+      },
+      {
+        "source_reference_id": "cmvc7sxs1004obn009qydj7vc",
+        "title": "【每日綻放 幸福滋味】嘉頓麵包及蛋糕系列 (30秒版本)",
+        "source_url": "https://www.youtube.com/watch?v=MOFzm7s7K2A",
+        "original_author": "嘉頓 Garden",
+        "original_channel_id_or_handle": "UCy80v1icfNULOE2wF3Hr7CQ",
+        "status": "official_brand_upload",
+        "reason": "Official Garden source matched: author=嘉頓 Garden; channel=UCy80v1icfNULOE2wF3Hr7CQ."
+      },
+      {
+        "source_reference_id": "cmvc7ss6b004lbn00ezs6v5dl",
+        "title": "【無論邊個年代 嘉頓一直都在】 全新「臻悅」禮盒系列 延續心意傳遞 繼續連結幸福 (30秒版本)",
+        "source_url": "https://www.youtube.com/watch?v=O0ul7UE2aZ4",
+        "original_author": "嘉頓 Garden",
+        "original_channel_id_or_handle": "UCy80v1icfNULOE2wF3Hr7CQ",
+        "status": "official_brand_upload",
+        "reason": "Official Garden source matched: author=嘉頓 Garden; channel=UCy80v1icfNULOE2wF3Hr7CQ."
+      }
+    ],
+    "excluded_records": [],
+    "unresolved_records": []
+  },
+  "graph_counts": {
+    "video_nodes": 15,
+    "aspect_nodes": 584,
+    "evidence_nodes": 763,
+    "candidate_edges": 2823,
+    "edge_type_counts": {
+      "aspect_supported_by_evidence": 411,
+      "same_author": 105,
+      "same_brand": 105,
+      "same_creative_mechanic": 21,
+      "same_cta_explicitness": 49,
+      "same_evidence_mode": 91,
+      "same_pacing": 49,
+      "same_safety_status": 105,
+      "same_structure_type": 17,
+      "similar_aspect_candidate": 523,
+      "video_has_aspect": 584,
+      "video_has_evidence": 763
+    }
+  },
+  "distributions": {
+    "brand_raw": {
+      "Garden": 11,
+      "Garden 嘉頓": 3,
+      "Garden (嘉頓)": 1
+    },
+    "brand_family": {
+      "Garden": 15
+    },
+    "sub_brand": {
+      "Garden": 15
+    },
+    "author": {
+      "嘉頓 Garden": 15
+    },
+    "creative_mechanic": {
+      "Problem-solution led": 4,
+      "Service credibility led": 1,
+      "Offer led": 6,
+      "Creative mechanic unresolved": 1,
+      "Announcement / information led": 1,
+      "Music / mood led": 1,
+      "Testimonial led": 1
+    },
+    "structure_type": {
+      "Problem-solution led": 5,
+      "Creative mechanic unresolved": 2,
+      "Offer led": 4,
+      "Announcement / information led": 1,
+      "Music / mood led": 1,
+      "Product proof led": 1,
+      "Testimonial led": 1
+    },
+    "evidence_mode": {
+      "mixed": 14,
+      "music_visual_led_sparse_dialogue": 1
+    },
+    "safety_status": {
+      "needs_review": 15
+    }
+  },
+  "header_contract": {
+    "video_node_column_count": 35,
+    "columns": [
+      "video_id",
+      "source_reference_id",
+      "title",
+      "brand_raw",
+      "brand_family",
+      "sub_brand",
+      "top_level_ui_brand",
+      "product_campaign",
+      "author",
+      "platform",
+      "source_url",
+      "publish_date",
+      "duration_seconds",
+      "main_message",
+      "hook",
+      "cta",
+      "value_promise",
+      "creative_mechanic",
+      "structure_type",
+      "evidence_mode",
+      "cta_explicitness",
+      "proof_strength",
+      "pacing",
+      "production_complexity",
+      "platform_fit",
+      "safety_status",
+      "copy_risk",
+      "fit_score",
+      "overall_evidence",
+      "unresolved_count",
+      "warning_count",
+      "languages",
+      "what_not_to_copy",
+      "inclusion_status",
+      "inclusion_reason"
+    ]
+  },
+  "limitations": [
+    "No upstream interpretation or model-generated field was independently re-judged.",
+    "Some Chinese-language normalization in the source files is low-confidence and should be audited by researcher.",
+    "Similarity edges are suggestions only; they do not represent supervised ground-truth labels or a trained GNN.",
+    "Only verified uploader/channel records are retained; source analysis safety-status flags are not uploader exclusions."
+  ]
+}

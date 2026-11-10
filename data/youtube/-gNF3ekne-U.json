@@ -1,0 +1,40 @@
+{
+  "video_id": "cmt3r3laf000pbnaworamd1c8",
+  "youtube_id": "-gNF3ekne-U",
+  "source_url": "https://www.youtube.com/watch?v=-gNF3ekne-U",
+  "retrieved_at_utc": "2026-11-09T12:01:04.576371+00:00",
+  "views": 1659191,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCSIfcoM9kmyjil_IU5IC_gA",
+  "subscriber_count_display": "33K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "15f264c54427baf8574d2ed448e44316fcdbfac72da347aa74c0f236072d42cd",
+  "platform_title": "【恒生信用卡：第 86853 種 +FUN Dollars 秘技解鎖！🔓 中港澳 +FUN Dollars 當錢使！ - 嘉豪 x 森美】",
+  "channel_name": "恒生銀行 Hang Seng Bank",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1659191",
+      "display": "1,659,191 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCSIfcoM9kmyjil_IU5IC_gA",
+      "name": "恒生銀行 Hang Seng Bank",
+      "subscribers_display": "33K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

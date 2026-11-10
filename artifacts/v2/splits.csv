@@ -1,0 +1,215 @@
+video_id,youtube_id,group,brand_family,split
+cmu3gznxt000pbn5k4mu9yl5f,-5P9rd8IuV0,0,MTR,train
+cmt3rij3m000fbnlsoi1w0z1s,-DTVoI_qJi4,1,Hang Seng Bank,train
+cmsxzrhfa0017bnn8p2stilmd,-GqyErEcxCE,2,HSBC,train
+cmu3h124d000zbn5koghp340c,-ScXERv_ZRQ,3,MTR,train
+cmvc4znur002dbn00afi5g52s,-ZLDI72Ffs0,4,Maxim's,train
+cmt3r3laf000pbnaworamd1c8,-gNF3ekne-U,5,Hang Seng Bank,train
+cmrzyteu8000tbnr8qwvfbdnd,0_1xI0ihZSk,6,McDonald's,train
+cmvc4x6u10023bn00ww0cuutd,0jpktNjWkz4,7,Maxim's,train
+cmvc5nw57003fbn00lnr610as,185p2FWa_R0,8,Café de Coral,train
+cmvc4lbtr000fbn0081iw3zrc,1YEhm7RjaG0,9,Maxim's,test
+cmu2vkwvr001ybn7c9mjfkkp4,1qXaxTz5Kcc,10,Lee Kum Kee,train
+cmvbtwsiz0033bnuoqo6zw17b,2o_krPfXibA,11,Mannings,train
+cmvc9tmte008mbn0040t3np8l,359mKJOz0L0,12,Kee Wah Bakery,train
+cmvcb32p700asbn00bt1uevem,3BCcDbFiVaA,13,Chow Tai Fook,train
+cmvcakh5x009lbn00brm6c7y9,3TQfmO8wi5c,14,Chow Tai Fook,train
+cmvc8vit6007sbn00j50pifsd,3Ybi_Gp6sAk,15,Kee Wah Bakery,test
+cmvbu476x004cbnuo1qv1tuh8,3lBk4mg_8YY,16,Prudential,test
+cmvc5jk89002lbn00olmyt66x,3pLqks-7nWo,17,Café de Coral,train
+cmvc5u9v20049bn00m8xakrl6,4NM3S0va1yA,18,Café de Coral,test
+cmvbtjmsy000nbnuohidox9lp,4rixed7cNhI,19,IKEA,train
+cmvc8orlg006ybn00umvx4vyc,5w_BXo_DRrY,20,Kee Wah Bakery,train
+cmrzz3s6r001sbnr8lbqxwrbd,61ekBwxBCLA,21,McDonald's,train
+cmol77a1i0000bns0j82s94vf,6nM-zMXtN5c,22,McDonald's,train
+cmvcahnw6009ebn00qlp8y61r,6sJztvpjQxQ,23,Chow Tai Fook,train
+cmvc2ym4o0000bn00gxrswcmz,78elgk91rFY,24,Prudential,train
+cmrzyy6gu0013bnr8x7bzdh4u,7gliR9tqu9U,25,McDonald's,train
+cmvc5u1i50046bn00x453059h,7y7LNpnUSPc,27,Café de Coral,train
+cmvc4xe0y0026bn00j0glnzsw,8IZV397_l38,28,Maxim's,train
+cmvc4mk5i000pbn00las6i1uw,8NZyb7wPlao,29,Maxim's,train
+cmvbtrn8y0021bnuoxlb9h1pr,8QDPwJDJ11s,30,Mannings,train
+cmvbtyikh003ibnuossgqavbj,8ySmQhxarpY,31,Mannings,test
+cmvc5xusw004gbn003frnxp6a,98Q60sqW-sQ,32,Café de Coral,train
+cmvcayjyb00abbn0031nkrbyw,9b7Obr630PQ,33,Chow Tai Fook,train
+cmvbtooj8001wbnuosydk73lo,AHaB5F7rBRs,34,IKEA,train
+cmu2vj9p2001tbn7cy0pvw8xx,B-94BJF4IhA,35,Lee Kum Kee,train
+cmt3r8lhc001ebnawtu04awo7,B2EyinOoCsE,36,Hang Seng Bank,train
+cmrzynj42000abnr8fpm7o1z0,B2QiLXaVP9U,37,McDonald's,train
+cmu2vv3bu002dbn7cf0p6kuuk,BGscT20uAJg,38,Cathay,train
+cmvc9slub008cbn00ivkttbc0,BJClwocXh8c,39,Kee Wah Bakery,train
+cmsxziaqt000obnn8sz706hui,BZYRhsgBTAw,40,HSBC,train
+cmt3r4r5i000zbnaw2vdpix5m,BtK5SCz4Z74,41,Hang Seng Bank,train
+cmt3q08mg0005bnawpa8ty5ye,CHqJrCwN_QE,42,HSBC,train
+cmvc5mafh0032bn00ur4j2w7y,COQgrghJZH8,43,Café de Coral,train
+cmrzz2ji6001nbnr8szn29cxl,CV-dAWG145s,44,McDonald's,train
+cmu2we1ju0005bn60fk3e908r,CeeE8TmGsY4,45,Cathay,train
+cmu2v61ek000pbn7csj900ufj,CoYEXVKF6bU,46,Lee Kum Kee,test
+cmol7iglr000fbns0sbn3n9x6,CrRejJT0q7c,47,McDonald's,train
+cmvc4pxvs001cbn00o7q88cw9,CxbnjaET7ew,48,Maxim's,train
+cmvbty2ye003dbnuob6j0llc3,D1H6HkY-tCo,49,Mannings,train
+cmvc5rjmi003zbn00kx00d5k7,E0kfVldng2M,50,Café de Coral,train
+cmvbtny5n001pbnuobvaxpn9c,EsGS9IAO_Xk,51,IKEA,train
+cmu3h7qjz001obn5kcdgz47iw,EuQjddhBXn0,52,MTR,train
+cmvc821ot005ibn00xs557445,F-KDWYQepLY,53,Garden,train
+cmvc8u1sj007lbn00caj0c5os,FSoZAWh93b0,54,Kee Wah Bakery,train
+cmu2x7awk001jbn60ht4lm5t5,F_gTeg6D8e0,38,Cathay,train
+cmt3rgi29000abnlsmmx5ufkk,GbFkx2yArDc,56,Hang Seng Bank,train
+cmrzyv755000ybnr8iqmrz1jk,Ghs18rt-6pw,57,McDonald's,test
+cmt3r7yyd0019bnawc43hg0oy,H4Ol-GN8eAo,58,Hang Seng Bank,train
+cmu2vtqne0028bn7crxlaymsx,HcP4Lt-D5Yc,59,Cathay,train
+cmsy0fmgu0028bnn8lr8uwa1j,Hki21yPVTS8,60,HSBC,train
+cmvcafqwt0091bn0093h4e03o,IFRknd39jgw,61,Chow Tai Fook,train
+cmvc83tdb005pbn00p4q0ub8t,IL1KdJE-az0,62,Garden,test
+cmu2widw9000fbn607342g203,IhMcOgW4zSs,63,Cathay,train
+cmvc8n56o006rbn00k6qpn70f,JHNJThUjAvY,64,Kee Wah Bakery,train
+cmt3rmfou000pbnlsayxa6pxl,KKfxbA-MMj4,65,Hang Seng Bank,train
+cmsxzoifu000ybnn8hkdaxhvh,KuamaJ_IFFk,66,HSBC,train
+cmu2wny6l000zbn60s16v9t46,L07xNpwQ2EQ,63,Cathay,train
+cmu2wkzjb000pbn60he94q1fu,LTlOInv_2TI,68,Cathay,test
+cmt3r98b3001jbnawgplw9ymh,Lh70a4x5KuI,69,Hang Seng Bank,test
+cmrzylxh00005bnr8zlzzvcu5,LmgcyUVg-iI,70,McDonald's,test
+cmvbtvkhs002vbnuoqrsrkngv,M085htAtiRs,71,Mannings,test
+cmu2vbxt5001ebn7c9f05myx8,MDuE6wFFMdE,72,Lee Kum Kee,test
+cmrzyosgu000fbnr8evhfjks5,MEYNmh5RqaQ,73,McDonald's,train
+cmvc7sxs1004obn009qydj7vc,MOFzm7s7K2A,74,Garden,train
+cmu2wy0qt0019bn60g1lld3sk,MW1vzYW1TPo,38,Cathay,train
+cmu2v7bvt000ubn7cnteika56,MbVxAuU3xxQ,76,Lee Kum Kee,train
+cmvc5k59i002qbn00o6l0ws5b,MhalEVYPJgE,77,Café de Coral,train
+cmvcae26v008rbn00atb8096n,MwMV3DLe1-0,78,Chow Tai Fook,train
+cmsxzlj93000tbnn87ta1t5gl,N1XdXPMy0vQ,79,HSBC,test
+cmvbtu70a002obnuolzssfs20,NOetjffBjYg,80,Mannings,test
+cmu3gd9b90000bn5ksc0fo2yj,NYFuZPNC0V0,81,MTR,train
+cmvc5ree3003wbn00gamp08f1,NxIwYigNCjI,82,Café de Coral,test
+cmvc5mj660035bn008vaqzdu6,OUx6Hxn7ZS4,84,Café de Coral,train
+cmvbtmyy9001fbnuohu625lh8,OpT3Sa9RQ3Q,85,IKEA,train
+cmvc9srdv008fbn00nr9rykfi,OyZoCBg3Ngk,86,Kee Wah Bakery,train
+cmooc24s50000bnz0qbywz2k5,P25f_dDd2MI,87,McDonald's,test
+cmvc5npif003cbn0036cb4swn,P3e4EiD4Wns,88,Café de Coral,train
+cmvc5jdko002ibn00jd17fzcb,Pgbkl89_DS8,89,Café de Coral,train
+cmvbthj43000dbnuo1zjduj9k,PhVN9idahMQ,90,IKEA,test
+cmt3ra46w001obnaweynvl0sp,PqFRv7ymhfA,91,Hang Seng Bank,test
+cmvcb242e00albn00rlhl4woq,QO1Nt4997vc,92,Chow Tai Fook,train
+cmvc30uwd0005bn00ai9vb6gd,QxWMBf3JHG4,93,Prudential,train
+cmrvjf9kh0000bng4t2lsf7tj,S-uITi7erCQ,94,McDonald's,train
+cmvbtndsl001kbnuopa1cj9rj,SD4QP6O6hN8,95,IKEA,test
+cmvc893cb006cbn001szl8gt5,S_O_1slKghs,96,Garden,train
+cmvc7zqe10058bn0034riz509,T_qSFi4V9u4,97,Garden,train
+cmu2vascj0019bn7crpn9ega3,TiU8WWzNSFI,98,Lee Kum Kee,train
+cmvbtes5p0005bnuotzavlabc,U0wzmf3VsfE,99,IKEA,train
+cmsy03r67001mbnn8kl8c7cb4,UZQ4nQEpuU4,100,HSBC,train
+cmvc9p9sn0085bn00duthearm,UyQuJaMKeLQ,101,Kee Wah Bakery,test
+cmu2vs2sd0023bn7cit6tg60x,VZQgQ4psi1g,102,Cathay,train
+cmvbtwm3y0030bnuonb2lsqqk,W55hGwh93DY,103,Mannings,train
+cmvc4piak0019bn00a2nk9b56,WBMGLbAvnQY,104,Maxim's,train
+cmrzyz82t0018bnr8x0wh8ezh,WChlOg45lmY,105,McDonald's,train
+cmu3gihtq000fbn5kvgwjfaql,WZTOLwgO93c,106,MTR,test
+cmvbucwxc005sbnuoskg5zh60,WkcyCWOx6-w,107,Prudential,train
+cmu2vhlxl001obn7ch9b8e4hh,Wm2sWEWQb0g,108,Lee Kum Kee,train
+cmsy0028z001hbnn87vol9rjo,X2dwXXFghCA,79,HSBC,test
+cmvc8akqj006jbn00rhvyhwp4,XH3o7qXEWvE,110,Garden,train
+cmvc9p30m0082bn00awb9y2vr,XLNo393de5U,111,Kee Wah Bakery,train
+cmvbtjw7g000qbnuo17u8h5ux,X_xSzTh-YcA,113,IKEA,train
+cmvcafxnb0094bn00d1yzihr3,XhMGwO14vQ8,114,Chow Tai Fook,train
+cmu2wjq7r000kbn60fmj7o90m,XkRrFEqViZA,115,Cathay,train
+cmu2v81ud000zbn7c14o0hmai,Xrp9jVmLXcI,116,Lee Kum Kee,train
+cmu3gebg70005bn5kiai0e7aw,XtXY6tEdn9g,106,MTR,test
+cmsxzdcjo0009bnn8u7fvvbqw,YgECszm3ChA,118,HSBC,train
+cmvc8r0b1007bbn00bh5fms9w,YyZQl4e5YvA,119,Kee Wah Bakery,test
+cmu2v1ti0000abn7csjhdowdv,Z8raj4zDuyo,120,Lee Kum Kee,train
+cmrzz0hxi001dbnr812x02b9f,ZM9zcu7kLAI,121,McDonald's,train
+cmvc4uzgb001tbn00ydmvzucw,ZbAU76bLqU0,122,Maxim's,train
+cmu2v2nkj000fbn7csko86y0l,_8WLqAaDoRQ,123,Lee Kum Kee,train
+cmvc8mz9z006obn00ksv5t22e,_KFUFerBlSI,124,Kee Wah Bakery,train
+cmvbu8h8j0056bnuooqjzem9a,__Za2MhJI68,125,Prudential,train
+cmvbu3g3q0044bnuoleiktjg8,aQgAxhh2iAk,126,Prudential,train
+cmu2wmsl3000ubn60e8ge1w06,aRxksODz0T4,127,Cathay,train
+cmu2ws9bi0014bn60h6tzjeme,adUW1gLM0mo,128,Cathay,test
+cmvc31bjj000abn00k2q5hopc,ag_jIwmmPBE,129,Prudential,train
+cmu3h4emb0019bn5k5d7br6p4,bRJnZfltaOo,130,MTR,train
+cmvbtzhz9003pbnuovdsne85s,bRSbvd6gB_0,131,Mannings,test
+cmvc85vf2005zbn00ydg413hj,cCe3JMmZzYA,132,Garden,test
+cmu3h2cny0014bn5kmtm8sjem,cru2ZL6HMEg,133,MTR,train
+cmu2x5ga1001ebn60k5cu5puh,ctvWljvgZ18,134,Cathay,test
+cmu2v4sz4000kbn7c1y4hhuot,dFs7ROIlVTg,135,Lee Kum Kee,train
+cmt3q1dqh000abnawxsrlhcae,demkAoN7Bzw,136,HSBC,test
+cmvbtsxqj002ebnuor3g929ox,dqfHMVoUET4,137,Mannings,train
+cmrzz69zk001xbnr8gin6fukw,dyLBuPaIH1s,21,McDonald's,train
+cmvcae8bx008ubn006iyhct3p,e1Nmg-6Qb8I,139,Chow Tai Fook,train
+cmrzyjkjt0000bnr8kciomyl8,ePE_MnQeyH0,140,McDonald's,train
+cmvbu6r54004tbnuoqsm4wkj3,g9cN05pET5E,141,Prudential,train
+cmt3rs53c000zbnlsfsg3r0lo,gUZvl5hnAow,142,Hang Seng Bank,train
+cmu2w4i710000bn601279dwvu,hPrZgpPeMoA,143,Cathay,train
+cmvc4lkv1000ibn00nzej00p6,hgjiQ8QnZN4,144,Maxim's,train
+cmu3h6smv001jbn5ks3l7sm38,hp8NlkDOZao,145,MTR,train
+cmvc8p5vl0071bn00encif876,iBrJl_B6p60,146,Kee Wah Bakery,train
+cmvc4od1x0012bn008i73bk38,iHipWYVjM5Q,147,Maxim's,train
+cmt3rj4fw000kbnlsr5kipwly,iV1GFMBXDTM,148,Hang Seng Bank,train
+cmvc7uufy004vbn00p6q5ojmr,ibmeLw7dgu8,149,Garden,train
+cmt3r70mm0014bnawzkkcz87d,icMDHuO9UZg,150,Hang Seng Bank,train
+cmsy06fr9001rbnn8ob3owlrg,ihxEsfPHqxo,151,HSBC,train
+cmvbu5bpx004mbnuobvnt3njr,jlB5oiVibQU,152,Prudential,train
+cmqq6d3m00000bn2onubls07g,jmgdq6hdLUQ,153,McDonald's,train
+cmu2wgkh7000abn60m4cm6ao7,kCG5VhYU-_4,45,Cathay,train
+cmvbu9ipm005dbnuo641y94kq,kMQohGK52l0,155,Prudential,train
+cmvc4rxbp001mbn00kujfo4p3,krimJHXX-GE,156,Maxim's,train
+cmt3r0xrl000fbnawtle1w65o,lDH7HlEFnzE,142,Hang Seng Bank,train
+cmu2v136h0005bn7cygpkh967,lS1rj3VjXYU,158,Lee Kum Kee,test
+cmvbu6xs9004wbnuo3n7cfzh3,m8qVqW63VQs,159,Prudential,test
+cmvcaszf2009ybn00tcimzawm,mME1WPYoY1I,160,Chow Tai Fook,train
+cmvbticur000ibnuo3g8w7j5m,mYm7ef4MEqE,161,IKEA,train
+cmvc5kwkj002vbn00twlvkg0b,meW_ZN4yHDM,162,Café de Coral,train
+cmvcb1w2800aibn00ffo3jltu,mfWKQDsUlME,163,Chow Tai Fook,train
+cmvbtmklm001cbnuocfnh5rs8,moIBJ9pzEYw,164,IKEA,train
+cmvc5qa8a003pbn00rsjxufrv,n17rIrkjINg,165,Café de Coral,train
+cmvbtl040000xbnuo3hv72oqd,nK_cRkehRUE,113,IKEA,train
+cmsxzfyuq000jbnn8fez5aj05,nPU-IV4HGbU,167,HSBC,train
+cmvc7v0zd004ybn00r68ga0yf,o33ogNGmKts,168,Garden,train
+cmvbttrk1002jbnuo7rbz1hvh,oFjdBkdtN04,169,Mannings,train
+cmvbu2lzu003zbnuozdbpcim0,oH32A0KAbNA,170,Mannings,train
+cmvbts9tf0029bnuoifoulmm5,oSSYljtVwQg,171,Mannings,test
+cmvcaydc600a8bn00b6o0wg76,oUY-9ccC8mM,33,Chow Tai Fook,train
+cmu2vg8lh001jbn7cs7r0okst,oc_NhOZd9OY,72,Lee Kum Kee,test
+cmu3h0e3l000ubn5kqeugr1bu,oriUYfDe6T0,175,MTR,train
+cmvbtxcvo0038bnuorfhf48r5,p2aVDSBbmlE,176,Mannings,train
+cmt3rfg5l0005bnlsdvg6ka9f,pDrZk2xigIg,5,Hang Seng Bank,train
+cmvbtru1q0024bnuo7nm520mx,pF8tH1Xmxno,178,Mannings,train
+cmvbtm45f0017bnuottzwhp9k,pO4nZry5YSY,179,IKEA,test
+cmsxztvj3001cbnn8kcixwl7j,pqcIYFpmDeg,180,HSBC,test
+cmvcakpub009obn00slsgmckr,q4VjqEQt_eQ,181,Chow Tai Fook,train
+cmu2v9btg0014bn7cbisarrg9,q6Xu4yOPnXA,182,Lee Kum Kee,train
+cmvc5q41u003mbn0063uldhht,q6Z2KZQId68,183,Café de Coral,train
+cmrzz8eib0022bnr8nhphfcel,qJ4TvIPCbds,184,McDonald's,train
+cmrzz1f9k001ibnr8j5lfhvfz,qOpf6dSzLuQ,185,McDonald's,train
+cmvc4rotk001jbn00tmz1u2nk,rBaWSamsK0Q,186,Maxim's,train
+cmvbpdekz0000bn6wbv7zcyqg,rUxv3XvskeU,187,IKEA,train
+cmvc8qsbq0078bn003z4jeqsb,rW9zKaIy4CA,188,Kee Wah Bakery,test
+cmu3ggxym000abn5k4p9zb5of,roFBb3KadtU,189,MTR,test
+cmvbu895p0053bnuoisvutc6v,sbx2Dx1B-Z0,190,Prudential,train
+cmt3ruagg0019bnlsyumm4sgl,tLwLeUSiOw4,191,Hang Seng Bank,train
+cmt3r43zf000ubnaw2ckc8qfh,tQyU-SMt33Y,5,Hang Seng Bank,train
+cmvc8vp2b007vbn00ks93w63e,uEhK6pMU-O4,193,Kee Wah Bakery,test
+cmvbu9ujj005gbnuou2b4c9k9,uaPKYTUO70Q,194,Prudential,test
+cmvc4o58w000zbn00siqy7mjs,uh8kE1NumE0,195,Maxim's,train
+cmvc861ux0062bn0085o4henq,v3IQWiF477Y,196,Garden,train
+cmt3rdmjb0000bnlsashglvqv,vASrfzs7E3I,197,Hang Seng Bank,train
+cmvbu021e003sbnuozy4ukblw,vauHxdnPEHA,198,Mannings,train
+cmvc4v771001wbn004sovgf41,vawylsc9428,199,Maxim's,train
+cmvc7zk9y0055bn00nkt9atyh,wSqyT9xSPUY,200,Garden,train
+cmu2uys670000bn7c3h7ycvuy,wrsnCX4O13A,201,Lee Kum Kee,train
+cmvc81w79005fbn00isdem44c,xCjSd7r4szc,202,Garden,train
+cmu3h99h6001tbn5kpr8n6err,xy0gfrI16Gc,203,MTR,train
+cmt3rtlvu0014bnls4109ko3o,y1Wkz2l1ESs,5,Hang Seng Bank,train
+cmvcawnzb00a3bn00nvj7payj,yA5XUepAbE0,205,Chow Tai Fook,train
+cmvbtdsug0000bnuovtsoez1h,yDsg8AqtepE,206,IKEA,train
+cmvbu3n6y0047bnuonmso0psg,yJeWR5KFr8Y,207,Prudential,test
+cmt3rnk8e000ubnlsqdq0mxnl,yRvDJXHErxY,208,Hang Seng Bank,test
+cmvcahcu5009bbn00dxvjoh7l,yTkqNa9rF2M,114,Chow Tai Fook,train
+cmvbu4ov1004hbnuon55b2mdh,yaKG5Dhk7mI,210,Prudential,train
+cmrzysa12000obnr8dpgkpy8m,ycspZ6JLJV4,211,McDonald's,test
+cmvc8ttlc007ibn00mz42oe2f,zJMAXqNsdZ0,212,Kee Wah Bakery,train
+cmu3gz0ns000kbn5klqdzok6v,zT1G1K_pMgA,214,MTR,train
+cmvc4mw0u000sbn00sn58cgyw,z_Teu7lch74,215,Maxim's,train
+cmt3pwyjb0000bnawtl1xstmg,zcCsjbcbxfc,216,HSBC,train
+cmvc88w3m0069bn00ftdd8673,zmol5gECAXo,217,Garden,train
+cmt3r2hlm000kbnawvq24lr5f,zo4PEWRqY7E,218,Hang Seng Bank,train

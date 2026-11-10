@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu2vbxt5001ebn7c9f05myx8",
+  "youtube_id": "MDuE6wFFMdE",
+  "source_url": "https://www.youtube.com/watch?v=MDuE6wFFMdE",
+  "retrieved_at_utc": "2026-11-09T12:01:28.081173+00:00",
+  "views": 2080752,
+  "likes": 513,
+  "comments": null,
+  "channel_id": "UCuVp1SVmuRD0-ADZ7AFdhyw",
+  "subscriber_count_display": "25.5K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "2d794ca53c57ce43126f11de7770a992b4e25c174ff7987cd3395d36276a3ac9",
+  "platform_title": "【神鮮之味 煮出輕盈新口味】李錦記減鹽蠔油 點煮都咁滋味篇",
+  "channel_name": "leekumkeekitchen",
+  "likes_display": "like this video along with 513 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "2080752",
+      "display": "2,080,752 views"
+    },
+    "likes_accessibility": "like this video along with 513 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCuVp1SVmuRD0-ADZ7AFdhyw",
+      "name": "leekumkeekitchen",
+      "subscribers_display": "25.5K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

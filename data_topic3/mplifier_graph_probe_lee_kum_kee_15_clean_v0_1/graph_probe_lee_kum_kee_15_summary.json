@@ -1,0 +1,89 @@
+{
+  "dataset_name": "lee_kum_kee_15",
+  "package_name": "mplifier_graph_probe_lee_kum_kee_15_clean_v0_1.zip",
+  "generated_from": "ad-reference-vault-export-LKK.json",
+  "source_export_generated_at": "2026-09-15T22:41:20.103Z",
+  "reference_diagnostic": {
+    "exported_references": 15,
+    "official_brand_uploads": 15,
+    "third_party_uploads": 0,
+    "unresolved_uploader_matches": 0,
+    "clean_references": 15,
+    "official_uploader_verification": "Official-uploader registry matched author 'leekumkeekitchen' and channel ID UCuVp1SVmuRD0-ADZ7AFdhyw. Lee Kum Kee's official web properties link to its YouTube content, and the channel describes Lee Kum Kee's brand/cooking mission.",
+    "excluded_records": [],
+    "unresolved_records": []
+  },
+  "graph_counts": {
+    "video_nodes": 15,
+    "aspect_nodes": 602,
+    "evidence_nodes": 925,
+    "candidate_edges": 3034,
+    "edge_type_counts": {
+      "aspect_supported_by_evidence": 382,
+      "same_author": 105,
+      "same_brand": 105,
+      "same_creative_mechanic": 38,
+      "same_cta_explicitness": 33,
+      "same_evidence_mode": 78,
+      "same_pacing": 79,
+      "same_safety_status": 69,
+      "same_structure_type": 21,
+      "similar_aspect_candidate": 597,
+      "video_has_aspect": 602,
+      "video_has_evidence": 925
+    }
+  },
+  "distributions": {
+    "canonical_brand_raw": {
+      "Lee Kum Kee": 2,
+      "李錦記 (Lee Kum Kee)": 7,
+      "李錦記 (LEE KUM KEE)": 3,
+      "LEE KUM KEE 李錦記": 1,
+      "李錦記 LEE KUM KEE": 2
+    },
+    "brand_family": {
+      "Lee Kum Kee": 15
+    },
+    "sub_brand": {
+      "Lee Kum Kee": 15
+    },
+    "author": {
+      "leekumkeekitchen": 15
+    },
+    "creative_mechanic": {
+      "Music / mood led": 1,
+      "Product proof led": 2,
+      "Offer led": 9,
+      "Service credibility led": 2,
+      "Problem-solution led": 1
+    },
+    "structure_type": {
+      "Music / mood led": 1,
+      "Problem-solution led": 6,
+      "Product proof led": 1,
+      "Offer led": 3,
+      "Creative mechanic unresolved": 3,
+      "Announcement / information led": 1
+    },
+    "evidence_mode": {
+      "text_led": 1,
+      "mixed": 13,
+      "endcard_led": 1
+    },
+    "cta_explicitness": {
+      "unclear": 6,
+      "implicit": 6,
+      "explicit": 3
+    },
+    "pacing": {
+      "medium tempo": 2,
+      "fast-cut": 13
+    },
+    "safety_status": {
+      "high_risk": 3,
+      "needs_review": 12
+    }
+  },
+  "important_caveat": "candidate_edges.csv is not ground truth. Deterministic structural/same-field edges should be treated differently from weaker similarity-candidate edges.",
+  "research_positioning": "Graph probe / graph-readiness / clustering test only; not a claim that Mplifier already has a working GNN."
+}

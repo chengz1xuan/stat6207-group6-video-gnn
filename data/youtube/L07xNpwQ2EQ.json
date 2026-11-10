@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu2wny6l000zbn60s16v9t46",
+  "youtube_id": "L07xNpwQ2EQ",
+  "source_url": "https://www.youtube.com/watch?v=L07xNpwQ2EQ",
+  "retrieved_at_utc": "2026-11-09T12:01:26.279599+00:00",
+  "views": 45111,
+  "likes": 78,
+  "comments": null,
+  "channel_id": "UCDF__e4OyxESzW1snu1i0Bg",
+  "subscriber_count_display": "161K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "7bdb6365902c274c6fbf3fae937f9616cfa980636cd426aa7d87f28ec3ebe340",
+  "platform_title": "Cast your votes for the Cathay Members’ Choice Awards 2025 國泰會員尊尚大獎2025，立即投票，品味由你主導！",
+  "channel_name": "cathaypacific",
+  "likes_display": "like this video along with 78 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "45111",
+      "display": "45,111 views"
+    },
+    "likes_accessibility": "like this video along with 78 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCDF__e4OyxESzW1snu1i0Bg",
+      "name": "cathaypacific",
+      "subscribers_display": "161K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

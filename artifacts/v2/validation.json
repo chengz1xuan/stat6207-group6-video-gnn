@@ -1,0 +1,16 @@
+{
+  "fresh_label_cohort": 214,
+  "split": [
+    171,
+    43
+  ],
+  "group_and_URL_disjoint": true,
+  "source_label_agreement": true,
+  "structural_edge_provenance": true,
+  "response_node_exclusion": true,
+  "query_outbound_message_edges": 0,
+  "training_reference_isolation": true,
+  "CV_selection_only": true,
+  "LOBO_model_brand_runs": 56,
+  "quantitative_neural_training_losses": true
+}

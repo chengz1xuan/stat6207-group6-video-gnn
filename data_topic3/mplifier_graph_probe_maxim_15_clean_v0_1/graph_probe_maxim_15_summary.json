@@ -1,0 +1,218 @@
+{
+  "dataset_name": "maxim_15",
+  "generated_from": "ad-reference-vault-export-Maxim.json",
+  "source_sha256": "10c415e46ecc0b350facadf636bcd0aff57647fe94ebe7f38e805d7ba30b8718",
+  "source_export_generated_at": "2026-10-17T08:36:24.093Z",
+  "reference_audit": {
+    "selected_references": 15,
+    "official_brand_uploads": 15,
+    "third_party_uploads": 0,
+    "unresolved_uploader_matches": 0,
+    "final_clean_references": 15,
+    "uploader_source_truth": {
+      "author": "美心食品 Maxim’s Products",
+      "channel_identity": [
+        "UCbv_6SSiwvl7fLoXg4usdWA",
+        "@MaximsProducts"
+      ],
+      "channel_equivalence_source": "https://www.youtube.com/channel/UCbv_6SSiwvl7fLoXg4usdWA",
+      "channel_handle": "https://www.youtube.com/@MaximsProducts",
+      "verification_note": "YouTube lists the channel with Maxim’s Products name and @MaximsProducts handle; the two identifiers represent the same channel."
+    },
+    "per_record_audit": [
+      {
+        "source_reference_id": "cmvc4x6u10023bn00ww0cuutd",
+        "title": "【你 + 美心 + 我 = 新年最好禮】電視廣告",
+        "original_author": "美心食品 Maxim’s Products",
+        "original_channel_id_or_handle": "UCbv_6SSiwvl7fLoXg4usdWA",
+        "source_url": "https://www.youtube.com/watch?v=0jpktNjWkz4",
+        "status": "official_brand_upload",
+        "reason": "Official brand uploader matched (original author=美心食品 Maxim’s Products, source channel=UCbv_6SSiwvl7fLoXg4usdWA); channel ID/handle equivalence verified via the YouTube channel listing."
+      },
+      {
+        "source_reference_id": "cmvc4lbtr000fbn0081iw3zrc",
+        "title": "2026 美心月餅 香港味道 美心製造 – 30秒",
+        "original_author": "美心食品 Maxim’s Products",
+        "original_channel_id_or_handle": "UCbv_6SSiwvl7fLoXg4usdWA",
+        "source_url": "https://www.youtube.com/watch?v=1YEhm7RjaG0",
+        "status": "official_brand_upload",
+        "reason": "Official brand uploader matched (original author=美心食品 Maxim’s Products, source channel=UCbv_6SSiwvl7fLoXg4usdWA); channel ID/handle equivalence verified via the YouTube channel listing."
+      },
+      {
+        "source_reference_id": "cmvc4znur002dbn00afi5g52s",
+        "title": "美心瑤柱蘿蔔糕電視廣告 2014",
+        "original_author": "美心食品 Maxim’s Products",
+        "original_channel_id_or_handle": "@MaximsProducts",
+        "source_url": "https://www.youtube.com/watch?v=-ZLDI72Ffs0",
+        "status": "official_brand_upload",
+        "reason": "Official brand uploader matched (original author=美心食品 Maxim’s Products, source channel=@MaximsProducts); channel ID/handle equivalence verified via the YouTube channel listing."
+      },
+      {
+        "source_reference_id": "cmvc4xe0y0026bn00j0glnzsw",
+        "title": "美心月餅電視廣告2015 - 30秒",
+        "original_author": "美心食品 Maxim’s Products",
+        "original_channel_id_or_handle": "@MaximsProducts",
+        "source_url": "https://www.youtube.com/watch?v=8IZV397_l38",
+        "status": "official_brand_upload",
+        "reason": "Official brand uploader matched (original author=美心食品 Maxim’s Products, source channel=@MaximsProducts); channel ID/handle equivalence verified via the YouTube channel listing."
+      },
+      {
+        "source_reference_id": "cmvc4v771001wbn004sovgf41",
+        "title": "2017 美心月餅電視廣告 - 30秒電視版",
+        "original_author": "美心食品 Maxim’s Products",
+        "original_channel_id_or_handle": "UCbv_6SSiwvl7fLoXg4usdWA",
+        "source_url": "https://www.youtube.com/watch?v=vawylsc9428",
+        "status": "official_brand_upload",
+        "reason": "Official brand uploader matched (original author=美心食品 Maxim’s Products, source channel=UCbv_6SSiwvl7fLoXg4usdWA); channel ID/handle equivalence verified via the YouTube channel listing."
+      },
+      {
+        "source_reference_id": "cmvc4uzgb001tbn00ydmvzucw",
+        "title": "2019美心月餅廣告 - 冰皮系列",
+        "original_author": "美心食品 Maxim’s Products",
+        "original_channel_id_or_handle": "UCbv_6SSiwvl7fLoXg4usdWA",
+        "source_url": "https://www.youtube.com/watch?v=ZbAU76bLqU0",
+        "status": "official_brand_upload",
+        "reason": "Official brand uploader matched (original author=美心食品 Maxim’s Products, source channel=UCbv_6SSiwvl7fLoXg4usdWA); channel ID/handle equivalence verified via the YouTube channel listing."
+      },
+      {
+        "source_reference_id": "cmvc4rxbp001mbn00kujfo4p3",
+        "title": "2019美心月餅廣告 - 30秒電視版",
+        "original_author": "美心食品 Maxim’s Products",
+        "original_channel_id_or_handle": "@MaximsProducts",
+        "source_url": "https://www.youtube.com/watch?v=krimJHXX-GE",
+        "status": "official_brand_upload",
+        "reason": "Official brand uploader matched (original author=美心食品 Maxim’s Products, source channel=@MaximsProducts); channel ID/handle equivalence verified via the YouTube channel listing."
+      },
+      {
+        "source_reference_id": "cmvc4rotk001jbn00tmz1u2nk",
+        "title": "全新美心拔絲蓮蓉月餅 將快樂拉長 ◆ 全新廣告 30秒足本版",
+        "original_author": "美心食品 Maxim’s Products",
+        "original_channel_id_or_handle": "UCbv_6SSiwvl7fLoXg4usdWA",
+        "source_url": "https://www.youtube.com/watch?v=rBaWSamsK0Q",
+        "status": "official_brand_upload",
+        "reason": "Official brand uploader matched (original author=美心食品 Maxim’s Products, source channel=UCbv_6SSiwvl7fLoXg4usdWA); channel ID/handle equivalence verified via the YouTube channel listing."
+      },
+      {
+        "source_reference_id": "cmvc4pxvs001cbn00o7q88cw9",
+        "title": "【祝福 就是最足料的幸福】2023年美心賀年廣告 - 鮮蛋卷篇",
+        "original_author": "美心食品 Maxim’s Products",
+        "original_channel_id_or_handle": "UCbv_6SSiwvl7fLoXg4usdWA",
+        "source_url": "https://www.youtube.com/watch?v=CxbnjaET7ew",
+        "status": "official_brand_upload",
+        "reason": "Official brand uploader matched (original author=美心食品 Maxim’s Products, source channel=UCbv_6SSiwvl7fLoXg4usdWA); channel ID/handle equivalence verified via the YouTube channel listing."
+      },
+      {
+        "source_reference_id": "cmvc4piak0019bn00a2nk9b56",
+        "title": "【祝福 就是最足料的幸福】 2023年美心賀年廣告 - 蘿蔔糕篇",
+        "original_author": "美心食品 Maxim’s Products",
+        "original_channel_id_or_handle": "UCbv_6SSiwvl7fLoXg4usdWA",
+        "source_url": "https://www.youtube.com/watch?v=WBMGLbAvnQY",
+        "status": "official_brand_upload",
+        "reason": "Official brand uploader matched (original author=美心食品 Maxim’s Products, source channel=UCbv_6SSiwvl7fLoXg4usdWA); channel ID/handle equivalence verified via the YouTube channel listing."
+      },
+      {
+        "source_reference_id": "cmvc4od1x0012bn008i73bk38",
+        "title": "2023 美心月餅 Reunite! 從心從新 快樂團圓 - 廣告 – 30秒",
+        "original_author": "美心食品 Maxim’s Products",
+        "original_channel_id_or_handle": "UCbv_6SSiwvl7fLoXg4usdWA",
+        "source_url": "https://www.youtube.com/watch?v=iHipWYVjM5Q",
+        "status": "official_brand_upload",
+        "reason": "Official brand uploader matched (original author=美心食品 Maxim’s Products, source channel=UCbv_6SSiwvl7fLoXg4usdWA); channel ID/handle equivalence verified via the YouTube channel listing."
+      },
+      {
+        "source_reference_id": "cmvc4o58w000zbn00siqy7mjs",
+        "title": "【從心出發 滋味團年】2024年美心賀年廣告 蘿蔔糕篇30秒",
+        "original_author": "美心食品 Maxim’s Products",
+        "original_channel_id_or_handle": "UCbv_6SSiwvl7fLoXg4usdWA",
+        "source_url": "https://www.youtube.com/watch?v=uh8kE1NumE0",
+        "status": "official_brand_upload",
+        "reason": "Official brand uploader matched (original author=美心食品 Maxim’s Products, source channel=UCbv_6SSiwvl7fLoXg4usdWA); channel ID/handle equivalence verified via the YouTube channel listing."
+      },
+      {
+        "source_reference_id": "cmvc4mw0u000sbn00sn58cgyw",
+        "title": "【從心出發 滋味團年】2024年美心賀年廣告 雞蛋卷及甜心酥篇30秒",
+        "original_author": "美心食品 Maxim’s Products",
+        "original_channel_id_or_handle": "UCbv_6SSiwvl7fLoXg4usdWA",
+        "source_url": "https://www.youtube.com/watch?v=z_Teu7lch74",
+        "status": "official_brand_upload",
+        "reason": "Official brand uploader matched (original author=美心食品 Maxim’s Products, source channel=UCbv_6SSiwvl7fLoXg4usdWA); channel ID/handle equivalence verified via the YouTube channel listing."
+      },
+      {
+        "source_reference_id": "cmvc4mk5i000pbn00las6i1uw",
+        "title": "2025 美心月餅 美心冰皮味道 香港製造 – 冰皮月餅系列+榴槤冰皮月餅",
+        "original_author": "美心食品 Maxim’s Products",
+        "original_channel_id_or_handle": "@MaximsProducts",
+        "source_url": "https://www.youtube.com/watch?v=8NZyb7wPlao",
+        "status": "official_brand_upload",
+        "reason": "Official brand uploader matched (original author=美心食品 Maxim’s Products, source channel=@MaximsProducts); channel ID/handle equivalence verified via the YouTube channel listing."
+      },
+      {
+        "source_reference_id": "cmvc4lkv1000ibn00nzej00p6",
+        "title": "2026 年美心賀年廣告 蘿蔔糕+金沙奶黃年糕篇30秒",
+        "original_author": "美心食品 Maxim’s Products",
+        "original_channel_id_or_handle": "UCbv_6SSiwvl7fLoXg4usdWA",
+        "source_url": "https://www.youtube.com/watch?v=hgjiQ8QnZN4",
+        "status": "official_brand_upload",
+        "reason": "Official brand uploader matched (original author=美心食品 Maxim’s Products, source channel=UCbv_6SSiwvl7fLoXg4usdWA); channel ID/handle equivalence verified via the YouTube channel listing."
+      }
+    ],
+    "excluded_records": [],
+    "unresolved_records": []
+  },
+  "graph_counts": {
+    "video_nodes": 15,
+    "aspect_nodes": 611,
+    "evidence_nodes": 818,
+    "candidate_edges": 2871,
+    "edge_type_counts": {
+      "aspect_supported_by_evidence": 349,
+      "same_author": 105,
+      "same_brand": 105,
+      "same_creative_mechanic": 25,
+      "same_cta_explicitness": 37,
+      "same_evidence_mode": 91,
+      "same_pacing": 55,
+      "same_safety_status": 79,
+      "same_structure_type": 38,
+      "similar_aspect_candidate": 558,
+      "video_has_aspect": 611,
+      "video_has_evidence": 818
+    }
+  },
+  "distributions": {
+    "brand_family": {
+      "Maxim's": 15
+    },
+    "sub_brand": {
+      "Maxim's Festive Foods": 7,
+      "Maxim's Mooncakes": 8
+    },
+    "author": {
+      "美心食品 Maxim’s Products": 15
+    },
+    "creative_mechanic": {
+      "Offer led": 7,
+      "Service credibility led": 1,
+      "Product proof led": 3,
+      "Music / mood led": 1,
+      "Testimonial led": 1,
+      "Announcement / information led": 2
+    },
+    "structure_type": {
+      "Product proof led": 9,
+      "Creative mechanic unresolved": 2,
+      "Offer led": 1,
+      "Testimonial led": 1,
+      "Announcement / information led": 2
+    },
+    "evidence_mode": {
+      "mixed": 14,
+      "music_visual_led_sparse_dialogue": 1
+    }
+  },
+  "caveats": [
+    "Graph edges are structural, shared-label or heuristic candidates; they are not GNN ground-truth labels.",
+    "Source analysis includes low-confidence extracted fields and original uncertainty; preserve them without inferring unsupported claims.",
+    "No master dataset was updated."
+  ]
+}

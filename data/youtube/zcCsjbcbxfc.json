@@ -1,0 +1,40 @@
+{
+  "video_id": "cmt3pwyjb0000bnawtl1xstmg",
+  "youtube_id": "zcCsjbcbxfc",
+  "source_url": "https://www.youtube.com/watch?v=zcCsjbcbxfc",
+  "retrieved_at_utc": "2026-11-09T12:02:17.344148+00:00",
+  "views": 588,
+  "likes": 12,
+  "comments": null,
+  "channel_id": "UCYassnxj-M1niKCNIaaRPWw",
+  "subscriber_count_display": "45.2K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "e4a17bc7358b2468946f1931ccd37a9c3a476872e1c9fe474eea7d5e51ea50d0",
+  "platform_title": "【應你心之所向 滙豐在你所在】",
+  "channel_name": "HSBC Hong Kong",
+  "likes_display": "like this video along with 12 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "588",
+      "display": "588 views"
+    },
+    "likes_accessibility": "like this video along with 12 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCYassnxj-M1niKCNIaaRPWw",
+      "name": "HSBC Hong Kong",
+      "subscribers_display": "45.2K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

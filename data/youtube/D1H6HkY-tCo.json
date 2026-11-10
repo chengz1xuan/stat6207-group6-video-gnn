@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvbty2ye003dbnuob6j0llc3",
+  "youtube_id": "D1H6HkY-tCo",
+  "source_url": "https://www.youtube.com/watch?v=D1H6HkY-tCo",
+  "retrieved_at_utc": "2026-11-09T12:01:20.560189+00:00",
+  "views": 1891076,
+  "likes": 35,
+  "comments": null,
+  "channel_id": "UCtOHIOjPlO12F7XghNsJzCg",
+  "subscriber_count_display": "18.1K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "940b762f5e85afd13db31277ee906f321de04dc92b0a8212cf176e02f6cb9674",
+  "platform_title": "【萬寧一萬種健康．日常 - 愛心飯盒 健康Level Up！】",
+  "channel_name": "萬寧Mannings",
+  "likes_display": "like this video along with 35 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1891076",
+      "display": "1,891,076 views"
+    },
+    "likes_accessibility": "like this video along with 35 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCtOHIOjPlO12F7XghNsJzCg",
+      "name": "萬寧Mannings",
+      "subscribers_display": "18.1K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

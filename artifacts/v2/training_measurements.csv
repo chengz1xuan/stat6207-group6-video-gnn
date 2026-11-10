@@ -1,0 +1,9 @@
+model,target,objective,n_train,train_log_RMSE,CV_log_RMSE,test_log_RMSE,refit_epochs,regularization
+Mean,ln(1+views),MSE on ln(1+views); closed-form constant,171,2.7801371833024895,,2.2641342861575686,,0.0
+Metadata Ridge,ln(1+views),sum squared log residuals + alpha * squared coefficient norm,171,2.4168056144230534,2.6383702047183455,2.134367032367466,,10.0
+Pooled Ridge,ln(1+views),sum squared log residuals + alpha * squared coefficient norm,171,2.501843810704218,2.651034635721336,2.1997588820648257,,100.0
+Pooled MLP,ln(1+views),MSE on train-standardized ln(1+views),171,2.409541896240647,2.598496085560725,2.2691938187349407,16.0,0.1
+Subgraph structural,ln(1+views),MSE on train-standardized ln(1+views),171,2.403067807833223,2.6002855602551858,2.2485227358438067,11.0,0.1
+Subgraph + similarity,ln(1+views),MSE on train-standardized ln(1+views),171,2.432960733277151,2.5936506804888606,2.238209418472312,14.0,0.1
+Node structural,ln(1+views),MSE on train-standardized ln(1+views),171,2.3129114579062575,2.6740651874276065,2.09870969804127,10.0,0.1
+Node + similarity,ln(1+views),MSE on train-standardized ln(1+views),171,2.40293805761635,2.6264504646495137,2.1317211566722962,8.0,0.1

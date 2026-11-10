@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu2wy0qt0019bn60g1lld3sk",
+  "youtube_id": "MW1vzYW1TPo",
+  "source_url": "https://www.youtube.com/watch?v=MW1vzYW1TPo",
+  "retrieved_at_utc": "2026-11-09T12:01:29.025464+00:00",
+  "views": 5190443,
+  "likes": 84,
+  "comments": null,
+  "channel_id": "UCDF__e4OyxESzW1snu1i0Bg",
+  "subscriber_count_display": "161K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "f81dda324df9f62ca7feec6d3e25c1cf7275c46577ea7aa0796586ac02241406",
+  "platform_title": "[CATHAY FRESH] FARM TO FAME — YOUR FRESHEST GATEWAY IN AND OUT OF ASIA｜【國泰—鮮貨運送】為您送上滿溢新鮮｜新鮮快捷 聯繫亞洲",
+  "channel_name": "cathaypacific",
+  "likes_display": "like this video along with 84 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "5190443",
+      "display": "5,190,443 views"
+    },
+    "likes_accessibility": "like this video along with 84 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCDF__e4OyxESzW1snu1i0Bg",
+      "name": "cathaypacific",
+      "subscribers_display": "161K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu2vv3bu002dbn7cf0p6kuuk",
+  "youtube_id": "BGscT20uAJg",
+  "source_url": "https://www.youtube.com/watch?v=BGscT20uAJg",
+  "retrieved_at_utc": "2026-11-09T12:01:16.814095+00:00",
+  "views": 199601,
+  "likes": 45,
+  "comments": null,
+  "channel_id": "UCDF__e4OyxESzW1snu1i0Bg",
+  "subscriber_count_display": "161K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "a92516372af06b738bed3da261df3fd576e8203b9ad1f67f11bb66c72fad4726",
+  "platform_title": "We Know How: Bringing Local Freshness to Global Gourmets | We Know How：本地鮮貨，讓世界品嚐",
+  "channel_name": "cathaypacific",
+  "likes_display": "like this video along with 45 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "199601",
+      "display": "199,601 views"
+    },
+    "likes_accessibility": "like this video along with 45 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCDF__e4OyxESzW1snu1i0Bg",
+      "name": "cathaypacific",
+      "subscribers_display": "161K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

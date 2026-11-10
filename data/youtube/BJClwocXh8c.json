@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc9slub008cbn00ivkttbc0",
+  "youtube_id": "BJClwocXh8c",
+  "source_url": "https://www.youtube.com/watch?v=BJClwocXh8c",
+  "retrieved_at_utc": "2026-11-09T12:01:16.966612+00:00",
+  "views": 3419,
+  "likes": 4,
+  "comments": null,
+  "channel_id": "UCNRqFSTPHIzVwrVnZAMj_2A",
+  "subscriber_count_display": "2.19K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "8f6fb240c95fecba5f9575bdfa898787d684cf06ca45c360a37aca8bb96e6a16",
+  "platform_title": "奇華餅家facebook專頁中秋特別呈獻「至真祝福‧送至親」",
+  "channel_name": "Kee Wah Bakery 奇華餅家",
+  "likes_display": "like this video along with 4 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "3419",
+      "display": "3,419 views"
+    },
+    "likes_accessibility": "like this video along with 4 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCNRqFSTPHIzVwrVnZAMj_2A",
+      "name": "Kee Wah Bakery 奇華餅家",
+      "subscribers_display": "2.19K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

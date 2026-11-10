@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc5u1i50046bn00x453059h",
+  "youtube_id": "7y7LNpnUSPc",
+  "source_url": "https://www.youtube.com/watch?v=7y7LNpnUSPc",
+  "retrieved_at_utc": "2026-11-09T12:01:12.720956+00:00",
+  "views": 314685,
+  "likes": 49,
+  "comments": null,
+  "channel_id": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+  "subscriber_count_display": "10.2K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "4bc1c3e3f311e8102f9d223bfd8b772a6e1003b8f11764fd87f2f45c1f4b7b50",
+  "platform_title": "大家樂「咋咋淋鐵板餐」電視廣告",
+  "channel_name": "大家樂 CafedeCoralHK",
+  "likes_display": "like this video along with 49 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "314685",
+      "display": "314,685 views"
+    },
+    "likes_accessibility": "like this video along with 49 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+      "name": "大家樂 CafedeCoralHK",
+      "subscribers_display": "10.2K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

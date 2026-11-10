@@ -1,0 +1,40 @@
+{
+  "video_id": "cmsxzrhfa0017bnn8p2stilmd",
+  "youtube_id": "-GqyErEcxCE",
+  "source_url": "https://www.youtube.com/watch?v=-GqyErEcxCE",
+  "retrieved_at_utc": "2026-11-09T12:01:03.536739+00:00",
+  "views": 1709054,
+  "likes": 13,
+  "comments": null,
+  "channel_id": "UCYassnxj-M1niKCNIaaRPWw",
+  "subscriber_count_display": "45.2K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "36bcc169890cdaee317cc6be29bd07f169d739ba4307a7c83cbca8029da55875",
+  "platform_title": "香港故事，世界靈感; 世界故事，香港靈感",
+  "channel_name": "HSBC Hong Kong",
+  "likes_display": "like this video along with 13 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1709054",
+      "display": "1,709,054 views"
+    },
+    "likes_accessibility": "like this video along with 13 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCYassnxj-M1niKCNIaaRPWw",
+      "name": "HSBC Hong Kong",
+      "subscribers_display": "45.2K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "dataset_name": "mtr_15",
+  "generated_from": "ad-reference-vault-export-MTR.json",
+  "source_export_generated_at": "2026-09-16T02:26:32.006Z",
+  "reference_audit": {
+    "selected_references": 15,
+    "official_brand_uploads": 14,
+    "third_party_uploads": 1,
+    "unresolved_uploader_matches": 0,
+    "final_clean_references": 14,
+    "excluded_records": [
+      {
+        "id": "cmt15ziwo0000bna021nhjrhr",
+        "title": "【 🎨 港鐵*廣告 聯乘 Hong Kong Design Centre 呈獻：「設計好，好設計 Great design lives here」走進深水埗 DX 設計館！ 💡✨ 】",
+        "reason": "Uploader did not match MTR registry: author=JCDecauxTransportHK; channel_id=UCrzQ7CIgyF_Q9LPoIHxVLYA."
+      }
+    ],
+    "unresolved_records": []
+  },
+  "graph_counts": {
+    "video_nodes": 14,
+    "aspect_nodes": 313,
+    "evidence_nodes": 541,
+    "candidate_edges": 1832,
+    "edge_type_counts": {
+      "video_has_aspect": 313,
+      "video_has_evidence": 541,
+      "same_brand": 91,
+      "same_author": 91,
+      "same_structure_type": 13,
+      "same_evidence_mode": 39,
+      "same_cta_explicitness": 30,
+      "same_pacing": 67,
+      "same_safety_status": 91,
+      "same_creative_mechanic": 17,
+      "similar_aspect_candidate": 539
+    }
+  },
+  "distributions": {
+    "author": {
+      "MTR Hong Kong": 14
+    },
+    "creative_mechanic": {
+      "Offer led": 5,
+      "Problem-solution led": 4,
+      "Testimonial led": 1,
+      "Music / mood led": 2,
+      "Announcement / information led": 1,
+      "Event experience led": 1
+    },
+    "structure_type": {
+      "Problem-solution led": 5,
+      "Product proof led": 2,
+      "Testimonial led": 1,
+      "Music / mood led": 2,
+      "Demo led": 2,
+      "Event experience led": 1,
+      "Service credibility led": 1
+    },
+    "evidence_mode": {
+      "mixed": 9,
+      "endcard_led": 1,
+      "text_led": 3,
+      "music_visual_led_sparse_dialogue": 1
+    }
+  },
+  "positioning": "Graph-readiness / clustering probe only; not a production GNN."
+}

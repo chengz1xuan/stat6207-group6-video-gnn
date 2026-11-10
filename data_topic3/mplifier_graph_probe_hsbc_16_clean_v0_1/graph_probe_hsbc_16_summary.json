@@ -1,0 +1,107 @@
+{
+  "dataset_name": "hsbc_16",
+  "package_name": "mplifier_graph_probe_hsbc_16_clean_v0_1.zip",
+  "generated_from": "ad-reference-vault-export-2026-08-22.json",
+  "source_export_generated_at": "2026-08-22T02:15:17.102Z",
+  "reference_diagnostic": {
+    "exported_references": 16,
+    "included_references": 16,
+    "excluded_references": 0,
+    "all_included_are_hsbc_family": true,
+    "off_theme_exclusions": [],
+    "notes": [
+      "Top-level UI brand fields are noisy in several records; canonical-analysis brand/evidence is used for identity.",
+      "HSBC / HSBC 滙豐 / 滙豐 (HSBC) / HSBC Life are normalized to parent brand_family=HSBC, while sub-brand is preserved.",
+      "One record is a 1995 HSBC commercial from a third-party archive channel; it is retained because the advertised brand is clearly HSBC."
+    ]
+  },
+  "graph_counts": {
+    "video_nodes": 16,
+    "aspect_nodes": 704,
+    "evidence_nodes": 1037,
+    "candidate_edges": 3554,
+    "edge_type_counts": {
+      "aspect_supported_by_evidence": 390,
+      "same_author": 105,
+      "same_brand": 120,
+      "same_creative_mechanic": 34,
+      "same_cta_explicitness": 68,
+      "same_evidence_mode": 72,
+      "same_pacing": 120,
+      "same_safety_status": 60,
+      "same_structure_type": 15,
+      "similar_aspect_candidate": 829,
+      "video_has_aspect": 704,
+      "video_has_evidence": 1037
+    }
+  },
+  "distributions": {
+    "canonical_brand_raw": {
+      "HSBC": 8,
+      "HSBC Life": 6,
+      "HSBC 滙豐": 1,
+      "滙豐 (HSBC)": 1
+    },
+    "sub_brand": {
+      "HSBC": 10,
+      "HSBC Life": 6
+    },
+    "author": {
+      "HSBC Hong Kong": 15,
+      "TPB HK CM 香港電視廣告庫 (香港電視廣告庫)": 1
+    },
+    "creative_mechanic": {
+      "Offer led": 8,
+      "Product proof led": 1,
+      "Announcement / information led": 4,
+      "Music / mood led": 1,
+      "Event experience led": 1,
+      "Creative mechanic unresolved": 1
+    },
+    "structure_type": {
+      "Announcement / information led": 3,
+      "Offer led": 4,
+      "Problem-solution led": 3,
+      "Product proof led": 3,
+      "Event experience led": 1,
+      "Testimonial led": 1,
+      "Creative mechanic unresolved": 1
+    },
+    "evidence_mode": {
+      "endcard_led": 12,
+      "mixed": 4
+    },
+    "cta_explicitness": {
+      "explicit": 12,
+      "unclear": 2,
+      "implicit": 2
+    },
+    "pacing": {
+      "medium tempo": 16
+    },
+    "safety_status": {
+      "high_risk": 6,
+      "needs_review": 10
+    }
+  },
+  "previous_mcdonalds_pack_baseline": {
+    "package": "mplifier_graph_probe_mcdonald_20_clean_v0_1.zip",
+    "references": 20,
+    "aspect_nodes": 667,
+    "evidence_nodes": 1486,
+    "candidate_edges": 6869
+  },
+  "change_vs_previous_mcdonalds_pack": {
+    "reference_delta": -4,
+    "aspect_node_delta": 37,
+    "evidence_node_delta": -449,
+    "candidate_edge_delta": -3315,
+    "interpretation": [
+      "The HSBC set is smaller by video count but more heterogeneous within one parent brand: banking/app, wealth/Premier, HSBC Life/insurance and brand/cultural work.",
+      "It includes one archival creative from a third-party channel, creating a useful source/author contrast without making the record off-theme.",
+      "Counts are pack-construction outputs, not performance metrics or proof of GNN readiness."
+    ]
+  },
+  "important_caveat": "candidate_edges.csv is not ground truth. Deterministic structural/same-field edges should be treated differently from weaker similarity-candidate edges.",
+  "research_positioning": "Graph probe / graph-readiness / clustering test only; not a claim that Mplifier already has a working GNN."
+}

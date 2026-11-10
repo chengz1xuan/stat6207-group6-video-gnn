@@ -1,0 +1,42 @@
+{
+  "test_campaign_groups": 40,
+  "test_log_RMSE_95": {
+    "Mean": [
+      1.9156141484336402,
+      2.6180527334662793
+    ],
+    "Metadata Ridge": [
+      1.6764053211039616,
+      2.57130587445362
+    ],
+    "Pooled Ridge": [
+      1.7780861465492346,
+      2.6406515480687536
+    ],
+    "Pooled MLP": [
+      1.8189384524649521,
+      2.7509832698895504
+    ],
+    "Subgraph structural": [
+      1.8159059538135234,
+      2.704985578126483
+    ],
+    "Subgraph + similarity": [
+      1.813632579065505,
+      2.6936456707315384
+    ],
+    "Node structural": [
+      1.633756719199042,
+      2.556827270436975
+    ],
+    "Node + similarity": [
+      1.624347184102242,
+      2.6543516229023663
+    ]
+  },
+  "paired_log_MAE_similarity_minus_structural_95": [
+    -0.038132736967286716,
+    0.062289581102978914
+  ],
+  "note": "Campaign-level percentile bootstrap, 2000 draws, conditional on this frozen snapshot and split; no split/model-selection uncertainty."
+}

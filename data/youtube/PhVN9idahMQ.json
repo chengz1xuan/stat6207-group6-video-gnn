@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvbthj43000dbnuo1zjduj9k",
+  "youtube_id": "PhVN9idahMQ",
+  "source_url": "https://www.youtube.com/watch?v=PhVN9idahMQ",
+  "retrieved_at_utc": "2026-11-09T12:01:34.066854+00:00",
+  "views": 1168179,
+  "likes": 18,
+  "comments": null,
+  "channel_id": "UCcQ5WlinXufbKizIJHlI4LQ",
+  "subscriber_count_display": "13.7K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "341f3988b61cb2a518679ae56c60d3574ccf7f9deb087719732a327a404c614e",
+  "platform_title": "IKEA 睡好覺做好夢 | 一齊瞓就要愛佢嘅一切 | IKEA Hong Kong",
+  "channel_name": "IKEAHongKong",
+  "likes_display": "like this video along with 18 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1168179",
+      "display": "1,168,179 views"
+    },
+    "likes_accessibility": "like this video along with 18 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCcQ5WlinXufbKizIJHlI4LQ",
+      "name": "IKEAHongKong",
+      "subscribers_display": "13.7K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

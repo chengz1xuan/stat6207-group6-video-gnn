@@ -1,0 +1,273 @@
+{
+  "dataset_name": "chow_tai_fook_15",
+  "generated_from": "ad-reference-vault-export-CTF.json",
+  "source_sha256": "3ef4d50611c83367465a6d040df8341d79914b71937359f246f361f0b252f8a8",
+  "source_export_generated_at": "2026-10-17T11:23:21.332Z",
+  "reference_audit": {
+    "selected_references": 15,
+    "official_brand_uploads": 15,
+    "third_party_uploads": 0,
+    "unresolved_uploader_matches": 0,
+    "final_clean_references": 15,
+    "uploader_source_truth": {
+      "author": "Chow Tai Fook Jewellery 周大福珠寶",
+      "channel_identity": [
+        "@chowtaifook1929",
+        "UCrpcqERIGaznGxm7ZoRVBRw"
+      ],
+      "channel_link": "https://www.youtube.com/channel/UCrpcqERIGaznGxm7ZoRVBRw",
+      "handle_link": "https://www.youtube.com/@chowtaifook1929",
+      "verification_note": "Uploader fields in the export match the Chow Tai Fook Jewellery 周大福珠寶 identity. The branded YouTube channel https://www.youtube.com/channel/UCrpcqERIGaznGxm7ZoRVBRw identifies its handle as @chowtaifook1929. Registry agreement, not per-video manual playback verification."
+    },
+    "per_record_audit": [
+      {
+        "source_reference_id": "cmvcb32p700asbn00bt1uevem",
+        "title": "周大福「Celebrate Love」情人節精選首飾",
+        "source_url": "https://www.youtube.com/watch?v=3BCcDbFiVaA",
+        "original_author": "Chow Tai Fook Jewellery 周大福珠寶",
+        "original_channel_id_or_handle": "UCrpcqERIGaznGxm7ZoRVBRw",
+        "status": "official_brand_upload",
+        "reason": "Official Chow Tai Fook source matched: author=Chow Tai Fook Jewellery 周大福珠寶; channel=UCrpcqERIGaznGxm7ZoRVBRw."
+      },
+      {
+        "source_reference_id": "cmvcb242e00albn00rlhl4woq",
+        "title": "周大福傳承系列 #GoldIsChic",
+        "source_url": "https://www.youtube.com/watch?v=QO1Nt4997vc",
+        "original_author": "Chow Tai Fook Jewellery 周大福珠寶",
+        "original_channel_id_or_handle": "UCrpcqERIGaznGxm7ZoRVBRw",
+        "status": "official_brand_upload",
+        "reason": "Official Chow Tai Fook source matched: author=Chow Tai Fook Jewellery 周大福珠寶; channel=UCrpcqERIGaznGxm7ZoRVBRw."
+      },
+      {
+        "source_reference_id": "cmvcb1w2800aibn00ffo3jltu",
+        "title": "周大福《Beyond Time》鑽石展覽",
+        "source_url": "https://www.youtube.com/watch?v=mfWKQDsUlME",
+        "original_author": "Chow Tai Fook Jewellery 周大福珠寶",
+        "original_channel_id_or_handle": "UCrpcqERIGaznGxm7ZoRVBRw",
+        "status": "official_brand_upload",
+        "reason": "Official Chow Tai Fook source matched: author=Chow Tai Fook Jewellery 周大福珠寶; channel=UCrpcqERIGaznGxm7ZoRVBRw."
+      },
+      {
+        "source_reference_id": "cmvcayjyb00abbn0031nkrbyw",
+        "title": "周大福 BEYOND TIME - Beyond Limits",
+        "source_url": "https://www.youtube.com/watch?v=9b7Obr630PQ",
+        "original_author": "Chow Tai Fook Jewellery 周大福珠寶",
+        "original_channel_id_or_handle": "UCrpcqERIGaznGxm7ZoRVBRw",
+        "status": "official_brand_upload",
+        "reason": "Official Chow Tai Fook source matched: author=Chow Tai Fook Jewellery 周大福珠寶; channel=UCrpcqERIGaznGxm7ZoRVBRw."
+      },
+      {
+        "source_reference_id": "cmvcaydc600a8bn00b6o0wg76",
+        "title": "周大福 BEYOND TIME - Beyond Generations",
+        "source_url": "https://www.youtube.com/watch?v=oUY-9ccC8mM",
+        "original_author": "Chow Tai Fook Jewellery 周大福珠寶",
+        "original_channel_id_or_handle": "UCrpcqERIGaznGxm7ZoRVBRw",
+        "status": "official_brand_upload",
+        "reason": "Official Chow Tai Fook source matched: author=Chow Tai Fook Jewellery 周大福珠寶; channel=UCrpcqERIGaznGxm7ZoRVBRw."
+      },
+      {
+        "source_reference_id": "cmvcawnzb00a3bn00nvj7payj",
+        "title": "Chow Tai Fook HUÁ Collection",
+        "source_url": "https://www.youtube.com/watch?v=yA5XUepAbE0",
+        "original_author": "Chow Tai Fook Jewellery 周大福珠寶",
+        "original_channel_id_or_handle": "@chowtaifook1929",
+        "status": "official_brand_upload",
+        "reason": "Official Chow Tai Fook source matched: author=Chow Tai Fook Jewellery 周大福珠寶; channel=@chowtaifook1929."
+      },
+      {
+        "source_reference_id": "cmvcaszf2009ybn00tcimzawm",
+        "title": "Chow Tai Fook In Love With Love - Bond to Love Collection",
+        "source_url": "https://www.youtube.com/watch?v=mME1WPYoY1I",
+        "original_author": "Chow Tai Fook Jewellery 周大福珠寶",
+        "original_channel_id_or_handle": "UCrpcqERIGaznGxm7ZoRVBRw",
+        "status": "official_brand_upload",
+        "reason": "Official Chow Tai Fook source matched: author=Chow Tai Fook Jewellery 周大福珠寶; channel=UCrpcqERIGaznGxm7ZoRVBRw."
+      },
+      {
+        "source_reference_id": "cmvcakpub009obn00slsgmckr",
+        "title": "Chow Tai Fook Rouge Collection - Power of ROUGE",
+        "source_url": "https://www.youtube.com/watch?v=q4VjqEQt_eQ",
+        "original_author": "Chow Tai Fook Jewellery 周大福珠寶",
+        "original_channel_id_or_handle": "UCrpcqERIGaznGxm7ZoRVBRw",
+        "status": "official_brand_upload",
+        "reason": "Official Chow Tai Fook source matched: author=Chow Tai Fook Jewellery 周大福珠寶; channel=UCrpcqERIGaznGxm7ZoRVBRw."
+      },
+      {
+        "source_reference_id": "cmvcakh5x009lbn00brm6c7y9",
+        "title": "Chow Tai Fook In Love With Love - Bond Collection",
+        "source_url": "https://www.youtube.com/watch?v=3TQfmO8wi5c",
+        "original_author": "Chow Tai Fook Jewellery 周大福珠寶",
+        "original_channel_id_or_handle": "UCrpcqERIGaznGxm7ZoRVBRw",
+        "status": "official_brand_upload",
+        "reason": "Official Chow Tai Fook source matched: author=Chow Tai Fook Jewellery 周大福珠寶; channel=UCrpcqERIGaznGxm7ZoRVBRw."
+      },
+      {
+        "source_reference_id": "cmvcahnw6009ebn00qlp8y61r",
+        "title": "Chow Tai Fook Joie Collection",
+        "source_url": "https://www.youtube.com/watch?v=6sJztvpjQxQ",
+        "original_author": "Chow Tai Fook Jewellery 周大福珠寶",
+        "original_channel_id_or_handle": "UCrpcqERIGaznGxm7ZoRVBRw",
+        "status": "official_brand_upload",
+        "reason": "Official Chow Tai Fook source matched: author=Chow Tai Fook Jewellery 周大福珠寶; channel=UCrpcqERIGaznGxm7ZoRVBRw."
+      },
+      {
+        "source_reference_id": "cmvcahcu5009bbn00dxvjoh7l",
+        "title": "Chow Tai Fook Summer Love",
+        "source_url": "https://www.youtube.com/watch?v=yTkqNa9rF2M",
+        "original_author": "Chow Tai Fook Jewellery 周大福珠寶",
+        "original_channel_id_or_handle": "@chowtaifook1929",
+        "status": "official_brand_upload",
+        "reason": "Official Chow Tai Fook source matched: author=Chow Tai Fook Jewellery 周大福珠寶; channel=@chowtaifook1929."
+      },
+      {
+        "source_reference_id": "cmvcafxnb0094bn00d1yzihr3",
+        "title": "Chow Tai Fook Summer Love",
+        "source_url": "https://www.youtube.com/watch?v=XhMGwO14vQ8",
+        "original_author": "Chow Tai Fook Jewellery 周大福珠寶",
+        "original_channel_id_or_handle": "UCrpcqERIGaznGxm7ZoRVBRw",
+        "status": "official_brand_upload",
+        "reason": "Official Chow Tai Fook source matched: author=Chow Tai Fook Jewellery 周大福珠寶; channel=UCrpcqERIGaznGxm7ZoRVBRw."
+      },
+      {
+        "source_reference_id": "cmvcafqwt0091bn0093h4e03o",
+        "title": "Chow Tai Fook - Blessings For Every Generation",
+        "source_url": "https://www.youtube.com/watch?v=IFRknd39jgw",
+        "original_author": "Chow Tai Fook Jewellery 周大福珠寶",
+        "original_channel_id_or_handle": "UCrpcqERIGaznGxm7ZoRVBRw",
+        "status": "official_brand_upload",
+        "reason": "Official Chow Tai Fook source matched: author=Chow Tai Fook Jewellery 周大福珠寶; channel=UCrpcqERIGaznGxm7ZoRVBRw."
+      },
+      {
+        "source_reference_id": "cmvcae8bx008ubn006iyhct3p",
+        "title": "Chow Tai Fook DAWN Collection",
+        "source_url": "https://www.youtube.com/watch?v=e1Nmg-6Qb8I",
+        "original_author": "Chow Tai Fook Jewellery 周大福珠寶",
+        "original_channel_id_or_handle": "UCrpcqERIGaznGxm7ZoRVBRw",
+        "status": "official_brand_upload",
+        "reason": "Official Chow Tai Fook source matched: author=Chow Tai Fook Jewellery 周大福珠寶; channel=UCrpcqERIGaznGxm7ZoRVBRw."
+      },
+      {
+        "source_reference_id": "cmvcae26v008rbn00atb8096n",
+        "title": "Chow Tai Fook Summer Tunning",
+        "source_url": "https://www.youtube.com/watch?v=MwMV3DLe1-0",
+        "original_author": "Chow Tai Fook Jewellery 周大福珠寶",
+        "original_channel_id_or_handle": "UCrpcqERIGaznGxm7ZoRVBRw",
+        "status": "official_brand_upload",
+        "reason": "Official Chow Tai Fook source matched: author=Chow Tai Fook Jewellery 周大福珠寶; channel=UCrpcqERIGaznGxm7ZoRVBRw."
+      }
+    ],
+    "excluded_records": [],
+    "unresolved_records": []
+  },
+  "graph_counts": {
+    "video_nodes": 15,
+    "aspect_nodes": 624,
+    "evidence_nodes": 821,
+    "candidate_edges": 3109,
+    "edge_type_counts": {
+      "aspect_supported_by_evidence": 408,
+      "same_author": 105,
+      "same_brand": 105,
+      "same_creative_mechanic": 78,
+      "same_cta_explicitness": 46,
+      "same_evidence_mode": 48,
+      "same_pacing": 79,
+      "same_safety_status": 105,
+      "same_structure_type": 78,
+      "similar_aspect_candidate": 612,
+      "video_has_aspect": 624,
+      "video_has_evidence": 821
+    }
+  },
+  "distributions": {
+    "brand_raw": {
+      "Chow Tai Fook": 1,
+      "CHOW TAI FOOK": 14
+    },
+    "brand_family": {
+      "Chow Tai Fook": 15
+    },
+    "sub_brand": {
+      "Chow Tai Fook": 15
+    },
+    "author": {
+      "Chow Tai Fook Jewellery 周大福珠寶": 15
+    },
+    "creative_mechanic": {
+      "Dialogue-led explainer": 1,
+      "Music / mood led": 13,
+      "Product proof led": 1
+    },
+    "structure_type": {
+      "Dialogue-led explainer": 1,
+      "Music / mood led": 13,
+      "Problem-solution led": 1
+    },
+    "evidence_mode": {
+      "text_led": 1,
+      "endcard_led": 1,
+      "music_visual_led_sparse_dialogue": 10,
+      "mixed": 3
+    },
+    "safety_status": {
+      "needs_review": 15
+    }
+  },
+  "source_quality_flags": [
+    {
+      "source_reference_id": "cmvcb32p700asbn00bt1uevem",
+      "issue": "garbled_character_extraction",
+      "source_fields": [
+        "evidence.raw.extract.extract_spoken_dialogue",
+        "evidence.raw.extract.extract_on_screen_text"
+      ],
+      "disposition": "Preserved verbatim for provenance. Do not treat as reliable Chinese text or semantic similarity labels without manual review."
+    }
+  ],
+  "header_contract": {
+    "video_node_column_count": 35,
+    "columns": [
+      "video_id",
+      "source_reference_id",
+      "title",
+      "brand_raw",
+      "brand_family",
+      "sub_brand",
+      "top_level_ui_brand",
+      "product_campaign",
+      "author",
+      "platform",
+      "source_url",
+      "publish_date",
+      "duration_seconds",
+      "main_message",
+      "hook",
+      "cta",
+      "value_promise",
+      "creative_mechanic",
+      "structure_type",
+      "evidence_mode",
+      "cta_explicitness",
+      "proof_strength",
+      "pacing",
+      "production_complexity",
+      "platform_fit",
+      "safety_status",
+      "copy_risk",
+      "fit_score",
+      "overall_evidence",
+      "unresolved_count",
+      "warning_count",
+      "languages",
+      "what_not_to_copy",
+      "inclusion_status",
+      "inclusion_reason"
+    ]
+  },
+  "limitations": [
+    "No upstream interpretation or model-generated field was independently re-judged.",
+    "Some Chinese-language fields have weak normalization; at least one record contains visibly garbled Chinese extraction. These raw text values are retained and specifically flagged for manual review; downstream text-similarity candidates may be noisy.",
+    "Similarity edges are suggestions only; they do not represent supervised ground-truth labels or a trained GNN.",
+    "Only verified uploader/channel records are retained; source analysis safety-status flags are not uploader exclusions."
+  ]
+}

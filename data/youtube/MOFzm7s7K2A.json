@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc7sxs1004obn009qydj7vc",
+  "youtube_id": "MOFzm7s7K2A",
+  "source_url": "https://www.youtube.com/watch?v=MOFzm7s7K2A",
+  "retrieved_at_utc": "2026-11-09T12:01:28.617491+00:00",
+  "views": 882157,
+  "likes": 69,
+  "comments": null,
+  "channel_id": "UCy80v1icfNULOE2wF3Hr7CQ",
+  "subscriber_count_display": "1.36K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "3f1619abca184271028e793aad99654ec4e30a03cb0b1b7ac59df0a5a77b175d",
+  "platform_title": "【每日綻放 幸福滋味】嘉頓麵包及蛋糕系列 (30秒版本)",
+  "channel_name": "嘉頓 Garden",
+  "likes_display": "like this video along with 69 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "882157",
+      "display": "882,157 views"
+    },
+    "likes_accessibility": "like this video along with 69 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCy80v1icfNULOE2wF3Hr7CQ",
+      "name": "嘉頓 Garden",
+      "subscribers_display": "1.36K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

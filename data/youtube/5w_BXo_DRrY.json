@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc8orlg006ybn00umvx4vyc",
+  "youtube_id": "5w_BXo_DRrY",
+  "source_url": "https://www.youtube.com/watch?v=5w_BXo_DRrY",
+  "retrieved_at_utc": "2026-11-09T12:01:10.514867+00:00",
+  "views": 106652,
+  "likes": 121,
+  "comments": null,
+  "channel_id": "UCNRqFSTPHIzVwrVnZAMj_2A",
+  "subscriber_count_display": "2.19K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "18ad1a8b3064073ccdbe05ae28a6969b87c64a4857aae4ed4307d880f3b2cbdb",
+  "platform_title": "奇華至尊月餅電視廣告2015",
+  "channel_name": "Kee Wah Bakery 奇華餅家",
+  "likes_display": "like this video along with 121 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "106652",
+      "display": "106,652 views"
+    },
+    "likes_accessibility": "like this video along with 121 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCNRqFSTPHIzVwrVnZAMj_2A",
+      "name": "Kee Wah Bakery 奇華餅家",
+      "subscribers_display": "2.19K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

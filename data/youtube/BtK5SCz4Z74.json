@@ -1,0 +1,40 @@
+{
+  "video_id": "cmt3r4r5i000zbnaw2vdpix5m",
+  "youtube_id": "BtK5SCz4Z74",
+  "source_url": "https://www.youtube.com/watch?v=BtK5SCz4Z74",
+  "retrieved_at_utc": "2026-11-09T12:01:17.797919+00:00",
+  "views": 999558,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCSIfcoM9kmyjil_IU5IC_gA",
+  "subscriber_count_display": "33K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "903bb276da2aa14d335fd99489d4896b431484a74450d8ef64a71d61ae0eb5ea",
+  "platform_title": "【投資好伙伴｜多種低門檻投資產品畀你揀，Carry 你輕鬆 Kick-start 投資第一步】",
+  "channel_name": "恒生銀行 Hang Seng Bank",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "999558",
+      "display": "999,558 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCSIfcoM9kmyjil_IU5IC_gA",
+      "name": "恒生銀行 Hang Seng Bank",
+      "subscribers_display": "33K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu2v136h0005bn7cygpkh967",
+  "youtube_id": "lS1rj3VjXYU",
+  "source_url": "https://www.youtube.com/watch?v=lS1rj3VjXYU",
+  "retrieved_at_utc": "2026-11-09T12:01:57.532195+00:00",
+  "views": 6548371,
+  "likes": 11,
+  "comments": null,
+  "channel_id": "UCuVp1SVmuRD0-ADZ7AFdhyw",
+  "subscriber_count_display": "25.5K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "dfac15729b7e09a2e70e77c96f920571df46e6efdbd8ea8a3756e870a655a0ac",
+  "platform_title": "【李錦記 快趣煮醬料包系列】真心方便 真心好味",
+  "channel_name": "leekumkeekitchen",
+  "likes_display": "like this video along with 11 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "6548371",
+      "display": "6,548,371 views"
+    },
+    "likes_accessibility": "like this video along with 11 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCuVp1SVmuRD0-ADZ7AFdhyw",
+      "name": "leekumkeekitchen",
+      "subscribers_display": "25.5K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

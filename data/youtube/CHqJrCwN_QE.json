@@ -1,0 +1,40 @@
+{
+  "video_id": "cmt3q08mg0005bnawpa8ty5ye",
+  "youtube_id": "CHqJrCwN_QE",
+  "source_url": "https://www.youtube.com/watch?v=CHqJrCwN_QE",
+  "retrieved_at_utc": "2026-11-09T12:01:17.984766+00:00",
+  "views": 5765990,
+  "likes": 17,
+  "comments": null,
+  "channel_id": "UCYassnxj-M1niKCNIaaRPWw",
+  "subscriber_count_display": "45.2K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "bf582383ffbddfe6dd80deeeb335ebc801914430344988a2426eac49b2292325",
+  "platform_title": "【滙豐Premier Elite｜洞悉環球市場先機，盡佔全球財富機遇】",
+  "channel_name": "HSBC Hong Kong",
+  "likes_display": "like this video along with 17 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "5765990",
+      "display": "5,765,990 views"
+    },
+    "likes_accessibility": "like this video along with 17 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCYassnxj-M1niKCNIaaRPWw",
+      "name": "HSBC Hong Kong",
+      "subscribers_display": "45.2K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

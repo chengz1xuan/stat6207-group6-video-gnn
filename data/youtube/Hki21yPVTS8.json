@@ -1,0 +1,40 @@
+{
+  "video_id": "cmsy0fmgu0028bnn8lr8uwa1j",
+  "youtube_id": "Hki21yPVTS8",
+  "source_url": "https://www.youtube.com/watch?v=Hki21yPVTS8",
+  "retrieved_at_utc": "2026-11-09T12:01:23.899932+00:00",
+  "views": 4141353,
+  "likes": 7,
+  "comments": null,
+  "channel_id": "UCYassnxj-M1niKCNIaaRPWw",
+  "subscriber_count_display": "45.2K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "cbca384b30523ee9eea838918c968c58a57d4ae354700a87a0e775adaba4e7ef",
+  "platform_title": "【滙豐保險呈獻｜一份選擇 成就更多財富可能】",
+  "channel_name": "HSBC Hong Kong",
+  "likes_display": "like this video along with 7 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "4141353",
+      "display": "4,141,353 views"
+    },
+    "likes_accessibility": "like this video along with 7 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCYassnxj-M1niKCNIaaRPWw",
+      "name": "HSBC Hong Kong",
+      "subscribers_display": "45.2K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

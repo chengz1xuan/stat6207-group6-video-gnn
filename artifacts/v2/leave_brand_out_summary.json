@@ -1,0 +1,29 @@
+{
+  "models": {
+    "Pooled Ridge": {
+      "brands": 14,
+      "macro_log_MAE": 2.144740610478422,
+      "macro_log_RMSE": 2.5634884550769685,
+      "macro_Spearman": 0.26238845740725436
+    },
+    "Pooled MLP": {
+      "brands": 14,
+      "macro_log_MAE": 2.187865851791499,
+      "macro_log_RMSE": 2.61181050051284,
+      "macro_Spearman": 0.24106419895893577
+    },
+    "Subgraph structural": {
+      "brands": 14,
+      "macro_log_MAE": 2.1364182457648417,
+      "macro_log_RMSE": 2.58644599480192,
+      "macro_Spearman": 0.2590359828141783
+    },
+    "Subgraph + similarity": {
+      "brands": 14,
+      "macro_log_MAE": 2.1877678359124912,
+      "macro_log_RMSE": 2.63308532727446,
+      "macro_Spearman": 0.23770139634801282
+    }
+  },
+  "protocol": "Each brand held out entirely. Fixed alpha=100 / weight_decay=.1; inner group holdout chooses epochs, then refit other brands. No held-out brand labels used for preprocessing/stopping. Not tuned on main outer testing results."
+}

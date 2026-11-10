@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu2ws9bi0014bn60h6tzjeme",
+  "youtube_id": "adUW1gLM0mo",
+  "source_url": "https://www.youtube.com/watch?v=adUW1gLM0mo",
+  "retrieved_at_utc": "2026-11-09T12:01:47.262401+00:00",
+  "views": 355950,
+  "likes": 144,
+  "comments": null,
+  "channel_id": "UCDF__e4OyxESzW1snu1i0Bg",
+  "subscriber_count_display": "161K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "a2f2f803b68c1dfd3225e86147dfa0f84a578b5db89d7b22b70de58aa784dbc8",
+  "platform_title": "Good Morning Europe! Freshly Ready for Your Trip | 煥然晨采 遊歷歐洲從早上開始",
+  "channel_name": "cathaypacific",
+  "likes_display": "like this video along with 144 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "355950",
+      "display": "355,950 views"
+    },
+    "likes_accessibility": "like this video along with 144 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCDF__e4OyxESzW1snu1i0Bg",
+      "name": "cathaypacific",
+      "subscribers_display": "161K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

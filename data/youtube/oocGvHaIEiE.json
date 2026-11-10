@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvbtlkpb0012bnuob0wm8e7h",
+  "youtube_id": "oocGvHaIEiE",
+  "source_url": "https://www.youtube.com/watch?v=oocGvHaIEiE",
+  "retrieved_at_utc": "2026-11-09T12:02:03.246761+00:00",
+  "views": null,
+  "likes": null,
+  "comments": null,
+  "channel_id": null,
+  "subscriber_count_display": null,
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "no_exact_view_count",
+  "http_status": 200,
+  "response_sha256": "678c2aa6bee9b9c3f5a47e1aa2d541ac52abbc4df81ce96e1de242fd01f2d52c",
+  "platform_title": "",
+  "channel_name": "",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": null,
+      "display": ""
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "",
+    "channel": {
+      "id": null,
+      "name": "",
+      "subscribers_display": null
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

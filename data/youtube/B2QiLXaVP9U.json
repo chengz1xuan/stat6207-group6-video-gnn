@@ -1,0 +1,40 @@
+{
+  "video_id": "cmrzynj42000abnr8fpm7o1z0",
+  "youtube_id": "B2QiLXaVP9U",
+  "source_url": "https://www.youtube.com/watch?v=B2QiLXaVP9U",
+  "retrieved_at_utc": "2026-11-09T12:01:16.519290+00:00",
+  "views": 1481545,
+  "likes": 83,
+  "comments": null,
+  "channel_id": "UCF4O7FcQ_xeXIRhYvR_vFog",
+  "subscriber_count_display": "65.8K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "48fe9167fe892f14cd44df50402c0bc1c36993504fabe260b6a13db789fb02b5",
+  "platform_title": "【WOW🫨! Legendary soccer stars ⚽️🌟 gather at McDonald's for an 18-piece McNugget meal🐔⁉️】",
+  "channel_name": "McDonaldsHK",
+  "likes_display": "like this video along with 83 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1481545",
+      "display": "1,481,545 views"
+    },
+    "likes_accessibility": "like this video along with 83 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCF4O7FcQ_xeXIRhYvR_vFog",
+      "name": "McDonaldsHK",
+      "subscribers_display": "65.8K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

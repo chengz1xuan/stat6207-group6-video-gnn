@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc4od1x0012bn008i73bk38",
+  "youtube_id": "iHipWYVjM5Q",
+  "source_url": "https://www.youtube.com/watch?v=iHipWYVjM5Q",
+  "retrieved_at_utc": "2026-11-09T12:01:53.418380+00:00",
+  "views": 767396,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCbv_6SSiwvl7fLoXg4usdWA",
+  "subscriber_count_display": "1.92K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "5eed49c5a4dfc0ca90d0ddac5f13465b294a16dc58f7797af1983fc51f371013",
+  "platform_title": "2023 美心月餅 Reunite! 從心從新 快樂團圓 - 廣告 – 30秒",
+  "channel_name": "美心食品 Maxim’s Products",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "767396",
+      "display": "767,396 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCbv_6SSiwvl7fLoXg4usdWA",
+      "name": "美心食品 Maxim’s Products",
+      "subscribers_display": "1.92K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

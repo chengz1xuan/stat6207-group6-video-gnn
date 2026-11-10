@@ -1,0 +1,20 @@
+{
+  "python": "/opt/anaconda3/envs/stat6207/bin/python",
+  "torch": "2.14.0",
+  "torch_geometric": "2.8.1",
+  "source_hash": "f0f71017f1939aae49d850ae0bdfe0ece9f38a495e60939714e8a9d331e118e3",
+  "snapshot_hash": "0f5f30e307b93983da6afdd165ed49e3dbfe9466c2eeff7227b1bb2c5dcb6e16",
+  "training_target": "MSE on training-standardized ln(1+views)",
+  "models": [
+    "Mean",
+    "Metadata Ridge",
+    "Pooled Ridge",
+    "Pooled MLP",
+    "Subgraph structural",
+    "Subgraph + similarity",
+    "Node structural",
+    "Node + similarity"
+  ],
+  "snapshot_selection": "Only fresh exact YouTube views; unavailable videos excluded, never approximated",
+  "known_limit": "Earlier v1 used archived labels; v2 is a new frozen snapshot and redesigned experiment, not an untouched external holdout. Hyperparameter tuning remains within v2 training only."
+}

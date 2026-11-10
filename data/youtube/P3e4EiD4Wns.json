@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvc5npif003cbn0036cb4swn",
+  "youtube_id": "P3e4EiD4Wns",
+  "source_url": "https://www.youtube.com/watch?v=P3e4EiD4Wns",
+  "retrieved_at_utc": "2026-11-09T12:01:33.312455+00:00",
+  "views": 319753,
+  "likes": 28,
+  "comments": null,
+  "channel_id": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+  "subscriber_count_display": "10.2K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "cc517cca3711f8672e90537031f6ca956804c2dc2722159127e5063b41ebfc6f",
+  "platform_title": "大家樂 一哥酸辣焗番茄雞扒飯 精華片段",
+  "channel_name": "大家樂 CafedeCoralHK",
+  "likes_display": "like this video along with 28 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "319753",
+      "display": "319,753 views"
+    },
+    "likes_accessibility": "like this video along with 28 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCIQZpBMs8zNn-g9Y7TzM8hw",
+      "name": "大家樂 CafedeCoralHK",
+      "subscribers_display": "10.2K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

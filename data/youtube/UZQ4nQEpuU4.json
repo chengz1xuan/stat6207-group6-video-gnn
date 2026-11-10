@@ -1,0 +1,40 @@
+{
+  "video_id": "cmsy03r67001mbnn8kl8c7cb4",
+  "youtube_id": "UZQ4nQEpuU4",
+  "source_url": "https://www.youtube.com/watch?v=UZQ4nQEpuU4",
+  "retrieved_at_utc": "2026-11-09T12:01:37.336902+00:00",
+  "views": 3310162,
+  "likes": 156,
+  "comments": null,
+  "channel_id": "UCYassnxj-M1niKCNIaaRPWw",
+  "subscriber_count_display": "45.2K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "4e43a66d83236b29e2e1e6108e18eb5f3c23a415ded4d81bf0feb69ba876692d",
+  "platform_title": "【滙豐保險｜人人擁有兌現承諾自由】",
+  "channel_name": "HSBC Hong Kong",
+  "likes_display": "like this video along with 156 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "3310162",
+      "display": "3,310,162 views"
+    },
+    "likes_accessibility": "like this video along with 156 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCYassnxj-M1niKCNIaaRPWw",
+      "name": "HSBC Hong Kong",
+      "subscribers_display": "45.2K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

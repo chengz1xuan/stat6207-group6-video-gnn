@@ -1,0 +1,40 @@
+{
+  "video_id": "cmu2we1ju0005bn60fk3e908r",
+  "youtube_id": "CeeE8TmGsY4",
+  "source_url": "https://www.youtube.com/watch?v=CeeE8TmGsY4",
+  "retrieved_at_utc": "2026-11-09T12:01:18.975123+00:00",
+  "views": 203145,
+  "likes": 39,
+  "comments": null,
+  "channel_id": "UCDF__e4OyxESzW1snu1i0Bg",
+  "subscriber_count_display": "161K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "539a6a61c81ad43b682750772a83f190aa36cafd7e27b01405ac31c7ced9b5b7",
+  "platform_title": "We Know How: Safeguarding Valuable Shipments with Vigilance | We Know How: 嚴密保安，運送貴重物品",
+  "channel_name": "cathaypacific",
+  "likes_display": "like this video along with 39 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "203145",
+      "display": "203,145 views"
+    },
+    "likes_accessibility": "like this video along with 39 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCDF__e4OyxESzW1snu1i0Bg",
+      "name": "cathaypacific",
+      "subscribers_display": "161K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "video_id": "cmsxzlj93000tbnn87ta1t5gl",
+  "youtube_id": "N1XdXPMy0vQ",
+  "source_url": "https://www.youtube.com/watch?v=N1XdXPMy0vQ",
+  "retrieved_at_utc": "2026-11-09T12:01:30.016387+00:00",
+  "views": 688046,
+  "likes": 11,
+  "comments": null,
+  "channel_id": "UCYassnxj-M1niKCNIaaRPWw",
+  "subscriber_count_display": "45.2K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "3ae52b3063ff4235f3f7fc1b983cb670dd4d3edf27ce2972e644bd152827fed9",
+  "platform_title": "HSBC HK App 升級 ‧ 就你⬆️｜手機認證篇📱",
+  "channel_name": "HSBC Hong Kong",
+  "likes_display": "like this video along with 11 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "688046",
+      "display": "688,046 views"
+    },
+    "likes_accessibility": "like this video along with 11 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCYassnxj-M1niKCNIaaRPWw",
+      "name": "HSBC Hong Kong",
+      "subscribers_display": "45.2K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

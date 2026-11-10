@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvbtrn8y0021bnuoxlb9h1pr",
+  "youtube_id": "8QDPwJDJ11s",
+  "source_url": "https://www.youtube.com/watch?v=8QDPwJDJ11s",
+  "retrieved_at_utc": "2026-11-09T12:01:13.890754+00:00",
+  "views": 2247762,
+  "likes": 5,
+  "comments": null,
+  "channel_id": "UCtOHIOjPlO12F7XghNsJzCg",
+  "subscriber_count_display": "18.1K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "3a700e24a6ebae67544a26fe794435a465eb0d62aefcc25f06d4834ae9fc36d4",
+  "platform_title": "【萬寧祝你日日好狀態！Let’s Go Well！】",
+  "channel_name": "萬寧Mannings",
+  "likes_display": "like this video along with 5 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "2247762",
+      "display": "2,247,762 views"
+    },
+    "likes_accessibility": "like this video along with 5 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCtOHIOjPlO12F7XghNsJzCg",
+      "name": "萬寧Mannings",
+      "subscribers_display": "18.1K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

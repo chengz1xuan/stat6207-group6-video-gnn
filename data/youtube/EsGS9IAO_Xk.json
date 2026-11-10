@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvbtny5n001pbnuobvaxpn9c",
+  "youtube_id": "EsGS9IAO_Xk",
+  "source_url": "https://www.youtube.com/watch?v=EsGS9IAO_Xk",
+  "retrieved_at_utc": "2026-11-09T12:01:20.701433+00:00",
+  "views": 1400173,
+  "likes": 10,
+  "comments": null,
+  "channel_id": "UCcQ5WlinXufbKizIJHlI4LQ",
+  "subscriber_count_display": "13.7K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "3f7dd751ba196b685b37707c78623ca6f1f878fe1b0dcb67e46947992338ecb3",
+  "platform_title": "耐用的好品質｜IKEA Hong Kong",
+  "channel_name": "IKEAHongKong",
+  "likes_display": "like this video along with 10 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1400173",
+      "display": "1,400,173 views"
+    },
+    "likes_accessibility": "like this video along with 10 other people",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCcQ5WlinXufbKizIJHlI4LQ",
+      "name": "IKEAHongKong",
+      "subscribers_display": "13.7K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

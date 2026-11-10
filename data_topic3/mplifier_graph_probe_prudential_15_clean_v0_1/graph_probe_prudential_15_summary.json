@@ -1,0 +1,86 @@
+{
+  "dataset_name": "prudential_15",
+  "source_export": "ad-reference-vault-export-Prudential.json",
+  "source_export_generated_at": "2026-10-17T07:59:56.078Z",
+  "reference_audit": {
+    "selected_references": 15,
+    "official_brand_uploads": 15,
+    "third_party_uploads": 0,
+    "unresolved_uploader_matches": 0,
+    "final_clean_references": 15,
+    "official_registry_author": "Prudential Hong Kong Limited 香港保誠保險",
+    "official_registry_channel_ids": [
+      "@prudentialhk",
+      "UC0FcaFJVwvfwIRgPJjFJaKQ"
+    ],
+    "uploader_channel_distributions": {
+      "Prudential Hong Kong Limited 香港保誠保險 | @prudentialhk": 3,
+      "Prudential Hong Kong Limited 香港保誠保險 | UC0FcaFJVwvfwIRgPJjFJaKQ": 12
+    },
+    "excluded_records": [],
+    "unresolved_records": []
+  },
+  "graph_counts": {
+    "video_nodes": 15,
+    "aspect_nodes": 659,
+    "evidence_nodes": 804,
+    "candidate_edges": 3073,
+    "edge_type_counts": {
+      "video_has_aspect": 659,
+      "video_has_evidence": 804,
+      "aspect_supported_by_evidence": 408,
+      "same_brand": 105,
+      "same_author": 105,
+      "same_cta_explicitness": 39,
+      "same_pacing": 79,
+      "same_safety_status": 105,
+      "same_creative_mechanic": 35,
+      "same_structure_type": 18,
+      "same_evidence_mode": 47,
+      "similar_aspect_candidate": 669
+    }
+  },
+  "distributions": {
+    "brand_family": {
+      "Prudential": 15
+    },
+    "author": {
+      "Prudential Hong Kong Limited 香港保誠保險": 15
+    },
+    "brand_raw": {
+      "Prudential": 3,
+      "PRUDENTIAL": 4,
+      "Prudential 英國保誠": 3,
+      "PRUDENTIAL 英國保誠": 1,
+      "PRUDENTIAL 保誠保險": 4
+    },
+    "creative_mechanic": {
+      "Offer led": 8,
+      "Music / mood led": 1,
+      "Testimonial led": 2,
+      "Announcement / information led": 4
+    },
+    "structure_type": {
+      "Offer led": 3,
+      "Music / mood led": 2,
+      "Testimonial led": 2,
+      "Announcement / information led": 3,
+      "Product proof led": 5
+    },
+    "evidence_mode": {
+      "mixed": 10,
+      "music_visual_led_sparse_dialogue": 2,
+      "dialogue_led": 2,
+      "endcard_led": 1
+    }
+  },
+  "quality_notes": [
+    "Prudential Hong Kong official website lists the Prudential Hong Kong Limited YouTube channel; YouTube channel UC0FcaFJVwvfwIRgPJjFJaKQ identifies handle @prudentialhk. Matching requires both this author and one known channel identity.",
+    "Uploader decision uses configured verified channel and author metadata; it is not proof of permission or copyright ownership.",
+    "Official-uploader inclusion does not override per-video analysis warnings or creative-quality caveats.",
+    "Distinct YouTube URLs and source reference IDs are required. Missing uploader data fail closed.",
+    "Sub-brand defaults conservatively to parent family; campaign/product is retained separately; do not invent sub-brand taxonomy.",
+    "Similarity and nonexact evidence links are candidates, not validated ground-truth labels or GNN training output."
+  ],
+  "research_positioning": "Graph probe / graph-readiness / clustering test only; no production GNN."
+}

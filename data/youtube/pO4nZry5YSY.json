@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvbtm45f0017bnuottzwhp9k",
+  "youtube_id": "pO4nZry5YSY",
+  "source_url": "https://www.youtube.com/watch?v=pO4nZry5YSY",
+  "retrieved_at_utc": "2026-11-09T12:02:04.561188+00:00",
+  "views": 2058922,
+  "likes": 35,
+  "comments": null,
+  "channel_id": "UCcQ5WlinXufbKizIJHlI4LQ",
+  "subscriber_count_display": "13.7K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "15b60199ce0e0aec58391b624918d4e157314c58e5916cfab82600165b068f88",
+  "platform_title": "IKEA 耐得住的好品質【陪你很久篇】+ 春日好禮｜ IKEA Hong Kong",
+  "channel_name": "IKEAHongKong",
+  "likes_display": "like this video along with 35 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "2058922",
+      "display": "2,058,922 views"
+    },
+    "likes_accessibility": "like this video along with 35 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCcQ5WlinXufbKizIJHlI4LQ",
+      "name": "IKEAHongKong",
+      "subscribers_display": "13.7K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

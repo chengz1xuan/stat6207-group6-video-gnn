@@ -1,0 +1,40 @@
+{
+  "video_id": "cmt3rfg5l0005bnlsdvg6ka9f",
+  "youtube_id": "pDrZk2xigIg",
+  "source_url": "https://www.youtube.com/watch?v=pDrZk2xigIg",
+  "retrieved_at_utc": "2026-11-09T12:02:04.218718+00:00",
+  "views": 6269150,
+  "likes": null,
+  "comments": null,
+  "channel_id": "UCSIfcoM9kmyjil_IU5IC_gA",
+  "subscriber_count_display": "33K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "44381a7fc3066f75d3d85d5f5a612b3c333b6e9d819a4a27db2c3e045fdcaa39",
+  "platform_title": "[恒生信用卡 x 森美小儀 x 洪嘉豪 餐飲篇] 立即登記簽賬再賺額外高達$2,800 +FUN Dollars🤩 贏在使錢前！| 恒生銀行",
+  "channel_name": "恒生銀行 Hang Seng Bank",
+  "likes_display": null,
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "6269150",
+      "display": "6,269,150 views"
+    },
+    "likes_accessibility": "",
+    "comments_count_text": "",
+    "channel": {
+      "id": "UCSIfcoM9kmyjil_IU5IC_gA",
+      "name": "恒生銀行 Hang Seng Bank",
+      "subscribers_display": "33K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}

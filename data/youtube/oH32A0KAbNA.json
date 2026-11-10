@@ -1,0 +1,40 @@
+{
+  "video_id": "cmvbu2lzu003zbnuozdbpcim0",
+  "youtube_id": "oH32A0KAbNA",
+  "source_url": "https://www.youtube.com/watch?v=oH32A0KAbNA",
+  "retrieved_at_utc": "2026-11-09T12:02:01.513753+00:00",
+  "views": 1305636,
+  "likes": 24,
+  "comments": null,
+  "channel_id": "UCtOHIOjPlO12F7XghNsJzCg",
+  "subscriber_count_display": "18.1K subscribers",
+  "method": "YouTube public watch HTML embedded metadata; no authentication",
+  "status": "ok",
+  "http_status": 200,
+  "response_sha256": "fb83c50bd8df406330cc56f6553c3ada0877faddaec31d2a885fc29b48f2e902",
+  "platform_title": "【萬寧一萬種健康．日常 - 髮量拯救！】",
+  "channel_name": "萬寧Mannings",
+  "likes_display": "like this video along with 24 other people",
+  "platform_publish_date": null,
+  "playability_status": "LOGIN_REQUIRED",
+  "playability_reason": "Sign in to confirm you’re not a bot",
+  "evidence": {
+    "views": {
+      "originalViewCount": "1305636",
+      "display": "1,305,636 views"
+    },
+    "likes_accessibility": "like this video along with 24 other people",
+    "comments_count_text": "Comments",
+    "channel": {
+      "id": "UCtOHIOjPlO12F7XghNsJzCg",
+      "name": "萬寧Mannings",
+      "subscribers_display": "18.1K subscribers"
+    },
+    "paths": {
+      "views": "ytInitialData.videoPrimaryInfoRenderer.viewCount.videoViewCountRenderer.originalViewCount",
+      "likes": "videoPrimaryInfoRenderer.likeButtonViewModel.accessibilityText",
+      "comments": "commentsHeaderRenderer.countText",
+      "channel": "videoOwnerRenderer"
+    }
+  }
+}
