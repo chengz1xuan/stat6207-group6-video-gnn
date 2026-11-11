@@ -1,13 +1,16 @@
 # Isolated campaign, text, graph and evaluation revision
 
 The preparation tools use Python 3.10+ and the standard library only. They are
-offline and never modify `src`, the original data, `artifacts\v2`, or the app.
-Training is a separate, explicit operation with the existing scientific packages.
+offline and never modify the original data or `artifacts\v2`.
+Training is a separate, explicit operation. The App can now select completed,
+isolated exploratory experiments without replacing the original results.
 
 ## 本次修改解决的潜在问题
 
-本说明独立维护于 `Scripts\README.md`。根目录 `README.md`、原有 `src\`、
-数据、模型和 `artifacts\v2\` 均保持不变。
+本说明独立维护于 `Scripts\README.md`。根目录 `README.md`、
+`src\pipeline.py`、`src\revision.py`、原始数据、原模型和 `artifacts\v2\`
+均保持不变。应用接入修改位于 `app.py`、`src\model_service.py`，并新增
+`src\experiment_results.py`。
 
 | 潜在问题 | 本次处理 | 仍需注意 |
 |---|---|---|
@@ -17,14 +20,15 @@ Training is a separate, explicit operation with the existing scientific packages
 | hook 与主信息完全重复，proof 与价值主张重复，摘要又被当作独立证据 | 清空重复 hook 并标记原因，去掉重复 proof；独立证据只保留描述、对白、屏幕文字和片尾文字等观察来源 | 不补造新 hook、proof 或证据；源提取仍可能有噪声 |
 | 启发式支持边可能把价格、产品主张连接到不相关对白等内容 | 将未审查的启发式支持边移入审查清单，保留来源和排除理由；仅按既定规则保留直接观察支持边 | 保留下来的边也不宣称全部经过人工语义确认，缺少支持会明确报告 |
 | 源文件含 NUL、历史点赞评论与新快照不一致，可能污染读取或混淆字段 | 只在副本中清理 NUL；核对 URL、精确播放量和带时区的采集时间；区分刷新字段和历史归档字段 | 不重新采集，不宣称重新核实了平台发布日期；乱码名称及可疑年份仍保留待审 |
-| 修正后继续沿用旧划分、旧模型或旧过滤函数，会使新结果名不副实 | 新建整组划分；在隔离工作区使用修正后的文本策略重新拟合和评估，不复用旧检查点 | 完整训练必须显式启动；新旧样本、图和划分不同，分数不能作为配对提升比较 |
-| 修正流程可能意外覆盖原始文件，或使用已被修改的中间产物 | 输出限定在新的隔离目录，拒绝覆盖已有运行目录，并校验输入、输出和准备策略的哈希 | 生成的数据与评估结果不随本次代码推送上传，也不会自动更新应用或正式报告 |
+| 修正后继续沿用旧划分、旧模型或旧过滤函数，会使新结果名不副实 | 新建整组划分；隔离重新拟合和评估；App 显式选择结果版本，新模型加载和编辑预测沿用修正后的文本策略 | 完整训练必须显式启动；新旧样本、图和划分不同，分数不能作为配对提升比较 |
+| 修正流程可能意外覆盖原始文件，或使用已被修改的中间产物 | 输出限定在新的隔离目录，拒绝覆盖已有运行目录，并校验输入、输出和准备策略的哈希 | 生成的数据与评估结果不会随代码自动上传，也不会覆盖默认应用结果或正式报告 |
+| App 显示旧样本数、旧下载文件或上一次实验的预测，却加载了新模型 | 按所选实验动态展示样本、划分、案例和指标；切换时清除预测与编辑状态，原版 PDF 只在原版模式提供 | 默认仍为原版；新实验必须完整导出并通过哈希校验后才出现在选择器 |
 
-**交付范围：**本次交付的是修正与重新评估脚本及独立说明。此前仅生成过
-12 条视频的样本，并运行训练均值的轻量流程检查；尚未执行全量修正导出、
-全量 GNN 训练或全量评估。因此本说明不宣称全部数据问题已人工解决，
-也不提供修正后模型优于旧模型的结论。所有导出仍标记为
-`training_ready: false`，完整评估需要明确接受待审限制。
+**交付范围：**包含离线修正、完整重新评估和 App 版本切换。某次运行是否已完成，
+以该运行目录中的 `evaluation\summary.json` 和最后发布的
+`evaluation\workspace\artifacts\v2\app_manifest.json` 为准；仅有训练中间文件不代表完成。
+本流程不宣称全部数据问题已人工解决，也不据新旧分数宣称模型改进。
+所有导出仍标记为 `training_ready: false`，完整评估需要明确接受待审限制。
 
 | 文件 | 职责 |
 |---|---|
@@ -34,6 +38,73 @@ Training is a separate, explicit operation with the existing scientific packages
 | `graph_revision.py` | 从原始来源重建图并记录证据、节点和边的处理 |
 | `evaluate_revision.py` | 默认只读计划、轻量均值检查及显式完整重新评估 |
 | `test_isolate_revision.py`、`test_revision_workflow.py` | 隔离、分组、文本、图、清单校验和评估入口的回归检查 |
+| `run_experiment.py` | 一键执行全量准备、完整重新评估及 App 结果发布；默认仅显示计划 |
+| `requirements-experiment.txt` | 独立实验环境的依赖范围，不替代原项目版本清单 |
+| `test_app_bundles.py` | 完成标记、结果发现、哈希防篡改与显式执行保护的回归检查 |
+| `validate_app_experiment.py` | 核对全队列推理一致性、旧模型预测及真实 Streamlit 切换 |
+
+## 0. 完整实验与 App 接入
+
+在仓库根目录准备独立环境。下面使用已安装的 `uv` 和 Python 3.12，
+不修改全局 Python 环境：
+
+```powershell
+uv venv --python 3.12 .venv
+uv pip install --python .venv\Scripts\python.exe --torch-backend cpu -r Scripts\requirements-experiment.txt
+```
+
+使用一个**尚不存在**的输出目录完成整个实验：
+
+```powershell
+.\.venv\Scripts\python.exe Scripts\run_experiment.py --output artifacts\isolated_revision\full-app-v3 --run --acknowledge-exploratory
+```
+
+不带 `--run` 时仅显示执行计划，不导出数据或训练。显式执行依次完成：
+全量离线核对与图重建、母活动整组划分、八模型三折训练内调参与重训、
+测试指标及 2,000 次活动组 bootstrap、折外残差及种子敏感性、
+四模型逐品牌留出压力测试，以及新模型、预测案例、App 数据和来源记录导出。
+中间任何步骤失败都返回非零退出码，不将未完成结果发布给 App。
+
+完成后核对实际推理与界面切换，并启动应用：
+
+```powershell
+.\.venv\Scripts\python.exe Scripts\validate_app_experiment.py --input artifacts\isolated_revision\full-app-v3 --check-app
+.\.venv\Scripts\python.exe -m streamlit run app.py
+```
+
+在左侧 **结果版本** 中选择“探索性修正实验 · full-app-v3”。应用启动默认
+保留原版，不合并两套结果。新模式展示实际纳入的训练/测试规模、待审隔离提示、
+新模型指标、重建图和重新生成的案例；下载指标也对应当前选择。
+切回原版不会保留新模式的预测或表单编辑。
+
+`src\model_service.py` 对新检查点使用独立的特征恢复策略，确保 `like`、
+`share` 修正同时用于训练和在线预测，而不修改旧模型的特征方法。
+新结果必须具有完整的 `app_manifest.json`，且检查点、指标、案例、输入清单、
+评估来源和文本策略哈希一致；校验失败会明确报错，不偷偷回退到旧结果。
+完整实验的实际依赖版本记录在 `evaluation\provenance.json`；
+推理与界面核验记录在 `evaluation\app_validation.json`。
+
+### 本次实际实验：full-app-v3
+
+2026-11-10 在当前工作区完成全量离线准备、八模型评估及 14 个品牌的
+逐品牌留出压力测试。214 条视频中，161 条训练、40 条测试、13 条待审隔离。
+App 的 201 条纳入视频预测与训练端逐条一致；原版预测保持不变。
+
+| 当前测试集模型 | Log MAE | Log RMSE |
+|---|---:|---:|
+| Mean | 2.252 | 2.713 |
+| Metadata Ridge | 1.891 | 2.483 |
+| Subgraph structural | 2.165 | 2.656 |
+| Subgraph + similarity（训练内选择的主子图模型） | 2.180 | 2.644 |
+
+该测试划分下，主子图 GNN **没有优于 Metadata Ridge**。这些值属于新的
+探索性样本/图策略/划分，不能与旧实验分数直接解释为性能提升或下降。
+完整八模型指标、区间、折外预测和跨品牌结果均在本地运行目录中。
+
+`full-app-v3` 为本机生成的运行目录，受 Git 忽略规则保护，不随代码自动上传。
+新克隆的仓库只会显示原版，须先运行上述完整流程生成新结果。
+当前工作区已存在该目录，重复实验时必须改用新的 `--output` 名称，
+并在验证命令中使用相同的新名称。
 
 ## 1. Prepare corrected data (sample by default)
 
@@ -163,8 +234,8 @@ the old data-loading, graph-building or split-selection entry points.
 
 Evaluation refuses modified exports or changed preparation policies. No existing
 checkpoint is reused. Old and new metrics have different samples/graphs/splits:
-they are **not a paired improvement comparison**. These outputs do not update
-the app, final PDF, old cases or reported scores.
+they are **not a paired improvement comparison**. These outputs become a separate selectable App experiment only after all exports
+complete. They never replace the original default, final PDF, old cases or scores.
 
 ## Export files
 
@@ -180,6 +251,10 @@ the app, final PDF, old cases or reported scores.
 | `video_pairs.json` | Source video relations restricted to eligible references |
 | `edge_changes.csv` | Excluded/review-pending support edges and reasons |
 | `source_sample\` | Cleaned archival source rows, not the revised model graph |
+| `evaluation\summary.json` | Completed training/evaluation summary |
+| `evaluation\provenance.json` | Prepared manifest hash, training source hashes and package versions |
+| `evaluation\workspace\artifacts\v2\app_manifest.json` | Completion marker and hashes for App discovery |
+| `evaluation\app_validation.json` | Explicitly executed inference parity and optional App checks |
 
 Generated runs are ignored by Git. Never paste sample partitions into the full
 cohort, or replace `data\processed`/`artifacts\v2` with isolated outputs.
@@ -192,4 +267,6 @@ python -m unittest discover -s Scripts -p "test_*.py"
 
 Tests cover campaign unions/quarantine, ordinary like/share text, real source
 regressions, graph reconstruction, evaluation source isolation, train-only smoke
-prediction, manifest tampering and overwrite guards. They do not train a GNN.
+prediction, manifest tampering, completed-bundle discovery and overwrite guards.
+They do not train a GNN. `validate_app_experiment.py` additionally requires a
+successfully completed full experiment and the scientific/UI environment.

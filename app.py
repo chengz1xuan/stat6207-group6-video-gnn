@@ -6,6 +6,7 @@ sys.path.insert(0,str(ROOT/'src'));sys.path.insert(0,str(ROOT/'.project-deps'))
 import pandas as pd
 import streamlit as st
 from model_service import ModelService
+from experiment_results import available_experiments
 from pipeline import CAT,TEXT
 
 st.set_page_config(page_title='VideoGraph Lab · Group 6',page_icon='◈',layout='wide')
@@ -14,31 +15,56 @@ st.markdown('''<style>.block-container{padding-top:2rem;max-width:1450px}h1{lett
 [data-testid="stMetricValue"]{font-size:1.8rem}div[data-testid="stTabs"] button{font-size:1rem}</style>''',unsafe_allow_html=True)
 
 @st.cache_resource
-def load_service(checkpoint_mtime):
-    return ModelService()
+def load_service(folder, checkpoint_mtime):
+    return ModelService(folder)
 
-service=load_service((ROOT/'artifacts/v2/primary_gnn.pt').stat().st_mtime_ns)
+try:
+    experiments=available_experiments()
+except (OSError,ValueError,KeyError) as error:
+    st.error(f'实验结果校验失败：{error}')
+    st.stop()
+labels=dict(experiments)
+with st.sidebar:
+    folder=st.selectbox('结果版本',list(labels),format_func=labels.get,key='experiment_folder')
+if st.session_state.get('active_experiment')!=folder:
+    for key in list(st.session_state):
+        if key in {'last_prediction','graph_brand','graph_video','inspect_node',
+                   'prediction_reference','graph_similarity'} or key.startswith(('edit_','duration_','age_','text_')):
+            del st.session_state[key]
+    st.session_state['active_experiment']=folder
+service=load_service(folder,(Path(folder)/'primary_gnn.pt').stat().st_mtime_ns)
 d=service.results;m=d['metrics'];selected=m['selected_primary_gnn'];r=m['test'][selected]
+video_count=len(d['videos']);brand_count=len({v['brand_family'] for v in d['videos']})
+split_label=f'{m["train_size"]} / {m["test_size"]}'
 st.caption('STAT6207 · APPLIED DEEP LEARNING · GROUP 06')
 st.title('视频创意图实验室')
 st.write('用真实数据检验创意关系，通过训练好的 GNN 探索新视频设置。')
+if service.exploratory:
+    st.warning(f'探索性修正实验：{service.manifest["split_counts"]["quarantine"]} 条待审视频整组隔离，'
+               '不参与训练、验证或评分。母活动与证据尚非完整人工核验；不能与旧分数作配对提升比较。')
+else:
+    st.info('当前为原版冻结实验，尚未应用 Scripts 中的活动分组、文本及证据修正。可在左侧切换已完成的新实验。')
 with st.sidebar:
     st.header('实验设置')
     st.write('**本地 Streamlit + Python**')
     st.caption('直接加载本地 PyTorch Geometric 模型与冻结实验数据。')
     st.write('模型：',service.name)
     st.write('目标：ln(1 + views)')
-    st.write('分组划分：171 训练 / 43 测试')
+    st.write(f'分组划分：{m["train_size"]} 训练 / {m["test_size"]} 测试')
     st.caption('3 折调参只使用训练数据；最终在完整训练集重训。')
     st.divider()
-    st.write('数据采集：2026-11-09')
-    st.caption('214 条精确播放量，175 条精确点赞数。评论计数缺失，不代表零。')
-    st.download_button('下载四页 IEEE 报告',(ROOT/'output/pdf/Group6_Final_Report.pdf').read_bytes(),
-                       file_name='Group6_Final_Report.pdf',mime='application/pdf')
+    st.caption(f'当前模型与结果目录：{service.folder.relative_to(ROOT)}')
+    st.caption(f'当前纳入 {video_count} 条视频、{brand_count} 个品牌。计数缺失不代表零。')
+    if service.exploratory:
+        st.download_button('下载修正与待审记录',json.dumps(d['audit'],ensure_ascii=False,indent=2),
+                           file_name='revision_audit.json',mime='application/json')
+    else:
+        st.download_button('下载原版四页 IEEE 报告',(ROOT/'output/pdf/Group6_Final_Report.pdf').read_bytes(),
+                           file_name='Group6_Final_Report.pdf',mime='application/pdf')
 
 cols=st.columns(4)
 for col,label,value in zip(cols,['真实播放量标签','品牌','分组训练 / 测试','主 GNN 测试 Log RMSE'],
-                           ['214','14','171 / 43',f'{r["log_RMSE"]:.3f}']):
+                           [str(video_count),str(brand_count),split_label,f'{r["log_RMSE"]:.3f}']):
     col.metric(label,value)
 results_tab,graph_tab,predict_tab,cases_tab,data_tab=st.tabs(['研究结果','图结构浏览','预测与优化建议','案例与 Storyboard','数据与报告'])
 
@@ -48,12 +74,15 @@ with results_tab:
     frame=pd.DataFrame(m['test']).T.rename_axis('Model').reset_index()
     st.dataframe(frame[['Model','log_MAE','log_RMSE','Spearman','views_MAE']],hide_index=True,width='stretch')
     st.bar_chart(frame.set_index('Model')[['log_RMSE']],color='#186b60',horizontal=True)
-    st.info(f'主子图模型 Log RMSE 为 {r["log_RMSE"]:.3f}，视频节点结构模型为 {m["test"]["Node structural"]["log_RMSE"]:.3f}。更复杂的子图设计未显示稳定优势。')
+    st.info(f'当前主子图模型 Log RMSE 为 {r["log_RMSE"]:.3f}，视频节点结构模型为 {m["test"]["Node structural"]["log_RMSE"]:.3f}。主子图模型由训练集交叉验证选择。')
     ci=d['uncertainty']['test_log_RMSE_95'][selected]
     st.write(f'主模型 campaign-bootstrap 95% 区间：**[{ci[0]:.3f}, {ci[1]:.3f}]**。区间以当前模型、采集和测试划分为条件。')
     st.subheader('跨品牌压力测试 · Leave-one-brand-out')
-    st.dataframe(pd.DataFrame(d['lobo']).T.rename_axis('Model'),width='stretch')
-    st.caption('每次完全留出一个品牌；其余品牌内部选择停止轮次。这里报告 14 个品牌的宏平均，区别于主 80/20 结果。')
+    if d['lobo'] is not None:
+        st.dataframe(pd.DataFrame(d['lobo']).T.rename_axis('Model'),width='stretch')
+        st.caption(f'每次完全留出一个品牌；其余品牌内部选择停止轮次。这里报告 {brand_count} 个品牌的宏平均，区别于主分组划分结果。')
+    else:
+        st.warning('本次实验显式跳过了跨品牌压力测试，没有可展示的跨品牌结果。')
     st.subheader('误差切片与潜在改进')
     st.dataframe(pd.DataFrame(d['slices'])[['slice','n','log_MAE','log_RMSE']],hide_index=True,width='stretch')
     st.write('媒体投放、频道受众、曝光时间、人物吸引力及抽取噪声都可能影响播放量。应补充固定观察窗口、媒体预算和人工核验的 campaign 分组，并扩展独立外部测试集。')
@@ -105,9 +134,9 @@ with predict_tab:
         if reference=='__new__':edited['title']='New advertising brief';edited['video_id']='new-video-example'
         graph=service.query_graph(edited,None if reference=='__new__' else reference)
         result=service.optimize(edited,graph) if optimized else {'base':service.predict(edited,graph)}
-        st.session_state['last_prediction']={'reference':reference,'input':edited,'result':result}
+        st.session_state['last_prediction']={'experiment':folder,'reference':reference,'input':edited,'result':result}
     saved=st.session_state.get('last_prediction')
-    if saved and saved['reference']==reference:
+    if saved and saved.get('experiment')==folder and saved['reference']==reference:
         pred=saved['result']['base'];st.metric('模型预测累计播放量',f'{pred["views"]:,.0f}')
         st.write(f'ln(1 + views) = {pred["log"]:.4f}')
         st.write(f'OOF 残差敏感度范围：**{pred["band"][0]:,.0f} – {pred["band"][1]:,.0f}**')
@@ -129,7 +158,7 @@ with cases_tab:
     c1,c2=st.columns(2);c1.metric('原设置预测',f'{new["base_prediction"]:,.0f}');c2.metric('建议设置预测',f'{new["optimized_prediction"]:,.0f}')
     st.json(new['changes']);st.dataframe(pd.DataFrame(new['storyboard']),hide_index=True,width='stretch')
     st.caption('此案例假定曝光 30 天，没有新上传视频的实测响应；图只由声明输入构建，与完整抽取的训练图存在差异。')
-    st.subheader('六个固定测试案例')
+    st.subheader(f'{len(d["cases"])} 个当前实验测试案例')
     for i,case in enumerate(d['cases'],1):
         with st.expander(f'{i}. {case["brand"]} · {case["title"]}',expanded=i==1):
             st.write('**Brief / objective：**',case['brief_objective'])
@@ -146,10 +175,10 @@ with data_tab:
     snapshot=pd.read_csv(ROOT/'data/youtube/snapshot.csv')
     st.dataframe(snapshot[['youtube_id','views','likes','comments','channel_name','retrieved_at_utc','status']],hide_index=True,width='stretch')
     evidence_id=st.selectbox('查看一条采集证据',snapshot.youtube_id.tolist(),key='source_evidence')
-    st.json(json.loads((ROOT/'data/youtube'/f'{evidence_id}.json').read_text()))
+    st.json(json.loads((ROOT/'data/youtube'/f'{evidence_id}.json').read_text(encoding='utf-8')))
     c1,c2,c3=st.columns(3)
     c1.download_button('下载冻结指标 CSV',(ROOT/'data/youtube/snapshot.csv').read_bytes(),file_name='youtube_snapshot.csv',mime='text/csv')
-    c2.download_button('下载数据字典',(ROOT/'data/processed/DATA_DICTIONARY.md').read_text(),file_name='DATA_DICTIONARY.md',mime='text/markdown')
-    c3.download_button('下载实验指标 JSON',(ROOT/'artifacts/v2/metrics.json').read_bytes(),file_name='metrics.json',mime='application/json')
-    with st.expander('实验与数据字典'):st.markdown((ROOT/'data/processed/DATA_DICTIONARY.md').read_text())
-    st.caption('报告下载位于左侧栏。所有预测均由本机 Python 模型计算。')
+    c2.download_button('下载数据字典',(ROOT/'data/processed/DATA_DICTIONARY.md').read_text(encoding='utf-8'),file_name='DATA_DICTIONARY.md',mime='text/markdown')
+    c3.download_button('下载当前实验指标 JSON',(service.folder/'metrics.json').read_bytes(),file_name='metrics.json',mime='application/json')
+    with st.expander('实验与数据字典'):st.markdown((ROOT/'data/processed/DATA_DICTIONARY.md').read_text(encoding='utf-8'))
+    st.caption('以上采集证据是公共冻结来源，不等于当前实验纳入清单。原版报告仅在原版结果模式提供；所有预测均由本机 Python 模型计算。')

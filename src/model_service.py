@@ -1,4 +1,4 @@
-"""Direct Python inference for the frozen experiment. No hosted service or JS model."""
+"""Direct local inference for original and isolated exploratory experiments."""
 from pathlib import Path
 import sys,json,copy
 ROOT=Path(__file__).resolve().parents[1]
@@ -9,15 +9,43 @@ import torch
 from revision import GraphFeatures,GraphRegressor,predict,edit_graph,new_graph,safe_text
 from pipeline import CAT,TEXT,Features
 import checkpoint_pickle
+from experiment_results import validate_bundle
+from Scripts.text_policy import response_free_text
+
+
+class RevisedFeatures(Features):
+    def text(self, data):
+        return [
+            ' '.join(response_free_text(row.get(field, '')) for field in TEXT)
+            for _, row in data.iterrows()
+        ]
+
+
+class RevisedUnpickler(checkpoint_pickle.Unpickler):
+    def find_class(self, module, name):
+        if module in ('pipeline', '__main__') and name == 'Features':
+            return RevisedFeatures
+        return super().find_class(module, name)
+
+
+class RevisedPickle:
+    __name__ = 'revised_checkpoint_pickle'
+    Unpickler = RevisedUnpickler
+    load = staticmethod(checkpoint_pickle.load)
 
 class ModelService:
-    def __init__(self):
-        folder=ROOT/'artifacts/v2'
-        self.results=json.loads((folder/'web_results.json').read_text())
-        self.scenarios=json.loads((folder/'optimization.json').read_text())
+    def __init__(self, folder=None):
+        folder=Path(folder).resolve() if folder is not None else ROOT/'artifacts/v2'
+        self.manifest=validate_bundle(folder)
+        self.exploratory=self.manifest['kind']=='isolated_exploratory'
+        self.folder=folder
+        self.clean_text=response_free_text if self.exploratory else safe_text
+        self.results=json.loads((folder/'web_results.json').read_text(encoding='utf-8'))
+        self.scenarios=json.loads((folder/'optimization.json').read_text(encoding='utf-8'))
         # Trusted local training checkpoint only. Compatibility loader resolves
         # script-origin classes without changing Streamlit's __main__ module.
-        cp=torch.load(folder/'primary_gnn.pt',map_location='cpu',weights_only=False,pickle_module=checkpoint_pickle)
+        cp=torch.load(folder/'primary_gnn.pt',map_location='cpu',weights_only=False,
+                      pickle_module=RevisedPickle if self.exploratory else checkpoint_pickle)
         self.features=cp['features'];self.config=cp['config'];self.name=cp['model_name']
         self.model=GraphRegressor(cp['state_dict']['c1.lin_l.weight'].shape[1])
         self.model.load_state_dict(cp['state_dict']);self.model.eval()
@@ -27,6 +55,15 @@ class ModelService:
         self.graphs={g['video_id']:g for g in self.results['graphs']}
         self.train_ids=set(cp['train_ids'])
         self.combos=self.scenarios['supported_combos']
+        if self.exploratory:
+            expected_train={key for key,row in self.videos.items() if row['split']=='train'}
+            expected_test={key for key,row in self.videos.items() if row['split']=='test'}
+            if self.train_ids != expected_train or set(cp['test_ids']) != expected_test:
+                raise ValueError('Checkpoint partitions differ from the displayed experiment.')
+            if set(self.graphs) != set(self.videos):
+                raise ValueError('Displayed video and graph inventories disagree.')
+            if not isinstance(self.features.root, RevisedFeatures):
+                raise ValueError('The revised inference text policy was not restored.')
 
     def predict_many(self, rows, graphs):
         ds=[self.features.graph(pd.Series(r),g,self.similarity)[0] for r,g in zip(rows,graphs)]
@@ -39,13 +76,18 @@ class ModelService:
 
     def query_graph(self, row, reference_id=None):
         if reference_id is None:
-            return new_graph(pd.Series(row))
+            graph=new_graph(pd.Series(row))
+            if self.exploratory:
+                for node in graph['nodes']:
+                    if node['type']=='aspect':
+                        node['text']=self.clean_text(row[node['field']])
+            return graph
         g=copy.deepcopy(self.graphs[reference_id])
         # Update declared creative aspect nodes to match the edited form; retain
         # extracted evidence, whose consistency must be reviewed by the user.
         for n in g['nodes']:
             if n['type']=='aspect' and n['field'] in CAT+TEXT and row[n['field']]!=self.videos[reference_id][n['field']]:
-                n['text']=safe_text(row[n['field']])
+                n['text']=self.clean_text(row[n['field']])
         return g
 
     def optimize(self,row,graph):

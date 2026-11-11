@@ -8,6 +8,7 @@ import json
 import math
 import os
 import sys
+from importlib.metadata import version
 from pathlib import Path
 
 from isolate_revision import ROOT, exact_count, keyed, load_json, read_csv, write_json
@@ -130,6 +131,49 @@ def smoke_evaluation(rows):
     }
 
 
+def export_app_results(revision, df, gs, tr, te, audit, trained, transfer):
+    features, models, configs, predictions, primary, bands, _, uncertainty = trained
+    cases, brief, _ = revision.scenarios(
+        df, gs, tr, te, features, models[primary], configs[primary], primary, bands[primary],
+    )
+    import numpy as np
+
+    slices = []
+    observed = np.log1p(df.iloc[te].views.to_numpy(float))
+    for brand in sorted(df.iloc[te].brand_family.unique()):
+        mask = (df.iloc[te].brand_family == brand).to_numpy()
+        slices.append({
+            "slice": brand, "n": int(mask.sum()),
+            **revision.metric(observed[mask], predictions[primary][mask]),
+        })
+    revision.dump(revision.OUT / "error_slices.json", slices)
+    split = {
+        "train": len(tr), "test": len(te), "quarantine": audit["split_counts"]["quarantine"],
+        "selection_rule": audit["split_policy"], "seed": 42,
+    }
+    revision.dump(revision.OUT / "split_policy.json", split)
+    graph_audit = {
+        "graphs": len(gs), "nodes": sum(len(g["nodes"]) for g in gs),
+        "provided_edges": sum(len(g["edges"]) for g in gs),
+        "policy": audit["graph_policy"],
+    }
+    revision.dump(revision.OUT / "graph_audit.json", graph_audit)
+    videos = json.loads(df.to_json(orient="records", force_ascii=False))
+    revision.dump(revision.OUT / "web_results.json", {
+        "experiment_kind": "isolated_exploratory", "training_ready": False,
+        "audit": audit, "metrics": load_json(revision.OUT / "metrics.json"),
+        "split": split, "uncertainty": uncertainty, "lobo": transfer,
+        "videos": videos, "graphs": gs, "cases": cases, "new_video": brief,
+        "slices": slices, "graph_audit": graph_audit,
+    })
+    data = features.transform(df, gs, primary == "Subgraph + similarity")
+    logs = revision.predict(models[primary], configs[primary], data)
+    revision.dump(revision.OUT / "inference_fixture.json", [
+        {"video_id": row["video_id"], "expected_log": float(log)}
+        for row, log in zip(videos, logs)
+    ])
+
+
 def train_evaluate(directory, output, rows, graphs, pairs, skip_brand_transfer):
     train_groups = {row["group"] for row in rows if row["split"] == "train"}
     if len(train_groups) < 3:
@@ -156,7 +200,8 @@ def train_evaluate(directory, output, rows, graphs, pairs, skip_brand_transfer):
     df[["video_id", "youtube_id", "group", "brand_family", "split"]].to_csv(
         revision.OUT / "splits.csv", index=False,
     )
-    _, _, _, _, primary, _, results, _ = revision.train_all(df, gs, tr, te, pairs)
+    trained = revision.train_all(df, gs, tr, te, pairs)
+    _, _, _, _, primary, _, results, _ = trained
     transfer = None if skip_brand_transfer else revision.leave_brand_out(df, gs, pairs)
     metrics = load_json(revision.OUT / "metrics.json")
     if metrics["train_size"] != len(tr) or metrics["test_size"] != len(te):
@@ -164,6 +209,9 @@ def train_evaluate(directory, output, rows, graphs, pairs, skip_brand_transfer):
     predictions = pd.read_csv(revision.OUT / "test_predictions.csv")
     if set(predictions.video_id) != set(df.iloc[te].video_id):
         raise ValueError("Test predictions do not cover the prepared held-out videos.")
+    export_app_results(
+        revision, df, gs, tr, te, load_json(directory / "audit.json"), trained, transfer,
+    )
     return {
         "mode": "full_retrained_exploratory",
         "train_size": len(tr), "test_size": len(te), "primary_gnn": primary,
@@ -223,7 +271,20 @@ def evaluate_args(args, directory, audit, rows, graphs, pairs):
             },
             "evaluation_script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
             "acknowledged_exploratory": args.acknowledge_exploratory,
+            "environment": None if args.smoke else {
+                name: version(name) for name in (
+                    "numpy", "pandas", "scipy", "scikit-learn", "matplotlib",
+                    "torch", "torch-geometric", "streamlit",
+                )
+            },
         })
+        if args.run:
+            sys.path.insert(0, str(ROOT / "src"))
+            from experiment_results import publish_bundle
+            publish_bundle(
+                directory, output / "workspace" / "artifacts" / "v2",
+                brand_transfer_completed=not args.skip_brand_transfer,
+            )
         print(json.dumps(summary, ensure_ascii=False))
         return 0
     except (ValueError, KeyError, OSError, csv.Error, ArithmeticError, ImportError) as error:
