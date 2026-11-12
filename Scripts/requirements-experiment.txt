@@ -1,0 +1,9 @@
+# Separate local experiment environment; does not replace the original lock.
+numpy>=2.0,<3
+pandas>=2.2,<4
+scipy>=1.14,<2
+scikit-learn>=1.6,<2
+matplotlib>=3.9,<4
+torch>=2.6,<3
+torch-geometric>=2.6,<3
+streamlit>=1.50,<2

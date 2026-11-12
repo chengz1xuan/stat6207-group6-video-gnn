@@ -1,0 +1,17 @@
+{
+  "fixture_videos": 214,
+  "max_log_error": 9.5367431640625e-7,
+  "optimization_cases": 6,
+  "available_experiments": 1,
+  "optional_bundle_errors": [],
+  "app_checks": "passed_main_prediction_optimization_graph_and_age_warning",
+  "environment": {
+    "torch": "2.15.0+cpu",
+    "torch_geometric": "2.8.1",
+    "streamlit": "1.67.0",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "sklearn": "1.9.1"
+  },
+  "additional_experiment_switching": "pending_actual_bundle"
+}
