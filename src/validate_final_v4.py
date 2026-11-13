@@ -72,7 +72,7 @@ def main():
     pdf=pymupdf.open(R/config['report_path']);assert len(pdf)==4
     text='\n'.join(page.get_text() for page in pdf)
     assert all(abs(p.rect.width-595.28)<.1 and abs(p.rect.height-841.89)<.1 for p in pdf)
-    for author in load(R/'AUTHORS.json'):assert author['name'] in text and author['email'] in text
+    for author in load(R/'AUTHORS.json'):assert author.get('ieee_name',author['name']) in text and author['email'] in text
     assert 'Group 6' not in text and 'GROUP 6' not in text
     for value in ['2.678','2.650','161','40','13','316,494','580,104']:assert value in text
     result={'version':'v4','cohort':201,'split':[161,40],'quarantine':13,'registered_families':len(rules['campaign_families']),

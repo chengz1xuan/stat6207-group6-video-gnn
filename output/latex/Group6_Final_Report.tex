@@ -1,11 +1,19 @@
 \documentclass[a4paper,conference]{IEEEtran}
+\usepackage[T1]{fontenc} % Actual Times regular/bold/italic fonts under XeTeX.
 \usepackage{amsmath,graphicx,booktabs,url,balance}
 \usepackage[hidelinks]{hyperref}
 \title{Audited Advertising Graphs for Video Views:\\A Paired Policy Evaluation}
-\author{\IEEEauthorblockN{CHENG, Zixuan\quad HUANG, Ze\quad SONG, Mingkun\quad HOU, Kaiwen}
-\IEEEauthorblockA{STAT6207: Applied Deep Learning, The Chinese University of Hong Kong\\
-CHENG: \texttt{1155280337@link.cuhk.edu.hk}\quad HUANG: \texttt{1155280222@link.cuhk.edu.hk}\\
-SONG: \texttt{1155276943@link.cuhk.edu.hk}\quad HOU: \texttt{1155280688@link.cuhk.edu.hk}}}
+\author{\IEEEauthorblockN{Zixuan CHENG}
+\IEEEauthorblockA{The Chinese University of Hong Kong\\Hong Kong SAR, China\\1155280337@link.cuhk.edu.hk}
+\and
+\IEEEauthorblockN{Ze HUANG}
+\IEEEauthorblockA{The Chinese University of Hong Kong\\Hong Kong SAR, China\\1155280222@link.cuhk.edu.hk}
+\and[\hfill\mbox{}\par\medskip\mbox{}\hfill]
+\IEEEauthorblockN{Mingkun SONG}
+\IEEEauthorblockA{The Chinese University of Hong Kong\\Hong Kong SAR, China\\1155276943@link.cuhk.edu.hk}
+\and
+\IEEEauthorblockN{Kaiwen HOU}
+\IEEEauthorblockA{The Chinese University of Hong Kong\\Hong Kong SAR, China\\1155280688@link.cuhk.edu.hk}}
 \begin{document}\maketitle
 \begin{abstract}
 We assess graph neural networks (GNNs) for advertising-video cumulative views. A frozen YouTube collection provides 214 exact labels across 14 brands. A source-text audit merges campaign variants, including previously separated IKEA and McDonald's series and Maxim's New Year chapters; unresolved families are quarantined. The revised evaluation uses 161 training, 40 testing and 13 quarantined videos. All models share the grouped split and training-only tuning. The selected subgraph GNN reaches log RMSE 2.678, versus 2.650 for metadata Ridge. A paired old/new text-and-graph-policy comparison holds cohort, labels, folds and tuning budgets fixed; its intervals do not establish improvement. Video-node adjacency is entirely same-brand connectivity. A local Streamlit tool shows real graphs, source-linked cases and an author-declared storyboard. Results are post-audit internal evidence; neither causal uplift nor 30-day forecasts are validated.
@@ -32,7 +40,7 @@ The root encodes brand/seven creative categories, log-duration/age with missingn
 \begin{figure}[t]\centering\includegraphics[width=\columnwidth]{v4_graph.pdf}
 \caption{Real training graph \texttt{3BCcDbFiVaA}, displaying 7 of 26 nodes. Gray: source membership; blue: retained source concept--evidence support; orange dashed: actual heuristic semantic extension. Nodes/edges and original text are exported in \texttt{report\_diagnostics.json}. Selection uses graph structure, never response labels.}\label{fig:graph}\end{figure}
 
-Two 24-unit mean GraphSAGE layers \cite{sage,pyg} use
+Two 24-unit mean GraphSAGE layers \cite{sage,pyg,sageconv} use
 \begin{equation}
 h_u^{\ell+1}=\operatorname{ReLU}\!\left(W_s h_u^\ell+W_n\operatorname{mean}_{w\in N(u)}h_w^\ell+b\right).
 \end{equation}
@@ -123,8 +131,9 @@ Paid media, audience targeting, uploader reach, timing, reupload status and feat
 Priority improvements are verified campaign/uploader/date review, fixed-age response/spend collection, an independently frozen external holdout, repeated grouped/time splits and exposure-controlled coherent variants. The revised GNN baseline is quantitatively reproducible, but neither graph superiority nor a policy-cleaning gain is established. Cumulative snapshot estimates must remain separate from validated future forecasts. The contribution is an auditable comparison and source-linked hypothesis interface, with no claim of sales, brand recognition or causal engagement gains. This four-page IEEE A4 report \cite{ieee} accompanies code, frozen evidence, checkpoints and the visible session transcript.
 
 \balance
-\begin{thebibliography}{3}
-\bibitem{sage} W. L. Hamilton, R. Ying, and J. Leskovec, ``Inductive representation learning on large graphs,'' in \emph{Advances in Neural Information Processing Systems}, vol. 30, 2017.
-\bibitem{pyg} PyTorch Geometric, ``SAGEConv and graph-level pooling documentation.'' [Online]. Available: \url{https://pytorch-geometric.readthedocs.io/}
-\bibitem{ieee} IEEE, ``Manuscript templates for conference proceedings.'' [Online]. Available: \url{https://www.ieee.org/conferences/publishing/templates.html}
+\begin{thebibliography}{4}
+\bibitem{sage} W. L. Hamilton, R. Ying, and J. Leskovec, ``Inductive representation learning on large graphs,'' in \emph{Advances in Neural Information Processing Systems}, vol. 30, 2017, pp. 1024--1034. [Online]. Available: \url{https://papers.nips.cc/paper/2017/hash/5dd9db5e033da9c6fb5ba83c7a7ebea9-Abstract.html}
+\bibitem{pyg} M. Fey and J. E. Lenssen, ``Fast graph representation learning with PyTorch Geometric,'' in \emph{ICLR Workshop on Representation Learning on Graphs and Manifolds}, 2019, arXiv:1903.02428. [Online]. Available: \url{https://arxiv.org/abs/1903.02428}
+\bibitem{sageconv} PyTorch Geometric, ``torch\_geometric.nn.conv.SAGEConv,'' \emph{Official API documentation}. Accessed: Nov. 13, 2026. [Online]. Available: \url{https://pytorch-geometric.readthedocs.io/en/stable/generated/torch_geometric.nn.conv.SAGEConv.html}
+\bibitem{ieee} IEEE, ``Manuscript templates for conference proceedings.'' Accessed: Nov. 13, 2026. [Online]. Available: \url{https://www.ieee.org/conferences/publishing/templates.html}
 \end{thebibliography}\end{document}

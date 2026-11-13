@@ -24,3 +24,9 @@ Primary subgraph+similarity: CV log RMSE 2.527, training 2.219, testing 2.678; M
 Machine-readable records are in `artifacts/isolated_revision/final-v4/evaluation/workspace/artifacts/v2/`: `v4_validation.json`, `package_validation.json`, `streamlit_browser_validation.json`. Actual new-model App switching is recorded in `artifacts/isolated_revision/final-v4/evaluation/app_validation.json`.
 
 The final ZIP may be rebuilt after documentation/verification records are included; its SHA-256 file inventory binds the final archived contents. No training code, model or report change is implied by that rebuild.
+
+## IEEE formatting / reference follow-up
+
+The updated report remains four A4 pages. Rendered-PDF checks confirm all 117 nonempty abstract spans use bold fonts, four independent author blocks form two rows, every supplied email aligns with its author's given-name/family-name display, and all fonts are embedded. T1 encoding restores native IEEE Times-family bold/italic; plot PDFs now embed TrueType rather than Type 3 fonts. Four complete reference entries and their specific hyperlinks are present. The primary publisher/author/project checks are recorded in `references/REFERENCE_AUDIT.md`, including the IEEE-origin robots limitation and supporting official distribution sources. Figures, metrics, test predictions and checkpoint values retain the same experimental content.
+
+Validation command: `python src/validate_report_format.py`; record: `artifacts/isolated_revision/final-v4/evaluation/workspace/artifacts/v2/report_format_validation.json`.

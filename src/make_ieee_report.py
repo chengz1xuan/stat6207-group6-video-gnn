@@ -30,13 +30,21 @@ for family in registry['campaign_families']:
  family_rows.append(' & '.join([tex(family_labels[family['campaign_id']]),str(len(family['youtube_ids'])),next(iter(roles))])+r' \\')
 family_rows.append(r'Five unresolved families & 13 & quarantine \\')
 source=r'''\documentclass[a4paper,conference]{IEEEtran}
+\usepackage[T1]{fontenc} % Actual Times regular/bold/italic fonts under XeTeX.
 \usepackage{amsmath,graphicx,booktabs,url,balance}
 \usepackage[hidelinks]{hyperref}
 \title{Audited Advertising Graphs for Video Views:\\A Paired Policy Evaluation}
-\author{\IEEEauthorblockN{@@NAMES@@}
-\IEEEauthorblockA{STAT6207: Applied Deep Learning, The Chinese University of Hong Kong\\
-CHENG: \texttt{@@EMAIL0@@}\quad HUANG: \texttt{@@EMAIL1@@}\\
-SONG: \texttt{@@EMAIL2@@}\quad HOU: \texttt{@@EMAIL3@@}}}
+\author{\IEEEauthorblockN{@@NAME0@@}
+\IEEEauthorblockA{The Chinese University of Hong Kong\\Hong Kong SAR, China\\@@EMAIL0@@}
+\and
+\IEEEauthorblockN{@@NAME1@@}
+\IEEEauthorblockA{The Chinese University of Hong Kong\\Hong Kong SAR, China\\@@EMAIL1@@}
+\and[\hfill\mbox{}\par\medskip\mbox{}\hfill]
+\IEEEauthorblockN{@@NAME2@@}
+\IEEEauthorblockA{The Chinese University of Hong Kong\\Hong Kong SAR, China\\@@EMAIL2@@}
+\and
+\IEEEauthorblockN{@@NAME3@@}
+\IEEEauthorblockA{The Chinese University of Hong Kong\\Hong Kong SAR, China\\@@EMAIL3@@}}
 \begin{document}\maketitle
 \begin{abstract}
 We assess graph neural networks (GNNs) for advertising-video cumulative views. A frozen YouTube collection provides 214 exact labels across 14 brands. A source-text audit merges campaign variants, including previously separated IKEA and McDonald's series and Maxim's New Year chapters; unresolved families are quarantined. The revised evaluation uses 161 training, 40 testing and 13 quarantined videos. All models share the grouped split and training-only tuning. The selected subgraph GNN reaches log RMSE @@RMSE@@, versus @@META@@ for metadata Ridge. A paired old/new text-and-graph-policy comparison holds cohort, labels, folds and tuning budgets fixed; its intervals do not establish improvement. Video-node adjacency is entirely same-brand connectivity. A local Streamlit tool shows real graphs, source-linked cases and an author-declared storyboard. Results are post-audit internal evidence; neither causal uplift nor 30-day forecasts are validated.
@@ -63,7 +71,7 @@ The root encodes brand/seven creative categories, log-duration/age with missingn
 \begin{figure}[t]\centering\includegraphics[width=\columnwidth]{v4_graph.pdf}
 \caption{Real training graph \texttt{@@GRAPHYT@@}, displaying @@SHOWCOUNT@@ of @@FULLCOUNT@@ nodes. Gray: source membership; blue: retained source concept--evidence support; orange dashed: actual heuristic semantic extension. Nodes/edges and original text are exported in \texttt{report\_diagnostics.json}. Selection uses graph structure, never response labels.}\label{fig:graph}\end{figure}
 
-Two 24-unit mean GraphSAGE layers \cite{sage,pyg} use
+Two 24-unit mean GraphSAGE layers \cite{sage,pyg,sageconv} use
 \begin{equation}
 h_u^{\ell+1}=\operatorname{ReLU}\!\left(W_s h_u^\ell+W_n\operatorname{mean}_{w\in N(u)}h_w^\ell+b\right).
 \end{equation}
@@ -132,10 +140,11 @@ Paid media, audience targeting, uploader reach, timing, reupload status and feat
 Priority improvements are verified campaign/uploader/date review, fixed-age response/spend collection, an independently frozen external holdout, repeated grouped/time splits and exposure-controlled coherent variants. The revised GNN baseline is quantitatively reproducible, but neither graph superiority nor a policy-cleaning gain is established. Cumulative snapshot estimates must remain separate from validated future forecasts. The contribution is an auditable comparison and source-linked hypothesis interface, with no claim of sales, brand recognition or causal engagement gains. This four-page IEEE A4 report \cite{ieee} accompanies code, frozen evidence, checkpoints and the visible session transcript.
 
 \balance
-\begin{thebibliography}{3}
-\bibitem{sage} W. L. Hamilton, R. Ying, and J. Leskovec, ``Inductive representation learning on large graphs,'' in \emph{Advances in Neural Information Processing Systems}, vol. 30, 2017.
-\bibitem{pyg} PyTorch Geometric, ``SAGEConv and graph-level pooling documentation.'' [Online]. Available: \url{https://pytorch-geometric.readthedocs.io/}
-\bibitem{ieee} IEEE, ``Manuscript templates for conference proceedings.'' [Online]. Available: \url{https://www.ieee.org/conferences/publishing/templates.html}
+\begin{thebibliography}{4}
+\bibitem{sage} W. L. Hamilton, R. Ying, and J. Leskovec, ``Inductive representation learning on large graphs,'' in \emph{Advances in Neural Information Processing Systems}, vol. 30, 2017, pp. 1024--1034. [Online]. Available: \url{https://papers.nips.cc/paper/2017/hash/5dd9db5e033da9c6fb5ba83c7a7ebea9-Abstract.html}
+\bibitem{pyg} M. Fey and J. E. Lenssen, ``Fast graph representation learning with PyTorch Geometric,'' in \emph{ICLR Workshop on Representation Learning on Graphs and Manifolds}, 2019, arXiv:1903.02428. [Online]. Available: \url{https://arxiv.org/abs/1903.02428}
+\bibitem{sageconv} PyTorch Geometric, ``torch\_geometric.nn.conv.SAGEConv,'' \emph{Official API documentation}. Accessed: Nov. 13, 2026. [Online]. Available: \url{https://pytorch-geometric.readthedocs.io/en/stable/generated/torch_geometric.nn.conv.SAGEConv.html}
+\bibitem{ieee} IEEE, ``Manuscript templates for conference proceedings.'' Accessed: Nov. 13, 2026. [Online]. Available: \url{https://www.ieee.org/conferences/publishing/templates.html}
 \end{thebibliography}\end{document}
 '''
 rowsdf=w['videos'];byid={r['video_id']:r for r in rowsdf};ci_meta=cp[primary+' minus Metadata Ridge']['campaign_bootstrap_95'];ci_node=cp['Node structural minus Node no-brand edges']['campaign_bootstrap_95'];supports=case['support_examples'];lastsupport=next((r for r in supports if 'IKEA' in r['title']),supports[-1]);YT=lambda sid:byid[sid]['youtube_id']
@@ -150,6 +159,7 @@ repl={'FAMILIES':'\n'.join(family_rows),'NAMES':r'\quad '.join(tex(a['name']) fo
  'CASECAND':case['candidates_evaluated'],'CASELOW':count(case['uncertainty_band'][0]),'CASEHIGH':count(case['uncertainty_band'][1]),'SUPPORT0':tex(YT(supports[0]['video_id'])),'SUPPORT1':tex(YT(lastsupport['video_id'])),
  'NEWCHANGE':tex(newchange),'NEWBASE':count(brief['base_prediction']),'NEWBEST':count(brief['optimized_prediction']),'NEWLOW':count(brief['uncertainty_band'][0]),'NEWHIGH':count(brief['uncertainty_band'][1])}
 repl.update({'EMAIL'+str(i):tex(a['email']) for i,a in enumerate(authors)})
+repl.update({'NAME'+str(i):tex(a.get('ieee_name',a['name'])) for i,a in enumerate(authors)})
 for key,value in repl.items():source=source.replace('@@'+key+'@@',str(value))
 assert '@@' not in source
 out=R/'output/latex';out.mkdir(exist_ok=True)

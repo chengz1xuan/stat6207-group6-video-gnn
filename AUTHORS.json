@@ -1,18 +1,22 @@
 [
   {
     "name": "CHENG, Zixuan",
-    "email": "1155280337@link.cuhk.edu.hk"
+    "email": "1155280337@link.cuhk.edu.hk",
+    "ieee_name": "Zixuan CHENG"
   },
   {
     "name": "HUANG, Ze",
-    "email": "1155280222@link.cuhk.edu.hk"
+    "email": "1155280222@link.cuhk.edu.hk",
+    "ieee_name": "Ze HUANG"
   },
   {
     "name": "SONG, Mingkun",
-    "email": "1155276943@link.cuhk.edu.hk"
+    "email": "1155276943@link.cuhk.edu.hk",
+    "ieee_name": "Mingkun SONG"
   },
   {
     "name": "HOU, Kaiwen",
-    "email": "1155280688@link.cuhk.edu.hk"
+    "email": "1155280688@link.cuhk.edu.hk",
+    "ieee_name": "Kaiwen HOU"
   }
 ]

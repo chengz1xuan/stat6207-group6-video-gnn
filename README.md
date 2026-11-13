@@ -161,6 +161,7 @@ LOBO 在 201 条纳入数据中逐品牌留出、其余 13 品牌内选择停止
 ```bash
 python -m unittest discover -s Scripts -p 'test_*.py'
 python src/validate_final_v4.py
+python src/validate_report_format.py
 python Scripts/validate_app_experiment.py --input artifacts/isolated_revision/final-v4 --check-app
 python Scripts/verify_integration.py --check-app
 ```
@@ -211,3 +212,11 @@ cd stat6207-group6-video-gnn
 conda activate stat6207
 python -m streamlit run app.py
 ```
+
+## 14. IEEE排版与参考文献核验
+
+摘要由IEEEtran原生abstract环境整段加粗；T1编码修复XeTeX下Times字体粗体/斜体回退的问题。PDF使用嵌入Times兼容字体，图表使用嵌入TrueType字体。四位作者按IEEE姓名—单位—地区—邮箱独立块排成两行，报告使用“名＋姓”，原始姓在前形式保留在AUTHORS.json的name字段，ieee_name保存报告显示形式。
+
+参考文献已核验，详见[核验记录](references/REFERENCE_AUDIT.md)：GraphSAGE为NIPS2017真实论文，补齐1024–1034页；PyG补充真实ICLR2019 RLGM Workshop论文；算子引用改为具体SAGEConv官方API；IEEE模板明确属于格式来源。原IEEE网页自动抓取受robots限制，已对照IEEE会议托管副本和官方IEEEtran分发说明，未虚构研究文献或DOI。
+
+`python src/validate_report_format.py`检查实际PDF字体粗体标志、作者/邮箱对应与两行布局、四条具体参考链接、字体嵌入及四页A4，而非只检查源码是否写了粗体命令。实验数据、模型和性能结果未因这次格式/引用修订而改变。

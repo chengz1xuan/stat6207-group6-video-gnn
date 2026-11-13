@@ -1,0 +1,32 @@
+{
+  "report_sha256": "314acf22f81e4b809fc8850e08b83167628f19549ef42728f4f031a09e7d6be9",
+  "pages": 4,
+  "A4": true,
+  "abstract_all_text_spans_bold": true,
+  "abstract_checked_spans": 117,
+  "individual_IEEE_author_blocks": 4,
+  "author_rows": 2,
+  "email_identity_alignment": true,
+  "given_name_family_name_order": true,
+  "verified_reference_entries": 4,
+  "specific_reference_links_present": true,
+  "all_fonts_embedded": true,
+  "font_families": [
+    "AKHCZK+NimbusMonL-Regu",
+    "BZIVMZ+NimbusRomNo9L-MediItal",
+    "CAFSZL+CMSY10",
+    "DDDMJT+DejaVuSerif",
+    "DDIEWW+CMMI7",
+    "EFKUVO+DejaVuSerif",
+    "FKPJSN+CMR7",
+    "IHAIZV+NimbusRomNo9L-Regu",
+    "IXFAWU+NimbusRomNo9L-Medi",
+    "JAGKKY+CMSY7",
+    "KPXLOM+CMR8",
+    "NOMARO+CMMI8",
+    "PVTTLK+CMEX10",
+    "TQTHRL+CMMI10",
+    "VDVGTR+NimbusRomNo9L-ReguItal",
+    "YEUUOC+CMR10"
+  ]
+}

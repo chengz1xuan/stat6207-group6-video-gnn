@@ -54,7 +54,7 @@ def main():
     showpath=R/'artifacts/final_v4_showcase.json';dump(showpath,show)
     config.update(showcase_path=str(showpath.relative_to(R)),showcase_sha256=hashlib.sha256(showpath.read_bytes()).hexdigest())
     dump(R/'artifacts/final_v4.json',config)
-    plt.rcParams.update({'font.family':'serif','font.size':8,'axes.spines.top':False,'axes.spines.right':False})
+    plt.rcParams.update({'font.family':'serif','font.size':8,'pdf.fonttype':42,'axes.spines.top':False,'axes.spines.right':False})
     fig,ax=plt.subplots(figsize=(3.45,2.3));ax.scatter(y,p,s=15,color='#186b60',alpha=.85,label='Primary GNN')
     meta=pred['Metadata Ridge_log'].to_numpy();ax.scatter(y,meta,s=14,marker='x',color='#9c9c9c',alpha=.6,label='Metadata Ridge')
     lim=[min(y.min(),p.min(),meta.min())-.4,max(y.max(),p.max(),meta.max())+.4];ax.plot(lim,lim,'--',color='#999',lw=.7)

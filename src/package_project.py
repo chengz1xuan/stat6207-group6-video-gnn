@@ -27,7 +27,7 @@ def collect_paths(root=R):
             if p.name.startswith('probe'):continue
             if p.name in ['deployment.json','web_model.json','browser_validation.json','inference_validation.json','prepare_website.py','make_report.py'] or p.name.startswith('website-'):continue
             paths.add(p)
-    required=['app.py','AUTHORS.json','README.md','PROJECT_REQUIREMENTS.md','requirements.txt','SESSION_WORKLOG.md','output/pdf/Group6_Final_Report.pdf','references/Group6_Plan.pdf','references/ieee/IEEEtran.cls','references/ieee/SOURCE.txt']
+    required=['app.py','AUTHORS.json','README.md','PROJECT_REQUIREMENTS.md','requirements.txt','SESSION_WORKLOG.md','output/pdf/Group6_Final_Report.pdf','references/Group6_Plan.pdf','references/ieee/IEEEtran.cls','references/ieee/SOURCE.txt','references/REFERENCE_AUDIT.md']
     for name in required:
         p=root/name
         if not p.is_file():raise FileNotFoundError(p)
