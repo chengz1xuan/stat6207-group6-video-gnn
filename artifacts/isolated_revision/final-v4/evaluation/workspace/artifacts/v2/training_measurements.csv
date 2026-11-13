@@ -1,0 +1,11 @@
+model,target,objective,n_train,train_log_RMSE,CV_log_RMSE,test_log_RMSE,refit_epochs,regularization
+Mean,ln(1+views),MSE on ln(1+views); closed-form constant,161,2.637350704464816,,2.804805362142774,,0.0
+Brand mean,ln(1+views),MSE on ln(1+views); training brand mean with global unseen-brand fallback,161,2.332459899537889,2.7208551856823817,2.9003706126184725,,0.0
+Metadata Ridge,ln(1+views),sum squared log residuals + alpha * squared coefficient norm,161,2.312824727039759,2.5017667445502485,2.6501543335030413,,10.0
+Pooled Ridge,ln(1+views),sum squared log residuals + alpha * squared coefficient norm,161,2.147863831789049,2.5270643562625117,2.743224462823291,,10.0
+Pooled MLP,ln(1+views),MSE on train-standardized ln(1+views),161,2.3857740776657517,2.5196511238517627,2.702604869153713,8.0,0.01
+Subgraph structural,ln(1+views),MSE on train-standardized ln(1+views),161,2.2840265012162932,2.535300180279065,2.6439971277845515,15.0,0.1
+Subgraph + similarity,ln(1+views),MSE on train-standardized ln(1+views),161,2.2185004118104583,2.5265446776922444,2.6780551833143322,21.0,0.1
+Node structural,ln(1+views),MSE on train-standardized ln(1+views),161,2.302275972283646,2.4551330298784904,2.7229790654575763,7.0,0.1
+Node + similarity,ln(1+views),MSE on train-standardized ln(1+views),161,2.293838350746071,2.485306716808212,2.811796258632215,6.0,0.01
+Node no-brand edges,ln(1+views),MSE on train-standardized ln(1+views),161,2.380543145308335,2.5166363157605605,2.8044670584802014,6.0,0.01

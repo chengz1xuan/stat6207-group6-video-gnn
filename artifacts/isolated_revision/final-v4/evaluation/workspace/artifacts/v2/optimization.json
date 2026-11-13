@@ -1,0 +1,440 @@
+{
+  "new_video": {
+    "video_id": "new-video-example",
+    "title": "New advertising brief: training-reference product context",
+    "brand": "MTR",
+    "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
+    "creative_elements": {
+      "creative_mechanic": "Offer led",
+      "structure_type": "Demo led",
+      "pacing": "medium tempo",
+      "main_message": "MTR's East Rail Line provides frequent and seamless transportation between Hong Kong and Shenzhen.",
+      "hook": "",
+      "cta": "Take the East Rail Line for convenient cross-boundary travel."
+    },
+    "base_prediction": 327048.0625,
+    "optimized_prediction": 621132.9375,
+    "base_log": 12.69786548614502,
+    "optimized_log": 13.339302062988281,
+    "uncertainty_band": [
+      6121.9833984375,
+      17468786.0
+    ],
+    "changes": {
+      "structure_type": "Problem-solution led",
+      "pacing": "fast-cut"
+    },
+    "candidates_evaluated": 15,
+    "support_examples": [
+      {
+        "video_id": "cmu2v7bvt000ubn7cnteika56",
+        "title": "【李錦記全新快趣煮APP📱過千中、英、印尼文食譜任你shake！】",
+        "source_url": "https://www.youtube.com/watch?v=MbVxAuU3xxQ"
+      },
+      {
+        "video_id": "cmvc5mj660035bn008vaqzdu6",
+        "title": "大家樂 燕麥奶炒滑蛋",
+        "source_url": "https://www.youtube.com/watch?v=OUx6Hxn7ZS4"
+      },
+      {
+        "video_id": "cmvbtes5p0005bnuotzavlabc",
+        "title": "為愛留好空間 | IKEA Hong Kong",
+        "source_url": "https://www.youtube.com/watch?v=U0wzmf3VsfE"
+      }
+    ],
+    "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
+    "age_days": 672.5013263455556,
+    "target_note": "Cumulative snapshot views at training-median age, not a validated fixed-horizon forecast.",
+    "storyboard": [
+      {
+        "seconds": "0-3",
+        "purpose": "Hook",
+        "content": ""
+      },
+      {
+        "seconds": "3-20",
+        "purpose": "Demonstrate the product benefit",
+        "content": "Passengers can enjoy fast, frequent, and weather-proof transit to Shenzhen, with trains running as often as every 3 to 6 minutes."
+      },
+      {
+        "seconds": "20-27",
+        "purpose": "Apply suggested creative structure",
+        "content": "structure_type = Problem-solution led; pacing = fast-cut"
+      },
+      {
+        "seconds": "27-30",
+        "purpose": "CTA and end card",
+        "content": "Take the East Rail Line for convenient cross-boundary travel."
+      }
+    ]
+  },
+  "dataset_cases": [
+    {
+      "video_id": "cmt3r3laf000pbnaworamd1c8",
+      "title": "【恒生信用卡：第 86853 種 +FUN Dollars 秘技解鎖！🔓 中港澳 +FUN Dollars 當錢使！ - 嘉豪 x 森美】",
+      "brand": "Hang Seng Bank",
+      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
+      "creative_elements": {
+        "creative_mechanic": "Offer led",
+        "structure_type": "Testimonial led",
+        "pacing": "medium tempo",
+        "main_message": "Hang Seng +FUN Dollars can be used as cash in over 150,000 ways across Mainland China, Hong Kong, and Macau when linked to AlipayHK.",
+        "hook": "",
+        "cta": "Bind your Hang Seng credit card to AlipayHK to use +FUN Dollars for payments in Mainland China, Hong Kong, and Macau, and visit the website for more details."
+      },
+      "base_prediction": 1016459.125,
+      "optimized_prediction": 1267737.125,
+      "base_log": 13.831836700439453,
+      "optimized_log": 14.05274486541748,
+      "uncertainty_band": [
+        19029.076171875,
+        54292592.0
+      ],
+      "changes": {
+        "structure_type": "Problem-solution led",
+        "pacing": "fast-cut"
+      },
+      "candidates_evaluated": 15,
+      "support_examples": [
+        {
+          "video_id": "cmu2v7bvt000ubn7cnteika56",
+          "title": "【李錦記全新快趣煮APP📱過千中、英、印尼文食譜任你shake！】",
+          "source_url": "https://www.youtube.com/watch?v=MbVxAuU3xxQ"
+        },
+        {
+          "video_id": "cmvc5mj660035bn008vaqzdu6",
+          "title": "大家樂 燕麥奶炒滑蛋",
+          "source_url": "https://www.youtube.com/watch?v=OUx6Hxn7ZS4"
+        },
+        {
+          "video_id": "cmvbtes5p0005bnuotzavlabc",
+          "title": "為愛留好空間 | IKEA Hong Kong",
+          "source_url": "https://www.youtube.com/watch?v=U0wzmf3VsfE"
+        }
+      ],
+      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
+      "observed_views": 1659191
+    },
+    {
+      "video_id": "cmu2vkwvr001ybn7c9mjfkkp4",
+      "title": "李錦記好好食湯/拌麵系列 – 真係好_好食😋！",
+      "brand": "Lee Kum Kee",
+      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
+      "creative_elements": {
+        "creative_mechanic": "Offer led",
+        "structure_type": "Offer led",
+        "pacing": "fast-cut",
+        "main_message": "Lee Kum Kee offers a range of high-quality soup and dressed noodle products that are delicious and satisfying.",
+        "hook": "",
+        "cta": "unclear"
+      },
+      "base_prediction": 244013.171875,
+      "optimized_prediction": 250046.5,
+      "base_log": 12.40498161315918,
+      "optimized_log": 12.42940616607666,
+      "uncertainty_band": [
+        4567.41162109375,
+        13033626.0
+      ],
+      "changes": {
+        "structure_type": "Problem-solution led"
+      },
+      "candidates_evaluated": 12,
+      "support_examples": [
+        {
+          "video_id": "cmu2v7bvt000ubn7cnteika56",
+          "title": "【李錦記全新快趣煮APP📱過千中、英、印尼文食譜任你shake！】",
+          "source_url": "https://www.youtube.com/watch?v=MbVxAuU3xxQ"
+        },
+        {
+          "video_id": "cmvc5mj660035bn008vaqzdu6",
+          "title": "大家樂 燕麥奶炒滑蛋",
+          "source_url": "https://www.youtube.com/watch?v=OUx6Hxn7ZS4"
+        },
+        {
+          "video_id": "cmvbtes5p0005bnuotzavlabc",
+          "title": "為愛留好空間 | IKEA Hong Kong",
+          "source_url": "https://www.youtube.com/watch?v=U0wzmf3VsfE"
+        }
+      ],
+      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
+      "observed_views": 475353
+    },
+    {
+      "video_id": "cmu2vj9p2001tbn7cy0pvw8xx",
+      "title": "【李錦記全新熱辣辣系列 辣夠味？！你挑戰咗未？】",
+      "brand": "Lee Kum Kee",
+      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
+      "creative_elements": {
+        "creative_mechanic": "Offer led",
+        "structure_type": "Offer led",
+        "pacing": "fast-cut",
+        "main_message": "Lee Kum Kee's 'Hot and Spicy Series' features three distinct chili products (Chili Oil with Dried Shrimp, Mala Red Chili Oil, and Green Peppercorn Oil) designed to offer intense and varied spicy experiences.",
+        "hook": "",
+        "cta": "The ad challenges consumers to try the spicy products with the line 'Are you ready for the challenge?' suggesting they should purchase and taste them."
+      },
+      "base_prediction": 289100.875,
+      "optimized_prediction": 297091.5625,
+      "base_log": 12.57453441619873,
+      "optimized_log": 12.601799011230469,
+      "uncertainty_band": [
+        5411.53955078125,
+        15441899.0
+      ],
+      "changes": {
+        "structure_type": "Problem-solution led"
+      },
+      "candidates_evaluated": 12,
+      "support_examples": [
+        {
+          "video_id": "cmu2v7bvt000ubn7cnteika56",
+          "title": "【李錦記全新快趣煮APP📱過千中、英、印尼文食譜任你shake！】",
+          "source_url": "https://www.youtube.com/watch?v=MbVxAuU3xxQ"
+        },
+        {
+          "video_id": "cmvc5mj660035bn008vaqzdu6",
+          "title": "大家樂 燕麥奶炒滑蛋",
+          "source_url": "https://www.youtube.com/watch?v=OUx6Hxn7ZS4"
+        },
+        {
+          "video_id": "cmvbtes5p0005bnuotzavlabc",
+          "title": "為愛留好空間 | IKEA Hong Kong",
+          "source_url": "https://www.youtube.com/watch?v=U0wzmf3VsfE"
+        }
+      ],
+      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
+      "observed_views": 859340
+    },
+    {
+      "video_id": "cmvc9slub008cbn00ivkttbc0",
+      "title": "奇華餅家facebook專頁中秋特別呈獻「至真祝福‧送至親」",
+      "brand": "Kee Wah Bakery",
+      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
+      "creative_elements": {
+        "creative_mechanic": "Event experience led",
+        "structure_type": "Event experience led",
+        "pacing": "medium tempo",
+        "main_message": "鼓勵大眾在中秋節期間關心至親好友並參與奇華餅家的線上抽獎活動，有機會贏取「奇華至尊月餅禮盒」。",
+        "hook": "",
+        "cta": "前往奇華餅家的 Facebook 頁面參與「至真祝福‧送至親」遊戲。"
+      },
+      "base_prediction": 45267.23046875,
+      "optimized_prediction": 84325.3125,
+      "base_log": 10.72036075592041,
+      "optimized_log": 11.342449188232422,
+      "uncertainty_band": [
+        846.5078125,
+        2417926.75
+      ],
+      "changes": {
+        "creative_mechanic": "Offer led",
+        "structure_type": "Announcement / information led"
+      },
+      "candidates_evaluated": 11,
+      "support_examples": [
+        {
+          "video_id": "cmvc5nw57003fbn00lnr610as",
+          "title": "【易Joy！易賞！易分享 全新大家樂Club 100易.0】",
+          "source_url": "https://www.youtube.com/watch?v=185p2FWa_R0"
+        },
+        {
+          "video_id": "cmt3r8lhc001ebnawtu04awo7",
+          "title": "【新升級恒生 MMPOWER卡】網購信用卡天花板 網球一哥都用緊！🛍️網購及指定商戶賺高達 8% +FUN Dollars！",
+          "source_url": "https://www.youtube.com/watch?v=B2EyinOoCsE"
+        },
+        {
+          "video_id": "cmt3q08mg0005bnawpa8ty5ye",
+          "title": "【滙豐Premier Elite｜洞悉環球市場先機，盡佔全球財富機遇】",
+          "source_url": "https://www.youtube.com/watch?v=CHqJrCwN_QE"
+        }
+      ],
+      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
+      "observed_views": 3419
+    },
+    {
+      "video_id": "cmsxziaqt000obnn8sz706hui",
+      "title": "【滙豐保險｜阿佘教路：退休計劃要趁早⏳】",
+      "brand": "HSBC",
+      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
+      "creative_elements": {
+        "creative_mechanic": "Announcement / information led",
+        "structure_type": "Offer led",
+        "pacing": "medium tempo",
+        "main_message": "HSBC Life offers comprehensive retirement solutions that cover wealth, legacy, and health, providing passive income and specialized protection like SilverGuard to ensure peace of mind regardless of future changes.",
+        "hook": "",
+        "cta": "unclear"
+      },
+      "base_prediction": 620843.9375,
+      "optimized_prediction": 1078725.375,
+      "base_log": 13.338836669921875,
+      "optimized_log": 13.891291618347168,
+      "uncertainty_band": [
+        11622.404296875,
+        33161440.0
+      ],
+      "changes": {
+        "creative_mechanic": "Offer led",
+        "structure_type": "Announcement / information led"
+      },
+      "candidates_evaluated": 13,
+      "support_examples": [
+        {
+          "video_id": "cmvc5nw57003fbn00lnr610as",
+          "title": "【易Joy！易賞！易分享 全新大家樂Club 100易.0】",
+          "source_url": "https://www.youtube.com/watch?v=185p2FWa_R0"
+        },
+        {
+          "video_id": "cmt3r8lhc001ebnawtu04awo7",
+          "title": "【新升級恒生 MMPOWER卡】網購信用卡天花板 網球一哥都用緊！🛍️網購及指定商戶賺高達 8% +FUN Dollars！",
+          "source_url": "https://www.youtube.com/watch?v=B2EyinOoCsE"
+        },
+        {
+          "video_id": "cmt3q08mg0005bnawpa8ty5ye",
+          "title": "【滙豐Premier Elite｜洞悉環球市場先機，盡佔全球財富機遇】",
+          "source_url": "https://www.youtube.com/watch?v=CHqJrCwN_QE"
+        }
+      ],
+      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
+      "observed_views": 546650
+    },
+    {
+      "video_id": "cmt3r4r5i000zbnaw2vdpix5m",
+      "title": "【投資好伙伴｜多種低門檻投資產品畀你揀，Carry 你輕鬆 Kick-start 投資第一步】",
+      "brand": "Hang Seng Bank",
+      "brief_objective": "Increase observable video reach for the specified product while preserving brand, claims, duration and exposure horizon.",
+      "creative_elements": {
+        "creative_mechanic": "Offer led",
+        "structure_type": "Offer led",
+        "pacing": "medium tempo",
+        "main_message": "Hang Seng Preferred Banking offers accessible investment options like SimplyFund starting from $1 and commission-free SimplyStock for beginners.",
+        "hook": "",
+        "cta": "The ad encourages viewers to open an account via their mobile app to enjoy rewards up to $9,100."
+      },
+      "base_prediction": 844748.375,
+      "optimized_prediction": 1181201.125,
+      "base_log": 13.646795272827148,
+      "optimized_log": 13.982043266296387,
+      "uncertainty_band": [
+        15814.3232421875,
+        45120936.0
+      ],
+      "changes": {
+        "structure_type": "Problem-solution led",
+        "pacing": "fast-cut"
+      },
+      "candidates_evaluated": 14,
+      "support_examples": [
+        {
+          "video_id": "cmu2v7bvt000ubn7cnteika56",
+          "title": "【李錦記全新快趣煮APP📱過千中、英、印尼文食譜任你shake！】",
+          "source_url": "https://www.youtube.com/watch?v=MbVxAuU3xxQ"
+        },
+        {
+          "video_id": "cmvc5mj660035bn008vaqzdu6",
+          "title": "大家樂 燕麥奶炒滑蛋",
+          "source_url": "https://www.youtube.com/watch?v=OUx6Hxn7ZS4"
+        },
+        {
+          "video_id": "cmvbtes5p0005bnuotzavlabc",
+          "title": "為愛留好空間 | IKEA Hong Kong",
+          "source_url": "https://www.youtube.com/watch?v=U0wzmf3VsfE"
+        }
+      ],
+      "transferable_takeaway": "Treat supported setting changes as a storyboard hypothesis; rewrite and re-annotate matching content before production, then compare variants under equal media exposure. No actual counterfactual outcome is observed.",
+      "observed_views": 999558
+    }
+  ],
+  "supported_combos": [
+    [
+      "Announcement / information led",
+      "Announcement / information led",
+      "medium tempo"
+    ],
+    [
+      "Event experience led",
+      "Event experience led",
+      "medium tempo"
+    ],
+    [
+      "Music / mood led",
+      "Music / mood led",
+      "fast-cut"
+    ],
+    [
+      "Music / mood led",
+      "Music / mood led",
+      "medium tempo"
+    ],
+    [
+      "Music / mood led",
+      "Offer led",
+      "medium tempo"
+    ],
+    [
+      "Offer led",
+      "Announcement / information led",
+      "medium tempo"
+    ],
+    [
+      "Offer led",
+      "Offer led",
+      "fast-cut"
+    ],
+    [
+      "Offer led",
+      "Offer led",
+      "medium tempo"
+    ],
+    [
+      "Offer led",
+      "Problem-solution led",
+      "fast-cut"
+    ],
+    [
+      "Offer led",
+      "Problem-solution led",
+      "medium tempo"
+    ],
+    [
+      "Offer led",
+      "Product proof led",
+      "fast-cut"
+    ],
+    [
+      "Offer led",
+      "Product proof led",
+      "medium tempo"
+    ],
+    [
+      "Problem-solution led",
+      "Problem-solution led",
+      "medium tempo"
+    ],
+    [
+      "Product proof led",
+      "Creative mechanic unresolved",
+      "fast-cut"
+    ],
+    [
+      "Product proof led",
+      "Problem-solution led",
+      "fast-cut"
+    ],
+    [
+      "Product proof led",
+      "Product proof led",
+      "fast-cut"
+    ],
+    [
+      "Product proof led",
+      "Product proof led",
+      "medium tempo"
+    ],
+    [
+      "Testimonial led",
+      "Testimonial led",
+      "medium tempo"
+    ]
+  ],
+  "rule": "At most two categorical changes among mechanic/structure/pacing. Triples occur >=2 times in outer training. Frozen GNN; recompute semantic edges. Evidence/text fixed for dataset cases; new graph uses only declared brief inputs. OOF 90% residual bands are sensitivity summaries, not guaranteed intervals."
+}

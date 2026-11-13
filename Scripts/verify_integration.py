@@ -37,6 +37,7 @@ def verify(check_app=False):
         from streamlit.testing.v1 import AppTest
         app = AppTest.from_file(str(ROOT / 'app.py'), default_timeout=120).run()
         assert not app.exception, [e.message for e in app.exception]
+        app.selectbox(key='experiment_folder').set_value(str(ROOT/'artifacts/v2')).run()
         assert app.metric[0].value == str(len(service.videos))
         assert app.number_input(key='age___new__').value == service.age_support['training_median_days']
         app.number_input(key='age___new__').set_value(30.)

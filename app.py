@@ -7,9 +7,10 @@ import pandas as pd
 import streamlit as st
 from model_service import ModelService
 from experiment_results import available_experiments
+from final_experiment import default_folder, report_matches, data_dictionary, showcase
 from pipeline import CAT,TEXT
 
-st.set_page_config(page_title='VideoGraph Lab · Group 6',page_icon='◈',layout='wide')
+st.set_page_config(page_title='VideoGraph Lab · Audited v4',page_icon='◈',layout='wide')
 st.markdown('''<style>.block-container{padding-top:2rem;max-width:1450px}h1{letter-spacing:-1px}
 [data-testid="stMetric"]{background:#fff;border:1px solid #dce2d9;border-radius:8px;padding:14px}
 [data-testid="stMetricValue"]{font-size:1.8rem}div[data-testid="stTabs"] button{font-size:1rem}</style>''',unsafe_allow_html=True)
@@ -26,7 +27,8 @@ except (OSError,ValueError,KeyError,TypeError) as error:
     st.stop()
 labels=dict(experiments)
 with st.sidebar:
-    folder=st.selectbox('结果版本',list(labels),format_func=labels.get,key='experiment_folder')
+    choices=list(labels)
+    folder=st.selectbox('结果版本',choices,index=choices.index(default_folder(choices)),format_func=labels.get,key='experiment_folder')
 if st.session_state.get('active_experiment')!=folder:
     for key in list(st.session_state):
         if key in {'last_prediction','graph_brand','graph_video','inspect_node',
@@ -38,10 +40,11 @@ try:
 except (OSError,ValueError,KeyError,RuntimeError) as error:
     st.error(f'所选实验无法加载：{error}')
     st.stop()
+author_brief=showcase(folder)
 d=service.results;m=d['metrics'];selected=m['selected_primary_gnn'];r=m['test'][selected]
 video_count=len(d['videos']);brand_count=len({v['brand_family'] for v in d['videos']})
 split_label=f'{m["train_size"]} / {m["test_size"]}'
-st.caption('STAT6207 · APPLIED DEEP LEARNING · GROUP 06')
+st.caption('STAT6207 · CHENG, Zixuan · HUANG, Ze · SONG, Mingkun · HOU, Kaiwen')
 st.title('视频创意图实验室')
 st.write('比较品牌、元数据和创意图信号，通过冻结 GNN 探索待检验的视频设置。')
 for error in bundle_errors:
@@ -65,10 +68,15 @@ with st.sidebar:
     if service.exploratory:
         st.download_button('下载修正与待审记录',json.dumps(d['audit'],ensure_ascii=False,indent=2),
                            file_name='revision_audit.json',mime='application/json')
-        st.caption('现有四页正式报告对应主分支实验，尚未纳入本附加实验。')
-    else:
+    if report_matches(folder):
         st.download_button('下载四页 IEEE 报告',(ROOT/'output/pdf/Group6_Final_Report.pdf').read_bytes(),
                            file_name='Group6_Final_Report.pdf',mime='application/pdf')
+        st.caption('报告对应当前 v4 队列，并包含同队列双策略配对比较。')
+    else:
+        st.caption('当前为历史/其他实验；新版报告对应 v4，不混用此版本的结果。')
+    with st.expander('作者与联系方式'):
+        for author in json.loads((ROOT/'AUTHORS.json').read_text()):
+            st.write(author['name']);st.caption(author['email'])
 
 cols=st.columns(4)
 for col,label,value in zip(cols,['真实播放量标签','品牌','分组训练 / 测试','主 GNN 测试 Log RMSE'],
@@ -104,6 +112,9 @@ with results_tab:
         audit=json.loads((ROOT/'artifacts/v2/reupload_error_audit.json').read_text(encoding='utf-8'))
         st.write(f'修正前的最大误差案例：{audit["title"]}；频道 {audit["channel_name"]}，实际 {audit["observed_views"]:,} 次，原预测 {audit["pre_correction_predicted_views"]:,.0f} 次。第三方转载的分发和曝光条件与官方广告不同；1996 是创意年份，不是本次上传日期。')
         st.caption('此数值是修正前的历史诊断，当前修正划分的预测另见结果 CSV。频道或曝光差异是潜在解释，未识别其因果作用。')
+    elif d.get('largest_error'):
+        error=d['largest_error']
+        st.write(f'当前最大测试 log 误差：{error["title"]}；实测 {error["views"]:,.0f}，预测 {error["predicted_views"]:,.0f}；频道 {error["channel_name"]}。频道和分发差异是潜在解释，未识别其因果作用。')
     st.write('媒体投放、频道受众、曝光时间、人物吸引力及抽取噪声都可能影响播放量。应补充固定观察窗口、媒体预算和人工核验的 campaign 分组，并扩展独立外部测试集。')
 
 with graph_tab:
@@ -132,7 +143,7 @@ with predict_tab:
     st.subheader('修改创意设置，直接运行本地 GNN')
     options=['__new__']+list(service.videos)
     reference=st.selectbox('输入来源',options,format_func=lambda k:'新视频 Brief · 只使用声明的设置与文本' if k=='__new__' else f'[{service.videos[k]["split"]}] {service.videos[k]["title"]}',key='prediction_reference')
-    template=next(v for v in d['videos'] if v['split']=='train') if reference=='__new__' else service.videos[reference]
+    template=(author_brief['row'] if author_brief else next(v for v in d['videos'] if v['split']=='train')) if reference=='__new__' else service.videos[reference]
     ages=service.age_support
     st.info(f'目标是采集时的累计播放量，年龄只是输入协变量。训练集曝光年龄范围 {ages["training_min_days"]:.1f}–{ages["training_max_days"]:.1f} 天，中位数 {ages["training_median_days"]:.1f} 天；没有验证上线后 30 天的固定窗口预测。')
     with st.form('prediction_settings'):
@@ -182,8 +193,9 @@ with predict_tab:
 
 with cases_tab:
     st.subheader('新视频 Brief 与 30 秒 Storyboard')
-    new=d['new_video'];st.write('**目标：**',new['brief_objective']);st.write('**品牌 / 产品语境：**',new['brand'])
+    new=author_brief or d['new_video'];st.write('**目标：**',new['brief_objective']);st.write('**品牌 / 产品语境：**',new['brand'])
     c1,c2=st.columns(2);c1.metric('原设置预测',f'{new["base_prediction"]:,.0f}');c2.metric('建议设置预测',f'{new["optimized_prediction"]:,.0f}')
+    if author_brief:st.caption(author_brief['input_provenance'])
     st.json(new['changes']);st.dataframe(pd.DataFrame(new['storyboard']),hide_index=True,width='stretch')
     case_age=new.get('age_days',30.)
     st.caption(f'此案例输入曝光年龄为 {case_age:.1f} 天，30 秒指视频时长。预测目标为累计播放量，并非经验证的固定窗口预测；新视频没有实测响应，声明图与训练抽取图也存在差异。')
@@ -207,7 +219,8 @@ with data_tab:
     st.json(json.loads((ROOT/'data/youtube'/f'{evidence_id}.json').read_text(encoding='utf-8')))
     c1,c2,c3=st.columns(3)
     c1.download_button('下载冻结指标 CSV',(ROOT/'data/youtube/snapshot.csv').read_bytes(),file_name='youtube_snapshot.csv',mime='text/csv')
-    c2.download_button('下载数据字典',(ROOT/'data/processed/DATA_DICTIONARY.md').read_text(encoding='utf-8'),file_name='DATA_DICTIONARY.md',mime='text/markdown')
+    dictionary=data_dictionary(service.folder)
+    c2.download_button('下载当前实验数据字典',dictionary.read_text(encoding='utf-8'),file_name='DATA_DICTIONARY.md',mime='text/markdown')
     c3.download_button('下载当前实验指标 JSON',(service.folder/'metrics.json').read_bytes(),file_name='metrics.json',mime='application/json')
-    with st.expander('实验与数据字典'):st.markdown((ROOT/'data/processed/DATA_DICTIONARY.md').read_text(encoding='utf-8'))
-    st.caption('正式报告仅在主实验模式提供。所有预测均由本机 Python 模型计算。')
+    with st.expander('当前实验与数据字典'):st.markdown(dictionary.read_text(encoding='utf-8'))
+    st.caption('报告下载与对应实验绑定；所有预测均由本机 Python 模型计算。')

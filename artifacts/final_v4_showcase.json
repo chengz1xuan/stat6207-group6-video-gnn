@@ -1,0 +1,99 @@
+{
+  "row": {
+    "brand_family": "MTR",
+    "creative_mechanic": "Offer led",
+    "structure_type": "Demo led",
+    "evidence_mode": "mixed",
+    "cta_explicitness": "implicit",
+    "proof_strength": "partial",
+    "pacing": "medium tempo",
+    "production_complexity": "low",
+    "video_id": "author-declared-mtr-brief",
+    "title": "Proposed cross-boundary rail brief",
+    "duration_seconds": 30.0,
+    "age_days": 672.5013263456,
+    "main_message": "Present the East Rail Line as a rail option for a Hong Kong to Shenzhen journey.",
+    "hook": "Planning a cross-boundary journey? Start with a clear route.",
+    "value_promise": "A route-map demonstration can explain a rail option; check current travel information before production.",
+    "cta": "Check the current MTR route and timetable before travelling."
+  },
+  "video_id": "author-declared-mtr-brief",
+  "title": "Proposed cross-boundary rail brief",
+  "brand": "MTR",
+  "brief_objective": "Explore a clearly explained Hong Kong--Shenzhen rail option; all wording is a proposed brief, not verified current service information.",
+  "creative_elements": {
+    "creative_mechanic": "Offer led",
+    "structure_type": "Demo led",
+    "pacing": "medium tempo",
+    "main_message": "Present the East Rail Line as a rail option for a Hong Kong to Shenzhen journey.",
+    "hook": "Planning a cross-boundary journey? Start with a clear route.",
+    "cta": "Check the current MTR route and timetable before travelling."
+  },
+  "base_prediction": 316494.34375,
+  "optimized_prediction": 580103.5625,
+  "base_log": 12.665063858032227,
+  "optimized_log": 13.270963668823242,
+  "uncertainty_band": [
+    5924.39794921875,
+    16905092.0
+  ],
+  "optimized_uncertainty_band": [
+    10859.666015625,
+    30985358.0
+  ],
+  "changes": {
+    "structure_type": "Problem-solution led",
+    "pacing": "fast-cut"
+  },
+  "support_examples": [
+    {
+      "video_id": "cmu2v7bvt000ubn7cnteika56",
+      "youtube_id": "MbVxAuU3xxQ",
+      "title": "【李錦記全新快趣煮APP📱過千中、英、印尼文食譜任你shake！】",
+      "source_url": "https://www.youtube.com/watch?v=MbVxAuU3xxQ",
+      "brand_family": "Lee Kum Kee"
+    },
+    {
+      "video_id": "cmvc5mj660035bn008vaqzdu6",
+      "youtube_id": "OUx6Hxn7ZS4",
+      "title": "大家樂 燕麥奶炒滑蛋",
+      "source_url": "https://www.youtube.com/watch?v=OUx6Hxn7ZS4",
+      "brand_family": "Café de Coral"
+    },
+    {
+      "video_id": "cmvbtes5p0005bnuotzavlabc",
+      "youtube_id": "U0wzmf3VsfE",
+      "title": "為愛留好空間 | IKEA Hong Kong",
+      "source_url": "https://www.youtube.com/watch?v=U0wzmf3VsfE",
+      "brand_family": "IKEA"
+    }
+  ],
+  "candidates_evaluated": 15,
+  "age_days": 672.5013263456,
+  "observed_views": null,
+  "input_provenance": "Author-declared hypothetical brief; no borrowed extracted evidence, no realized video outcome.",
+  "checkpoint_sha256": "74e04cc5891d18b0138c7eb8e0f4991949510e99bed74c5d065ce48b3bfb0bba",
+  "storyboard": [
+    {
+      "seconds": "0-3",
+      "purpose": "Hook",
+      "content": "Planning a cross-boundary journey? Start with a clear route."
+    },
+    {
+      "seconds": "3-20",
+      "purpose": "Explain the travel need and an option",
+      "content": "Show a hypothetical journey-planning need and an East Rail route-map option."
+    },
+    {
+      "seconds": "20-27",
+      "purpose": "Apply proposed settings",
+      "content": "structure_type = Problem-solution led; pacing = fast-cut"
+    },
+    {
+      "seconds": "27-30",
+      "purpose": "CTA",
+      "content": "Check the current MTR route and timetable before travelling."
+    }
+  ],
+  "transferable_takeaway": "Test a coherent rewritten storyboard under comparable exposure; categorical search and training support do not establish causal uplift."
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "kind": "paired_policy_evaluation",
+  "mode": "full_retrained",
+  "policies": {
+    "v2": "Original fields, original response-word filter and frozen v2 subgraphs.",
+    "v3": "Audited fields, quantified-response filter and conservative rebuilt subgraphs."
+  },
+  "controls": "Identical eligible videos, labels, metadata, corrected campaign groups, outer split, inner folds, video-node pairs, model definitions and search budget.",
+  "seeds": [
+    42,
+    7,
+    21,
+    84
+  ],
+  "models": [
+    "Mean",
+    "Brand mean",
+    "Metadata Ridge",
+    "Pooled Ridge",
+    "Pooled MLP",
+    "Subgraph structural",
+    "Subgraph + similarity",
+    "Node structural",
+    "Node + similarity",
+    "Node no-brand edges"
+  ],
+  "bootstrap_draws": 2000,
+  "bootstrap_seed": 44,
+  "brand_transfer": "Not repeated; this experiment isolates the fixed grouped holdout.",
+  "app_publication": false,
+  "note": "Internal paired re-evaluation on an already inspected holdout, not an untouched external test. Differences estimate the combined text/graph-policy effect, not the effect of any single correction or a causal creative uplift.",
+  "inputs": {
+    "prepared_directory": "/Users/chengzixuan/CUHK/STAT 6207/Final Project/artifacts/isolated_revision/final-v4",
+    "prepared_manifest_sha256": "cdc8cdd51cc9966e8236d6490de8a1a3299c8a9ea5509e5a69f6454d033f4c90",
+    "legacy_rows_sha256": "fb6736a71580bcf77f11130f0156f8dccb11bbb903eef9495e4f6972899e89d7",
+    "legacy_graphs_sha256": "396d2c48576edb1dc9ca01b3b51fa749d652a013ed8baee32da5d80f37682bd7"
+  },
+  "original_sources": {
+    "pipeline.py": "8f046ce82978e7e21ab32a6718b72f2440a04643fb97780691d1a268e562e54e",
+    "revision.py": "d84cf44b09635860a1d30af7ef63ef312385af3a20b6ede498d69ab6bc3338b9"
+  },
+  "runner_sha256": "0b2a3e73ad88f6a74e19add042b923aba7b2879c482c7f9cabd1a504f5c20875",
+  "files": {
+    "common/inner_folds.csv": "d7ce06ac565404ec5c4f83c0ebc8aaea983abbbd95599fb9eca08d0a2215f5cd",
+    "common/splits.csv": "bf62e576929fbed40ca5855647ff58fa733bd0014e45ca632fa14239528a2a78",
+    "common/video_pairs.json": "0a3da1f3696ab5cdb609cd4861f0138bbd4504caf9b41fc804f38dac7257c537",
+    "v2/raw_graphs.json": "5b321937d5c15bfc3c70ba507ea9804c9acde5b6811ae0fc4363b39ec3d372d6",
+    "v2/videos.csv": "3ef0684425f34ab32c27fb130de8c0905643d541a87282937fa7029d30bfca12",
+    "v2/workspace/src/pipeline.py": "8f046ce82978e7e21ab32a6718b72f2440a04643fb97780691d1a268e562e54e",
+    "v2/workspace/src/revision.py": "d84cf44b09635860a1d30af7ef63ef312385af3a20b6ede498d69ab6bc3338b9",
+    "v3/raw_graphs.json": "3f27de5615b92a23c0981af7ab5867331ee10740bb96556f212cf5b97f0b5c3e",
+    "v3/videos.csv": "fd9d2f50279856fad5c174bb20cb3191ac97ab88bea80d51f29fbf65426c69c9",
+    "v3/workspace/src/pipeline.py": "7734747d415b33e773d0acdef9a0e4d0c5fc5cf25ea8b7c3027c5f9a9a29644f",
+    "v3/workspace/src/revision.py": "2ee11b258b4508c8b564c9a54694cb581654c32e64f7fc19c87fbe4266438b80",
+    "v3/workspace/src/text_policy.py": "6077260a644492c6fda90a0e3747e2511ef3e01ebbcf25b2d2224a8a91af52b8"
+  }
+}

@@ -1,0 +1,371 @@
+{
+  "folds": 3,
+  "scope": "outer 80% training only; fold-local transforms, graphs and stopping",
+  "scores": {
+    "Metadata Ridge": {
+      "10.0": [
+        {
+          "fold": 0,
+          "log_RMSE": 2.3852243814906293,
+          "epochs": null,
+          "train_log_RMSE": null
+        },
+        {
+          "fold": 1,
+          "log_RMSE": 2.5590024621780008,
+          "epochs": null,
+          "train_log_RMSE": null
+        },
+        {
+          "fold": 2,
+          "log_RMSE": 2.5610733899821154,
+          "epochs": null,
+          "train_log_RMSE": null
+        }
+      ],
+      "100.0": [
+        {
+          "fold": 0,
+          "log_RMSE": 2.3663546908402795,
+          "epochs": null,
+          "train_log_RMSE": null
+        },
+        {
+          "fold": 1,
+          "log_RMSE": 2.625711244117261,
+          "epochs": null,
+          "train_log_RMSE": null
+        },
+        {
+          "fold": 2,
+          "log_RMSE": 2.697549629313356,
+          "epochs": null,
+          "train_log_RMSE": null
+        }
+      ]
+    },
+    "Pooled Ridge": {
+      "10.0": [
+        {
+          "fold": 0,
+          "log_RMSE": 2.372918228261709,
+          "epochs": null,
+          "train_log_RMSE": null
+        },
+        {
+          "fold": 1,
+          "log_RMSE": 2.566873108507331,
+          "epochs": null,
+          "train_log_RMSE": null
+        },
+        {
+          "fold": 2,
+          "log_RMSE": 2.6386993896777855,
+          "epochs": null,
+          "train_log_RMSE": null
+        }
+      ],
+      "100.0": [
+        {
+          "fold": 0,
+          "log_RMSE": 2.3530073769605298,
+          "epochs": null,
+          "train_log_RMSE": null
+        },
+        {
+          "fold": 1,
+          "log_RMSE": 2.5988199956769154,
+          "epochs": null,
+          "train_log_RMSE": null
+        },
+        {
+          "fold": 2,
+          "log_RMSE": 2.699167994878437,
+          "epochs": null,
+          "train_log_RMSE": null
+        }
+      ]
+    },
+    "Pooled MLP": {
+      "0.01": [
+        {
+          "fold": 0,
+          "log_RMSE": 2.381572712110406,
+          "epochs": 7,
+          "train_log_RMSE": 2.422713035861467
+        },
+        {
+          "fold": 1,
+          "log_RMSE": 2.5655628746342156,
+          "epochs": 9,
+          "train_log_RMSE": 2.2122625160594307
+        },
+        {
+          "fold": 2,
+          "log_RMSE": 2.679351148275756,
+          "epochs": 8,
+          "train_log_RMSE": 2.29247670160642
+        }
+      ],
+      "0.1": [
+        {
+          "fold": 0,
+          "log_RMSE": 2.3769652200016216,
+          "epochs": 14,
+          "train_log_RMSE": 2.505773093681026
+        },
+        {
+          "fold": 1,
+          "log_RMSE": 2.5612888689688664,
+          "epochs": 18,
+          "train_log_RMSE": 2.247141231477663
+        },
+        {
+          "fold": 2,
+          "log_RMSE": 2.698304276984789,
+          "epochs": 29,
+          "train_log_RMSE": 1.8195360490318877
+        }
+      ]
+    },
+    "Subgraph structural": {
+      "0.01": [
+        {
+          "fold": 0,
+          "log_RMSE": 2.3185385083668786,
+          "epochs": 6,
+          "train_log_RMSE": 2.316675676502103
+        },
+        {
+          "fold": 1,
+          "log_RMSE": 2.534621352936237,
+          "epochs": 5,
+          "train_log_RMSE": 2.216977910631813
+        },
+        {
+          "fold": 2,
+          "log_RMSE": 2.685780731162709,
+          "epochs": 3,
+          "train_log_RMSE": 2.342039547581816
+        }
+      ],
+      "0.1": [
+        {
+          "fold": 0,
+          "log_RMSE": 2.3465291791616094,
+          "epochs": 13,
+          "train_log_RMSE": 2.4383587551546384
+        },
+        {
+          "fold": 1,
+          "log_RMSE": 2.5418642394830524,
+          "epochs": 19,
+          "train_log_RMSE": 1.9566451029813114
+        },
+        {
+          "fold": 2,
+          "log_RMSE": 2.7017645391836655,
+          "epochs": 20,
+          "train_log_RMSE": 1.8562858465684935
+        }
+      ]
+    },
+    "Subgraph + similarity": {
+      "0.01": [
+        {
+          "fold": 0,
+          "log_RMSE": 2.322073802434481,
+          "epochs": 6,
+          "train_log_RMSE": 2.400985713779437
+        },
+        {
+          "fold": 1,
+          "log_RMSE": 2.525148711074411,
+          "epochs": 6,
+          "train_log_RMSE": 2.2169054715530145
+        },
+        {
+          "fold": 2,
+          "log_RMSE": 2.6886232897263422,
+          "epochs": 11,
+          "train_log_RMSE": 1.8820867247269493
+        }
+      ],
+      "0.1": [
+        {
+          "fold": 0,
+          "log_RMSE": 2.3469988329468205,
+          "epochs": 16,
+          "train_log_RMSE": 2.4327982336040415
+        },
+        {
+          "fold": 1,
+          "log_RMSE": 2.5094284477893605,
+          "epochs": 19,
+          "train_log_RMSE": 2.077938498568547
+        },
+        {
+          "fold": 2,
+          "log_RMSE": 2.6875432329526427,
+          "epochs": 21,
+          "train_log_RMSE": 1.9438313195893187
+        }
+      ]
+    },
+    "Node structural": {
+      "0.01": [
+        {
+          "fold": 0,
+          "log_RMSE": 2.373641325982133,
+          "epochs": 2,
+          "train_log_RMSE": 2.546641444984869
+        },
+        {
+          "fold": 1,
+          "log_RMSE": 2.5909298406143253,
+          "epochs": 19,
+          "train_log_RMSE": 1.6474919392286824
+        },
+        {
+          "fold": 2,
+          "log_RMSE": 2.4421514669470716,
+          "epochs": 8,
+          "train_log_RMSE": 2.1196953543869377
+        }
+      ],
+      "0.1": [
+        {
+          "fold": 0,
+          "log_RMSE": 2.365262106418136,
+          "epochs": 4,
+          "train_log_RMSE": 2.4734726979814936
+        },
+        {
+          "fold": 1,
+          "log_RMSE": 2.5035449388371185,
+          "epochs": 8,
+          "train_log_RMSE": 2.0744240348745713
+        },
+        {
+          "fold": 2,
+          "log_RMSE": 2.496302379854392,
+          "epochs": 8,
+          "train_log_RMSE": 2.232979864603802
+        }
+      ]
+    },
+    "Node + similarity": {
+      "0.01": [
+        {
+          "fold": 0,
+          "log_RMSE": 2.3584001581664094,
+          "epochs": 3,
+          "train_log_RMSE": 2.513243328566749
+        },
+        {
+          "fold": 1,
+          "log_RMSE": 2.5814344103717812,
+          "epochs": 19,
+          "train_log_RMSE": 1.6327519108483501
+        },
+        {
+          "fold": 2,
+          "log_RMSE": 2.491067452164456,
+          "epochs": 12,
+          "train_log_RMSE": 1.9570381246275168
+        }
+      ],
+      "0.1": [
+        {
+          "fold": 0,
+          "log_RMSE": 2.359521004701247,
+          "epochs": 4,
+          "train_log_RMSE": 2.54441814343797
+        },
+        {
+          "fold": 1,
+          "log_RMSE": 2.511947899994005,
+          "epochs": 13,
+          "train_log_RMSE": 2.0229989875949936
+        },
+        {
+          "fold": 2,
+          "log_RMSE": 2.539646772108328,
+          "epochs": 14,
+          "train_log_RMSE": 2.0920684031447134
+        }
+      ]
+    },
+    "Node no-brand edges": {
+      "0.01": [
+        {
+          "fold": 0,
+          "log_RMSE": 2.326572604051755,
+          "epochs": 6,
+          "train_log_RMSE": 2.4055000234189587
+        },
+        {
+          "fold": 1,
+          "log_RMSE": 2.5627917679058347,
+          "epochs": 4,
+          "train_log_RMSE": 2.3408640021081815
+        },
+        {
+          "fold": 2,
+          "log_RMSE": 2.682017811101519,
+          "epochs": 7,
+          "train_log_RMSE": 2.216885408868935
+        }
+      ],
+      "0.1": [
+        {
+          "fold": 0,
+          "log_RMSE": 2.3374108339408446,
+          "epochs": 8,
+          "train_log_RMSE": 2.455809226439326
+        },
+        {
+          "fold": 1,
+          "log_RMSE": 2.566641966858774,
+          "epochs": 10,
+          "train_log_RMSE": 2.2291121573539394
+        },
+        {
+          "fold": 2,
+          "log_RMSE": 2.665147816586828,
+          "epochs": 23,
+          "train_log_RMSE": 1.903648811558267
+        }
+      ]
+    }
+  },
+  "closed_form_baselines": {
+    "Brand mean": [
+      {
+        "fold": 0,
+        "log_RMSE": 3.0326258158848267,
+        "train_log_RMSE": 2.162889200252641
+      },
+      {
+        "fold": 1,
+        "log_RMSE": 2.7227758433343014,
+        "train_log_RMSE": 2.234713028252887
+      },
+      {
+        "fold": 2,
+        "log_RMSE": 2.407163897828016,
+        "train_log_RMSE": 2.35770612400408
+      }
+    ]
+  },
+  "selected": {
+    "Metadata Ridge": 10.0,
+    "Pooled Ridge": 10.0,
+    "Pooled MLP": 0.01,
+    "Subgraph structural": 0.01,
+    "Subgraph + similarity": 0.01,
+    "Node structural": 0.1,
+    "Node + similarity": 0.1,
+    "Node no-brand edges": 0.1
+  }
+}

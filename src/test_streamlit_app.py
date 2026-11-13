@@ -18,6 +18,7 @@ g=s.query_graph(row);assert all(n['type']!='evidence' for n in g['nodes']);p=s.p
 assert p['age_diagnostic']['input_age_days']==30 and s.age_support['training_min_days']>30
 app=AppTest.from_file(str(ROOT/'app.py'),default_timeout=40).run()
 assert not app.exception,[e.message for e in app.exception]
+app.selectbox(key='experiment_folder').set_value(str(ROOT/'artifacts/v2')).run()
 assert app.number_input(key='age___new__').value==s.age_support['training_median_days']
 app.number_input(key='age___new__').set_value(30.)
 app.button[0].click().run()

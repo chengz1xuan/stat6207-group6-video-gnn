@@ -9,6 +9,7 @@ BUNDLE_FILES = (
     "test_predictions.csv", "oof_predictions.csv", "uncertainty.json",
     "cross_validation.json", "splits.csv", "seed_sensitivity.json",
     "error_slices.json", "inference_fixture.json",
+    "age_support.json", "brand_edge_audit.json", "largest_error.json", "DATA_DICTIONARY.md",
 )
 
 
@@ -28,6 +29,8 @@ def validate_bundle(folder, root=ROOT):
         raise ValueError("An experiment must be inside artifacts/isolated_revision.")
     manifest_path = folder / "app_manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    if not isinstance(manifest, dict):
+        raise ValueError("App experiment manifest must be a JSON object.")
     if manifest.get("schema_version") != 1 or manifest.get("kind") != "isolated_exploratory":
         raise ValueError(f"Unsupported App experiment manifest: {manifest_path}")
     expected_files = set(BUNDLE_FILES)

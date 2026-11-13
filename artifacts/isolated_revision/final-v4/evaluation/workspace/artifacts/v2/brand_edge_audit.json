@@ -1,0 +1,8 @@
+{
+  "core_undirected_pairs": 1382,
+  "same_brand_pairs": 1382,
+  "same_brand_fraction": 1.0,
+  "no_brand_pairs": 0,
+  "equals_complete_brand_cliques": true,
+  "ablation": "Remove every same-brand endpoint pair; retain brand input features and tuning protocol."
+}

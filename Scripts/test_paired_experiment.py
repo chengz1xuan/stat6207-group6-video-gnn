@@ -227,7 +227,7 @@ class PairedStatisticsTests(unittest.TestCase):
 
 class RealPreparedInputTests(unittest.TestCase):
     def test_actual_cohort_policy_separation_and_read_only_plan(self):
-        prepared = ROOT / "artifacts" / "isolated_revision" / "full-app-v3"
+        prepared = ROOT / "artifacts" / "isolated_revision" / "final-v4"
         if not (prepared / "manifest.json").exists():
             self.skipTest("Local full-app-v3 data is not part of a fresh source checkout.")
         audit, rows, graphs, pairs, _ = paired.load_inputs(prepared)
@@ -254,7 +254,7 @@ class RealPreparedInputTests(unittest.TestCase):
             self.assertFalse(Path(plan["output"]).exists())
 
     def test_actual_smoke_publishes_only_data_path_results(self):
-        prepared = ROOT / "artifacts" / "isolated_revision" / "full-app-v3"
+        prepared = ROOT / "artifacts" / "isolated_revision" / "final-v4"
         if not (prepared / "manifest.json").exists():
             self.skipTest("Local full-app-v3 data is not part of a fresh source checkout.")
         base = ROOT / "artifacts" / "paired_revision"

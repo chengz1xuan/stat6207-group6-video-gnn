@@ -1,0 +1,14 @@
+{
+  "version": "v4",
+  "branch": "report/campaign-audit-v4",
+  "base_commit": "e51ce4fdcde1d9ccdda7c40416f6be43d246067a",
+  "prepared_directory": "artifacts/isolated_revision/final-v4",
+  "primary_folder": "artifacts/isolated_revision/final-v4/evaluation/workspace/artifacts/v2",
+  "paired_directory": "artifacts/paired_revision/final-v4",
+  "authors_file": "AUTHORS.json",
+  "report_path": "output/pdf/Group6_Final_Report.pdf",
+  "label_snapshot": "data/youtube/snapshot.csv",
+  "scope": "Post-audit grouped internal evaluation; source-supported campaign unions and unresolved-family quarantine. No new external holdout or causal uplift.",
+  "showcase_path": "artifacts/final_v4_showcase.json",
+  "showcase_sha256": "ff0f82a0cedf30257d1a29a6a8430756e15932404ee5e14f72a3528f9f1d0410"
+}

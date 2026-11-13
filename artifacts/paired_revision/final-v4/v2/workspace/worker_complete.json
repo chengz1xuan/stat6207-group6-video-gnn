@@ -1,0 +1,13 @@
+{
+  "policy": "v2",
+  "train_size": 161,
+  "test_size": 40,
+  "environment": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "torch": "2.14.0",
+    "torch-geometric": "2.8.1"
+  }
+}

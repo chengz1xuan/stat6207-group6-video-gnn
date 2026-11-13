@@ -1,0 +1,19 @@
+{
+  "prepared_manifest_sha256": "cdc8cdd51cc9966e8236d6490de8a1a3299c8a9ea5509e5a69f6454d033f4c90",
+  "training_sources": {
+    "pipeline.py": "8f046ce82978e7e21ab32a6718b72f2440a04643fb97780691d1a268e562e54e",
+    "revision.py": "d84cf44b09635860a1d30af7ef63ef312385af3a20b6ede498d69ab6bc3338b9"
+  },
+  "evaluation_script_sha256": "2b9701ceb8e2df744548539047e74fb9b38e704e863aae42e7e3d7344a43c446",
+  "acknowledged_exploratory": true,
+  "environment": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "torch": "2.14.0",
+    "torch-geometric": "2.8.1",
+    "streamlit": "1.66.1"
+  }
+}

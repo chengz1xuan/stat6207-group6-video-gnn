@@ -131,7 +131,7 @@ def smoke_evaluation(rows):
     }
 
 
-def export_app_results(revision, df, gs, tr, te, audit, trained, transfer):
+def export_app_results(revision, df, gs, tr, te, audit, trained, transfer, pairs):
     features, models, configs, predictions, primary, bands, _, uncertainty = trained
     cases, brief, _ = revision.scenarios(
         df, gs, tr, te, features, models[primary], configs[primary], primary, bands[primary],
@@ -158,6 +158,23 @@ def export_app_results(revision, df, gs, tr, te, audit, trained, transfer):
         "policy": audit["graph_policy"],
     }
     revision.dump(revision.OUT / "graph_audit.json", graph_audit)
+    nonbrand = revision.remove_brand_pairs(df, pairs)
+    cliques = {tuple(sorted((a, b))) for _, part in df.groupby('brand_family')
+               for a in part.video_id for b in part.video_id if a != b}
+    brand_audit = {
+        'core_undirected_pairs': len(pairs), 'same_brand_pairs': len(pairs - nonbrand),
+        'same_brand_fraction': len(pairs - nonbrand) / len(pairs) if pairs else 0.,
+        'no_brand_pairs': len(nonbrand), 'equals_complete_brand_cliques': pairs == cliques,
+        'ablation': 'Remove every same-brand endpoint pair; retain brand input features and tuning protocol.',
+    }
+    ages = revision.age_support(df.iloc[tr])
+    revision.dump(revision.OUT / 'brand_edge_audit.json', brand_audit)
+    revision.dump(revision.OUT / 'age_support.json', ages)
+    prediction_frame = df.iloc[te][['video_id', 'youtube_id', 'title', 'source_url', 'channel_name', 'views']].copy()
+    prediction_frame['predicted_views'] = np.expm1(np.clip(predictions[primary], 0, 25))
+    prediction_frame['absolute_log_error'] = abs(observed - predictions[primary])
+    worst = prediction_frame.sort_values('absolute_log_error', ascending=False).iloc[0].to_dict()
+    revision.dump(revision.OUT / 'largest_error.json', worst)
     videos = json.loads(df.to_json(orient="records", force_ascii=False))
     revision.dump(revision.OUT / "web_results.json", {
         "experiment_kind": "isolated_exploratory", "training_ready": False,
@@ -165,7 +182,36 @@ def export_app_results(revision, df, gs, tr, te, audit, trained, transfer):
         "split": split, "uncertainty": uncertainty, "lobo": transfer,
         "videos": videos, "graphs": gs, "cases": cases, "new_video": brief,
         "slices": slices, "graph_audit": graph_audit,
+        'brand_edge_audit': brand_audit, 'age_support': ages, 'largest_error': worst,
     })
+    dictionary = (
+        '# Audited cumulative-view experiment data dictionary\n\n'
+        f'This experiment uses {len(tr)} training / {len(te)} testing videos and '
+        f'{audit["split_counts"]["quarantine"]} quarantined videos from the 214-label snapshot.\n\n'
+        '`views`: exact frozen cumulative YouTube views at 2026-11-09 capture; target ln(1+views).\n\n'
+        '`group` / `campaign_id`: original groups transitively unioned with source-text-supported '
+        'parent-series rules. `needs_review` families are quarantined as complete components. '
+        '`original_group` / `original_split`: provenance only. `split`: train, test or quarantine.\n\n'
+        '`main_message`, `hook`, `value_promise`, `cta`: quantified-response-free text; duplicate '
+        'summary hooks are blanked. `original_*`: unedited text for the paired old-policy control.\n\n'
+        '`likes` / `comments`: fresh platform values where available; missing is not zero. '
+        '`likes_archived` / `comments_archived`: historical values, not model inputs.\n\n'
+        '`age_days`: capture minus source-supplied publication date, not a newly verified upload date. '
+        f'Training support {ages["training_min_days"]:.4f}--{ages["training_max_days"]:.4f} days; '
+        f'default new-brief age {ages["training_median_days"]:.4f} days. '
+        'No fixed-horizon or 30-day forecast has been validated.\n\n'
+        'CAT fields are the eight allowlisted brand/creative categories; duration is in seconds. '
+        'Channel, engagement and original-text audit columns are excluded from predictive features '
+        'except the explicitly allowlisted text/category/duration/age inputs.\n\n'
+        'Structural edges are original memberships and deterministic observation-support links. '
+        'Similarity links are training-fitted, heuristic within-video top-2 cosine >=0.55. '
+        f'Video-node core has {len(pairs)} pairs, {len(pairs - nonbrand)} same-brand; '
+        f'{len(nonbrand)} remain after removing brand pairs.\n\n'
+        'Evaluation is post-audit internal evidence, not an untouched external holdout. '
+        'Campaign coverage and source annotations are not exhaustively video-verified. '
+        'Creative recommendations and OOF sensitivity bands do not demonstrate causal uplift.\n'
+    )
+    (revision.OUT / 'DATA_DICTIONARY.md').write_text(dictionary, encoding='utf-8')
     data = features.transform(df, gs, primary == "Subgraph + similarity")
     logs = revision.predict(models[primary], configs[primary], data)
     revision.dump(revision.OUT / "inference_fixture.json", [
@@ -210,7 +256,7 @@ def train_evaluate(directory, output, rows, graphs, pairs, skip_brand_transfer):
     if set(predictions.video_id) != set(df.iloc[te].video_id):
         raise ValueError("Test predictions do not cover the prepared held-out videos.")
     export_app_results(
-        revision, df, gs, tr, te, load_json(directory / "audit.json"), trained, transfer,
+        revision, df, gs, tr, te, load_json(directory / "audit.json"), trained, transfer, pairs,
     )
     return {
         "mode": "full_retrained_exploratory",

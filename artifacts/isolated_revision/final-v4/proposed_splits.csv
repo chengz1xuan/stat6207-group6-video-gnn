@@ -1,0 +1,215 @@
+video_id,youtube_id,brand_family,original_group,original_split,campaign_id,group,split
+cmu3gznxt000pbn5k4mu9yl5f,-5P9rd8IuV0,MTR,0,train,campaign-85a539c3d26c3313,campaign-85a539c3d26c3313,train
+cmt3rij3m000fbnlsoi1w0z1s,-DTVoI_qJi4,Hang Seng Bank,1,train,campaign-39c1736c04e0b26e,campaign-39c1736c04e0b26e,train
+cmsxzrhfa0017bnn8p2stilmd,-GqyErEcxCE,HSBC,2,test,campaign-ba67ab776b2392c2,campaign-ba67ab776b2392c2,train
+cmu3h124d000zbn5koghp340c,-ScXERv_ZRQ,MTR,3,test,campaign-90d4007b90c201ab,campaign-90d4007b90c201ab,train
+cmvc4znur002dbn00afi5g52s,-ZLDI72Ffs0,Maxim's,4,test,campaign-6f52d9e5f864a2c4,campaign-6f52d9e5f864a2c4,train
+cmt3r3laf000pbnaworamd1c8,-gNF3ekne-U,Hang Seng Bank,5,train,campaign-41dac6f6ca6d4d42,campaign-41dac6f6ca6d4d42,test
+cmrzyteu8000tbnr8qwvfbdnd,0_1xI0ihZSk,McDonald's,6,test,mcdonalds-shogun-tamago,mcdonalds-shogun-tamago,train
+cmvc4x6u10023bn00ww0cuutd,0jpktNjWkz4,Maxim's,7,test,campaign-8256077bb58438b3,campaign-8256077bb58438b3,train
+cmvc5nw57003fbn00lnr610as,185p2FWa_R0,Café de Coral,8,train,campaign-6644b70c1553004f,campaign-6644b70c1553004f,train
+cmvc4lbtr000fbn0081iw3zrc,1YEhm7RjaG0,Maxim's,9,test,campaign-9f8d9dd23fb45f75,campaign-9f8d9dd23fb45f75,train
+cmu2vkwvr001ybn7c9mjfkkp4,1qXaxTz5Kcc,Lee Kum Kee,10,train,campaign-9a21ac423f8e2f5a,campaign-9a21ac423f8e2f5a,test
+cmvbtwsiz0033bnuoqo6zw17b,2o_krPfXibA,Mannings,11,test,mannings-say-yes-to-better-2024,mannings-say-yes-to-better-2024,quarantine
+cmvc9tmte008mbn0040t3np8l,359mKJOz0L0,Kee Wah Bakery,12,train,campaign-dd6422e3aeb941c2,campaign-dd6422e3aeb941c2,train
+cmvcb32p700asbn00bt1uevem,3BCcDbFiVaA,Chow Tai Fook,13,train,campaign-1873ee06df54ee68,campaign-1873ee06df54ee68,train
+cmvcakh5x009lbn00brm6c7y9,3TQfmO8wi5c,Chow Tai Fook,14,train,campaign-2f67a37f6fdcb29c,campaign-2f67a37f6fdcb29c,train
+cmvc8vit6007sbn00j50pifsd,3Ybi_Gp6sAk,Kee Wah Bakery,15,train,keewah-traditional-craft-new-year-2022,keewah-traditional-craft-new-year-2022,quarantine
+cmvbu476x004cbnuo1qv1tuh8,3lBk4mg_8YY,Prudential,16,test,prudential-we-do-family-2023,prudential-we-do-family-2023,quarantine
+cmvc5jk89002lbn00olmyt66x,3pLqks-7nWo,Café de Coral,17,train,campaign-0fe17c3fd730eb39,campaign-0fe17c3fd730eb39,train
+cmvc5u9v20049bn00m8xakrl6,4NM3S0va1yA,Café de Coral,18,train,campaign-206ce611ddd165bd,campaign-206ce611ddd165bd,train
+cmvbtjmsy000nbnuohidox9lp,4rixed7cNhI,IKEA,19,test,campaign-dbe4d4b7c5fa4445,campaign-dbe4d4b7c5fa4445,train
+cmvc8orlg006ybn00umvx4vyc,5w_BXo_DRrY,Kee Wah Bakery,20,train,campaign-0ea65645063e8db2,campaign-0ea65645063e8db2,train
+cmrzz3s6r001sbnr8lbqxwrbd,61ekBwxBCLA,McDonald's,21,train,campaign-75a8068737a9a26c,campaign-75a8068737a9a26c,train
+cmol77a1i0000bns0j82s94vf,6nM-zMXtN5c,McDonald's,22,train,campaign-c5b886c34889e8a8,campaign-c5b886c34889e8a8,train
+cmvcahnw6009ebn00qlp8y61r,6sJztvpjQxQ,Chow Tai Fook,23,train,campaign-ba1a30de2c5b8a7b,campaign-ba1a30de2c5b8a7b,train
+cmvc2ym4o0000bn00gxrswcmz,78elgk91rFY,Prudential,24,train,campaign-e191108e5c62901e,campaign-e191108e5c62901e,train
+cmrzyy6gu0013bnr8x7bzdh4u,7gliR9tqu9U,McDonald's,25,test,campaign-11b30e474bf7dcd5,campaign-11b30e474bf7dcd5,train
+cmvc5u1i50046bn00x453059h,7y7LNpnUSPc,Café de Coral,27,train,campaign-8d97db02fc378bda,campaign-8d97db02fc378bda,train
+cmvc4xe0y0026bn00j0glnzsw,8IZV397_l38,Maxim's,28,test,campaign-ef8e37ef1760d050,campaign-ef8e37ef1760d050,train
+cmvc4mk5i000pbn00las6i1uw,8NZyb7wPlao,Maxim's,29,train,campaign-cc55280de3d5094f,campaign-cc55280de3d5094f,train
+cmvbtrn8y0021bnuoxlb9h1pr,8QDPwJDJ11s,Mannings,30,train,campaign-7986cf1e24328814,campaign-7986cf1e24328814,train
+cmvbtyikh003ibnuossgqavbj,8ySmQhxarpY,Mannings,31,train,mannings-everyday-wellness-2023,mannings-everyday-wellness-2023,train
+cmvc5xusw004gbn003frnxp6a,98Q60sqW-sQ,Café de Coral,32,train,campaign-faad3f0173a868b0,campaign-faad3f0173a868b0,train
+cmvcayjyb00abbn0031nkrbyw,9b7Obr630PQ,Chow Tai Fook,33,train,campaign-a79dc78088c5c7b2,campaign-a79dc78088c5c7b2,train
+cmvbtooj8001wbnuosydk73lo,AHaB5F7rBRs,IKEA,34,train,campaign-3c2ebb439da3951c,campaign-3c2ebb439da3951c,train
+cmu2vj9p2001tbn7cy0pvw8xx,B-94BJF4IhA,Lee Kum Kee,35,train,campaign-5754b7b0e77c1e9b,campaign-5754b7b0e77c1e9b,test
+cmt3r8lhc001ebnawtu04awo7,B2EyinOoCsE,Hang Seng Bank,36,train,campaign-ea87affb96671111,campaign-ea87affb96671111,train
+cmrzynj42000abnr8fpm7o1z0,B2QiLXaVP9U,McDonald's,37,train,mcdonalds-world-cup-wow-sauce-2026,mcdonalds-world-cup-wow-sauce-2026,train
+cmu2vv3bu002dbn7cf0p6kuuk,BGscT20uAJg,Cathay,38,train,campaign-6c7f6369563c9cf8,campaign-6c7f6369563c9cf8,train
+cmvc9slub008cbn00ivkttbc0,BJClwocXh8c,Kee Wah Bakery,39,test,campaign-4e4fbc9597a42ed2,campaign-4e4fbc9597a42ed2,test
+cmsxziaqt000obnn8sz706hui,BZYRhsgBTAw,HSBC,40,train,campaign-42d5cff9352d3c4e,campaign-42d5cff9352d3c4e,test
+cmt3r4r5i000zbnaw2vdpix5m,BtK5SCz4Z74,Hang Seng Bank,41,train,campaign-f5a5441bd4367308,campaign-f5a5441bd4367308,test
+cmt3q08mg0005bnawpa8ty5ye,CHqJrCwN_QE,HSBC,42,train,campaign-73945433b0fb60b7,campaign-73945433b0fb60b7,train
+cmvc5mafh0032bn00ur4j2w7y,COQgrghJZH8,Café de Coral,43,train,campaign-1c99847a73e86f0a,campaign-1c99847a73e86f0a,test
+cmrzz2ji6001nbnr8szn29cxl,CV-dAWG145s,McDonald's,44,train,campaign-1709cefa7f06a339,campaign-1709cefa7f06a339,train
+cmu2we1ju0005bn60fk3e908r,CeeE8TmGsY4,Cathay,45,test,campaign-dd19d3e49c01f78b,campaign-dd19d3e49c01f78b,train
+cmu2v61ek000pbn7csj900ufj,CoYEXVKF6bU,Lee Kum Kee,46,train,campaign-bc082978dca63f95,campaign-bc082978dca63f95,train
+cmol7iglr000fbns0sbn3n9x6,CrRejJT0q7c,McDonald's,47,train,campaign-0144459ca2ed1e41,campaign-0144459ca2ed1e41,train
+cmvc4pxvs001cbn00o7q88cw9,CxbnjaET7ew,Maxim's,48,train,maxims-blessings-cny-2023,maxims-blessings-cny-2023,train
+cmvbty2ye003dbnuob6j0llc3,D1H6HkY-tCo,Mannings,49,train,mannings-everyday-wellness-2023,mannings-everyday-wellness-2023,train
+cmvc5rjmi003zbn00kx00d5k7,E0kfVldng2M,Café de Coral,50,train,campaign-ab480fd8753ad69f,campaign-ab480fd8753ad69f,train
+cmvbtny5n001pbnuobvaxpn9c,EsGS9IAO_Xk,IKEA,51,test,campaign-f521598390b8c272,campaign-f521598390b8c272,train
+cmu3h7qjz001obn5kcdgz47iw,EuQjddhBXn0,MTR,52,test,campaign-2f015ed34ed39bcc,campaign-2f015ed34ed39bcc,train
+cmvc821ot005ibn00xs557445,F-KDWYQepLY,Garden,53,test,campaign-7730d2ddf18795ea,campaign-7730d2ddf18795ea,train
+cmvc8u1sj007lbn00caj0c5os,FSoZAWh93b0,Kee Wah Bakery,54,test,keewah-traditional-craft-new-year-2022,keewah-traditional-craft-new-year-2022,quarantine
+cmu2x7awk001jbn60ht4lm5t5,F_gTeg6D8e0,Cathay,38,train,campaign-6c7f6369563c9cf8,campaign-6c7f6369563c9cf8,train
+cmt3rgi29000abnlsmmx5ufkk,GbFkx2yArDc,Hang Seng Bank,56,train,campaign-e4da20d2410078a4,campaign-e4da20d2410078a4,train
+cmrzyv755000ybnr8iqmrz1jk,Ghs18rt-6pw,McDonald's,57,train,mcdonalds-shogun-tamago,mcdonalds-shogun-tamago,train
+cmt3r7yyd0019bnawc43hg0oy,H4Ol-GN8eAo,Hang Seng Bank,58,train,campaign-920b0f2679d5f821,campaign-920b0f2679d5f821,train
+cmu2vtqne0028bn7crxlaymsx,HcP4Lt-D5Yc,Cathay,59,train,campaign-4b27761509cc1186,campaign-4b27761509cc1186,test
+cmsy0fmgu0028bnn8lr8uwa1j,Hki21yPVTS8,HSBC,60,train,hsbc-life-one-choice,hsbc-life-one-choice,quarantine
+cmvcafqwt0091bn0093h4e03o,IFRknd39jgw,Chow Tai Fook,61,train,campaign-1e1ef13135a39a7d,campaign-1e1ef13135a39a7d,test
+cmvc83tdb005pbn00p4q0ub8t,IL1KdJE-az0,Garden,62,train,campaign-03b03b3dae8bdb7b,campaign-03b03b3dae8bdb7b,test
+cmu2widw9000fbn607342g203,IhMcOgW4zSs,Cathay,63,test,campaign-aa24b57d0fcc85ee,campaign-aa24b57d0fcc85ee,train
+cmvc8n56o006rbn00k6qpn70f,JHNJThUjAvY,Kee Wah Bakery,64,test,campaign-337519b114485219,campaign-337519b114485219,train
+cmt3rmfou000pbnlsayxa6pxl,KKfxbA-MMj4,Hang Seng Bank,65,train,campaign-2f1655a0e1961d1f,campaign-2f1655a0e1961d1f,train
+cmsxzoifu000ybnn8hkdaxhvh,KuamaJ_IFFk,HSBC,66,train,campaign-63f126d7443d6a9a,campaign-63f126d7443d6a9a,train
+cmu2wny6l000zbn60s16v9t46,L07xNpwQ2EQ,Cathay,63,test,campaign-aa24b57d0fcc85ee,campaign-aa24b57d0fcc85ee,train
+cmu2wkzjb000pbn60he94q1fu,LTlOInv_2TI,Cathay,68,test,campaign-08848f4921f0bd0c,campaign-08848f4921f0bd0c,train
+cmt3r98b3001jbnawgplw9ymh,Lh70a4x5KuI,Hang Seng Bank,69,test,hangseng-invest-express-2026,hangseng-invest-express-2026,quarantine
+cmrzylxh00005bnr8zlzzvcu5,LmgcyUVg-iI,McDonald's,70,test,mcdonalds-world-cup-wow-sauce-2026,mcdonalds-world-cup-wow-sauce-2026,train
+cmvbtvkhs002vbnuoqrsrkngv,M085htAtiRs,Mannings,71,train,campaign-bcae4938ebd051f7,campaign-bcae4938ebd051f7,test
+cmu2vbxt5001ebn7c9f05myx8,MDuE6wFFMdE,Lee Kum Kee,72,test,campaign-9c295c08868def58,campaign-9c295c08868def58,test
+cmrzyosgu000fbnr8evhfjks5,MEYNmh5RqaQ,McDonald's,73,train,campaign-4fb32e214fc45229,campaign-4fb32e214fc45229,train
+cmvc7sxs1004obn009qydj7vc,MOFzm7s7K2A,Garden,74,test,campaign-30badd91d027317d,campaign-30badd91d027317d,train
+cmu2wy0qt0019bn60g1lld3sk,MW1vzYW1TPo,Cathay,38,train,campaign-6c7f6369563c9cf8,campaign-6c7f6369563c9cf8,train
+cmu2v7bvt000ubn7cnteika56,MbVxAuU3xxQ,Lee Kum Kee,76,train,campaign-00e01e3d5746376b,campaign-00e01e3d5746376b,train
+cmvc5k59i002qbn00o6l0ws5b,MhalEVYPJgE,Café de Coral,77,test,campaign-5856a49e51918dd7,campaign-5856a49e51918dd7,train
+cmvcae26v008rbn00atb8096n,MwMV3DLe1-0,Chow Tai Fook,78,test,campaign-e9f75baaae653922,campaign-e9f75baaae653922,train
+cmsxzlj93000tbnn87ta1t5gl,N1XdXPMy0vQ,HSBC,79,train,campaign-fac13b584614e993,campaign-fac13b584614e993,train
+cmvbtu70a002obnuolzssfs20,NOetjffBjYg,Mannings,80,train,campaign-423abd4d496a1484,campaign-423abd4d496a1484,test
+cmu3gd9b90000bn5ksc0fo2yj,NYFuZPNC0V0,MTR,81,train,campaign-a9a55e66aed76df5,campaign-a9a55e66aed76df5,train
+cmvc5ree3003wbn00gamp08f1,NxIwYigNCjI,Café de Coral,82,train,campaign-ff18882f02aa336a,campaign-ff18882f02aa336a,test
+cmvc5mj660035bn008vaqzdu6,OUx6Hxn7ZS4,Café de Coral,84,train,campaign-ee82aae95f836ad1,campaign-ee82aae95f836ad1,train
+cmvbtmyy9001fbnuohu625lh8,OpT3Sa9RQ3Q,IKEA,85,train,ikea-tested-quality-proposal,ikea-tested-quality-proposal,train
+cmvc9srdv008fbn00nr9rykfi,OyZoCBg3Ngk,Kee Wah Bakery,86,train,campaign-aab892b0ba5d4c25,campaign-aab892b0ba5d4c25,train
+cmooc24s50000bnz0qbywz2k5,P25f_dDd2MI,McDonald's,87,train,campaign-9d121a81fcae8e3d,campaign-9d121a81fcae8e3d,train
+cmvc5npif003cbn0036cb4swn,P3e4EiD4Wns,Café de Coral,88,train,campaign-68645112448f4185,campaign-68645112448f4185,train
+cmvc5jdko002ibn00jd17fzcb,Pgbkl89_DS8,Café de Coral,89,train,campaign-d9a5ade2573934fd,campaign-d9a5ade2573934fd,test
+cmvbthj43000dbnuo1zjduj9k,PhVN9idahMQ,IKEA,90,train,ikea-complete-sleep,ikea-complete-sleep,train
+cmt3ra46w001obnaweynvl0sp,PqFRv7ymhfA,Hang Seng Bank,91,train,campaign-ced673557bbd71d9,campaign-ced673557bbd71d9,train
+cmvcb242e00albn00rlhl4woq,QO1Nt4997vc,Chow Tai Fook,92,train,campaign-649e9f2504c9c067,campaign-649e9f2504c9c067,train
+cmvc30uwd0005bn00ai9vb6gd,QxWMBf3JHG4,Prudential,93,train,campaign-54316bc71750d4c1,campaign-54316bc71750d4c1,train
+cmrvjf9kh0000bng4t2lsf7tj,S-uITi7erCQ,McDonald's,94,train,campaign-e4c124f29d5ebff0,campaign-e4c124f29d5ebff0,train
+cmvbtndsl001kbnuopa1cj9rj,SD4QP6O6hN8,IKEA,95,train,campaign-4d304a65a3d4727f,campaign-4d304a65a3d4727f,train
+cmvc893cb006cbn001szl8gt5,S_O_1slKghs,Garden,96,train,campaign-6b201aaca1ae12f0,campaign-6b201aaca1ae12f0,train
+cmvc7zqe10058bn0034riz509,T_qSFi4V9u4,Garden,97,train,campaign-529433a1523cfb4e,campaign-529433a1523cfb4e,train
+cmu2vascj0019bn7crpn9ega3,TiU8WWzNSFI,Lee Kum Kee,98,train,campaign-2b1d3d7a08098942,campaign-2b1d3d7a08098942,train
+cmvbtes5p0005bnuotzavlabc,U0wzmf3VsfE,IKEA,99,train,ikea-home-storage-for-love,ikea-home-storage-for-love,train
+cmsy03r67001mbnn8kl8c7cb4,UZQ4nQEpuU4,HSBC,100,train,campaign-9d6275288c55ce0c,campaign-9d6275288c55ce0c,train
+cmvc9p9sn0085bn00duthearm,UyQuJaMKeLQ,Kee Wah Bakery,101,train,keewah-traditional-craft-new-year-2022,keewah-traditional-craft-new-year-2022,quarantine
+cmu2vs2sd0023bn7cit6tg60x,VZQgQ4psi1g,Cathay,102,train,campaign-6325ec31da435c3e,campaign-6325ec31da435c3e,test
+cmvbtwm3y0030bnuonb2lsqqk,W55hGwh93DY,Mannings,103,train,campaign-851c91f8d61d4e88,campaign-851c91f8d61d4e88,train
+cmvc4piak0019bn00a2nk9b56,WBMGLbAvnQY,Maxim's,104,train,maxims-blessings-cny-2023,maxims-blessings-cny-2023,train
+cmrzyz82t0018bnr8x0wh8ezh,WChlOg45lmY,McDonald's,105,test,campaign-faf97d8d0608b6d3,campaign-faf97d8d0608b6d3,train
+cmu3gihtq000fbn5kvgwjfaql,WZTOLwgO93c,MTR,106,train,campaign-19f2e21418fe0fff,campaign-19f2e21418fe0fff,test
+cmvbucwxc005sbnuoskg5zh60,WkcyCWOx6-w,Prudential,107,train,campaign-da7ea3e6a72a5c53,campaign-da7ea3e6a72a5c53,train
+cmu2vhlxl001obn7ch9b8e4hh,Wm2sWEWQb0g,Lee Kum Kee,108,train,campaign-a67a43a64b13c7d5,campaign-a67a43a64b13c7d5,train
+cmsy0028z001hbnn87vol9rjo,X2dwXXFghCA,HSBC,79,train,campaign-fac13b584614e993,campaign-fac13b584614e993,train
+cmvc8akqj006jbn00rhvyhwp4,XH3o7qXEWvE,Garden,110,train,campaign-5cb4fe203f0e482c,campaign-5cb4fe203f0e482c,train
+cmvc9p30m0082bn00awb9y2vr,XLNo393de5U,Kee Wah Bakery,111,train,keewah-traditional-craft-new-year-2022,keewah-traditional-craft-new-year-2022,quarantine
+cmvbtjw7g000qbnuo17u8h5ux,X_xSzTh-YcA,IKEA,113,train,campaign-e7f451e6c3f4ed24,campaign-e7f451e6c3f4ed24,test
+cmvcafxnb0094bn00d1yzihr3,XhMGwO14vQ8,Chow Tai Fook,114,train,campaign-89c82e4e506d02db,campaign-89c82e4e506d02db,train
+cmu2wjq7r000kbn60fmj7o90m,XkRrFEqViZA,Cathay,115,train,campaign-9dc5c68744e15fed,campaign-9dc5c68744e15fed,test
+cmu2v81ud000zbn7c14o0hmai,Xrp9jVmLXcI,Lee Kum Kee,116,train,campaign-a4ee2756c20a5c39,campaign-a4ee2756c20a5c39,train
+cmu3gebg70005bn5kiai0e7aw,XtXY6tEdn9g,MTR,106,train,campaign-19f2e21418fe0fff,campaign-19f2e21418fe0fff,test
+cmsxzdcjo0009bnn8u7fvvbqw,YgECszm3ChA,HSBC,118,train,campaign-70e25908f8b5a84d,campaign-70e25908f8b5a84d,train
+cmvc8r0b1007bbn00bh5fms9w,YyZQl4e5YvA,Kee Wah Bakery,119,test,campaign-a9e0a21877761487,campaign-a9e0a21877761487,train
+cmu2v1ti0000abn7csjhdowdv,Z8raj4zDuyo,Lee Kum Kee,120,train,campaign-fd307a8d8126a70d,campaign-fd307a8d8126a70d,train
+cmrzz0hxi001dbnr812x02b9f,ZM9zcu7kLAI,McDonald's,121,test,campaign-88232ec38ab47639,campaign-88232ec38ab47639,train
+cmvc4uzgb001tbn00ydmvzucw,ZbAU76bLqU0,Maxim's,122,test,campaign-796a221c158b1fb7,campaign-796a221c158b1fb7,train
+cmu2v2nkj000fbn7csko86y0l,_8WLqAaDoRQ,Lee Kum Kee,123,test,campaign-c55ba4a97ffb0097,campaign-c55ba4a97ffb0097,test
+cmvc8mz9z006obn00ksv5t22e,_KFUFerBlSI,Kee Wah Bakery,124,train,campaign-cad99eb525f3f156,campaign-cad99eb525f3f156,train
+cmvbu8h8j0056bnuooqjzem9a,__Za2MhJI68,Prudential,125,train,campaign-9ef0b322487f7486,campaign-9ef0b322487f7486,train
+cmvbu3g3q0044bnuoleiktjg8,aQgAxhh2iAk,Prudential,126,train,campaign-a12fdc1e7fced169,campaign-a12fdc1e7fced169,train
+cmu2wmsl3000ubn60e8ge1w06,aRxksODz0T4,Cathay,127,train,campaign-d6ecf073bfa59222,campaign-d6ecf073bfa59222,test
+cmu2ws9bi0014bn60h6tzjeme,adUW1gLM0mo,Cathay,128,train,campaign-1d193de9692e5437,campaign-1d193de9692e5437,train
+cmvc31bjj000abn00k2q5hopc,ag_jIwmmPBE,Prudential,129,train,campaign-e119b99700f17946,campaign-e119b99700f17946,test
+cmu3h4emb0019bn5k5d7br6p4,bRJnZfltaOo,MTR,130,train,campaign-b472b7e8b965898a,campaign-b472b7e8b965898a,train
+cmvbtzhz9003pbnuovdsne85s,bRSbvd6gB_0,Mannings,131,test,campaign-4c103882e58b1baf,campaign-4c103882e58b1baf,train
+cmvc85vf2005zbn00ydg413hj,cCe3JMmZzYA,Garden,132,train,campaign-1d7856b2fd631acb,campaign-1d7856b2fd631acb,train
+cmu3h2cny0014bn5kmtm8sjem,cru2ZL6HMEg,MTR,133,train,campaign-9123440ca79d3b9c,campaign-9123440ca79d3b9c,train
+cmu2x5ga1001ebn60k5cu5puh,ctvWljvgZ18,Cathay,134,train,campaign-40f39ce297cb0635,campaign-40f39ce297cb0635,train
+cmu2v4sz4000kbn7c1y4hhuot,dFs7ROIlVTg,Lee Kum Kee,135,train,campaign-d9b3948f16352670,campaign-d9b3948f16352670,train
+cmt3q1dqh000abnawxsrlhcae,demkAoN7Bzw,HSBC,136,test,hsbc-life-one-choice,hsbc-life-one-choice,quarantine
+cmvbtsxqj002ebnuor3g929ox,dqfHMVoUET4,Mannings,137,train,campaign-bc977db6d8015dad,campaign-bc977db6d8015dad,train
+cmrzz69zk001xbnr8gin6fukw,dyLBuPaIH1s,McDonald's,21,train,campaign-75a8068737a9a26c,campaign-75a8068737a9a26c,train
+cmvcae8bx008ubn006iyhct3p,e1Nmg-6Qb8I,Chow Tai Fook,139,train,campaign-32f8fa7b2f9acd29,campaign-32f8fa7b2f9acd29,test
+cmrzyjkjt0000bnr8kciomyl8,ePE_MnQeyH0,McDonald's,140,train,campaign-ffda50147314d9cf,campaign-ffda50147314d9cf,train
+cmvbu6r54004tbnuoqsm4wkj3,g9cN05pET5E,Prudential,141,train,prudential-170-anniversary-2019,prudential-170-anniversary-2019,train
+cmt3rs53c000zbnlsfsg3r0lo,gUZvl5hnAow,Hang Seng Bank,142,train,campaign-12996b2ad7b1d670,campaign-12996b2ad7b1d670,train
+cmu2w4i710000bn601279dwvu,hPrZgpPeMoA,Cathay,143,train,campaign-a45fcaf6fa1b778a,campaign-a45fcaf6fa1b778a,train
+cmvc4lkv1000ibn00nzej00p6,hgjiQ8QnZN4,Maxim's,144,train,campaign-15e4a1cea47dd4cf,campaign-15e4a1cea47dd4cf,train
+cmu3h6smv001jbn5ks3l7sm38,hp8NlkDOZao,MTR,145,train,campaign-5776fb51f57661e1,campaign-5776fb51f57661e1,train
+cmvc8p5vl0071bn00encif876,iBrJl_B6p60,Kee Wah Bakery,146,train,campaign-803badb660a90bb4,campaign-803badb660a90bb4,train
+cmvc4od1x0012bn008i73bk38,iHipWYVjM5Q,Maxim's,147,train,campaign-329761b003d7637f,campaign-329761b003d7637f,train
+cmt3rj4fw000kbnlsr5kipwly,iV1GFMBXDTM,Hang Seng Bank,148,train,campaign-4715f58e835038e9,campaign-4715f58e835038e9,train
+cmvc7uufy004vbn00p6q5ojmr,ibmeLw7dgu8,Garden,149,train,campaign-0b87833d0923efdd,campaign-0b87833d0923efdd,train
+cmt3r70mm0014bnawzkkcz87d,icMDHuO9UZg,Hang Seng Bank,150,test,hangseng-invest-express-2026,hangseng-invest-express-2026,quarantine
+cmsy06fr9001rbnn8ob3owlrg,ihxEsfPHqxo,HSBC,151,train,campaign-dbf7a825ffc63bbf,campaign-dbf7a825ffc63bbf,train
+cmvbu5bpx004mbnuobvnt3njr,jlB5oiVibQU,Prudential,152,train,prudential-170-anniversary-2019,prudential-170-anniversary-2019,train
+cmqq6d3m00000bn2onubls07g,jmgdq6hdLUQ,McDonald's,153,train,campaign-3c6a265863d82154,campaign-3c6a265863d82154,train
+cmu2wgkh7000abn60m4cm6ao7,kCG5VhYU-_4,Cathay,45,test,campaign-dd19d3e49c01f78b,campaign-dd19d3e49c01f78b,train
+cmvbu9ipm005dbnuo641y94kq,kMQohGK52l0,Prudential,155,train,campaign-4f1b8f291e197165,campaign-4f1b8f291e197165,test
+cmvc4rxbp001mbn00kujfo4p3,krimJHXX-GE,Maxim's,156,train,campaign-1d0ea9298306ff61,campaign-1d0ea9298306ff61,train
+cmt3r0xrl000fbnawtle1w65o,lDH7HlEFnzE,Hang Seng Bank,142,train,campaign-12996b2ad7b1d670,campaign-12996b2ad7b1d670,train
+cmu2v136h0005bn7cygpkh967,lS1rj3VjXYU,Lee Kum Kee,158,train,campaign-b67a4f12faaa4a84,campaign-b67a4f12faaa4a84,test
+cmvbu6xs9004wbnuo3n7cfzh3,m8qVqW63VQs,Prudential,152,train,prudential-170-anniversary-2019,prudential-170-anniversary-2019,train
+cmvcaszf2009ybn00tcimzawm,mME1WPYoY1I,Chow Tai Fook,160,train,campaign-c2e30e6ff5a1d2a0,campaign-c2e30e6ff5a1d2a0,test
+cmvbticur000ibnuo3g8w7j5m,mYm7ef4MEqE,IKEA,161,test,ikea-complete-sleep,ikea-complete-sleep,train
+cmvc5kwkj002vbn00twlvkg0b,meW_ZN4yHDM,Café de Coral,162,train,campaign-79b9eadd2baa84fc,campaign-79b9eadd2baa84fc,test
+cmvcb1w2800aibn00ffo3jltu,mfWKQDsUlME,Chow Tai Fook,163,train,campaign-7a4e6cca709087fa,campaign-7a4e6cca709087fa,train
+cmvbtmklm001cbnuocfnh5rs8,moIBJ9pzEYw,IKEA,164,train,ikea-tested-quality-proposal,ikea-tested-quality-proposal,train
+cmvc5qa8a003pbn00rsjxufrv,n17rIrkjINg,Café de Coral,165,train,campaign-44d9178c5b14617d,campaign-44d9178c5b14617d,train
+cmvbtl040000xbnuo3hv72oqd,nK_cRkehRUE,IKEA,113,train,campaign-e7f451e6c3f4ed24,campaign-e7f451e6c3f4ed24,test
+cmsxzfyuq000jbnn8fez5aj05,nPU-IV4HGbU,HSBC,167,train,campaign-20f93ae88bddf1af,campaign-20f93ae88bddf1af,train
+cmvc7v0zd004ybn00r68ga0yf,o33ogNGmKts,Garden,168,train,campaign-dd47d21bc0910794,campaign-dd47d21bc0910794,train
+cmvbttrk1002jbnuo7rbz1hvh,oFjdBkdtN04,Mannings,169,train,campaign-e7601e50ecf5989a,campaign-e7601e50ecf5989a,train
+cmvbu2lzu003zbnuozdbpcim0,oH32A0KAbNA,Mannings,170,train,mannings-everyday-wellness-2023,mannings-everyday-wellness-2023,train
+cmvbts9tf0029bnuoifoulmm5,oSSYljtVwQg,Mannings,171,test,mannings-say-yes-to-better-2024,mannings-say-yes-to-better-2024,quarantine
+cmvcaydc600a8bn00b6o0wg76,oUY-9ccC8mM,Chow Tai Fook,33,train,campaign-a79dc78088c5c7b2,campaign-a79dc78088c5c7b2,train
+cmu2vg8lh001jbn7cs7r0okst,oc_NhOZd9OY,Lee Kum Kee,72,test,campaign-9c295c08868def58,campaign-9c295c08868def58,test
+cmu3h0e3l000ubn5kqeugr1bu,oriUYfDe6T0,MTR,175,train,campaign-496eec5bec3e4911,campaign-496eec5bec3e4911,train
+cmvbtxcvo0038bnuorfhf48r5,p2aVDSBbmlE,Mannings,176,train,campaign-903dec0110d01db0,campaign-903dec0110d01db0,train
+cmt3rfg5l0005bnlsdvg6ka9f,pDrZk2xigIg,Hang Seng Bank,5,train,campaign-41dac6f6ca6d4d42,campaign-41dac6f6ca6d4d42,test
+cmvbtru1q0024bnuo7nm520mx,pF8tH1Xmxno,Mannings,178,train,campaign-e6791245f70c68d7,campaign-e6791245f70c68d7,test
+cmvbtm45f0017bnuottzwhp9k,pO4nZry5YSY,IKEA,179,train,campaign-710ca98de7032181,campaign-710ca98de7032181,train
+cmsxztvj3001cbnn8kcixwl7j,pqcIYFpmDeg,HSBC,180,train,campaign-6f42d01586fa98fb,campaign-6f42d01586fa98fb,train
+cmvcakpub009obn00slsgmckr,q4VjqEQt_eQ,Chow Tai Fook,181,test,campaign-4df5efe663bffa9e,campaign-4df5efe663bffa9e,test
+cmu2v9btg0014bn7cbisarrg9,q6Xu4yOPnXA,Lee Kum Kee,182,test,campaign-2dbb33e85309a2fb,campaign-2dbb33e85309a2fb,train
+cmvc5q41u003mbn0063uldhht,q6Z2KZQId68,Café de Coral,183,train,campaign-540449bf1a901804,campaign-540449bf1a901804,train
+cmrzz8eib0022bnr8nhphfcel,qJ4TvIPCbds,McDonald's,184,train,campaign-52d1818e60ad8b8a,campaign-52d1818e60ad8b8a,train
+cmrzz1f9k001ibnr8j5lfhvfz,qOpf6dSzLuQ,McDonald's,185,train,campaign-c50710b1c6d4a411,campaign-c50710b1c6d4a411,train
+cmvc4rotk001jbn00tmz1u2nk,rBaWSamsK0Q,Maxim's,186,train,campaign-90e0eba920e66a9c,campaign-90e0eba920e66a9c,test
+cmvbpdekz0000bn6wbv7zcyqg,rUxv3XvskeU,IKEA,187,train,ikea-complete-sleep,ikea-complete-sleep,train
+cmvc8qsbq0078bn003z4jeqsb,rW9zKaIy4CA,Kee Wah Bakery,188,train,campaign-59becef71681d08e,campaign-59becef71681d08e,test
+cmu3ggxym000abn5k4p9zb5of,roFBb3KadtU,MTR,189,train,campaign-ac04a7893ef057e2,campaign-ac04a7893ef057e2,train
+cmvbu895p0053bnuoisvutc6v,sbx2Dx1B-Z0,Prudential,190,train,campaign-fe35cddf551837ee,campaign-fe35cddf551837ee,train
+cmt3ruagg0019bnlsyumm4sgl,tLwLeUSiOw4,Hang Seng Bank,191,train,campaign-1a622ca3421d1fda,campaign-1a622ca3421d1fda,train
+cmt3r43zf000ubnaw2ckc8qfh,tQyU-SMt33Y,Hang Seng Bank,5,train,campaign-41dac6f6ca6d4d42,campaign-41dac6f6ca6d4d42,test
+cmvc8vp2b007vbn00ks93w63e,uEhK6pMU-O4,Kee Wah Bakery,193,train,keewah-traditional-craft-new-year-2022,keewah-traditional-craft-new-year-2022,quarantine
+cmvbu9ujj005gbnuou2b4c9k9,uaPKYTUO70Q,Prudential,194,train,campaign-73f6c171b4d69dc8,campaign-73f6c171b4d69dc8,train
+cmvc4o58w000zbn00siqy7mjs,uh8kE1NumE0,Maxim's,195,train,campaign-3a8b770f366d7a91,campaign-3a8b770f366d7a91,test
+cmvc861ux0062bn0085o4henq,v3IQWiF477Y,Garden,196,train,campaign-eaf5801a2a00ba42,campaign-eaf5801a2a00ba42,train
+cmt3rdmjb0000bnlsashglvqv,vASrfzs7E3I,Hang Seng Bank,197,train,campaign-34fa8b2fd262aca6,campaign-34fa8b2fd262aca6,train
+cmvbu021e003sbnuozy4ukblw,vauHxdnPEHA,Mannings,198,test,campaign-55782bc3bf20cc53,campaign-55782bc3bf20cc53,test
+cmvc4v771001wbn004sovgf41,vawylsc9428,Maxim's,199,train,campaign-3cdfab35452dac9e,campaign-3cdfab35452dac9e,train
+cmvc7zk9y0055bn00nkt9atyh,wSqyT9xSPUY,Garden,200,train,campaign-3dbabf21327fae4a,campaign-3dbabf21327fae4a,train
+cmu2uys670000bn7c3h7ycvuy,wrsnCX4O13A,Lee Kum Kee,201,train,campaign-f4dbd47b9005d174,campaign-f4dbd47b9005d174,test
+cmvc81w79005fbn00isdem44c,xCjSd7r4szc,Garden,202,train,campaign-febfae10372383a4,campaign-febfae10372383a4,train
+cmu3h99h6001tbn5kpr8n6err,xy0gfrI16Gc,MTR,203,train,campaign-364014acfac8f088,campaign-364014acfac8f088,train
+cmt3rtlvu0014bnls4109ko3o,y1Wkz2l1ESs,Hang Seng Bank,5,train,campaign-41dac6f6ca6d4d42,campaign-41dac6f6ca6d4d42,test
+cmvcawnzb00a3bn00nvj7payj,yA5XUepAbE0,Chow Tai Fook,205,train,campaign-f2cb7a5b9a68b0e8,campaign-f2cb7a5b9a68b0e8,train
+cmvbtdsug0000bnuovtsoez1h,yDsg8AqtepE,IKEA,206,train,ikea-home-storage-for-love,ikea-home-storage-for-love,train
+cmvbu3n6y0047bnuonmso0psg,yJeWR5KFr8Y,Prudential,207,train,campaign-c2ccf701dae510f3,campaign-c2ccf701dae510f3,train
+cmt3rnk8e000ubnlsqdq0mxnl,yRvDJXHErxY,Hang Seng Bank,208,test,campaign-feab1769b357c2ef,campaign-feab1769b357c2ef,train
+cmvcahcu5009bbn00dxvjoh7l,yTkqNa9rF2M,Chow Tai Fook,114,train,campaign-89c82e4e506d02db,campaign-89c82e4e506d02db,train
+cmvbu4ov1004hbnuon55b2mdh,yaKG5Dhk7mI,Prudential,210,train,prudential-we-do-family-2023,prudential-we-do-family-2023,quarantine
+cmrzysa12000obnr8dpgkpy8m,ycspZ6JLJV4,McDonald's,211,train,campaign-11bcea53c941db1b,campaign-11bcea53c941db1b,train
+cmvc8ttlc007ibn00mz42oe2f,zJMAXqNsdZ0,Kee Wah Bakery,212,train,campaign-30bf970049490a90,campaign-30bf970049490a90,train
+cmu3gz0ns000kbn5klqdzok6v,zT1G1K_pMgA,MTR,214,train,campaign-375d3ed77e3f44c2,campaign-375d3ed77e3f44c2,train
+cmvc4mw0u000sbn00sn58cgyw,z_Teu7lch74,Maxim's,215,train,campaign-965c73f9839297d4,campaign-965c73f9839297d4,train
+cmt3pwyjb0000bnawtl1xstmg,zcCsjbcbxfc,HSBC,216,train,campaign-ee9cdd5a6b1e0676,campaign-ee9cdd5a6b1e0676,train
+cmvc88w3m0069bn00ftdd8673,zmol5gECAXo,Garden,217,train,campaign-89a4cd65bade45a0,campaign-89a4cd65bade45a0,train
+cmt3r2hlm000kbnawvq24lr5f,zo4PEWRqY7E,Hang Seng Bank,218,train,campaign-49bee7e173af207c,campaign-49bee7e173af207c,train

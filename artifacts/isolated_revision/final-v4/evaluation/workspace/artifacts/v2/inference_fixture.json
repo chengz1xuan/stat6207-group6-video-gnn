@@ -1,0 +1,806 @@
+[
+  {
+    "video_id": "cmu3gznxt000pbn5k4mu9yl5f",
+    "expected_log": 13.223543167114258
+  },
+  {
+    "video_id": "cmt3rij3m000fbnlsoi1w0z1s",
+    "expected_log": 13.554048538208008
+  },
+  {
+    "video_id": "cmsxzrhfa0017bnn8p2stilmd",
+    "expected_log": 11.768719673156738
+  },
+  {
+    "video_id": "cmu3h124d000zbn5koghp340c",
+    "expected_log": 13.529546737670898
+  },
+  {
+    "video_id": "cmvc4znur002dbn00afi5g52s",
+    "expected_log": 10.469902992248535
+  },
+  {
+    "video_id": "cmt3r3laf000pbnaworamd1c8",
+    "expected_log": 13.831836700439453
+  },
+  {
+    "video_id": "cmrzyteu8000tbnr8qwvfbdnd",
+    "expected_log": 13.210835456848145
+  },
+  {
+    "video_id": "cmvc4x6u10023bn00ww0cuutd",
+    "expected_log": 11.764283180236816
+  },
+  {
+    "video_id": "cmvc5nw57003fbn00lnr610as",
+    "expected_log": 13.171905517578125
+  },
+  {
+    "video_id": "cmvc4lbtr000fbn0081iw3zrc",
+    "expected_log": 13.269861221313477
+  },
+  {
+    "video_id": "cmu2vkwvr001ybn7c9mjfkkp4",
+    "expected_log": 12.40498161315918
+  },
+  {
+    "video_id": "cmvc9tmte008mbn0040t3np8l",
+    "expected_log": 11.104803085327148
+  },
+  {
+    "video_id": "cmvcb32p700asbn00bt1uevem",
+    "expected_log": 10.824832916259766
+  },
+  {
+    "video_id": "cmvcakh5x009lbn00brm6c7y9",
+    "expected_log": 10.831560134887695
+  },
+  {
+    "video_id": "cmvc5jk89002lbn00olmyt66x",
+    "expected_log": 13.605903625488281
+  },
+  {
+    "video_id": "cmvc5u9v20049bn00m8xakrl6",
+    "expected_log": 11.970121383666992
+  },
+  {
+    "video_id": "cmvbtjmsy000nbnuohidox9lp",
+    "expected_log": 12.08942985534668
+  },
+  {
+    "video_id": "cmvc8orlg006ybn00umvx4vyc",
+    "expected_log": 10.58909797668457
+  },
+  {
+    "video_id": "cmrzz3s6r001sbnr8lbqxwrbd",
+    "expected_log": 12.643311500549316
+  },
+  {
+    "video_id": "cmol77a1i0000bns0j82s94vf",
+    "expected_log": 12.395781517028809
+  },
+  {
+    "video_id": "cmvcahnw6009ebn00qlp8y61r",
+    "expected_log": 11.26066780090332
+  },
+  {
+    "video_id": "cmvc2ym4o0000bn00gxrswcmz",
+    "expected_log": 9.632777214050293
+  },
+  {
+    "video_id": "cmrzyy6gu0013bnr8x7bzdh4u",
+    "expected_log": 11.442411422729492
+  },
+  {
+    "video_id": "cmvc5u1i50046bn00x453059h",
+    "expected_log": 11.523386001586914
+  },
+  {
+    "video_id": "cmvc4xe0y0026bn00j0glnzsw",
+    "expected_log": 10.132278442382812
+  },
+  {
+    "video_id": "cmvc4mk5i000pbn00las6i1uw",
+    "expected_log": 12.8751802444458
+  },
+  {
+    "video_id": "cmvbtrn8y0021bnuoxlb9h1pr",
+    "expected_log": 13.3104887008667
+  },
+  {
+    "video_id": "cmvbtyikh003ibnuossgqavbj",
+    "expected_log": 13.376877784729004
+  },
+  {
+    "video_id": "cmvc5xusw004gbn003frnxp6a",
+    "expected_log": 11.501723289489746
+  },
+  {
+    "video_id": "cmvcayjyb00abbn0031nkrbyw",
+    "expected_log": 10.521944999694824
+  },
+  {
+    "video_id": "cmvbtooj8001wbnuosydk73lo",
+    "expected_log": 11.775712966918945
+  },
+  {
+    "video_id": "cmu2vj9p2001tbn7cy0pvw8xx",
+    "expected_log": 12.57453441619873
+  },
+  {
+    "video_id": "cmt3r8lhc001ebnawtu04awo7",
+    "expected_log": 14.069910049438477
+  },
+  {
+    "video_id": "cmrzynj42000abnr8fpm7o1z0",
+    "expected_log": 12.730880737304688
+  },
+  {
+    "video_id": "cmu2vv3bu002dbn7cf0p6kuuk",
+    "expected_log": 12.515253067016602
+  },
+  {
+    "video_id": "cmvc9slub008cbn00ivkttbc0",
+    "expected_log": 10.72036075592041
+  },
+  {
+    "video_id": "cmsxziaqt000obnn8sz706hui",
+    "expected_log": 13.338836669921875
+  },
+  {
+    "video_id": "cmt3r4r5i000zbnaw2vdpix5m",
+    "expected_log": 13.646795272827148
+  },
+  {
+    "video_id": "cmt3q08mg0005bnawpa8ty5ye",
+    "expected_log": 13.529816627502441
+  },
+  {
+    "video_id": "cmvc5mafh0032bn00ur4j2w7y",
+    "expected_log": 11.476129531860352
+  },
+  {
+    "video_id": "cmrzz2ji6001nbnr8szn29cxl",
+    "expected_log": 12.43649959564209
+  },
+  {
+    "video_id": "cmu2we1ju0005bn60fk3e908r",
+    "expected_log": 12.494244575500488
+  },
+  {
+    "video_id": "cmu2v61ek000pbn7csj900ufj",
+    "expected_log": 12.020435333251953
+  },
+  {
+    "video_id": "cmol7iglr000fbns0sbn3n9x6",
+    "expected_log": 11.863723754882812
+  },
+  {
+    "video_id": "cmvc4pxvs001cbn00o7q88cw9",
+    "expected_log": 11.23001766204834
+  },
+  {
+    "video_id": "cmvbty2ye003dbnuob6j0llc3",
+    "expected_log": 13.617603302001953
+  },
+  {
+    "video_id": "cmvc5rjmi003zbn00kx00d5k7",
+    "expected_log": 11.461906433105469
+  },
+  {
+    "video_id": "cmvbtny5n001pbnuobvaxpn9c",
+    "expected_log": 12.368318557739258
+  },
+  {
+    "video_id": "cmu3h7qjz001obn5kcdgz47iw",
+    "expected_log": 12.875237464904785
+  },
+  {
+    "video_id": "cmvc821ot005ibn00xs557445",
+    "expected_log": 12.295395851135254
+  },
+  {
+    "video_id": "cmu2x7awk001jbn60ht4lm5t5",
+    "expected_log": 12.87407398223877
+  },
+  {
+    "video_id": "cmt3rgi29000abnlsmmx5ufkk",
+    "expected_log": 13.365684509277344
+  },
+  {
+    "video_id": "cmrzyv755000ybnr8iqmrz1jk",
+    "expected_log": 13.151322364807129
+  },
+  {
+    "video_id": "cmt3r7yyd0019bnawc43hg0oy",
+    "expected_log": 13.552068710327148
+  },
+  {
+    "video_id": "cmu2vtqne0028bn7crxlaymsx",
+    "expected_log": 11.983538627624512
+  },
+  {
+    "video_id": "cmvcafqwt0091bn0093h4e03o",
+    "expected_log": 11.842839241027832
+  },
+  {
+    "video_id": "cmvc83tdb005pbn00p4q0ub8t",
+    "expected_log": 12.509093284606934
+  },
+  {
+    "video_id": "cmu2widw9000fbn607342g203",
+    "expected_log": 12.493407249450684
+  },
+  {
+    "video_id": "cmvc8n56o006rbn00k6qpn70f",
+    "expected_log": 11.304969787597656
+  },
+  {
+    "video_id": "cmt3rmfou000pbnlsayxa6pxl",
+    "expected_log": 13.270227432250977
+  },
+  {
+    "video_id": "cmsxzoifu000ybnn8hkdaxhvh",
+    "expected_log": 12.756436347961426
+  },
+  {
+    "video_id": "cmu2wny6l000zbn60s16v9t46",
+    "expected_log": 12.808331489562988
+  },
+  {
+    "video_id": "cmu2wkzjb000pbn60he94q1fu",
+    "expected_log": 11.804569244384766
+  },
+  {
+    "video_id": "cmrzylxh00005bnr8zlzzvcu5",
+    "expected_log": 12.538436889648438
+  },
+  {
+    "video_id": "cmvbtvkhs002vbnuoqrsrkngv",
+    "expected_log": 12.24252700805664
+  },
+  {
+    "video_id": "cmu2vbxt5001ebn7c9f05myx8",
+    "expected_log": 12.368626594543457
+  },
+  {
+    "video_id": "cmrzyosgu000fbnr8evhfjks5",
+    "expected_log": 12.67481517791748
+  },
+  {
+    "video_id": "cmvc7sxs1004obn009qydj7vc",
+    "expected_log": 13.240765571594238
+  },
+  {
+    "video_id": "cmu2wy0qt0019bn60g1lld3sk",
+    "expected_log": 13.054739952087402
+  },
+  {
+    "video_id": "cmu2v7bvt000ubn7cnteika56",
+    "expected_log": 12.809574127197266
+  },
+  {
+    "video_id": "cmvc5k59i002qbn00o6l0ws5b",
+    "expected_log": 13.576347351074219
+  },
+  {
+    "video_id": "cmvcae26v008rbn00atb8096n",
+    "expected_log": 11.671640396118164
+  },
+  {
+    "video_id": "cmsxzlj93000tbnn87ta1t5gl",
+    "expected_log": 12.935399055480957
+  },
+  {
+    "video_id": "cmvbtu70a002obnuolzssfs20",
+    "expected_log": 12.687694549560547
+  },
+  {
+    "video_id": "cmu3gd9b90000bn5ksc0fo2yj",
+    "expected_log": 13.72768783569336
+  },
+  {
+    "video_id": "cmvc5ree3003wbn00gamp08f1",
+    "expected_log": 11.462162017822266
+  },
+  {
+    "video_id": "cmvc5mj660035bn008vaqzdu6",
+    "expected_log": 12.92784309387207
+  },
+  {
+    "video_id": "cmvbtmyy9001fbnuohu625lh8",
+    "expected_log": 12.50843334197998
+  },
+  {
+    "video_id": "cmvc9srdv008fbn00nr9rykfi",
+    "expected_log": 9.549707412719727
+  },
+  {
+    "video_id": "cmooc24s50000bnz0qbywz2k5",
+    "expected_log": 12.756824493408203
+  },
+  {
+    "video_id": "cmvc5npif003cbn0036cb4swn",
+    "expected_log": 12.488248825073242
+  },
+  {
+    "video_id": "cmvc5jdko002ibn00jd17fzcb",
+    "expected_log": 13.85487174987793
+  },
+  {
+    "video_id": "cmvbthj43000dbnuo1zjduj9k",
+    "expected_log": 12.359210014343262
+  },
+  {
+    "video_id": "cmt3ra46w001obnaweynvl0sp",
+    "expected_log": 13.858845710754395
+  },
+  {
+    "video_id": "cmvcb242e00albn00rlhl4woq",
+    "expected_log": 10.700689315795898
+  },
+  {
+    "video_id": "cmvc30uwd0005bn00ai9vb6gd",
+    "expected_log": 9.949836730957031
+  },
+  {
+    "video_id": "cmrvjf9kh0000bng4t2lsf7tj",
+    "expected_log": 13.137986183166504
+  },
+  {
+    "video_id": "cmvbtndsl001kbnuopa1cj9rj",
+    "expected_log": 12.555282592773438
+  },
+  {
+    "video_id": "cmvc893cb006cbn001szl8gt5",
+    "expected_log": 11.258390426635742
+  },
+  {
+    "video_id": "cmvc7zqe10058bn0034riz509",
+    "expected_log": 12.619182586669922
+  },
+  {
+    "video_id": "cmu2vascj0019bn7crpn9ega3",
+    "expected_log": 13.037799835205078
+  },
+  {
+    "video_id": "cmvbtes5p0005bnuotzavlabc",
+    "expected_log": 14.333030700683594
+  },
+  {
+    "video_id": "cmsy03r67001mbnn8kl8c7cb4",
+    "expected_log": 13.419119834899902
+  },
+  {
+    "video_id": "cmu2vs2sd0023bn7cit6tg60x",
+    "expected_log": 12.716486930847168
+  },
+  {
+    "video_id": "cmvbtwm3y0030bnuonb2lsqqk",
+    "expected_log": 12.219687461853027
+  },
+  {
+    "video_id": "cmvc4piak0019bn00a2nk9b56",
+    "expected_log": 12.551839828491211
+  },
+  {
+    "video_id": "cmrzyz82t0018bnr8x0wh8ezh",
+    "expected_log": 11.726659774780273
+  },
+  {
+    "video_id": "cmu3gihtq000fbn5kvgwjfaql",
+    "expected_log": 12.403207778930664
+  },
+  {
+    "video_id": "cmvbucwxc005sbnuoskg5zh60",
+    "expected_log": 9.817890167236328
+  },
+  {
+    "video_id": "cmu2vhlxl001obn7ch9b8e4hh",
+    "expected_log": 12.260855674743652
+  },
+  {
+    "video_id": "cmsy0028z001hbnn87vol9rjo",
+    "expected_log": 12.739757537841797
+  },
+  {
+    "video_id": "cmvc8akqj006jbn00rhvyhwp4",
+    "expected_log": 10.819937705993652
+  },
+  {
+    "video_id": "cmvbtjw7g000qbnuo17u8h5ux",
+    "expected_log": 13.120076179504395
+  },
+  {
+    "video_id": "cmvcafxnb0094bn00d1yzihr3",
+    "expected_log": 11.121729850769043
+  },
+  {
+    "video_id": "cmu2wjq7r000kbn60fmj7o90m",
+    "expected_log": 12.052241325378418
+  },
+  {
+    "video_id": "cmu2v81ud000zbn7c14o0hmai",
+    "expected_log": 11.71175765991211
+  },
+  {
+    "video_id": "cmu3gebg70005bn5kiai0e7aw",
+    "expected_log": 12.46311092376709
+  },
+  {
+    "video_id": "cmsxzdcjo0009bnn8u7fvvbqw",
+    "expected_log": 13.546121597290039
+  },
+  {
+    "video_id": "cmvc8r0b1007bbn00bh5fms9w",
+    "expected_log": 10.622262954711914
+  },
+  {
+    "video_id": "cmu2v1ti0000abn7csjhdowdv",
+    "expected_log": 13.218164443969727
+  },
+  {
+    "video_id": "cmrzz0hxi001dbnr812x02b9f",
+    "expected_log": 12.803485870361328
+  },
+  {
+    "video_id": "cmvc4uzgb001tbn00ydmvzucw",
+    "expected_log": 11.6106538772583
+  },
+  {
+    "video_id": "cmu2v2nkj000fbn7csko86y0l",
+    "expected_log": 13.313088417053223
+  },
+  {
+    "video_id": "cmvc8mz9z006obn00ksv5t22e",
+    "expected_log": 12.689985275268555
+  },
+  {
+    "video_id": "cmvbu8h8j0056bnuooqjzem9a",
+    "expected_log": 10.350780487060547
+  },
+  {
+    "video_id": "cmvbu3g3q0044bnuoleiktjg8",
+    "expected_log": 11.829171180725098
+  },
+  {
+    "video_id": "cmu2wmsl3000ubn60e8ge1w06",
+    "expected_log": 12.846446990966797
+  },
+  {
+    "video_id": "cmu2ws9bi0014bn60h6tzjeme",
+    "expected_log": 12.547711372375488
+  },
+  {
+    "video_id": "cmvc31bjj000abn00k2q5hopc",
+    "expected_log": 11.288976669311523
+  },
+  {
+    "video_id": "cmu3h4emb0019bn5k5d7br6p4",
+    "expected_log": 12.083174705505371
+  },
+  {
+    "video_id": "cmvbtzhz9003pbnuovdsne85s",
+    "expected_log": 13.231244087219238
+  },
+  {
+    "video_id": "cmvc85vf2005zbn00ydg413hj",
+    "expected_log": 12.219466209411621
+  },
+  {
+    "video_id": "cmu3h2cny0014bn5kmtm8sjem",
+    "expected_log": 11.94806957244873
+  },
+  {
+    "video_id": "cmu2x5ga1001ebn60k5cu5puh",
+    "expected_log": 11.522627830505371
+  },
+  {
+    "video_id": "cmu2v4sz4000kbn7c1y4hhuot",
+    "expected_log": 11.989775657653809
+  },
+  {
+    "video_id": "cmvbtsxqj002ebnuor3g929ox",
+    "expected_log": 12.718864440917969
+  },
+  {
+    "video_id": "cmrzz69zk001xbnr8gin6fukw",
+    "expected_log": 12.449775695800781
+  },
+  {
+    "video_id": "cmvcae8bx008ubn006iyhct3p",
+    "expected_log": 11.47049331665039
+  },
+  {
+    "video_id": "cmrzyjkjt0000bnr8kciomyl8",
+    "expected_log": 12.851076126098633
+  },
+  {
+    "video_id": "cmvbu6r54004tbnuoqsm4wkj3",
+    "expected_log": 11.111374855041504
+  },
+  {
+    "video_id": "cmt3rs53c000zbnlsfsg3r0lo",
+    "expected_log": 13.204427719116211
+  },
+  {
+    "video_id": "cmu2w4i710000bn601279dwvu",
+    "expected_log": 12.409073829650879
+  },
+  {
+    "video_id": "cmvc4lkv1000ibn00nzej00p6",
+    "expected_log": 13.229658126831055
+  },
+  {
+    "video_id": "cmu3h6smv001jbn5ks3l7sm38",
+    "expected_log": 12.92335033416748
+  },
+  {
+    "video_id": "cmvc8p5vl0071bn00encif876",
+    "expected_log": 10.528022766113281
+  },
+  {
+    "video_id": "cmvc4od1x0012bn008i73bk38",
+    "expected_log": 12.31498908996582
+  },
+  {
+    "video_id": "cmt3rj4fw000kbnlsr5kipwly",
+    "expected_log": 13.498760223388672
+  },
+  {
+    "video_id": "cmvc7uufy004vbn00p6q5ojmr",
+    "expected_log": 12.723339080810547
+  },
+  {
+    "video_id": "cmsy06fr9001rbnn8ob3owlrg",
+    "expected_log": 13.22531795501709
+  },
+  {
+    "video_id": "cmvbu5bpx004mbnuobvnt3njr",
+    "expected_log": 11.67592716217041
+  },
+  {
+    "video_id": "cmqq6d3m00000bn2onubls07g",
+    "expected_log": 12.708379745483398
+  },
+  {
+    "video_id": "cmu2wgkh7000abn60m4cm6ao7",
+    "expected_log": 13.173247337341309
+  },
+  {
+    "video_id": "cmvbu9ipm005dbnuo641y94kq",
+    "expected_log": 11.412454605102539
+  },
+  {
+    "video_id": "cmvc4rxbp001mbn00kujfo4p3",
+    "expected_log": 11.800370216369629
+  },
+  {
+    "video_id": "cmt3r0xrl000fbnawtle1w65o",
+    "expected_log": 13.856228828430176
+  },
+  {
+    "video_id": "cmu2v136h0005bn7cygpkh967",
+    "expected_log": 12.942296981811523
+  },
+  {
+    "video_id": "cmvbu6xs9004wbnuo3n7cfzh3",
+    "expected_log": 10.886958122253418
+  },
+  {
+    "video_id": "cmvcaszf2009ybn00tcimzawm",
+    "expected_log": 10.651335716247559
+  },
+  {
+    "video_id": "cmvbticur000ibnuo3g8w7j5m",
+    "expected_log": 12.194557189941406
+  },
+  {
+    "video_id": "cmvc5kwkj002vbn00twlvkg0b",
+    "expected_log": 13.536336898803711
+  },
+  {
+    "video_id": "cmvcb1w2800aibn00ffo3jltu",
+    "expected_log": 10.548735618591309
+  },
+  {
+    "video_id": "cmvbtmklm001cbnuocfnh5rs8",
+    "expected_log": 12.920510292053223
+  },
+  {
+    "video_id": "cmvc5qa8a003pbn00rsjxufrv",
+    "expected_log": 12.617152214050293
+  },
+  {
+    "video_id": "cmvbtl040000xbnuo3hv72oqd",
+    "expected_log": 13.09272575378418
+  },
+  {
+    "video_id": "cmsxzfyuq000jbnn8fez5aj05",
+    "expected_log": 13.631831169128418
+  },
+  {
+    "video_id": "cmvc7v0zd004ybn00r68ga0yf",
+    "expected_log": 11.288888931274414
+  },
+  {
+    "video_id": "cmvbttrk1002jbnuo7rbz1hvh",
+    "expected_log": 12.815160751342773
+  },
+  {
+    "video_id": "cmvbu2lzu003zbnuozdbpcim0",
+    "expected_log": 13.033268928527832
+  },
+  {
+    "video_id": "cmvcaydc600a8bn00b6o0wg76",
+    "expected_log": 11.129646301269531
+  },
+  {
+    "video_id": "cmu2vg8lh001jbn7cs7r0okst",
+    "expected_log": 12.324504852294922
+  },
+  {
+    "video_id": "cmu3h0e3l000ubn5kqeugr1bu",
+    "expected_log": 13.185112953186035
+  },
+  {
+    "video_id": "cmvbtxcvo0038bnuorfhf48r5",
+    "expected_log": 12.351025581359863
+  },
+  {
+    "video_id": "cmt3rfg5l0005bnlsdvg6ka9f",
+    "expected_log": 13.687213897705078
+  },
+  {
+    "video_id": "cmvbtru1q0024bnuo7nm520mx",
+    "expected_log": 13.845287322998047
+  },
+  {
+    "video_id": "cmvbtm45f0017bnuottzwhp9k",
+    "expected_log": 13.087104797363281
+  },
+  {
+    "video_id": "cmsxztvj3001cbnn8kcixwl7j",
+    "expected_log": 12.232900619506836
+  },
+  {
+    "video_id": "cmvcakpub009obn00slsgmckr",
+    "expected_log": 10.772303581237793
+  },
+  {
+    "video_id": "cmu2v9btg0014bn7cbisarrg9",
+    "expected_log": 13.13222599029541
+  },
+  {
+    "video_id": "cmvc5q41u003mbn0063uldhht",
+    "expected_log": 12.712382316589355
+  },
+  {
+    "video_id": "cmrzz8eib0022bnr8nhphfcel",
+    "expected_log": 12.57651138305664
+  },
+  {
+    "video_id": "cmrzz1f9k001ibnr8j5lfhvfz",
+    "expected_log": 12.480249404907227
+  },
+  {
+    "video_id": "cmvc4rotk001jbn00tmz1u2nk",
+    "expected_log": 10.89330005645752
+  },
+  {
+    "video_id": "cmvbpdekz0000bn6wbv7zcyqg",
+    "expected_log": 13.116904258728027
+  },
+  {
+    "video_id": "cmvc8qsbq0078bn003z4jeqsb",
+    "expected_log": 9.972284317016602
+  },
+  {
+    "video_id": "cmu3ggxym000abn5k4p9zb5of",
+    "expected_log": 12.112435340881348
+  },
+  {
+    "video_id": "cmvbu895p0053bnuoisvutc6v",
+    "expected_log": 11.06982707977295
+  },
+  {
+    "video_id": "cmt3ruagg0019bnlsyumm4sgl",
+    "expected_log": 12.917518615722656
+  },
+  {
+    "video_id": "cmt3r43zf000ubnaw2ckc8qfh",
+    "expected_log": 13.859630584716797
+  },
+  {
+    "video_id": "cmvbu9ujj005gbnuou2b4c9k9",
+    "expected_log": 11.441542625427246
+  },
+  {
+    "video_id": "cmvc4o58w000zbn00siqy7mjs",
+    "expected_log": 12.409139633178711
+  },
+  {
+    "video_id": "cmvc861ux0062bn0085o4henq",
+    "expected_log": 10.993369102478027
+  },
+  {
+    "video_id": "cmt3rdmjb0000bnlsashglvqv",
+    "expected_log": 13.742620468139648
+  },
+  {
+    "video_id": "cmvbu021e003sbnuozy4ukblw",
+    "expected_log": 12.584953308105469
+  },
+  {
+    "video_id": "cmvc4v771001wbn004sovgf41",
+    "expected_log": 11.096400260925293
+  },
+  {
+    "video_id": "cmvc7zk9y0055bn00nkt9atyh",
+    "expected_log": 12.583343505859375
+  },
+  {
+    "video_id": "cmu2uys670000bn7c3h7ycvuy",
+    "expected_log": 13.86822509765625
+  },
+  {
+    "video_id": "cmvc81w79005fbn00isdem44c",
+    "expected_log": 12.590428352355957
+  },
+  {
+    "video_id": "cmu3h99h6001tbn5kpr8n6err",
+    "expected_log": 12.459620475769043
+  },
+  {
+    "video_id": "cmt3rtlvu0014bnls4109ko3o",
+    "expected_log": 12.257885932922363
+  },
+  {
+    "video_id": "cmvcawnzb00a3bn00nvj7payj",
+    "expected_log": 10.936059951782227
+  },
+  {
+    "video_id": "cmvbtdsug0000bnuovtsoez1h",
+    "expected_log": 14.358237266540527
+  },
+  {
+    "video_id": "cmvbu3n6y0047bnuonmso0psg",
+    "expected_log": 11.541714668273926
+  },
+  {
+    "video_id": "cmt3rnk8e000ubnlsqdq0mxnl",
+    "expected_log": 13.167284965515137
+  },
+  {
+    "video_id": "cmvcahcu5009bbn00dxvjoh7l",
+    "expected_log": 11.137560844421387
+  },
+  {
+    "video_id": "cmrzysa12000obnr8dpgkpy8m",
+    "expected_log": 12.87998104095459
+  },
+  {
+    "video_id": "cmvc8ttlc007ibn00mz42oe2f",
+    "expected_log": 10.31529426574707
+  },
+  {
+    "video_id": "cmu3gz0ns000kbn5klqdzok6v",
+    "expected_log": 13.310993194580078
+  },
+  {
+    "video_id": "cmvc4mw0u000sbn00sn58cgyw",
+    "expected_log": 12.762247085571289
+  },
+  {
+    "video_id": "cmt3pwyjb0000bnawtl1xstmg",
+    "expected_log": 13.438356399536133
+  },
+  {
+    "video_id": "cmvc88w3m0069bn00ftdd8673",
+    "expected_log": 11.677433967590332
+  },
+  {
+    "video_id": "cmt3r2hlm000kbnawvq24lr5f",
+    "expected_log": 13.501731872558594
+  }
+]

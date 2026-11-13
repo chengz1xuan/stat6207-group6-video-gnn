@@ -1,0 +1,7 @@
+{
+  "training_min_days": 36.501551067430555,
+  "training_median_days": 672.5013263455556,
+  "training_max_days": 5620.5015745195715,
+  "training_n": 161,
+  "target": "Cumulative views at snapshot; age is a covariate, not a validated response trajectory or fixed-horizon forecast."
+}

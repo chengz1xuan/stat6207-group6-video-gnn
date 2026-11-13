@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "kind": "isolated_exploratory",
+  "label": "探索性修正实验 · final-v4",
+  "training_ready": false,
+  "brand_transfer_completed": true,
+  "split_counts": {
+    "train": 161,
+    "test": 40,
+    "quarantine": 13
+  },
+  "prepared": {
+    "manifest.json": "cdc8cdd51cc9966e8236d6490de8a1a3299c8a9ea5509e5a69f6454d033f4c90",
+    "audit.json": "62ad0a00515a3979d858ea3fa161830c241706905800dbe5b55954c3f610c6d8"
+  },
+  "evaluation": {
+    "summary.json": "dcc2853029879cae5e3dd0d052b95a6acd737922de35d407c97c80e1446324e1",
+    "provenance.json": "8369a57ce210166ccf14aa95a70f554a9cb42cb2729926ee4f2e287e0d612e05"
+  },
+  "text_policy_sha256": "6077260a644492c6fda90a0e3747e2511ef3e01ebbcf25b2d2224a8a91af52b8",
+  "outputs": {
+    "primary_gnn.pt": "74e04cc5891d18b0138c7eb8e0f4991949510e99bed74c5d065ce48b3bfb0bba",
+    "web_results.json": "d78159631e621a12cb12f5e08c77c344239089e85cf69619f761b78c6defb258",
+    "optimization.json": "d313f43fc1d3115ffd115628a85614c3aebf612d6942d6811a04016746ec299c",
+    "metrics.json": "3c71dbe44c685bfa75bc75bff30470f59eb0ccef3c173d4067d01b8ea5445259",
+    "test_predictions.csv": "d1dc695d44971d363e0b2700ac8b980a3cef0a87a9fdd363bfc0398aa715e42a",
+    "oof_predictions.csv": "b06dafc8efff3c05bc45b68e408a788bcc25b9022be42392f976ba56b4f7b730",
+    "uncertainty.json": "bad11dff4a7d6de9a61ac3809bfa0cd536c15a54af0a54a21b140a06cce20d32",
+    "cross_validation.json": "51ef92097fe2eca54930998f686869c4758ce0d5fc6b12804ec786cc620e3786",
+    "splits.csv": "1e95e299c690076a6add4e2f67259bcdb2c1e3cb2fd421e8c41948e233c19ef5",
+    "seed_sensitivity.json": "1a3fd69f7f387b314f93402c6451db54555617eac4fb44ac9824d21d79e72dca",
+    "error_slices.json": "a3ad06af515be0d5392dfa4be909a5c8cb54f5ceb89eaa7c4c95b615135916c1",
+    "inference_fixture.json": "3bdec06f4c9bc503a9092dd8e2b84bfc85006a39d73a778262504e1c97ff1dce",
+    "age_support.json": "3fd230f32c7b366a79ac62e0c933f31da30651e4b3297c5b3fe9af7143dc5585",
+    "brand_edge_audit.json": "03bddd5c39a3e240a44078926ffc1e762254cc4f2d4457a6032423619c227084",
+    "largest_error.json": "f811b48ef9ab30dc868b7741c78bbe1a0cea2a42dcf3d70ee71d53134849bf36",
+    "DATA_DICTIONARY.md": "01597f25ad7019d2fe8b8a7667ee7df043ad0f8470237514e62a4d9d088f1b7b",
+    "leave_brand_out.csv": "ede745bd1d04e7b23b215e7ae8e04251798c0d12468fc6a3b7da0f0d1fa0aae9",
+    "leave_brand_out_summary.json": "241e4a3f785cd5d079b85b2dce14cf9696c1cfb6bd2a6a88aa9e5d70f1e452d7"
+  }
+}

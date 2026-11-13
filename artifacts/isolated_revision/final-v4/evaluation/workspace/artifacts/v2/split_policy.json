@@ -1,0 +1,7 @@
+{
+  "train": 161,
+  "test": 40,
+  "quarantine": 13,
+  "selection_rule": "Seed 42; closest rounded 20% of eligible videos, whole groups only; no label access.",
+  "seed": 42
+}

@@ -1,0 +1,174 @@
+{
+  "campaign_groups_test": 34,
+  "paired_RMSE_comparisons": {
+    "Subgraph + similarity minus Metadata Ridge": {
+      "campaign_bootstrap_95": [
+        -0.18570158127149708,
+        0.24161669794271967
+      ]
+    },
+    "Node structural minus Node no-brand edges": {
+      "campaign_bootstrap_95": [
+        -0.31165267325198337,
+        0.13526631133703845
+      ]
+    }
+  },
+  "display_graph": {
+    "video_id": "cmvcb32p700asbn00bt1uevem",
+    "youtube_id": "3BCcDbFiVaA",
+    "nodes": [
+      {
+        "id": "video:cmvcb32p700asbn00bt1uevem",
+        "type": "video",
+        "field": "video",
+        "text": ""
+      },
+      {
+        "id": "aspect:cmvcb32p700asbn00bt1uevem:brand:01",
+        "type": "aspect",
+        "field": "brand_family",
+        "text": "Chow Tai Fook"
+      },
+      {
+        "id": "evidence:cmvcb32p700asbn00bt1uevem:0042",
+        "type": "evidence",
+        "field": "extract_end_card_text",
+        "text": "CHOW TAI FOOK"
+      },
+      {
+        "id": "evidence:cmvcb32p700asbn00bt1uevem:0043",
+        "type": "evidence",
+        "field": "extract_end_card_text",
+        "text": "CELEBRATE"
+      },
+      {
+        "id": "aspect:cmvcb32p700asbn00bt1uevem:creative_mechanic:01",
+        "type": "aspect",
+        "field": "creative_mechanic",
+        "text": "Dialogue-led explainer"
+      },
+      {
+        "id": "aspect:cmvcb32p700asbn00bt1uevem:structure_type:01",
+        "type": "aspect",
+        "field": "structure_type",
+        "text": "Dialogue-led explainer"
+      },
+      {
+        "id": "aspect:cmvcb32p700asbn00bt1uevem:pacing:01",
+        "type": "aspect",
+        "field": "pacing",
+        "text": "medium tempo"
+      }
+    ],
+    "source_edges": [
+      {
+        "source": "video:cmvcb32p700asbn00bt1uevem",
+        "target": "aspect:cmvcb32p700asbn00bt1uevem:brand:01",
+        "type": "video_has_aspect",
+        "heuristic": false,
+        "source_edge_id": "edge:000001",
+        "original_source": "video:cmvcb32p700asbn00bt1uevem",
+        "original_target": "aspect:cmvcb32p700asbn00bt1uevem:brand:01",
+        "endpoint_remapped": false,
+        "additional_source_edges": [
+          {
+            "source_edge_id": "edge:000002",
+            "original_source": "video:cmvcb32p700asbn00bt1uevem",
+            "original_target": "aspect:cmvcb32p700asbn00bt1uevem:brand_family:01",
+            "endpoint_remapped": true
+          }
+        ]
+      },
+      {
+        "source": "video:cmvcb32p700asbn00bt1uevem",
+        "target": "aspect:cmvcb32p700asbn00bt1uevem:creative_mechanic:01",
+        "type": "video_has_aspect",
+        "heuristic": false,
+        "source_edge_id": "edge:000009",
+        "original_source": "video:cmvcb32p700asbn00bt1uevem",
+        "original_target": "aspect:cmvcb32p700asbn00bt1uevem:creative_mechanic:01",
+        "endpoint_remapped": false
+      },
+      {
+        "source": "video:cmvcb32p700asbn00bt1uevem",
+        "target": "aspect:cmvcb32p700asbn00bt1uevem:structure_type:01",
+        "type": "video_has_aspect",
+        "heuristic": false,
+        "source_edge_id": "edge:000010",
+        "original_source": "video:cmvcb32p700asbn00bt1uevem",
+        "original_target": "aspect:cmvcb32p700asbn00bt1uevem:structure_type:01",
+        "endpoint_remapped": false
+      },
+      {
+        "source": "video:cmvcb32p700asbn00bt1uevem",
+        "target": "aspect:cmvcb32p700asbn00bt1uevem:pacing:01",
+        "type": "video_has_aspect",
+        "heuristic": false,
+        "source_edge_id": "edge:000013",
+        "original_source": "video:cmvcb32p700asbn00bt1uevem",
+        "original_target": "aspect:cmvcb32p700asbn00bt1uevem:pacing:01",
+        "endpoint_remapped": false
+      },
+      {
+        "source": "video:cmvcb32p700asbn00bt1uevem",
+        "target": "evidence:cmvcb32p700asbn00bt1uevem:0042",
+        "type": "video_has_evidence",
+        "heuristic": false,
+        "source_edge_id": "edge:000666",
+        "original_source": "video:cmvcb32p700asbn00bt1uevem",
+        "original_target": "evidence:cmvcb32p700asbn00bt1uevem:0042",
+        "endpoint_remapped": false
+      },
+      {
+        "source": "video:cmvcb32p700asbn00bt1uevem",
+        "target": "evidence:cmvcb32p700asbn00bt1uevem:0043",
+        "type": "video_has_evidence",
+        "heuristic": false,
+        "source_edge_id": "edge:000667",
+        "original_source": "video:cmvcb32p700asbn00bt1uevem",
+        "original_target": "evidence:cmvcb32p700asbn00bt1uevem:0043",
+        "endpoint_remapped": false
+      },
+      {
+        "source": "aspect:cmvcb32p700asbn00bt1uevem:brand:01",
+        "target": "evidence:cmvcb32p700asbn00bt1uevem:0042",
+        "type": "aspect_supported_by_evidence",
+        "heuristic": false,
+        "source_edge_id": "edge:001448",
+        "original_source": "aspect:cmvcb32p700asbn00bt1uevem:brand:01",
+        "original_target": "evidence:cmvcb32p700asbn00bt1uevem:0042",
+        "endpoint_remapped": false,
+        "additional_source_edges": [
+          {
+            "source_edge_id": "edge:001451",
+            "original_source": "aspect:cmvcb32p700asbn00bt1uevem:brand_family:01",
+            "original_target": "evidence:cmvcb32p700asbn00bt1uevem:0042",
+            "endpoint_remapped": true
+          }
+        ]
+      }
+    ],
+    "semantic_edges": [
+      [
+        "aspect:cmvcb32p700asbn00bt1uevem:brand:01",
+        "evidence:cmvcb32p700asbn00bt1uevem:0043"
+      ],
+      [
+        "aspect:cmvcb32p700asbn00bt1uevem:creative_mechanic:01",
+        "aspect:cmvcb32p700asbn00bt1uevem:structure_type:01"
+      ],
+      [
+        "evidence:cmvcb32p700asbn00bt1uevem:0042",
+        "evidence:cmvcb32p700asbn00bt1uevem:0043"
+      ]
+    ],
+    "full_node_count": 26,
+    "selection": "First training graph in inventory order with surviving deterministic support and semantic extension; no response-based selection."
+  },
+  "showcase": {
+    "path": "artifacts/final_v4_showcase.json",
+    "sha256": "ff0f82a0cedf30257d1a29a6a8430756e15932404ee5e14f72a3528f9f1d0410"
+  },
+  "finalizer_source_sha256": "845e441ef753e6123f6bb548df274c6712dd10e8ee51ea993f541b4a8efa6730"
+}

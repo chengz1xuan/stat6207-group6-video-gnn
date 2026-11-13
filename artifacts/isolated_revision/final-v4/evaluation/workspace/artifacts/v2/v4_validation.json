@@ -1,0 +1,22 @@
+{
+  "version": "v4",
+  "cohort": 201,
+  "split": [
+    161,
+    40
+  ],
+  "quarantine": 13,
+  "registered_families": 13,
+  "outer_and_inner_family_isolation": true,
+  "fresh_label_agreement": true,
+  "same_split_ten_model_measurements": true,
+  "paired_controls_and_hashes": true,
+  "brand_pairs": 1382,
+  "remaining_no_brand_pairs": 0,
+  "real_graph_source_and_semantic_edges": true,
+  "six_case_and_declared_brief_parity": true,
+  "LOBO_runs": 70,
+  "named_authors_and_emails": 4,
+  "report_pages": 4,
+  "A4": true
+}

@@ -1,0 +1,8 @@
+{
+  "eligible_inference_checks": 201,
+  "maximum_log_error": 0.0,
+  "legacy_inference_unchanged": true,
+  "corrected_brief_filter": true,
+  "prediction_and_optimization": true,
+  "app_switching": true
+}

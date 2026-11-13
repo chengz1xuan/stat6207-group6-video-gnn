@@ -1,0 +1,166 @@
+{
+  "campaign_families": [
+    {
+      "campaign_id": "ikea-complete-sleep",
+      "status": "text_evidence",
+      "youtube_ids": [
+        "PhVN9idahMQ",
+        "mYm7ef4MEqE",
+        "rUxv3XvskeU"
+      ],
+      "reason": "Shared series title; the bedding and mattress descriptions share complete-sleep landing pages and campaign hashtags. This establishes a conservative series boundary, not identical footage."
+    },
+    {
+      "campaign_id": "mcdonalds-shogun-tamago",
+      "status": "text_evidence",
+      "youtube_ids": [
+        "0_1xI0ihZSk",
+        "Ghs18rt-6pw"
+      ],
+      "reason": "Shared reincarnation narrative and Shogun Tamago collectible-card promotion; the King Shogun description explicitly identifies its cards as the second release."
+    },
+    {
+      "campaign_id": "hsbc-life-one-choice",
+      "status": "needs_review",
+      "youtube_ids": [
+        "Hki21yPVTS8",
+        "demkAoN7Bzw"
+      ],
+      "reason": "Shared One Choice series wording, hashtags and New Year promotion. Human confirmation of the parent campaign is still needed; quarantine the whole connected group."
+    },
+    {
+      "campaign_id": "prudential-170-anniversary-2019",
+      "status": "text_evidence",
+      "youtube_ids": [
+        "jlB5oiVibQU",
+        "m8qVqW63VQs",
+        "g9cN05pET5E"
+      ],
+      "reason": "Two campaign names explicitly identify the 170th anniversary. The cycling video's extracted main message also identifies the anniversary, and its title shares the 2019 action-oriented series. Conservative parent-series boundary, not identical footage."
+    },
+    {
+      "campaign_id": "mannings-everyday-wellness-2023",
+      "status": "text_evidence",
+      "youtube_ids": [
+        "8ySmQhxarpY",
+        "D1H6HkY-tCo",
+        "oH32A0KAbNA"
+      ],
+      "reason": "Same distinctive Everyday Wellness series title, campaign hashtags and 2023-10-02 release date, despite different service/product labels."
+    },
+    {
+      "campaign_id": "mcdonalds-world-cup-wow-sauce-2026",
+      "status": "text_evidence",
+      "youtube_ids": [
+        "B2QiLXaVP9U",
+        "LmgcyUVg-iI"
+      ],
+      "reason": "June 2026 World Cup WOW sauce campaign: same 18-piece McNuggets set, four sauce options and HKD49 price; the later video introduces the next WOW sauce."
+    },
+    {
+      "campaign_id": "ikea-home-storage-for-love",
+      "status": "text_evidence",
+      "youtube_ids": [
+        "U0wzmf3VsfE",
+        "yDsg8AqtepE"
+      ],
+      "reason": "Same named For Love storage creative; the second title explicitly marks the full-length version. Merge even though both currently occur in training."
+    },
+    {
+      "campaign_id": "ikea-tested-quality-proposal",
+      "status": "text_evidence",
+      "youtube_ids": [
+        "OpT3Sa9RQ3Q",
+        "moIBJ9pzEYw"
+      ],
+      "reason": "Identical named Tested Quality - Proposal creative, with different product/promotion labels. Conservative grouping also protects inner validation."
+    },
+    {
+      "campaign_id": "keewah-traditional-craft-new-year-2022",
+      "status": "needs_review",
+      "youtube_ids": [
+        "3Ybi_Gp6sAk",
+        "UyQuJaMKeLQ",
+        "uEhK6pMU-O4",
+        "FSoZAWh93b0",
+        "XLNo393de5U"
+      ],
+      "reason": "Matching traditional-craft presentation and hashtags, all released on 2022-01-17/18. Human confirmation of the parent campaign is needed."
+    },
+    {
+      "campaign_id": "prudential-we-do-family-2023",
+      "status": "needs_review",
+      "youtube_ids": [
+        "3lBk4mg_8YY",
+        "yaKG5Dhk7mI"
+      ],
+      "reason": "Shared we-do-family landing page and actors, but different products and release months. Quarantine rather than assuming a confirmed parent campaign."
+    },
+    {
+      "campaign_id": "hangseng-invest-express-2026",
+      "status": "needs_review",
+      "youtube_ids": [
+        "Lh70a4x5KuI",
+        "icMDHuO9UZg"
+      ],
+      "reason": "Shared Invest Express features in April/May 2026; product overlap alone is not proof of a shared campaign. Quarantine until reviewed."
+    },
+    {
+      "campaign_id": "mannings-say-yes-to-better-2024",
+      "status": "needs_review",
+      "youtube_ids": [
+        "oSSYljtVwQg",
+        "2o_krPfXibA"
+      ],
+      "reason": "Shared Say Yes to Better parent slogan but different creative waves. Quarantine pending confirmation of the desired parent boundary."
+    },
+    {
+      "campaign_id": "maxims-blessings-cny-2023",
+      "status": "text_evidence",
+      "youtube_ids": [
+        "CxbnjaET7ew",
+        "WBMGLbAvnQY"
+      ],
+      "reason": "Both source titles explicitly name the Blessings / 2023 Maxim's CNY series, published 2022-12-29; descriptions identify 20-second egg-roll/pastry and radish-cake/pastry chapters. Conservative parent-series grouping, not a claim of identical footage."
+    }
+  ],
+  "excluded_support_edges": [
+    {
+      "youtube_id": "0_1xI0ihZSk",
+      "source_edge_id": "edge:cmrzyteu8000tbnr8qwvfbdnd:proof_type:c72f0cb4b1:supported_by:cmrzyteu8000tbnr8qwvfbdnd:evidence:extract:extract_on_screen_text:002143f0dd77",
+      "reason": "An isolated reunion dialogue line does not substantiate the product/price proof claim."
+    },
+    {
+      "youtube_id": "0_1xI0ihZSk",
+      "source_edge_id": "edge:cmrzyteu8000tbnr8qwvfbdnd:proof_type:c72f0cb4b1:supported_by:cmrzyteu8000tbnr8qwvfbdnd:evidence:extract:extract_on_screen_text:e33f79925391",
+      "reason": "An isolated farewell dialogue line does not substantiate the product/price proof claim."
+    }
+  ],
+  "creative_reviews": [
+    {
+      "youtube_id": "0_1xI0ihZSk",
+      "field": "structure_type",
+      "reason": "Product proof led conflicts with the cinematic reunion summary. Watch the video before assigning a replacement label."
+    },
+    {
+      "youtube_id": "XtXY6tEdn9g",
+      "field": "structure_type",
+      "reason": "Music / mood led is not established by the available station-design text. Watch the video before changing either creative classification."
+    },
+    {
+      "youtube_id": "rUxv3XvskeU",
+      "field": "product_campaign",
+      "reason": "The product name contains corrupted-looking characters. Do not invent a replacement; retain the original value pending source review."
+    },
+    {
+      "youtube_id": "1YEhm7RjaG0",
+      "field": "product_campaign",
+      "reason": "Title and upload date say 2026, but the campaign field says 2024. Source review is required; do not infer a corrected year."
+    },
+    {
+      "youtube_id": "zT1G1K_pMgA",
+      "field": "product_campaign",
+      "reason": "Upload date says 2026, while the campaign field says 2014. Confirm whether the footage is reused before changing the campaign year."
+    }
+  ]
+}

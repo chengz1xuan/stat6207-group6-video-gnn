@@ -195,6 +195,7 @@ def prepare_run(output, rows, graphs, pairs, provenance, smoke):
 
 
 def validate_run(output):
+    output = Path(output).resolve()
     protocol = load_json(output / "protocol.json")
     if protocol["kind"] != "paired_policy_evaluation":
         raise ValueError("Not a paired experiment.")
@@ -479,7 +480,7 @@ def main():
             "note": NOTE, "outputs": {
                 str(path.relative_to(output)): sha256(path)
                 for path in sorted(output.rglob("*"))
-                if path.is_file() and "__pycache__" not in path.parts and "tmp" not in path.parts
+                if path.is_file() and "__pycache__" not in path.parts and "tmp" not in path.relative_to(output).parts
             },
         }
         write_json(output / "summary.json", summary)

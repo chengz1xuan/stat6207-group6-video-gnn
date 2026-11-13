@@ -1,0 +1,122 @@
+{
+  "mode": "full_retrained_exploratory",
+  "train_size": 161,
+  "test_size": 40,
+  "primary_gnn": "Subgraph + similarity",
+  "metrics": {
+    "Mean": {
+      "log_MAE": 2.384528976106092,
+      "log_RMSE": 2.804805362142774,
+      "Spearman": null,
+      "views_MAE": 1147268.786370212,
+      "views_RMSE": 2189512.9549312717,
+      "log_R2": -0.002746306542557919
+    },
+    "Brand mean": {
+      "log_MAE": 2.300687836130627,
+      "log_RMSE": 2.9003706126184725,
+      "Spearman": 0.1334990377210881,
+      "views_MAE": 1152667.2387373243,
+      "views_RMSE": 2140278.9317687633,
+      "log_R2": -0.07224148268898434
+    },
+    "Metadata Ridge": {
+      "log_MAE": 2.1618070880483904,
+      "log_RMSE": 2.6501543335030413,
+      "Spearman": 0.35234521575984995,
+      "views_MAE": 1059678.0831054687,
+      "views_RMSE": 2026395.466669926,
+      "log_R2": 0.10478377424182106
+    },
+    "Pooled Ridge": {
+      "log_MAE": 2.199715946483992,
+      "log_RMSE": 2.743224462823291,
+      "Spearman": 0.34596622889305817,
+      "views_MAE": 1043016.7814941406,
+      "views_RMSE": 2065359.3510799622,
+      "log_R2": 0.04080191534017785
+    },
+    "Pooled MLP": {
+      "log_MAE": 2.3316780361806466,
+      "log_RMSE": 2.702604869153713,
+      "Spearman": 0.37936210131332093,
+      "views_MAE": 1121699.4744140625,
+      "views_RMSE": 2157252.572734104,
+      "log_R2": 0.06899776683014491
+    },
+    "Subgraph structural": {
+      "log_MAE": 2.2014851327005807,
+      "log_RMSE": 2.6439971277845515,
+      "Spearman": 0.4191369606003753,
+      "views_MAE": 1062347.9525390626,
+      "views_RMSE": 2081190.1640012555,
+      "log_R2": 0.10893872268274474
+    },
+    "Subgraph + similarity": {
+      "log_MAE": 2.16140597415505,
+      "log_RMSE": 2.6780551833143322,
+      "Spearman": 0.4103189493433396,
+      "views_MAE": 1054668.554638672,
+      "views_RMSE": 2044780.5953349075,
+      "log_R2": 0.08583485965474702
+    },
+    "Node structural": {
+      "log_MAE": 2.216844748980183,
+      "log_RMSE": 2.7229790654575763,
+      "Spearman": 0.35741088180112573,
+      "views_MAE": 1065065.5325683593,
+      "views_RMSE": 2103854.3445779197,
+      "log_R2": 0.05490771516203208
+    },
+    "Node + similarity": {
+      "log_MAE": 2.2605232151112227,
+      "log_RMSE": 2.811796258632215,
+      "Spearman": 0.26622889305816144,
+      "views_MAE": 1040914.1661621094,
+      "views_RMSE": 2073129.0154533777,
+      "log_R2": -0.007751168526609176
+    },
+    "Node no-brand edges": {
+      "log_MAE": 2.3117742991358354,
+      "log_RMSE": 2.8044670584802014,
+      "Spearman": 0.16191369606003755,
+      "views_MAE": 1101534.605078125,
+      "views_RMSE": 2136501.641054308,
+      "log_R2": -0.002504427163468659
+    }
+  },
+  "brand_transfer": {
+    "Pooled Ridge": {
+      "brands": 14,
+      "macro_log_MAE": 2.1773788273487464,
+      "macro_log_RMSE": 2.5792557655227744,
+      "macro_Spearman": 0.24204101957308505
+    },
+    "Pooled MLP": {
+      "brands": 14,
+      "macro_log_MAE": 2.240059588116395,
+      "macro_log_RMSE": 2.6521883880421058,
+      "macro_Spearman": 0.24992824881148623
+    },
+    "Subgraph structural": {
+      "brands": 14,
+      "macro_log_MAE": 2.2249383218400105,
+      "macro_log_RMSE": 2.666669412903023,
+      "macro_Spearman": 0.20697499095331912
+    },
+    "Subgraph + similarity": {
+      "brands": 14,
+      "macro_log_MAE": 2.261293585197583,
+      "macro_log_RMSE": 2.696233996302336,
+      "macro_Spearman": 0.2231040189355094
+    },
+    "Brand mean": {
+      "brands": 14,
+      "macro_log_MAE": 2.2659735307327713,
+      "macro_log_RMSE": 2.667615849574228,
+      "macro_Spearman": null
+    }
+  },
+  "results_path": "/Users/chengzixuan/CUHK/STAT 6207/Final Project/artifacts/isolated_revision/final-v4/evaluation/workspace/artifacts/v2",
+  "note": "New cohort/graph policy/split. Not a paired improvement over frozen v2 scores."
+}

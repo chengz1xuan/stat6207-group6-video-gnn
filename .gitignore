@@ -43,3 +43,14 @@ artifacts/v2/website-*.png
 *.synctex.gz
 *.fls
 *.fdb_latexmk
+
+# Frozen v4 inputs, results and paired comparison used by the report
+!artifacts/final_v4.json
+!artifacts/isolated_revision/
+artifacts/isolated_revision/*
+!artifacts/isolated_revision/final-v4/
+!artifacts/paired_revision/
+artifacts/paired_revision/*
+!artifacts/paired_revision/final-v4/
+
+!artifacts/final_v4_showcase.json

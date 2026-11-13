@@ -1,43 +1,26 @@
-# 整合与回归测试记录
+# Audited v4 verification record
 
-日期：2026-11-11。对象：本目录整合候选版。测试平台为 Linux CPU，非用户的 Mac。
-结论：已有 main 正式实验的推理及主要网页交互通过回归验证；新增实验的真实结果切换
-仍待明坤补充完整实验目录。没有远程合并、重新采集或全量重训。
+Date: 2026-11-13 (Asia/Hong_Kong). Branch: `report/campaign-audit-v4`, based on `e51ce4f`.
+Environment: macOS, existing Conda stat6207 / Python 3.11.16, Torch 2.14.0, PyG 2.8.1, Streamlit 1.66.1.
 
-## 已执行
+| Check | Result |
+|---|---|
+| Unit tests | 57 passed, zero errors/skips; real frozen-cohort checks included |
+| Campaign isolation | 13 registered families closed through outer and inner folds; 161 train / 40 test / 13 quarantine |
+| Labels | All eligible responses agree with unchanged frozen exact platform labels |
+| Full evaluation | Ten-model CV/refit/test and 70 model-brand LOBO runs completed |
+| Paired policies | Same cohort/folds/budget; shared-control predictions agree within 1e-6; two GNNs retain four seeds/checkpoints |
+| Integrity | Nonempty paired source/output SHA-256 inventory agrees; relative temporary-cache exclusion and normalized Mac roots |
+| Inference | All 201 revised and 214 historical predictions pass saved-output checks; six optimizations and declared brief reproducible |
+| Streamlit AppTest | New and historical selection, prediction, optimization, state clearing, age warnings and declared inputs pass |
+| Real Chrome | Desktop 1440x1000, mobile 390x844, real graph SVG and optimization; zero App/JS exceptions and no page overflow |
+| Extracted ZIP | All file checksums agree; Scripts imports, complete model bundle, 201 default, nonempty declared hook and 30-day warning pass |
+| PDF | Four A4 pages rendered and visually reviewed; all four supplied names/emails; real graphs, measured tables and complete cases |
 
-| 检查 | 结果与证据 |
-| --- | --- |
-| Python 语法解析 | app、src、Scripts 全部通过 |
-| 离线隔离、分组、文本、图与 bundle 单元测试 | `python -m unittest discover -s Scripts -p 'test_*.py'`：38项通过 |
-| main 正式内容保留 | 对408个数据、artifact、报告和核心代码文件逐个SHA-256比较，零变化 |
-| checkpoint 实际加载与推理 | 214条 fixture 全部覆盖；最大 absolute log 预测差 9.5367431640625e-07，小于1e-4容差 |
-| 既有优化案例 | 6个案例的最佳预测、候选数量与 main 保存结果一致 |
-| Streamlit AppTest | 页面初始化、样本数、年龄中位数默认值、新 Brief 预测、30天外推提示、设置优化、已有视频预测和图开关通过，无应用异常 |
-| 新 Brief 输入 | 验证提交输入不含参考视频 views 标签 |
-| 可选 bundle 故障处理 | 损坏 checkpoint 的单元测试通过：主实验仍可发现，同时返回明确诊断；直接加载损坏 bundle 仍被拒绝 |
+The package test initially detected a missing author-brief sidecar; packaging now includes the report-bound path and a regression assertion. Both runtime policy modules and the author-brief file are verified in the extracted package. No local credentials or dependencies are packaged.
 
-AppTest检查控件和执行流程，不等同于人工浏览器视觉验收。正式PDF保持main原件，未添加
-未经验证的探索性实验数值。Windows/Mac系统级兼容仍需当地环境验证。
+Primary subgraph+similarity: CV log RMSE 2.527, training 2.219, testing 2.678; Metadata Ridge testing 2.650. Paired policy intervals include zero. These checks do not establish GNN superiority, a policy benefit, external generalization or causal creative uplift. Campaign coverage is targeted and source/exposure limitations remain explicit.
 
-## 缺失或未执行
+Machine-readable records are in `artifacts/isolated_revision/final-v4/evaluation/workspace/artifacts/v2/`: `v4_validation.json`, `package_validation.json`, `streamlit_browser_validation.json`. Actual new-model App switching is recorded in `artifacts/isolated_revision/final-v4/evaluation/app_validation.json`.
 
-- 两份输入 ZIP 均无明坤 full-app-v3 的模型、输入、指标和 app_manifest 完整产物。
-- 因此未执行真实附加实验的推理一致性和版本来回切换测试；不能把脚本单元测试当作该项通过。
-- 未全量重训；新隔离流程已接到最新main的十模型训练函数，旧八模型指标不可直接复用。
-- 旧实验训练源码哈希可能不符，程序继续拒绝不匹配来源；不得直接篡改哈希。
-- ZIP没有Git提交历史；补丁只针对提供的main内容。远程main若有后续提交，需重新核对。
-
-## 用户合并后验收
-
-在Mac的项目环境中执行：
-
-```bash
-python -m unittest discover -s Scripts -p 'test_*.py'
-python Scripts/verify_integration.py --check-app
-python -m streamlit run app.py
-```
-
-手动检查图、预测、优化、JSON和PDF下载。补齐附加实验后，执行
-`python Scripts/validate_app_experiment.py --input <实验目录> --check-app`。
-最终main通过这些关键流程后，只需补记测试日期、commit和结果，不必重训或撰写长报告。
+The final ZIP may be rebuilt after documentation/verification records are included; its SHA-256 file inventory binds the final archived contents. No training code, model or report change is implied by that rebuild.

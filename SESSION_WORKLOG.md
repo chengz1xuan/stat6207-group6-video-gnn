@@ -46,3 +46,13 @@ Changed the new-brief exposure age from 30 days to the training median (718.5 da
 Preserved the historical 1,019-versus-442,536 third-party McDonald’s reupload failure, with captured uploader, source URL and supplied upload date. The video is now training, and current held-out IKEA failure is reported separately. Added an actual source concept graph and complete corrected test scatter to the four-page IEEE report. Added regression checks for grouping, training-only baseline, edge provenance, age warnings, and source graph fidelity.
 
 The old test set had been inspected before corrections; this is transparently a post-audit corrected internal evaluation, not a new untouched external test. No frozen view labels were altered or videos selectively excluded.
+
+## 2026-11-13 audited v4 branch and named-author report
+
+Created report/campaign-audit-v4 from e51ce4f (mingkun/paired-policy-experiment) without merging main. Added the Maxim's named CNY campaign chapters to the existing conservative parent-series registry. Rebuilt the full audited cohort: 161 training, 40 testing, 13 unresolved-family videos quarantined; all registered families stay closed through outer and inner partitions. Original 214 frozen response labels are unchanged.
+
+Refit the ten-model suite and all 70 LOBO evaluations, and separately retrained both legacy/revised policy arms on the exact same cohort/folds/budget with four subgraph seeds. Primary CV selects similarity subgraphs (test log RMSE 2.678 vs metadata 2.650); paired intervals include zero, so no predictive superiority or policy gain is claimed.
+
+Replaced the report author block with CHENG, Zixuan; HUANG, Ze; SONG, Mingkun; HOU, Kaiwen and their supplied university emails. The four-page report now includes current CV/test results, a paired-policy table, actual source-support/semantic graph, full test scatter and concrete existing/new cases with settings, training sources and numeric sensitivity ranges. The new MTR brief is explicitly author-declared, with no extracted evidence or observed response, at the training-median age 672.5 days.
+
+Fixed the concrete package, optional-manifest type, Mac path normalization, temporary-directory checksum, experiment dictionary and brand-audit presentation defects. The App defaults to the report-bound v4 and keeps historical results selectable with state clearing. Code/data/model/report provenance, quantitative training measurements and checks remain part of the release; known observational/confounding and unverified annotation limits remain explicit.

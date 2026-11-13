@@ -1,0 +1,11 @@
+{
+  "graphs": 201,
+  "nodes": 5473,
+  "provided_edges": 5353,
+  "policy": {
+    "evidence": "description, spoken dialogue, on-screen text, end card",
+    "support": "source-provided deterministic observation links only; no new semantic claims",
+    "caps": "three observations per kind; one aspect per field; four visual/audience signals",
+    "model_comparison": "Different evidence policy and split; old metrics are not a paired baseline."
+  }
+}

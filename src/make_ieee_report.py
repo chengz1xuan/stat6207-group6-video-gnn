@@ -1,156 +1,159 @@
-"""Four-page IEEE A4 report generated only from measured, corrected artifacts."""
+"""Generate the four-page v4 IEEE report from frozen audited/paired results."""
 from pathlib import Path
-import json,shutil
-R=Path(__file__).resolve().parents[1];D=R/'artifacts/v2'
-load=lambda f:json.loads((D/f).read_text())
-m=load('metrics.json');a=load('audit.json');u=load('uncertainty.json');ga=load('graph_audit.json')
-lo=load('leave_brand_out_summary.json');o=load('optimization.json');sp=load('split_policy.json')
-ages=load('age_support.json');edge=load('brand_edge_audit.json');pa=load('paired_comparisons.json')['comparisons']
-graph=load('report_graph.json');old=load('reupload_error_audit.json');worst=load('corrected_largest_error.json')
-gnn=m['selected_primary_gnn'];v=m['test'][gnn]
-def tex(s):
-    return ''.join({'&':r'\&','%':r'\%','$':r'\$','#':r'\#','_':r'\_','{':r'\{','}':r'\}','~':r'\textasciitilde{}','^':r'\textasciicircum{}','\\':r'\textbackslash{}'}.get(c,c) for c in str(s))
+import json,shutil,csv
+R=Path(__file__).resolve().parents[1]
+load=lambda p:json.loads(p.read_text())
+config=load(R/'artifacts/final_v4.json');D=R/config['primary_folder'];P=R/config['paired_directory']
+m=load(D/'metrics.json');w=load(D/'web_results.json');o=load(D/'optimization.json');u=load(D/'uncertainty.json');diag=load(D/'report_diagnostics.json');paired=load(P/'comparison.json');authors=load(R/'AUTHORS.json')
+primary=m['selected_primary_gnn'];v=m['test'][primary];ages=w['age_support'];edge=w['brand_edge_audit'];case=o['dataset_cases'][0];brief=load(R/config['showcase_path']);ga=w['graph_audit'];worst=w['largest_error'];graph=diag['display_graph'];cp=diag['paired_RMSE_comparisons']
+def tex(s):return ''.join({'&':r'\&','%':r'\%','$':r'\$','#':r'\#','_':r'\_','{':r'\{','}':r'\}','~':r'\textasciitilde{}','^':r'\textasciicircum{}','\\':r'\textbackslash{}'}.get(c,c) for c in str(s))
 def f(x):return '--' if x is None else f'{x:.3f}'
-labels={'Mean':'Constant log mean','Brand mean':'Training brand log mean','Metadata Ridge':'Metadata Ridge','Pooled Ridge':'Pooled-feature Ridge','Pooled MLP':'No-message MLP','Subgraph structural':'Subgraph: structural','Subgraph + similarity':'Subgraph: structural+sim.','Node structural':'Video node: brand cliques','Node + similarity':'Video node: cliques+sim.','Node no-brand edges':'Video node: no brand edges'}
+def count(x):return f'{x:,.0f}'
+labels={'Mean':'Constant log mean','Brand mean':'Brand log mean','Metadata Ridge':'Metadata Ridge','Pooled Ridge':'Pooled Ridge','Pooled MLP':'No-message MLP','Subgraph structural':'Subgraph: core','Subgraph + similarity':'Subgraph: core+sim.','Node structural':'Video: brand cliques','Node + similarity':'Video: cliques+sim.','Node no-brand edges':'Video: no brand edges'}
 rows=[]
 for n,z in m['test'].items():
-    row=' & '.join([labels[n],f(z['log_MAE']),f(z['log_RMSE']),f(z['Spearman'])])+r' \\'
-    rows.append((r'\bfseries ' if n==gnn else '')+row)
-lrows=[' & '.join([labels[n],f(z['macro_log_MAE']),f(z['macro_log_RMSE']),f(z['macro_Spearman'])])+r' \\' for n,z in lo['models'].items()]
-case=next((c for c in o['dataset_cases'] if c['changes']),o['dataset_cases'][0]);new=o['new_video'];ci=u['test_log_RMSE_95'][gnn]
+    label=labels[n]+('*' if n==primary else '')
+    rows.append(' & '.join([label,f(m['CV_log_RMSE'].get(n)),f(z['log_MAE']),f(z['log_RMSE']),f(z['Spearman'])])+r' \\')
+lrows=[' & '.join([labels[n],f(z['macro_log_MAE']),f(z['macro_log_RMSE']),f(z['macro_Spearman'])])+r' \\' for n,z in w['lobo'].items()]
+prows=[]
+for name in ['Subgraph structural','Subgraph + similarity']:
+    z=paired['model_comparisons_seed42'][name]
+    prows.append(' & '.join([labels[name],f(z['v2_log_RMSE']),f(z['v3_log_RMSE']),f'[{z["delta_log_RMSE_95"][0]:.3f}, {z["delta_log_RMSE_95"][1]:.3f}]'])+r' \\')
+cv=m['configs'][primary];ci=u['test_log_RMSE_95'][primary];fields=['structure_type','pacing'];oldcase='; '.join(k.replace('_',' ')+': '+case['creative_elements'][k]+' to '+case['changes'][k] for k in fields if k in case['changes']);newchange='; '.join(k.replace('_',' ')+': '+brief['row'][k]+' to '+val for k,val in brief['changes'].items())
+prepared_rows=list(csv.DictReader((R/config['prepared_directory']/'videos.csv').open()))
+byyoutube={r['youtube_id']:r for r in prepared_rows};registry=load(R/config['prepared_directory']/'review_rules.json')
+family_labels={'ikea-complete-sleep':'IKEA Complete Sleep','mcdonalds-shogun-tamago':"McDonald's Shogun",'prudential-170-anniversary-2019':'Prudential 170th','mannings-everyday-wellness-2023':'Mannings wellness', 'mcdonalds-world-cup-wow-sauce-2026':"McDonald's WOW sauce",'ikea-home-storage-for-love':'IKEA storage','ikea-tested-quality-proposal':'IKEA Proposal','maxims-blessings-cny-2023':"Maxim's CNY 2023"}
+family_rows=[]
+for family in registry['campaign_families']:
+ if family['status']!='text_evidence':continue
+ roles={byyoutube[k]['split'] for k in family['youtube_ids']};assert len(roles)==1
+ family_rows.append(' & '.join([tex(family_labels[family['campaign_id']]),str(len(family['youtube_ids'])),next(iter(roles))])+r' \\')
+family_rows.append(r'Five unresolved families & 13 & quarantine \\')
 source=r'''\documentclass[a4paper,conference]{IEEEtran}
-\usepackage{amsmath,amssymb,graphicx,booktabs,url}
+\usepackage{amsmath,graphicx,booktabs,url,balance}
 \usepackage[hidelinks]{hyperref}
-\title{Advertising Video Popularity Prediction:\\Auditing Creative Subgraphs and Brand Connectivity}
-\author{\IEEEauthorblockN{Group 6}\IEEEauthorblockA{STAT6207: Applied Deep Learning\\The Chinese University of Hong Kong}}
+\title{Audited Advertising Graphs for Video Views:\\A Paired Policy Evaluation}
+\author{\IEEEauthorblockN{@@NAMES@@}
+\IEEEauthorblockA{STAT6207: Applied Deep Learning, The Chinese University of Hong Kong\\
+CHENG: \texttt{@@EMAIL0@@}\quad HUANG: \texttt{@@EMAIL1@@}\\
+SONG: \texttt{@@EMAIL2@@}\quad HOU: \texttt{@@EMAIL3@@}}}
 \begin{document}\maketitle
 \begin{abstract}
-We implement a compact graph neural network (GNN) to predict cumulative YouTube views from advertising annotations. A frozen collection supplies 214 exact labels across 14 brands. The primary design is a video-level concept/evidence subgraph; video-as-node graphs are an extension. After manually merging bilingual Prudential anniversary variants, all models are retrained and evaluated on a shared campaign-grouped 80/20 split. The training-selected primary subgraph obtains log RMSE @@RMSE@@, compared with @@META@@ for metadata Ridge and @@NODE@@ for the video-node model: it does not outperform these controls. All 1,558 video-node structural pairs form complete same-brand cliques. Brand-mean and no-brand-edge controls therefore separate brand connectivity from creative-graph claims. A local Streamlit tool exposes source graphs, errors and exploratory recommendations. Cumulative snapshot labels do not validate 30-day forecasts or causal creative uplift.
+We assess graph neural networks (GNNs) for advertising-video cumulative views. A frozen YouTube collection provides 214 exact labels across 14 brands. A source-text audit merges campaign variants, including previously separated IKEA and McDonald's series and Maxim's New Year chapters; unresolved families are quarantined. The revised evaluation uses 161 training, 40 testing and 13 quarantined videos. All models share the grouped split and training-only tuning. The selected subgraph GNN reaches log RMSE @@RMSE@@, versus @@META@@ for metadata Ridge. A paired old/new text-and-graph-policy comparison holds cohort, labels, folds and tuning budgets fixed; its intervals do not establish improvement. Video-node adjacency is entirely same-brand connectivity. A local Streamlit tool shows real graphs, source-linked cases and an author-declared storyboard. Results are post-audit internal evidence; neither causal uplift nor 30-day forecasts are validated.
 \end{abstract}
-\begin{IEEEkeywords}Graph neural networks, advertising, cumulative views, grouped evaluation, brand confounding.\end{IEEEkeywords}
+\begin{IEEEkeywords}Graph neural networks, cumulative views, campaign grouping, brand confounding, paired evaluation.\end{IEEEkeywords}
 
-\section{Objective, Inventory and Labels}
-We predict observable video response and ask whether graph structure adds signal beyond simpler features. The target is $y_i=\ln(1+v_i)$ for cumulative views $v_i$ at collection. Neither sales nor brand recognition is measured. The supplied slide-level compact GNN is our implementation baseline: no executable VideoGNN code, weights or identifiable 120-video reference subset was provided. We use the latest full packages uniformly, without claiming an exact reproduction of that reference.
+\section{Question, Data and Evaluation Version}
+We ask whether creative graph structure predicts observable audience response beyond metadata and pooled features. The target is $y=\ln(1+v)$ for views $v$ at capture, not sales or brand recognition. Following the supplied slide-level specification, we implement a compact GNN rather than claim reproduction of unavailable VideoGNN code or an unidentified 120-video subset.
 
-The latest version per brand gives 219 unique URLs across 14 brands; HSBC and Hang Seng use v0.2, while MTR actually contains 14 rows. Original responses are mainly in \texttt{evidence\_nodes.csv}, selecting \texttt{kind=engagement\_stats} and parsing \texttt{value\_json} or \texttt{text}. Original coverage is 219 views, 184 likes and no non-null comments; McDonald's also has direct response columns.
+Uniform latest-version-per-brand selection yields 219 unique URLs; HSBC/Hang Seng use v0.2 and MTR contains 14 rows. Archived counts are mainly JSON \texttt{engagement\_stats} in each package's evidence table (219 views, 184 likes, no comments). A public unauthenticated collection on 9 November 2026, 12:01:03--12:02:18 UTC, recovers 214 exact current-video view counts/channel identities and 175 exact likes. Five unavailable fresh labels are excluded without archived substitution. Missing comments are not zero. URL/ID, timestamps, status, response digests and extraction snippets preserve provenance; rounded subscriber strings are not model inputs.
 
-To collect platform labels, one unauthenticated pass over all supplied watch URLs on 9 November 2026, 12:01:03--12:02:18 UTC, recovers 214 exact current-video view counts/channel identities and 175 exact likes. No exact comments appear in initial public metadata; missing is not zero. Five URLs lacking fresh exact views are excluded, without substituting archived labels. There is no external holdout. Each retrieval retains URL/ID, UTC time, status, response digest, extraction paths and raw evidence snippets. Rounded subscriber strings are descriptive metadata, excluded from model inputs. No login barrier is bypassed.
+This paper reports \emph{v4}, superseding the earlier 171/43 report for this branch. Source-supported parent-series rules now merge IKEA Complete Sleep, McDonald's Shogun Tamago/WOW sauce and Maxim's 2023 New Year chapters, among others. For example, \texttt{CxbnjaET7ew} and \texttt{WBMGLbAvnQY} share the named New Year series and 29 December 2022 release date despite different product labels. Existing groups are only unioned, never split. Thirteen registry families comprise eight text-supported families and five unresolved families; unresolved connected components (13 videos) are excluded from fitting and scoring. Text support establishes a conservative campaign boundary, not verified identical footage. Other creative annotations still require review.
 
-Publication dates/durations remain source-supplied because the fresh pass exposes no verified upload dates. Exposure age is capture time minus supplied date. For the corrected training set, ages range from @@AGEMIN@@ to @@AGEMAX@@ days (median @@AGEMED@@). These are cumulative snapshot labels at heterogeneous ages, not measurements at a common horizon. A 30-day input is outside training support and cannot be called a validated 30-day prediction. Even an in-range age does not establish a validated response trajectory for a new brief.
+The eligible cohort has @@GROUPS@@ groups over 201 videos. A fixed seed-42 whole-group subset-sum rule chooses the closest rounded 20\% count without labels: 161 training/40 testing (80.10/19.90\%). Every registered family remains within one outer partition and one role in each training CV fold. Thus known cross-boundary variants are repaired, but exhaustive campaign lineage is not claimed. The holdout was already inspected during prior audits; this is corrected internal evaluation, not a new untouched external test. No fresh label was altered to improve scores.
 
-\section{Graphs, Features and Controls}
-\subsection{Primary Video Subgraph}
-Each video is a graph with a context root, creative-aspect nodes and textual-evidence nodes. We normalize schema aliases, allowlist creative fields, deduplicate text, and cap repeated visual/audience aspects at four and each selected evidence kind at three. Engagement statistics, assessment/risk scores and response-bearing sentences are excluded. Across 214 graphs, @@GNODES@@ nodes and @@GEDGES@@ supplied directed relations survive filtering.
+Publication dates/durations remain source-supplied, not newly verified platform dates. Training age ranges from @@AGEMIN@@ to @@AGEMAX@@ days (median @@AGEMED@@). Heterogeneous-age cumulative labels do not identify a response trajectory. Thirty days is outside training support; an in-range age also does not validate a new-video time forecast.
 
-Core relations are copied from \texttt{candidate\_edges.csv}: video--aspect membership, video--evidence membership, and aspect--evidence support. Original edge IDs and packages remain in the provenance table. Membership is deterministic; support links can be source-derived heuristics and are flagged. The GNN symmetrizes these edges. Figure~\ref{fig:graph} shows a real induced display subset, with no invented nodes or links; the full graph is available interactively.
+\section{Graphs, Features and Baselines}
+\subsection{Video as a Creative/Evidence Subgraph}
+The primary representation is one graph per video: a context root, creative aspects and observed-text evidence. It retains original \texttt{candidate\_edges} memberships and deterministic observation-support links, with original IDs. It excludes response statistics, assessment/risk scores, derived-summary evidence and unreviewed heuristic support links. Quantified-response sentences are removed while ordinary uses of ``like''/``share'' survive. Duplicate-summary hooks are blanked and duplicated value-promise/proof text is omitted, without inventing replacement observations. Caps are three evidence nodes per kind, one aspect per field and four visual/audience aspects. Eligible graphs contain @@NODES@@ nodes and @@EDGES@@ original relations, including @@SUPPORTS@@ retained support links.
 
-\begin{figure}[t]\centering
-\includegraphics[width=\columnwidth]{concept_graph.pdf}
-\caption{Actual training-video concept graph: source ID \texttt{@@GRAPHID@@}. An induced subset of @@SHOWN@@ of @@FULL@@ nodes is shown for legibility. Boxes show source concept values and evidence kinds; lines are original supplied membership edges. Full text, original IDs and edge provenance are exported in \texttt{report\_graph.json}.}\label{fig:graph}
-\end{figure}
+The root encodes brand/seven creative categories, log-duration/age with missingness flags and 16-dimensional TF-IDF/SVD message/hook/promise/CTA text. Nodes add type/field indicators and a separate 16-dimensional text representation. All encoders, medians, scalers, vocabularies and SVD fit training data only. The semantic extension adds within-video nonroot top-two neighbors with training-fitted SVD cosine $\geq0.55$, then symmetrizes/deduplicates. These links are explicitly heuristic. Figure~\ref{fig:graph} shows actual source and semantic relationships.
 
-The root contains brand/seven creative categories, log-duration/age with missingness flags, and a 16-dimensional TF-IDF/SVD representation of message, hook, promise and CTA. Each node adds type/field indicators and a separate 16-dimensional text representation. Encoders, medians, scaling, vocabularies and SVD are fitted only on the relevant training fold. Unseen categories are handled without fitting on queries. Word tokenization limits bilingual semantic fidelity.
+\begin{figure}[t]\centering\includegraphics[width=\columnwidth]{v4_graph.pdf}
+\caption{Real training graph \texttt{@@GRAPHYT@@}, displaying @@SHOWCOUNT@@ of @@FULLCOUNT@@ nodes. Gray: source membership; blue: retained source concept--evidence support; orange dashed: actual heuristic semantic extension. Nodes/edges and original text are exported in \texttt{report\_diagnostics.json}. Selection uses graph structure, never response labels.}\label{fig:graph}\end{figure}
 
-The tested semantic extension adds within-video edges between nonroot nodes with training-fitted SVD cosine similarity at least 0.55, up to two neighbors per node, then symmetrizes/deduplicates. This heuristic rule, node caps and input allowlists are fixed; views never construct edges. Structural-only and structural+similarity models use identical inputs and evaluation.
-
-\subsection{Compact GNN and Feature Baselines}
-Two 24-unit mean GraphSAGE layers \cite{sage,pyg} compute
+Two 24-unit mean GraphSAGE layers \cite{sage,pyg} use
 \begin{equation}
- h_u^{(\ell+1)}=\operatorname{ReLU}\!\left(W_s h_u^{(\ell)}+W_n\operatorname{mean}_{w\in N(u)}h_w^{(\ell)}+b\right).
+h_u^{\ell+1}=\operatorname{ReLU}\!\left(W_s h_u^\ell+W_n\operatorname{mean}_{w\in N(u)}h_w^\ell+b\right).
 \end{equation}
-A linear head on concatenated root and mean node embeddings predicts standardized log views. Adam uses learning rate 0.01 and mean squared error (MSE). A no-message MLP uses the same node information, two 24-unit transformations and root/mean readout; its parameter count differs because the GNN has neighbor weights. Additional baselines are constant training-log-mean, metadata Ridge (brand/duration/age), and Ridge on pooled raw root/mean node features.
+A linear head on concatenated root/mean embeddings predicts standardized log views. Adam (learning rate 0.01) minimizes MSE. Controls are constant training log mean; training brand log mean with global-mean fallback for unseen brands; metadata Ridge (brand/duration/age); pooled-root/mean-feature Ridge; and a two-layer no-message MLP with the same information/readout but a different parameter count. All predict the same target.
 
-The added brand baseline predicts the \emph{mean log views within each training brand}, using the global training log mean for unseen brands. It never averages test labels. This is a closed-form MSE fit, not an arithmetic mean of raw views. All baselines share the target, split and quantitative metrics.
+\subsection{Video Nodes and Brand Adjacency}
+The extension makes each video a node with root features. Supplied same-brand/author/creative relations collapse to @@PAIRS@@ binary pairs, exactly complete brand cliques. Creative relation labels add no independent adjacency. A no-brand-edge control removes every same-brand endpoint pair, leaving zero edges while retaining brand features, architecture and tuning budget. A separate extension adds five nearest training-feature neighbors. Queries receive messages only from training references, with no query-to-training/query messages. Clique performance cannot demonstrate effective concept relations.
 
-\subsection{Video Nodes: Brand Connectivity Audit}
-The extension represents each video as a node, using root features and two mean GraphSAGE layers. Supplied same-brand/author/creative-category relations are collapsed to binary adjacency. Crucially, the resulting @@PAIRS@@ unique pairs equal complete brand cliques: every edge joins same-brand videos. Overlapping creative/author labels add no distinct adjacency. Thus a good result cannot demonstrate that creative-concept relationships are effective.
+\section{Training, Uncertainty and Paired Policies}
+Three grouped folds within the 161 training videos select Ridge $\alpha\in\{10,100\}$ and neural weight decay $\lambda\in\{0.01,0.1\}$. Each fold refits preprocessing; validation log MSE stops training within 260 epochs (patience 35). Mean fold log RMSE selects parameters, and median selected-fold epoch determines final refitting on all training rows. Quantitative training/CV/test measurements are exported for all ten models.
 
-The no-brand-edge control removes \emph{every same-brand endpoint pair}, including overlaps supported by other relation labels. Zero edges remain. It retains brand input features, architecture and the same tuning grid, so this is an adjacency ablation, not removal of all brand information. The separate similarity extension adds five nearest training-feature neighbors. Query nodes receive messages only from training references; they send none to training or other query nodes.
+The prespecified primary family is subgraph-as-video. CV selects core+similarity: @@CVSIM@@ versus @@CVCORE@@ for core-only, despite core-only's better test RMSE. Final primary training uses @@EPOCH@@ epochs, $\lambda=@@WD@@$, training log RMSE @@TRAINRMSE@@. Across the whole suite, CV prefers the video-node clique model (@@CVNODE@@); it does not redefine the primary design. Test rankings never change model selection.
 
-\section{Training and Corrected Evaluation}
-\subsection{Campaign-Grouped 80/20 Split}
-Original groups union normalized same-brand campaign labels and exact same-brand message duplicates. Manual review identified Prudential 170th-anniversary variants \texttt{jlB5oiVibQU} and \texttt{m8qVqW63VQs}, previously separated by English/Chinese naming and split across train/test. Both are now assigned the canonical ID \texttt{prudential\_170th\_anniversary\_2019}; a checked-in override table unions their existing groups rather than splitting any prior family.
-
-There are now @@GROUPS@@ groups. We resplit all models into 171 training and 43 testing videos (79.91/20.09\%). The pre-existing count-only rule takes the first seed from 42 yielding exactly round$(0.2N)$ query videos; this gives seed @@SEED@@. It uses group sizes, never view labels or model scores. Both anniversary variants are now in training; outer and inner-fold group/URL disjointness are checked. Other paraphrased families may still escape this heuristic-plus-manual grouping. This measures unseen campaign groups within known brands, not unseen-brand transfer.
-
-This is explicitly a \emph{post-audit corrected internal evaluation}. Earlier holdout errors were inspected before the grouping correction; the new split is not a pristine external test. Superseded metrics and the reason for correction are preserved. The frozen label snapshot is unchanged.
-
-\subsection{Quantitative Objectives and Selection}
-Three grouped folds inside the outer training set select Ridge $\alpha\in\{10,100\}$ and neural weight decay $\lambda\in\{0.01,0.1\}$. Each fold refits all preprocessing. Early stopping uses fold-validation log MSE, at most 260 epochs and patience 35. Hyperparameters minimize mean fold log RMSE; final fitting uses all 171 training videos and the median selected-fold stopping epoch, without querying test losses. Closed-form mean baselines have no tuning parameters.
-
-The primary graph design remains subgraph-as-video. Within that prespecified family, training CV now selects \emph{structural-only}, with @@EPOCH@@ epochs and $\lambda=@@WD@@$. Its training log RMSE is @@TRAINRMSE@@. Across the comparison suite, training CV selects the no-brand-edge video-node control; we disclose this without redefining the primary design or choosing a new primary model from test rankings. Objectives, fold scores, final training RMSE/loss histories, configurations and source hashes are exported for every model.
-
-Common held-out metrics are MAE/RMSE on natural-log views and Spearman correlation. The inverse $\exp(\hat y)-1$ is clipped to nonnegative counts; it is not an unbiased arithmetic expected view count. A 2,000-draw campaign-level bootstrap gives conditional intervals and paired differences, excluding split/selection uncertainty. Additional seeds 7, 21 and 84 probe initialization without replacing seed 42.
-
-\begin{table}[t]\caption{Corrected same-split test results ($n=43$). Lower errors are better. Bold marks the training-selected primary subgraph, not the best test result.}\label{tab:main}\centering\footnotesize\setlength{\tabcolsep}{3pt}
-\begin{tabular}{lrrr}\toprule
-Model & Log MAE & Log RMSE & $\rho$\\\midrule
+\begin{table}[t]\caption{Same v4 cohort. CV is training-only tuning error; other columns are held-out results ($n=40$). * marks the primary subgraph selected by CV. Errors use natural-log views.}\label{tab:main}\centering\scriptsize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrr}\toprule
+Model & CV RMSE & Test MAE & Test RMSE & $\rho$\\\midrule
 @@ROWS@@
 \bottomrule\end{tabular}\end{table}
 
-\section{Results and Failure Analysis}
-The original, superseded primary result (RMSE 2.238) was worse than metadata Ridge (2.134) and video-node GNN (2.099); it did not justify a superiority claim. After correcting grouping and retraining, the primary structural subgraph obtains RMSE @@RMSE@@ (95\% campaign-bootstrap interval [@@CILO@@, @@CIHI@@]), again worse than metadata Ridge (@@META@@), pooled Ridge (@@POOL@@) and video-node brand cliques (@@NODE@@). Its paired RMSE difference versus metadata Ridge has interval [@@METALO@@, @@METAHI@@], spanning zero. We establish neither superiority nor a precise performance ordering.
+Common metrics are log MAE/RMSE and Spearman correlation. Back-transformed $\exp(\hat y)-1$ is clipped nonnegative, not an unbiased arithmetic expected count. Campaign bootstrap (2,000 paired draws, seed 44) gives conditional intervals, excluding split/selection uncertainty. Primary test RMSE @@RMSE@@ has 95\% interval [@@CILO@@, @@CIHI@@]. Its RMSE difference versus metadata Ridge has interval [@@MDLO@@, @@MDHI@@], spanning zero. Node clique-minus-no-edge difference also spans zero [@@NDLO@@, @@NDHI@@]. We establish no reliable graph advantage.
 
-The similarity subgraph has test RMSE @@SIM@@, but structural-only was preferred by training CV; we do not switch models after seeing testing results. In particular, the primary MAE/RMSE tradeoff and uncertain edge gains do not prove useful creative graph structure beyond feature baselines.
+\subsection{Matched Old/New Policy Experiment}
+We retrain both legacy and revised policies on the \emph{same v4 eligible videos, labels, groups, outer split, inner folds, video-node pairs, architectures and tuning budget}. The legacy arm restores original text and frozen old subgraphs; the revised arm uses cleaned text and rebuilt conservative graphs. Shared mean/brand-mean/metadata predictions must agree (absolute tolerance $10^{-6}$), otherwise comparison fails. Both subgraph architectures use seeds 42, 7, 21 and 84; only seed 42 tunes, with other seeds using selected regularization/epochs. Table~\ref{tab:paired} reports seed-42 paired RMSE; all seed predictions/checkpoints are retained.
 
-Brand mean gives RMSE @@BRAND@@; video-node brand cliques give @@NODE@@, versus @@NOBRAND@@ with no edges. The paired clique-minus-no-edge RMSE interval [@@EDGELO@@, @@EDGEHI@@] includes zero. Thus adjacency supplies only a small, uncertain numerical gain here. The clique model also uses duration, age and creative root features, so improvement over brand mean cannot be attributed solely to edges or concepts.
-
-\begin{figure}[t]\centering
-\includegraphics[width=\columnwidth]{scatter.pdf}
-\caption{All 43 corrected test predictions from the primary structural subgraph. Dashed line: perfect log-scale prediction. The circled IKEA case is the largest corrected test log error; extreme responses are compressed.}\label{fig:scatter}
-\end{figure}
-
-\subsection{Reupload and Exposure Confounding}
-A particularly informative \emph{historical} failure is the 1996 McDonald's ad reupload \texttt{P25f\_dDd2MI}: observed views were 1,019, while the superseded subgraph predicted about 442,536. The captured uploader is ``TPB HK CM,'' a third-party Hong Kong TV-ad archive, rather than the official brand channel. Its supplied upload date is 28 April 2026 (about 195.5 days before capture); 1996 refers to the creative, not the upload age. Brand/creative cues do not establish comparable distribution or paid exposure. This is a plausible channel/exposure mismatch, not an identified causal explanation.
-
-That video is now in training, so its corrected prediction is an in-sample diagnostic, \emph{not} a held-out error. The corrected largest test log error instead concerns IKEA video \texttt{@@WORSTID@@}: @@WORSTOBS@@ observed versus @@WORSTPRED@@ predicted views. An official uploader alone therefore does not resolve exposure confounding. Figure~\ref{fig:scatter} and exported view-scale/brand slices make the remaining failures visible.
-
-\subsection{Cross-Brand Stress Test}
-Leave-one-brand-out (LOBO) refits on 13 brands and tests the remaining brand, repeating all 14. An inner grouped holdout chooses epochs; regularization is fixed separately ($\alpha=100$, $\lambda=0.1$), never tuned using held-out-brand responses. Brand mean necessarily falls back to the global training log mean. Table~\ref{tab:lobo} reports macro averages; constant-within-brand predictions have undefined rank correlation. These 70 model--brand runs are a stress test separate from the main split, with small per-brand samples and substantial transfer error.
-
-\begin{table}[t]\caption{LOBO brand-macro results across 14 held-out brands.}\label{tab:lobo}\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{table}[t]\caption{Matched-policy test RMSE and 95\% campaign-bootstrap difference interval (revised minus legacy). Negative favors revised. Neither interval establishes improvement.}\label{tab:paired}\centering\scriptsize\setlength{\tabcolsep}{3pt}
 \begin{tabular}{lrrr}\toprule
-Model & Log MAE & Log RMSE & $\rho$\\\midrule
+Subgraph & Legacy & Revised & Difference interval\\\midrule
+@@PROWS@@
+\bottomrule\end{tabular}\end{table}
+
+These intervals describe the combined text/graph policy and fitted learning procedure; they do not isolate removal of one hook or edge, or identify causal creative effects. Earlier 171/43 scores are not compared directly with v4 as if paired. Additional seeds probe initialization; no favorable test seed replaces the primary.
+
+\section{Errors and Cross-Brand Transfer}
+Figure~\ref{fig:scatter} includes all 40 test videos. The largest primary log error is \texttt{@@WORSTYT@@} (Caf\'e de Coral): @@WORSTOBS@@ observed versus @@WORSTPRED@@ predicted, despite an official uploader. The historical third-party McDonald's archive \texttt{P25f\_dDd2MI} had 1,019 views versus about 442,536 under the superseded model; that is historical evidence, not a v4 score. Its 1996 creative year differs from its supplied 2026 upload date. Channel identity, distribution and paid exposure may differ, but their causal contributions are not measured.
+
+\begin{figure}[t]\centering\includegraphics[width=\columnwidth]{v4_scatter.pdf}
+\caption{All 40 v4 test predictions: primary GNN (green) and metadata Ridge (gray crosses). Dashed line: perfect prediction; circle: largest primary log error. No training predictions enter this plot.}\label{fig:scatter}\end{figure}
+
+LOBO refits on 13 brands, holding out each of 14 in turn. Training-only grouped inner stopping is followed by refitting; separate fixed regularization is $\alpha=100$, $\lambda=0.1$. Table~\ref{tab:lobo} reports five-model brand-macro metrics (70 runs). Brand mean falls back to global training mean and has undefined within-brand rank correlation. These stress tests are separate from the main 80/20 result.
+
+\begin{table}[t]\caption{V4 leave-one-brand-out macro results (14 brands).}\label{tab:lobo}\centering\scriptsize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrr}\toprule Model & Log MAE & Log RMSE & $\rho$\\\midrule
 @@LROWS@@
 \bottomrule\end{tabular}\end{table}
 
-\section{Recommendations, Website and Limitations}
-Six cases use the first six corrected test indices, without selecting maximum gains. Each follows objective $\rightarrow$ creative elements $\rightarrow$ predicted/observed response with uncertainty $\rightarrow$ transferable hypothesis. The frozen primary GNN searches mechanic/structure/pacing triples appearing at least twice in training, with at most two categorical edits. Original settings remain if no candidate improves the model estimate; text/similarity features are recomputed. Existing source evidence stays fixed, so a suggested category can conflict with the script and requires human revision.
+\section{Source-Linked Cases and Demonstrator}
+Six existing-video cases are the first six fixed test indices. Frozen-GNN search changes at most two mechanic/structure/pacing categories, requiring each proposed triple to occur at least twice in training. It retains the original when no candidate improves the estimate. Extracted evidence stays fixed; categories must be reconciled with a rewritten script before use. Nominal 90\% out-of-fold absolute-log-residual ranges are sensitivity summaries, not calibrated individual intervals or uplift uncertainty.
 
-For the @@CASEBRAND@@ case \texttt{@@CASEID@@}, observed views are @@CASEOBS@@; predictions are @@CASEBASE@@ before and @@CASEBEST@@ after the suggested settings. Linked supporting examples come only from training. Out-of-fold absolute-log-residual sensitivity bands are reported; these are not calibrated individual intervals, and no modified-video response is observed.
+\emph{Existing brief:} Hang Seng credit-card payment convenience, source \texttt{@@CASEYT@@}, with observed @@CASEOBS@@ views. The proposed edits are @@CASECHANGE@@. Original prediction @@CASEBASE@@ becomes @@CASEBEST@@ over @@CASECAND@@ candidates; its original sensitivity range is [@@CASELOW@@, @@CASEHIGH@@]. Supporting training examples include recipe-app \texttt{@@SUPPORT0@@} and IKEA storage \texttt{@@SUPPORT1@@}; they support a categorical triple, not guaranteed cross-product transfer. Takeaway: test a coherent problem/solution edit under comparable exposure; no edited outcome is observed.
 
-The 30-second new-brief storyboard uses training-median age @@AGEMED@@ days, \emph{not} a 30-day forecast. It contains a hook (0--3 s), product benefit (3--20 s), suggested structure (20--27 s), and CTA (27--30 s). A graph built solely from declared inputs avoids borrowing another video's evidence, but is sparser than extracted training graphs. New briefs remain an unvalidated showcase even at in-range ages.
+\emph{New author-declared brief:} a hypothetical 30-second MTR route-planning ad with hook ``Planning a cross-boundary journey? Start with a clear route.'' Age is the training median @@AGEMED@@ days, not a 30-day forecast. Proposed edits: @@NEWCHANGE@@. Predicted cumulative views change from @@NEWBASE@@ to @@NEWBEST@@; original sensitivity range [@@NEWLOW@@, @@NEWHIGH@@]. A graph contains declared inputs only, with no borrowed extracted evidence. Storyboard: 0--3 s question; 3--20 s travel need/route-map option; 20--27 s proposed structure/pacing; 27--30 s check-current-timetable CTA. Wording is proposed, not verified current service information; there is no observed response. Training support and model errors make the recommendation a hypothesis.
 
-The local Streamlit/Python website directly loads the frozen PyG checkpoint and encoders. It combines editable feature-to-recommendation inputs, source evidence, actual concept graphs, baseline/ablation results and one storyboard. Display-edge toggles do not change the trained model. New inputs default to the training age median; out-of-range inputs, including 30 days, display an explicit extrapolation warning in the page and prediction JSON. All outputs remain exploratory cumulative-view estimates. Numerical checks cover all 214 frozen predictions and six optimizations; widget tests cover both input types, graph controls and age warnings.
+The Streamlit/Python prototype defaults to this v4 checkpoint, with source graphs, complete cases, matched experiment dictionary/metrics and the report download. Historical results remain selectable and explicitly labeled. Changing versions clears stale inputs/predictions. Out-of-support ages, including 30 days, trigger warnings in the UI and JSON; in-range ages and sparse new-brief graphs are still unvalidated. ZIP packaging includes the runtime policy module and frozen input/result bundles.
 
-Paid spend, targeting, channel audience, publication timing, reupload status and featured people's popularity can jointly affect both creative choices and views. Contemporary channel metadata is not historical audience exposure. Annotation style, heuristic support edges, bilingual tokenization, incomplete responses, imperfect campaign verification and a single corrected split further constrain construct validity. Optimizing model estimates can exploit prediction errors; support from two examples does not identify causal uplift.
+\section{Reproducibility and Audit Checks}
+The frozen branch records preparation rules/inputs, fold identities, code hashes, paired controls, checkpoints and environment versions. Fifty-seven unit tests pass on macOS in Conda \texttt{stat6207}; all 201 revised and 214 historical predictions match saved outputs within $10^{-4}$ log units. App tests cover age warnings, optimization and switching. The registered families cover 32 of 214 source videos (Table~\ref{tab:families}); this targeted registry is not an exhaustive video-level campaign audit. Both source-backed known unions and unresolved-family quarantine are checked through outer/inner partitions. Package verification includes importing the extracted App dependencies and checking result hashes; these checks do not establish predictive or causal validity.
 
-Priority improvements are to verify campaign families, uploader type and dates; collect exposure/spend and fixed-age response labels; expand a separately frozen official-channel holdout; test bilingual encoders and capacity-matched edge controls; and repeat grouped/time splits. Prospective exposure-controlled coherent variants are required to evaluate actual creative gains. We claim no sales, brand-recognition or causal engagement effect.
+\begin{table}[t]\caption{Registered family components in v4. Each supported family has one outer role; unresolved connected families are excluded entirely.}\label{tab:families}\centering\scriptsize\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrl}\toprule Family & Videos & V4 role\\\midrule
+@@FAMILIES@@
+\bottomrule\end{tabular}\end{table}
 
-\section{Conclusion}
-The corrected compact-GNN baseline is reproducible and quantitatively evaluated, but the primary concept subgraph does not outperform simpler controls. Video-node adjacency is exactly brand connectivity, and its no-edge comparison is uncertain. Cumulative snapshot prediction must be separated from validated future-horizon forecasting. The contribution is an auditable comparison and source-linked hypothesis tool, rather than proof that concept edges improve creative performance. This report uses the IEEE A4 template \cite{ieee}; code, frozen evidence, checkpoints, full metrics and session transcript accompany it.
+\section{Limitations and Conclusion}
+Paid media, audience targeting, uploader reach, timing, reupload status and featured people's popularity may confound creative choices and views. Contemporary channel metadata is not historical exposure. Source dates, bilingual tokenization, heuristic semantic links, annotation noise, unresolved creative reviews, non-exhaustive campaign coverage and an inspected single holdout limit validity. Search can exploit model error; two supporting examples cannot establish actual uplift.
 
+Priority improvements are verified campaign/uploader/date review, fixed-age response/spend collection, an independently frozen external holdout, repeated grouped/time splits and exposure-controlled coherent variants. The revised GNN baseline is quantitatively reproducible, but neither graph superiority nor a policy-cleaning gain is established. Cumulative snapshot estimates must remain separate from validated future forecasts. The contribution is an auditable comparison and source-linked hypothesis interface, with no claim of sales, brand recognition or causal engagement gains. This four-page IEEE A4 report \cite{ieee} accompanies code, frozen evidence, checkpoints and the visible session transcript.
+
+\balance
 \begin{thebibliography}{3}
 \bibitem{sage} W. L. Hamilton, R. Ying, and J. Leskovec, ``Inductive representation learning on large graphs,'' in \emph{Advances in Neural Information Processing Systems}, vol. 30, 2017.
 \bibitem{pyg} PyTorch Geometric, ``SAGEConv and graph-level pooling documentation.'' [Online]. Available: \url{https://pytorch-geometric.readthedocs.io/}
 \bibitem{ieee} IEEE, ``Manuscript templates for conference proceedings.'' [Online]. Available: \url{https://www.ieee.org/conferences/publishing/templates.html}
 \end{thebibliography}\end{document}
 '''
-rep={'RMSE':f(v['log_RMSE']),'META':f(m['test']['Metadata Ridge']['log_RMSE']),'NODE':f(m['test']['Node structural']['log_RMSE']),
-     'AGEMIN':f'{ages["training_min_days"]:.1f}','AGEMAX':f'{ages["training_max_days"]:.1f}','AGEMED':f'{ages["training_median_days"]:.1f}',
-     'GNODES':f'{ga["nodes"]:,}','GEDGES':f'{ga["provided_edges"]:,}','GRAPHID':tex(graph['video_id']),'SHOWN':len(graph['nodes']),'FULL':graph['full_node_count'],
-     'PAIRS':f'{edge["core_undirected_pairs"]:,}','GROUPS':a['groups'],'SEED':sp['seed'],'EPOCH':m['configs'][gnn]['epochs'],'WD':m['configs'][gnn]['weight_decay'],
-     'TRAINRMSE':f(m['configs'][gnn]['train_log_RMSE']),'ROWS':'\n'.join(rows),'LROWS':'\n'.join(lrows),'CILO':f(ci[0]),'CIHI':f(ci[1]),
-     'POOL':f(m['test']['Pooled Ridge']['log_RMSE']),'METALO':f(pa[gnn+' minus Metadata Ridge']['campaign_bootstrap_95'][0]),'METAHI':f(pa[gnn+' minus Metadata Ridge']['campaign_bootstrap_95'][1]),
-     'SIM':f(m['test']['Subgraph + similarity']['log_RMSE']),'BRAND':f(m['test']['Brand mean']['log_RMSE']),'NOBRAND':f(m['test']['Node no-brand edges']['log_RMSE']),
-     'EDGELO':f(pa['Node structural minus Node no-brand edges']['campaign_bootstrap_95'][0]),'EDGEHI':f(pa['Node structural minus Node no-brand edges']['campaign_bootstrap_95'][1]),
-     'WORSTID':tex(__import__('pandas').read_csv(R/'data/processed/videos_v2.csv').set_index('video_id').loc[worst['video_id'],'youtube_id']),
-     'WORSTOBS':f'{worst["observed_views"]:,}','WORSTPRED':f'{worst["predicted_views"]:,.0f}',
-     'CASEBRAND':tex(case['brand']),'CASEID':tex(case['video_id']),'CASEOBS':f'{case["observed_views"]:,}','CASEBASE':f'{case["base_prediction"]:,.0f}','CASEBEST':f'{case["optimized_prediction"]:,.0f}'}
-for k,val in rep.items():source=source.replace('@@'+k+'@@',str(val))
+rowsdf=w['videos'];byid={r['video_id']:r for r in rowsdf};ci_meta=cp[primary+' minus Metadata Ridge']['campaign_bootstrap_95'];ci_node=cp['Node structural minus Node no-brand edges']['campaign_bootstrap_95'];supports=case['support_examples'];lastsupport=next((r for r in supports if 'IKEA' in r['title']),supports[-1]);YT=lambda sid:byid[sid]['youtube_id']
+repl={'FAMILIES':'\n'.join(family_rows),'NAMES':r'\quad '.join(tex(a['name']) for a in authors),'RMSE':f(v['log_RMSE']),'META':f(m['test']['Metadata Ridge']['log_RMSE']),
+ 'GROUPS':len({r['group'] for r in rowsdf}),'AGEMIN':f'{ages["training_min_days"]:.1f}','AGEMAX':f'{ages["training_max_days"]:.1f}','AGEMED':f'{ages["training_median_days"]:.1f}',
+ 'NODES':f'{ga["nodes"]:,}','EDGES':f'{ga["provided_edges"]:,}','SUPPORTS':sum(e['type']=='aspect_supported_by_evidence' for g in w['graphs'] for e in g['edges']),
+ 'GRAPHYT':tex(graph['youtube_id']),'SHOWCOUNT':len(graph['nodes']),'FULLCOUNT':graph['full_node_count'],'PAIRS':f'{edge["core_undirected_pairs"]:,}',
+ 'CVSIM':f(m['CV_log_RMSE']['Subgraph + similarity']),'CVCORE':f(m['CV_log_RMSE']['Subgraph structural']),'EPOCH':cv['epochs'],'WD':cv['weight_decay'],'TRAINRMSE':f(cv['train_log_RMSE']),
+ 'CVNODE':f(m['CV_log_RMSE']['Node structural']),'ROWS':'\n'.join(rows),'PROWS':'\n'.join(prows),'LROWS':'\n'.join(lrows),'CILO':f(ci[0]),'CIHI':f(ci[1]),
+ 'MDLO':f(ci_meta[0]),'MDHI':f(ci_meta[1]),'NDLO':f(ci_node[0]),'NDHI':f(ci_node[1]),'WORSTYT':tex(worst['youtube_id']),'WORSTOBS':count(worst['views']),'WORSTPRED':count(worst['predicted_views']),
+ 'CASEYT':tex(YT(case['video_id'])),'CASEOBS':count(case['observed_views']),'CASECHANGE':tex(oldcase),'CASEBASE':count(case['base_prediction']),'CASEBEST':count(case['optimized_prediction']),
+ 'CASECAND':case['candidates_evaluated'],'CASELOW':count(case['uncertainty_band'][0]),'CASEHIGH':count(case['uncertainty_band'][1]),'SUPPORT0':tex(YT(supports[0]['video_id'])),'SUPPORT1':tex(YT(lastsupport['video_id'])),
+ 'NEWCHANGE':tex(newchange),'NEWBASE':count(brief['base_prediction']),'NEWBEST':count(brief['optimized_prediction']),'NEWLOW':count(brief['uncertainty_band'][0]),'NEWHIGH':count(brief['uncertainty_band'][1])}
+repl.update({'EMAIL'+str(i):tex(a['email']) for i,a in enumerate(authors)})
+for key,value in repl.items():source=source.replace('@@'+key+'@@',str(value))
 assert '@@' not in source
 out=R/'output/latex';out.mkdir(exist_ok=True)
-(out/'Group6_Final_Report.tex').write_text(source)
-for name in ['concept_graph.pdf','scatter.pdf']:shutil.copy2(D/name,out/name)
+(out/'Group6_Final_Report.tex').write_text(source,encoding='utf-8')
+for before,after in [('report_graph.pdf','v4_graph.pdf'),('report_scatter.pdf','v4_scatter.pdf')]:shutil.copy2(D/before,out/after)
 shutil.copy2(R/'references/ieee/IEEEtran.cls',out/'IEEEtran.cls')
-print('IEEE A4 source:',out/'Group6_Final_Report.tex')
+print('Wrote v4 report source with four named authors and measured audited/paired results.')
